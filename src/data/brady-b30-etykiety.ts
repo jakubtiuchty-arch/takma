@@ -106,7 +106,7 @@ export const bradyB30GhsClp: Product = {
   faq: [
     { question: 'Co oznacza końcówka CLP1–CLP4C w numerze etykiety?', answer: 'Cyfra podaje liczbę czerwonych rombów nadrukowanych na etykiecie, od jednego do czterech. Litera A, B albo C oznacza ich ułożenie. Wersję CLP4C ma tylko najmniejsza etykieta 76,2 × 25,4 mm.' },
     { question: 'Czy do etykiet GHS/CLP potrzebna jest osobna taśma barwiąca?', answer: 'Tak. Kaseta zawiera same etykiety. Do wydruku zaleca się taśmę barwiącą B30-R10000 w osobnej kasecie.' },
-    { question: 'Do jakiej drukarki pasują etykiety B-7569?', answer: 'Do drukarek [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i przemysłowej [Brady i3300](/produkt/brady-i3300), a także [Brady i4311](/produkt/brady-i4311) i i5300. Etykiety przyjmują też starsze modele S3000, BBP30, BBP31, BBP33, BBP35 i BBP37.' },
+    { question: 'Do jakiej drukarki pasują etykiety B-7569?', answer: 'Do drukarek [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i przemysłowej [Brady i3300](/produkt/brady-i3300), a także [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300). Etykiety przyjmują też starsze modele S3000, BBP30, BBP31, BBP33, BBP35 i BBP37.' },
   ],
   applications: ['Oznaczanie substancji i mieszanin niebezpiecznych zgodnie z GHS/CLP', 'Identyfikacja zagrożeń na pojemnikach i opakowaniach', 'Oznaczenia w zakładzie i na instalacjach elektrycznych'],
 }
@@ -205,7 +205,7 @@ export const bradyB30Wypukle593: Product = {
   faq: [
     { question: 'Czym wypukła etykieta B30EP różni się od zwykłej etykiety wykrawanej?', answer: 'Ma grubość 0,65 mm i piankowy klej, dlatego wystaje ponad powierzchnię jak grawerowana tabliczka. Nadaje się na przyciski, przełączniki, panele krosowe i tabliczki znamionowe.' },
     { question: 'Jaką taśmę barwiącą wybrać do czarnych etykiet B30EP?', answer: 'Do czarnych etykiet zaleca się białą taśmę B30-R4400-WT. Etykiety białe, żółte i srebrne drukuje się taśmą B30-R6000, a czerwone i zielone dowolną z nich.' },
-    { question: 'Czy te etykiety pasują do drukarki Brady S3100?', answer: 'Tak. Kasety B30EP są przeznaczone do drukarek [Brady S3100](/produkt/brady-s3100) i [Brady S3700](/produkt/brady-s3700) oraz do przemysłowych [Brady i3300](/produkt/brady-i3300), [Brady i4311](/produkt/brady-i4311) i i5300. Pasują też do starszych S3000 i BBP30–BBP37.' },
+    { question: 'Czy te etykiety pasują do drukarki Brady S3100?', answer: 'Tak. Kasety B30EP są przeznaczone do drukarek [Brady S3100](/produkt/brady-s3100) i [Brady S3700](/produkt/brady-s3700) oraz do przemysłowych [Brady i3300](/produkt/brady-i3300), [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300). Pasują też do starszych S3000 i BBP30–BBP37.' },
   ],
   applications: ['Panele krosowe i punkty połączeń w szafach', 'Przyciski zewnętrzne i przełączniki', 'Tabliczki znamionowe i numery seryjne'],
 }
@@ -291,7 +291,7 @@ export const bradyB30WypuklePrzyciski593: Product = {
   faq: [
     { question: 'Czym wersja B30EP-167U różni się od B30EP-167?', answer: 'Obie mają wymiary 30,48 × 38,1 mm i po 200 sztuk na rolce. Zwykła wersja ma okrągły otwór z wcięciem, a wersja U ma otwór okrągły bez wcięcia.' },
     { question: 'Do czego służą wypukłe etykiety na przyciski?', answer: 'Tabliczka z otworem obejmuje przycisk albo przełącznik i opisuje jego funkcję. Jest wypukła jak tabliczka grawerowana, a trzyma się na piankowym kleju akrylowym.' },
-    { question: 'Z jakimi drukarkami współpracują kasety B30EP?', answer: 'Kasety B30EP współpracują z drukarkami [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i [Brady i3300](/produkt/brady-i3300), a także z [Brady i4311](/produkt/brady-i4311) i i5300. Obsługują je też starsze S3000 i modele BBP30–BBP37.' },
+    { question: 'Z jakimi drukarkami współpracują kasety B30EP?', answer: 'Kasety B30EP współpracują z drukarkami [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i [Brady i3300](/produkt/brady-i3300), a także z [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300). Obsługują je też starsze S3000 i modele BBP30–BBP37.' },
   ],
   applications: ['Opisy przycisków sterowniczych na panelach', 'Oznaczenia przełączników na szafach i pulpitach', 'Zamiennik grawerowanych tabliczek'],
 }
@@ -358,7 +358,7 @@ export const bradyB30ZawieszkiKolorowe: Product = {
   faq: [
     { question: 'Czy zawieszki B30-255-851 mają nadruk fabryczny?', answer: 'Nie. Zawieszki są jednolicie kolorowe, a całą treść, razem z hasłem sygnałowym, drukuje się w drukarce. Zawieszki z fabrycznym nagłówkiem OSHA albo ANSI są osobnym produktem.' },
     { question: 'Czy na zawieszce można pisać ręcznie?', answer: 'Tak. Chropowata powierzchnia pozwala dopisać podpis, datę i uwagi, a nadruk zajmuje jedną stronę.' },
-    { question: 'Z jaką drukarką pracują te zawieszki?', answer: 'Zawieszki drukuje się w [Brady S3100](/produkt/brady-s3100) lub [Brady S3700](/produkt/brady-s3700) albo w przemysłowej [Brady i3300](/produkt/brady-i3300). Pasują też [Brady i4311](/produkt/brady-i4311), i5300 oraz starsze S3000 i BBP30–BBP37. Zalecana taśma barwiąca to B30-R10000.' },
+    { question: 'Z jaką drukarką pracują te zawieszki?', answer: 'Zawieszki drukuje się w [Brady S3100](/produkt/brady-s3100) lub [Brady S3700](/produkt/brady-s3700) albo w przemysłowej [Brady i3300](/produkt/brady-i3300). Pasują też [Brady i4311](/produkt/brady-i4311), [Brady i5300](/produkt/brady-i5300) oraz starsze S3000 i BBP30–BBP37. Zalecana taśma barwiąca to B30-R10000.' },
   ],
   applications: ['Zawieszki ostrzegawcze z własnym hasłem sygnałowym', 'Oznaczanie kolorami sprzętu, zespołów i działów', 'Zawieszki inspekcyjne i inwentaryzacyjne'],
 }
@@ -432,7 +432,7 @@ export const bradyB30Winyl595Puste: Product = {
   faq: [
     { question: 'Do jakich powierzchni nadają się etykiety B-595?', answer: 'Do gładkich i chropowatych, także malowanych pustaków, drewna, tworzyw o fakturze, rur w papierowej osłonie i obudów wydmuchiwanych. Klej jest bardzo mocny i trwały.' },
     { question: 'Ile lat etykiety wytrzymują na zewnątrz?', answer: 'Średnio od 8 do 10 lat. Pracują w temperaturze od −40 do 82 °C, a naklejanie jest możliwe od −18 °C.' },
-    { question: 'Z jaką drukarką pracują puste etykiety B-595?', answer: 'Pracują w [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700), [Brady i3300](/produkt/brady-i3300), [Brady i4311](/produkt/brady-i4311) i i5300. Starsze S3000 i BBP30–BBP37 także je przyjmują. Zalecana taśma barwiąca to B30-R10000.' },
+    { question: 'Z jaką drukarką pracują puste etykiety B-595?', answer: 'Pracują w [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700), [Brady i3300](/produkt/brady-i3300), [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300). Starsze S3000 i BBP30–BBP37 także je przyjmują. Zalecana taśma barwiąca to B30-R10000.' },
   ],
   applications: ['Znaki bezpieczeństwa i oznaczenia ostrzegawcze', 'Oznaczanie rur, zaworów i urządzeń', 'Etykiety na półki oraz instalacje elektryczne'],
 }
@@ -455,7 +455,7 @@ const WINYL_7569_PUSTE: [string, string, string, string, string][] = [
 
 export const bradyB30Winyl7569Puste: Product = {
   ...wspolneB30,
-  relatedProducts: ['brady-s3100', 'brady-s3700', 'brady-i3300'],
+  relatedProducts: ['brady-s3100', 'brady-s3700', 'brady-i3300', 'brady-i5300'],
   id: 'brady-b30-25-7569-wt',
   slug: 'brady-b30-25-7569-wt',
   name: 'Puste etykiety winylowe Brady B30-25-7569-WT — materiał B30 do S3100 i S3700',
@@ -507,7 +507,7 @@ export const bradyB30Winyl7569Puste: Product = {
   faq: [
     { question: 'Czym puste etykiety B-7569 różnią się od etykiet GHS/CLP z tego samego winylu?', answer: 'Tu etykiety są puste, a w wersjach GHS/CLP na etykiecie są fabrycznie nadrukowane czerwone romby. Materiał, klej i temperatura pracy są takie same.' },
     { question: 'Ile pustych etykiet B-7569 mieści się na rolce?', answer: 'Zależy od rozmiaru: 175 sztuk (101 × 152 mm), 250 sztuk (57 × 98 mm) albo 300 sztuk (28,58 × 72 mm i 57 × 75 mm).' },
-    { question: 'Jakie drukarki obsługują te etykiety?', answer: 'Etykiety drukują [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700), [Brady i3300](/produkt/brady-i3300) i i5300. Z drukarek starszych przyjmują je też S3000 i BBP30–BBP37. Zalecana taśma barwiąca to B30-R10000.' },
+    { question: 'Jakie drukarki obsługują te etykiety?', answer: 'Etykiety drukują [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700), [Brady i3300](/produkt/brady-i3300) i [Brady i5300](/produkt/brady-i5300). Z drukarek starszych przyjmują je też S3000 i BBP30–BBP37. Zalecana taśma barwiąca to B30-R10000.' },
   ],
   applications: ['Znaki bezpieczeństwa i informacje o zagrożeniach', 'Oznaczenia instalacji elektrycznych', 'Identyfikacja obiektów w zakładzie'],
 }
@@ -583,7 +583,7 @@ export const bradyB30RightToKnow: Product = {
   faq: [
     { question: 'Co daje fabryczny nadruk na etykietach Right-to-know?', answer: 'Kolorowe pola są już na etykiecie. Drukarka dodaje tylko czarny nadruk w jednym przebiegu, więc powstaje pięciokolorowa etykieta chemiczna.' },
     { question: 'Czym różnią się wzory NFPA, HMIG i CB?', answer: 'Romb NFPA ma niebieskie, czerwone, żółte i białe pole. Paski HMIG mają białe kółka, a paski CB białe prostokąty. Wersje z liniami dają miejsce na opis.' },
-    { question: 'Do jakiej drukarki pasują te etykiety?', answer: 'Pasują do [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700), [Brady i3300](/produkt/brady-i3300), [Brady i4311](/produkt/brady-i4311) i i5300. Starsze S3000 i BBP30–BBP37 również je obsługują. Zalecana taśma barwiąca to B30-R10000.' },
+    { question: 'Do jakiej drukarki pasują te etykiety?', answer: 'Pasują do [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700), [Brady i3300](/produkt/brady-i3300), [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300). Starsze S3000 i BBP30–BBP37 również je obsługują. Zalecana taśma barwiąca to B30-R10000.' },
   ],
   applications: ['Etykiety z rombem NFPA na pojemnikach z chemikaliami', 'Oznaczenia zagrożeń w magazynie i laboratorium', 'Znakowanie substancji w zakładzie produkcyjnym'],
 }
@@ -663,7 +663,7 @@ export const bradyB30Naglowki595: Product = {
   faq: [
     { question: 'Co oznaczają hasła DANGER, CAUTION, WARNING i NOTICE?', answer: 'DANGER to niebezpieczeństwo, CAUTION to ostrożność, WARNING to ostrzeżenie, a NOTICE to informacja. Każde hasło ma własny kolor paska w standardzie ANSI.' },
     { question: 'Dlaczego nagłówek jest nadrukowany fabrycznie?', answer: 'Kolorowy pasek jest już na etykiecie, więc drukarka dodaje tylko czarną treść w jednym przebiegu. Powstaje wielokolorowy znak bez drukarki kolorowej.' },
-    { question: 'Z jaką drukarką pracują te etykiety?', answer: 'Etykiety obsługują [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700), [Brady i3300](/produkt/brady-i3300), [Brady i4311](/produkt/brady-i4311) i i5300. Z modeli starszych współpracuje z nimi S3000 oraz seria BBP30–BBP37. Zalecana taśma barwiąca to B30-R10000.' },
+    { question: 'Z jaką drukarką pracują te etykiety?', answer: 'Etykiety obsługują [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700), [Brady i3300](/produkt/brady-i3300), [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300). Z modeli starszych współpracuje z nimi S3000 oraz seria BBP30–BBP37. Zalecana taśma barwiąca to B30-R10000.' },
   ],
   applications: ['Znaki bezpieczeństwa z hasłem ANSI albo OSHA', 'Oznaczenia ostrzegawcze na urządzeniach i instalacjach', 'Znaki na rurach, półkach i szafach elektrycznych'],
 }
@@ -737,7 +737,7 @@ export const bradyB30Metalizowane438: Product = {
   faq: [
     { question: 'Na czym polega zabezpieczenie Defender w etykietach B-438?', answer: 'Klej jest trwały, a po zdjęciu etykiety na podłożu zostaje ślad w układzie szachownicy. Dzięki temu widać, że etykietę próbowano usunąć.' },
     { question: 'Dlaczego metalizowanych etykiet nie należy dotykać przed naklejeniem?', answer: 'Zbyt częste dotykanie może przedwcześnie odsłonić wzór szachownicy. Etykietę należy chwytać jak najrzadziej i nakleić od razu na gładkie podłoże.' },
-    { question: 'Jakie drukarki obsługują etykiety B-438?', answer: 'Drukarki [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i przemysłowa [Brady i3300](/produkt/brady-i3300) obsługują etykiety B-438. Są one zgodne także z [Brady i4311](/produkt/brady-i4311) i i5300 oraz ze starszymi S3000 i BBP30–BBP37. Zalecana taśma barwiąca to B30-R4300.' },
+    { question: 'Jakie drukarki obsługują etykiety B-438?', answer: 'Drukarki [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i przemysłowa [Brady i3300](/produkt/brady-i3300) obsługują etykiety B-438. Są one zgodne także z [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300) oraz ze starszymi S3000 i BBP30–BBP37. Zalecana taśma barwiąca to B30-R4300.' },
   ],
   applications: ['Tabliczki znamionowe i seryjne z ochroną przed usunięciem', 'Śledzenie zasobów i znakowanie produktów', 'Oznaczanie płytek drukowanych'],
 }
@@ -755,7 +755,7 @@ const METALIZOWANE_7563: [string, string, string, string][] = [
 
 export const bradyB30Metalizowane7563: Product = {
   ...wspolneB30,
-  relatedProducts: ['brady-s3100', 'brady-s3700', 'brady-i3300'],
+  relatedProducts: ['brady-s3100', 'brady-s3700', 'brady-i3300', 'brady-i5300'],
   id: 'brady-b30-17-7563',
   slug: 'brady-b30-17-7563',
   name: 'Metalizowane etykiety poliestrowe Brady B30-17-7563 — materiał B30 do S3100 i S3700',
@@ -796,7 +796,7 @@ export const bradyB30Metalizowane7563: Product = {
   faq: [
     { question: 'Do jakiej temperatury nadają się etykiety B-7563?', answer: 'Poliester pracuje od −40 do 135 °C. Folia ma satynowe wykończenie i srebrny, metaliczny kolor.' },
     { question: 'Czy etykiety B-7563 mają nadruk fabryczny?', answer: 'Nie. Etykiety są puste, a cały wzór drukuje się w drukarce taśmą barwiącą B30-R6000.' },
-    { question: 'Z jakimi drukarkami współpracują te etykiety?', answer: 'Etykiety przyjmują [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700), [Brady i3300](/produkt/brady-i3300) i i5300 oraz, ze starszych, S3000 i BBP30–BBP37.' },
+    { question: 'Z jakimi drukarkami współpracują te etykiety?', answer: 'Etykiety przyjmują [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700), [Brady i3300](/produkt/brady-i3300) i [Brady i5300](/produkt/brady-i5300) oraz, ze starszych, S3000 i BBP30–BBP37.' },
   ],
   applications: ['Identyfikacja ogólna sprzętu i wyposażenia', 'Śledzenie zasobów', 'Etykiety odporne na wysoką temperaturę'],
 }
@@ -881,7 +881,7 @@ export const bradyB30ZawieszkiLoto: Product = {
   faq: [
     { question: 'Co oznaczają standardy OSHA i ANSI na zawieszkach?', answer: 'To amerykańskie standardy wyglądu nagłówka zawieszki. Hasło DANGER oznacza niebezpieczeństwo, a CAUTION ostrożność. Zawieszka spełnia OSHA 1910.145(f) po wydrukowaniu wymaganego hasła sygnałowego i głównego komunikatu.' },
     { question: 'Czym różni się zawieszka z pustym tyłem od zawieszki z nadrukiem na odwrocie?', answer: 'Pusty tył służy do pisania. Zadrukowany tył ma gotowy komunikat o zablokowaniu źródła energii i o zasadach zdejmowania zawieszki: „Unauthorised Removal” albo „Signed Reverse Side”.' },
-    { question: 'Z jaką drukarką pracują zawieszki LOTO B-851?', answer: 'Zawieszki LOTO drukuje się w [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i [Brady i3300](/produkt/brady-i3300). Pasują też do [Brady i4311](/produkt/brady-i4311), i5300 oraz do starszych S3000 i BBP30–BBP37. Zalecana taśma barwiąca to B30-R10000.' },
+    { question: 'Z jaką drukarką pracują zawieszki LOTO B-851?', answer: 'Zawieszki LOTO drukuje się w [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i [Brady i3300](/produkt/brady-i3300). Pasują też do [Brady i4311](/produkt/brady-i4311), [Brady i5300](/produkt/brady-i5300) oraz do starszych S3000 i BBP30–BBP37. Zalecana taśma barwiąca to B30-R10000.' },
   ],
   applications: ['Zawieszki blokady i oznakowania (LOTO) na maszynach', 'Zawieszki ostrzegawcze OSHA i ANSI z własnym tekstem', 'Zawieszki inspekcyjne i znakowanie Lean/5S'],
 }

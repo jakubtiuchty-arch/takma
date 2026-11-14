@@ -71,7 +71,7 @@ export const bradyB33Poliimid797: Product = {
   faq: [
     { question: 'Czy etykiety B-797 znoszą lutowanie na fali?', answer: 'Tak. Poliimid wytrzymuje temperatury do 300 °C, a klej i warstwa wierzchnia są przystosowane do wielokrotnego mycia płytek.' },
     { question: 'Czy nadruk wymaga lutowania rozpływowego lub wstępnego podgrzewania?', answer: 'Nie. Nadruk pozostaje czytelny bez lutowania rozpływowego i bez podgrzewania wstępnego.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-797?', answer: 'Zaleca się taśmę barwiącą B30-R6300, kupowaną osobno. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je także BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-797?', answer: 'Zaleca się taśmę barwiącą B30-R6300, kupowaną osobno. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je także BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Znakowanie płytek drukowanych', 'Oznaczanie elementów elektronicznych i urządzeń'],
 }
@@ -144,7 +144,7 @@ export const bradyB33Esd719: Product = {
   faq: [
     { question: 'Co oznacza, że etykiety B-719 są antystatyczne?', answer: 'Klej i podkład rozpraszają ładunki elektrostatyczne. Rezystywność powierzchniowa mieści się w zakresie zalecanym przez ANSI/ESD S541-2008 dla rozpraszających materiałów ESD.' },
     { question: 'Jaką grubość i temperaturę pracy ma materiał B-719?', answer: 'Folia ma 0,084 mm grubości i pracuje w zakresie od −70 do 300 °C. Powierzchnia jest matowa, a nadruk wykonuje się termotransferem.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-719?', answer: 'Zaleca się kasetę B30-R6000, kupowaną osobno. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Współpracują z nią także BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-719?', answer: 'Zaleca się kasetę B30-R6000, kupowaną osobno. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Współpracują z nią także BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Znakowanie płytek drukowanych przed lutowaniem', 'Oznaczanie podzespołów wrażliwych na ładunki elektrostatyczne'],
 }
@@ -213,7 +213,7 @@ export const bradyB33Esd767: Product = {
   faq: [
     { question: 'Jaką rezystywność powierzchniową ma klej etykiet B-767?', answer: 'Od 10⁴ do 10¹¹ Ω. Wartość mieści się w przedziale zalecanym przez ANSI/ESD S541-2008 dla rozpraszających materiałów ESD.' },
     { question: 'Kiedy obowiązuje uznanie UL 969 dla materiału B-767?', answer: 'Gdy nadruk wykonano taśmą barwiącą serii R6300 albo R6000 bez halogenów.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-767?', answer: 'Zaleca się kasetę B30-R6300, kupowaną osobno. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je także BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-767?', answer: 'Zaleca się kasetę B30-R6300, kupowaną osobno. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je także BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Znakowanie płytek drukowanych po procesie produkcyjnym', 'Oznaczanie komponentów przy montażu SMT i przewlekanym'],
 }
@@ -284,7 +284,7 @@ export const bradyB33Cieplo797: Product = {
   faq: [
     { question: 'Czy nadruk na etykietach B-797 rozmazuje się?', answer: 'Nie. Poliimid jest odporny na rozmazywanie, a wzmocniona powłoka wierzchnia chroni zapis podczas wielokrotnego mycia płytek.' },
     { question: 'Do jakiej temperatury można używać etykiet odpornych na ciepło B-797?', answer: 'Zakres pracy wynosi od −80 do 300 °C. Dzięki temu etykiety przechodzą lutowanie na fali.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-797?', answer: 'Zaleca się taśmę B30-R6300, dobieraną osobno. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300), a także BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-797?', answer: 'Zaleca się taśmę B30-R6300, dobieraną osobno. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300), a także BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Znakowanie płytek drukowanych przed lutowaniem na fali', 'Oznaczanie płytek myjonych w trudnych warunkach'],
 }
@@ -351,7 +351,7 @@ export const bradyB33EsdRdzen767: Product = {
   faq: [
     { question: 'Czy etykiety ESD B-767 wymagają lutowania rozpływowego przed odczytem nadruku?', answer: 'Nie. Nadruk jest czytelny bez lutowania rozpływowego i bez wstępnego podgrzewania płytki.' },
     { question: 'Na której stronie płytki można naklejać etykiety B-767?', answer: 'Na obu. Materiał jest przewidziany do montażu SMT i elementów przewlekanych, z góry oraz od spodu płytki.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet ESD B-767?', answer: 'Zaleca się kasetę B30-R6300, kupowaną osobno. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Współpracują z nią także BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet ESD B-767?', answer: 'Zaleca się kasetę B30-R6300, kupowaną osobno. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Współpracują z nią także BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Znakowanie płytek drukowanych w produkcji elektroniki', 'Oznaczanie elementów po lutowaniu i myciu'],
 }
@@ -424,7 +424,7 @@ export const bradyB33Matowy728: Product = {
   faq: [
     { question: 'Czy etykiety B-728 nadają się do automatycznych aplikatorów?', answer: 'Tak. Klej jest dobrany do mycia w ekstremalnych procedurach i do użycia w automatycznych aplikatorach etykiet.' },
     { question: 'Jaką grubość i temperaturę pracy ma materiał B-728?', answer: 'Folia ma 0,112 mm grubości. Zakres pracy wynosi od −70 do 300 °C.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-728?', answer: 'Zaleca się kasetę B30-R6000, kupowaną osobno. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Współpracują z nią także BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-728?', answer: 'Zaleca się kasetę B30-R6000, kupowaną osobno. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Współpracują z nią także BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Znakowanie płytek drukowanych przed procesem', 'Oznaczanie komponentów w liniach z automatycznym naklejaniem'],
 }
@@ -491,7 +491,7 @@ export const bradyB33Esd768: Product = {
   faq: [
     { question: 'Czym różni się materiał B-768 od B-718?', answer: 'B-768 ma 0,078 mm grubości i dolną granicę pracy −80 °C. B-718 ma 0,084 mm i −70 °C. Obie folie są błyszczące i antystatyczne.' },
     { question: 'Kiedy obowiązuje uznanie UL 969 dla etykiet B-768?', answer: 'Gdy nadruk wykonano taśmą barwiącą serii R6300 albo R6000 bez halogenów.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-768?', answer: 'Zaleca się kasetę B30-R6300, kupowaną osobno. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Współpracują z nią także BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-768?', answer: 'Zaleca się kasetę B30-R6300, kupowaną osobno. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Współpracują z nią także BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Znakowanie cienkich płytek drukowanych o niskim profilu', 'Oznaczanie komponentów wrażliwych na ładunki elektrostatyczne'],
 }
@@ -563,7 +563,7 @@ export const bradyB33Blyszczacy777: Product = {
   faq: [
     { question: 'Czy etykiety B-777 wymagają lutowania rozpływowego lub podgrzewania?', answer: 'Nie. Nadruk pozostaje czytelny bez lutowania rozpływowego i bez wstępnego podgrzewania.' },
     { question: 'Którą taśmą barwiącą spełnia się test odporności na rozpuszczalniki?', answer: 'Test MIL-STD-202G, metoda 215K, dotyczy nadruku wykonanego kasetą B30-R6300, kupowaną osobno.' },
-    { question: 'Jaka drukarka obsługuje etykiety B-777?', answer: 'Przemysłowa [Brady i3300](/produkt/brady-i3300). Materiał drukują także BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaka drukarka obsługuje etykiety B-777?', answer: 'Przemysłowa [Brady i3300](/produkt/brady-i3300). Materiał drukują także BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Znakowanie płytek drukowanych przed obróbką', 'Oznaczanie płytek myjonych w ciężkich warunkach'],
 }
@@ -629,7 +629,7 @@ export const bradyB33Bialy797: Product = {
   faq: [
     { question: 'Czy etykiety B-797 pasują do automatycznych aplikatorów?', answer: 'Tak. Klej jest przystosowany do ekstremalnych procedur mycia i do użycia w automatycznych aplikatorach.' },
     { question: 'Czy materiał B-797 zawiera dibutylocynę lub dioktylocynę?', answer: 'Nie. Materiał jest wolny od obu związków, ma uznanie UL i spełnia test MIL-STD-202G, metoda 215K.' },
-    { question: 'Jaką taśmę barwiącą zamówić do białych etykiet B-797?', answer: 'Zaleca się taśmę B30-R6300, kupowaną osobno. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je także BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do białych etykiet B-797?', answer: 'Zaleca się taśmę B30-R6300, kupowaną osobno. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je także BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Znakowanie płytek drukowanych i podzespołów', 'Oznaczanie elementów w liniach z automatycznym naklejaniem'],
 }
@@ -702,7 +702,7 @@ export const bradyB33Matowy729: Product = {
   faq: [
     { question: 'Dlaczego etykiety B-729 nazywa się cienkimi?', answer: 'Folia ma 0,086 mm grubości i niski profil. Producent przewidział ją do procesów, które wymagają cienkich lub lekkich etykiet.' },
     { question: 'Jaki zakres temperatur znosi materiał B-729?', answer: 'Od −70 do 300 °C. Etykiety przechodzą lutowanie na fali i wielokrotne mycie płytek.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-729?', answer: 'Zaleca się kasetę B30-R6000, kupowaną osobno. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Współpracują z nią także BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-729?', answer: 'Zaleca się kasetę B30-R6000, kupowaną osobno. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Współpracują z nią także BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Znakowanie płytek drukowanych o ograniczonej grubości', 'Oznaczanie lekkich komponentów elektronicznych'],
 }
@@ -773,7 +773,7 @@ export const bradyB33Bursztynowy724: Product = {
   faq: [
     { question: 'Czy bursztynowe etykiety B-724 wytrzymują lutowanie na fali?', answer: 'Tak. Poliimid zostaje na płytce w procesie lutowania, po stronie górnej i dolnej, i znosi wielokrotne mycie.' },
     { question: 'Do czego odnosi się norma SAE AS81531 przy etykietach B-724?', answer: 'Dotyczy znakowania izolacji elektrycznej. Wymaganie jest spełnione, gdy nadruk wykonano taśmą barwiącą serii R4300.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-724?', answer: 'Zaleca się kasetę B30-R4300, kupowaną osobno. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Współpracują z nią także BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-724?', answer: 'Zaleca się kasetę B30-R4300, kupowaną osobno. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Współpracują z nią także BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Znakowanie płytek drukowanych przechodzących lutowanie na fali', 'Oznaczanie komponentów elektronicznych po lutowaniu i myciu'],
 }

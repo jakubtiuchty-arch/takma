@@ -180,7 +180,7 @@ export const bradyB30Winyl595: Product = {
   faq: [
     { question: 'Na jakich powierzchniach trzyma winyl B-595?', answer: 'Na podłożach gładkich, szorstkich i teksturowanych, także brudnych. Przykłady to malowany pustak, malowane drewno, tworzywo z fakturą, rury w papierowej osłonie i obudowy formowane z tworzywa.' },
     { question: 'Którą taśmę barwiącą wybrać do kolorowego winylu B-595?', answer: 'Na jasnych kolorach drukuje czarna taśma B30-R10000. Na ciemnych kolorach drukuje biała B30-R10000-WT. Dla każdej wersji kolor nadruku podaje nazwa wariantu i dymek kolumny Kolor.' },
-    { question: 'Do jakich drukarek pasuje taśma B30C-595?', answer: 'Do [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i przemysłowej [Brady i3300](/produkt/brady-i3300), a także do [Brady i4311](/produkt/brady-i4311) i i5300. Ze starszych drukarek taśmę przyjmują S3000, BBP30, BBP31, BBP33, BBP35 i BBP37. Taśma barwiąca jest w osobnej kasecie B30-R.' },
+    { question: 'Do jakich drukarek pasuje taśma B30C-595?', answer: 'Do [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i przemysłowej [Brady i3300](/produkt/brady-i3300), a także do [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300). Ze starszych drukarek taśmę przyjmują S3000, BBP30, BBP31, BBP33, BBP35 i BBP37. Taśma barwiąca jest w osobnej kasecie B30-R.' },
   ],
   applications: ['Oznaczanie rur, zaworów i urządzeń', 'Znaki podłogowe i oznaczenia magazynu', 'Etykiety Lean i 5S'],
 }
@@ -276,7 +276,7 @@ export const bradyB30Winyl7569: Product = {
   faq: [
     { question: 'Jaki zakres temperatur obejmuje winyl B-7569?', answer: 'Etykiety pracują w temperaturze od −20 do 75 °C. Taśmę można naklejać od 10 °C.' },
     { question: 'Którą taśmę barwiącą zamówić do taśmy B-7569?', answer: 'Do białej, żółtej i pomarańczowej zalecana jest czarna B30-R10000. Do czerwonej, zielonej, niebieskiej i czarnej zalecana jest biała B30-R10000-WT.' },
-    { question: 'Do jakich drukarek pasują kasety B30C-7569?', answer: 'Kasety pasują do [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i [Brady i3300](/produkt/brady-i3300) oraz do [Brady i4311](/produkt/brady-i4311) i i5300. Starsze S3000, BBP30, BBP31, BBP33, BBP35 i BBP37 też je przyjmują. Taśma barwiąca jest w osobnej kasecie B30-R.' },
+    { question: 'Do jakich drukarek pasują kasety B30C-7569?', answer: 'Kasety pasują do [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i [Brady i3300](/produkt/brady-i3300) oraz do [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300). Starsze S3000, BBP30, BBP31, BBP33, BBP35 i BBP37 też je przyjmują. Taśma barwiąca jest w osobnej kasecie B30-R.' },
   ],
   applications: ['Znaki bezpieczeństwa i ostrzeżenia', 'Oznaczenia rur i zaworów', 'Znaki podłogowe i oznaczenia magazynu'],
 }
@@ -436,7 +436,7 @@ export const bradyB30TrudneWarunki: Product = {
   faq: [
     { question: 'Które taśmy z tej rodziny nadają się do autoklawu?', answer: 'Do autoklawu przeznaczone są B-423 i B-488. B-488 pracuje do 160 °C i nadaje się też do przechowywania kriogenicznego.' },
     { question: 'Którą taśmę barwiącą wybrać do taśm 101,6 mm z tej rodziny?', answer: 'Do B-423, B-432, B-434A, B-480A, B-483A i B-787 zalecana jest B30-R6000. Do B-424, B-428 i B-488 zalecana jest B30-R4300. Nazwa każdego wariantu podaje właściwą taśmę.' },
-    { question: 'Do jakich drukarek pasują te kasety B30C?', answer: 'Kasety przyjmują [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i [Brady i3300](/produkt/brady-i3300) oraz [Brady i4311](/produkt/brady-i4311) i i5300. Z modeli starszych współpracują S3000, BBP35 i BBP37. Taśma barwiąca jest w osobnej kasecie B30-R.' },
+    { question: 'Do jakich drukarek pasują te kasety B30C?', answer: 'Kasety przyjmują [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i [Brady i3300](/produkt/brady-i3300) oraz [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300). Z modeli starszych współpracują S3000, BBP35 i BBP37. Taśma barwiąca jest w osobnej kasecie B30-R.' },
   ],
   applications: ['Kody kreskowe i oznaczenia inwentarzowe', 'Płytki drukowane i podzespoły elektroniczne', 'Oznaczenia laboratoryjne i śledzenie wyposażenia'],
 }
@@ -507,7 +507,7 @@ export const bradyB30OznaczanieProduktow: Product = {
   faq: [
     { question: 'Do czego służy biały poliester B-423?', answer: 'Do oznaczania płytek drukowanych i podzespołów, etykiet z kodami kreskowymi, tabliczek znamionowych i paneli fotowoltaicznych. Materiał jest bezhalogenowy i nadaje się do autoklawu.' },
     { question: 'Którą taśmę barwiącą zamówić do tej rodziny?', answer: 'Do B-423 i B-434A zalecana jest B30-R6000, a do B-428 zalecana jest B30-R4300. Nazwa każdego wariantu podaje właściwą taśmę.' },
-    { question: 'Do jakich drukarek pasują te kasety?', answer: 'Do [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700), [Brady i3300](/produkt/brady-i3300), [Brady i4311](/produkt/brady-i4311) i i5300 oraz BBP31, BBP33, BBP35 i BBP37.' },
+    { question: 'Do jakich drukarek pasują te kasety?', answer: 'Do [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700), [Brady i3300](/produkt/brady-i3300), [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300) oraz BBP31, BBP33, BBP35 i BBP37.' },
   ],
   applications: ['Płytki drukowane i podzespoły elektroniczne', 'Etykiety z kodami kreskowymi i tabliczki znamionowe', 'Panele fotowoltaiczne'],
 }
@@ -572,7 +572,7 @@ export const bradyB30Metalizowana565: Product = {
   faq: [
     { question: 'Do czego służy metalizowany poliester B-565?', answer: 'Do własnych tabliczek informacyjnych, etykiet z kodami kreskowymi i oznaczeń ogólnych. Stosuje się go też do identyfikacji zasobów i podzespołów oraz do oznaczeń inwentarzowych i kontrolnych.' },
     { question: 'Którą taśmę barwiącą zamówić do materiału B-565?', answer: 'Zalecana jest czarna taśma barwiąca B30-R10000 w osobnej kasecie serii B30.' },
-    { question: 'Do jakich drukarek pasuje materiał B-565?', answer: 'Do [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i przemysłowych [Brady i3300](/produkt/brady-i3300), [Brady i4311](/produkt/brady-i4311) oraz i5300. Pasuje też do starszych drukarek BBP30, BBP31, BBP33, BBP35, BBP37 i S3000.' },
+    { question: 'Do jakich drukarek pasuje materiał B-565?', answer: 'Do [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i przemysłowych [Brady i3300](/produkt/brady-i3300), [Brady i4311](/produkt/brady-i4311) oraz [Brady i5300](/produkt/brady-i5300). Pasuje też do starszych drukarek BBP30, BBP31, BBP33, BBP35, BBP37 i S3000.' },
   ],
   applications: ['Tabliczki informacyjne', 'Etykiety z kodami kreskowymi', 'Oznaczenia zasobów i podzespołów'],
 }
@@ -772,7 +772,7 @@ export const bradyB30PoliesterKauczuk: Product = {
   faq: [
     { question: 'Który materiał z tej rodziny przykleja się do mocno teksturowanych powierzchni?', answer: 'B-489A, na przykład do malowanych proszkowo obudów i urządzeń wewnątrz pomieszczeń. Do bardzo szorstkich podłoży przeznaczony jest metalizowany B-486B.' },
     { question: 'Którą taśmę barwiącą zamówić do tych materiałów?', answer: 'Do B-484A zalecana jest B30-R6000. Do B-486B i B-489A zalecana jest B30-R4300. Nazwa każdego wariantu podaje właściwą taśmę.' },
-    { question: 'Do jakich drukarek pasują te kasety B30C?', answer: 'Drukują je [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700), [Brady i3300](/produkt/brady-i3300), [Brady i4311](/produkt/brady-i4311) i i5300. Starsze S3000, BBP35 i BBP37 także je obsługują. Taśma barwiąca jest w osobnej kasecie B30-R.' },
+    { question: 'Do jakich drukarek pasują te kasety B30C?', answer: 'Drukują je [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700), [Brady i3300](/produkt/brady-i3300), [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300). Starsze S3000, BBP35 i BBP37 także je obsługują. Taśma barwiąca jest w osobnej kasecie B30-R.' },
   ],
   applications: ['Tabliczki znamionowe i oznaczenia paneli', 'Obudowy i urządzenia o chropowatej powierzchni', 'Oznaczenia produktów i zasobów'],
 }

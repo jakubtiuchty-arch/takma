@@ -49,7 +49,7 @@ export const bradyB33Pcr492: Product = {
   faq: [
     { question: 'Jak rozdzielić etykiety na pasku B-492?', answer: 'Etykiety rozdziela perforacja. Pasek przykleja się na osiem probówek w stojaku i rozrywa wzdłuż linii.' },
     { question: 'Czy etykiety B33-289-492-WT nadają się do ciekłego azotu?', answer: 'Nie zaleca się ich do ciekłego azotu, bo etykieta nie może się nakładać na siebie. Materiał wytrzymuje zamrażarkę i łaźnię wodną o temperaturze 100 °C.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet na probówki PCR?', answer: 'Zaleca się taśmę barwiącą B30-R6400. Etykiety drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz i5300. Ze starszych drukarek pasuje BBP33.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet na probówki PCR?', answer: 'Zaleca się taśmę barwiącą B30-R6400. Etykiety drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz [Brady i5300](/produkt/brady-i5300). Ze starszych drukarek pasuje BBP33.' },
   ],
   applications: ['Probówki PCR w stojaku', 'Probówki Eppendorf i wirówkowe', 'Fiolki laboratoryjne'],
 }
@@ -121,7 +121,7 @@ export const bradyB33Poliester488: Product = {
   faq: [
     { question: 'Na jakie rozpuszczalniki odporne są etykiety B-488?', answer: 'Na ksylen, etanol, toluen, izopropanol, MEK i DMSO. Materiał znosi też ścieranie, korozję i wilgoć.' },
     { question: 'Czy etykiety B-488 można sterylizować w autoklawie?', answer: 'Tak. Zakres temperatur pracy to od −40 do 160 °C. Materiał nadaje się też do zamrażarki.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-488?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Etykiety drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz i5300. Ze starszych drukarek pasuje BBP33.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-488?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Etykiety drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz [Brady i5300](/produkt/brady-i5300). Ze starszych drukarek pasuje BBP33.' },
   ],
   applications: ['Butelki, szalki i kolby laboratoryjne', 'Kasety histologiczne', 'Znakowanie sprzętu i inwentarza w szpitalach'],
 }
@@ -201,7 +201,7 @@ export const bradyB33Polipropylen7425: Product = {
   faq: [
     { question: 'Kiedy nakleić etykietę B-7425 na próbkę przeznaczoną do zamrażarki?', answer: 'Przed zamrożeniem próbki. Materiał pracuje od −80 do 70 °C i znosi autoklaw.' },
     { question: 'Który rozmiar B-7425 pasuje do probówek 0,5 ml?', answer: 'Etykiety 25,4 × 12,7 mm (B33-59-7425) i 25,4 × 9,53 mm (B33-152-7425). Druga wersja ma dwie etykiety w rzędzie.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-7425?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Etykiety drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz i5300. Ze starszych drukarek pasuje BBP33.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-7425?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Etykiety drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz [Brady i5300](/produkt/brady-i5300). Ze starszych drukarek pasuje BBP33.' },
   ],
   applications: ['Probówki wirówkowe i stożkowe', 'Fiolki, szkiełka i płytki wielodołkowe', 'Kody kreskowe na naczyniach laboratoryjnych'],
 }
@@ -276,7 +276,7 @@ export const bradyB33FreezerBondz490: Product = {
   faq: [
     { question: 'Czy etykiety FreezerBondz B-490 można naklejać na zamrożone naczynia?', answer: 'Tak, na szkło i polipropylen wyjęte z ciekłego azotu, jeśli etykieta ma niewielką zakładkę. Minimalna temperatura naklejania wynosi −196 °C.' },
     { question: 'Czy okrągłe etykiety B33-144-490 nadają się do ciekłego azotu?', answer: 'Nie zaleca się tego, bo etykieta na wieczku fiolki nie może się zakładać. Pozostałe rozmiary B-490 mają zakładkę i można je naklejać na zamrożone naczynia.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-490?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Etykiety drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz i5300. Ze starszych drukarek pasuje BBP33.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-490?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Etykiety drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz [Brady i5300](/produkt/brady-i5300). Ze starszych drukarek pasuje BBP33.' },
   ],
   applications: ['Zamrożone probówki i fiolki', 'Wieczka fiolek (etykiety okrągłe)', 'Butelki, szalki i kolby z próbkami'],
 }
@@ -348,7 +348,7 @@ export const bradyB33FreezerBondz492: Product = {
   faq: [
     { question: 'Czym różni się FreezerBondz II B-492 od B-490?', answer: 'B-492 ma błyszczącą powierzchnię i grubość 0,081 mm, a B-490 jest matowy i ma 0,065 mm.' },
     { question: 'Czy etykiety B-492 można naklejać na zamrożone naczynia?', answer: 'Tak, z niewielką zakładką, także na szkło i polipropylen wyjęte z ciekłego azotu. Temperatura naklejania wynosi −196 °C.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-492?', answer: 'Zaleca się taśmę barwiącą B30-R6400. Etykiety drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz i5300. Ze starszych drukarek pasuje BBP33.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-492?', answer: 'Zaleca się taśmę barwiącą B30-R6400. Etykiety drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz [Brady i5300](/produkt/brady-i5300). Ze starszych drukarek pasuje BBP33.' },
   ],
   applications: ['Zamrożone i oszronione probówki', 'Fiolki i probówki wirówkowe', 'Probówki PCR i Eppendorf'],
 }
@@ -408,7 +408,7 @@ export const bradyB33StainerBondz481: Product = {
   faq: [
     { question: 'Do czego służą etykiety StainerBondz B-481?', answer: 'Do oznaczania szkiełek mikroskopowych w procesie barwienia, na przykład hematoksyliną i eozyną (H&E). Nadruk i etykieta znoszą ksylen oraz inne chemikalia.' },
     { question: 'W jakim zakresie temperatur pracuje materiał B-481?', answer: 'Od −80 do 130 °C. Materiał znosi też zamrażarkę i gorącą wodę o temperaturze 100 °C.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-481?', answer: 'Zaleca się taśmę barwiącą B30-R6400. Etykiety drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz i5300. Ze starszych drukarek pasuje BBP33.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-481?', answer: 'Zaleca się taśmę barwiącą B30-R6400. Etykiety drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz [Brady i5300](/produkt/brady-i5300). Ze starszych drukarek pasuje BBP33.' },
   ],
   applications: ['Szkiełka mikroskopowe w barwieniu H&E', 'Oznaczenia laboratoryjne odporne na ksylen', 'Identyfikacja w szpitalach i laboratoriach'],
 }
@@ -474,7 +474,7 @@ export const bradyB33PolipropylenWieczko7425: Product = {
   faq: [
     { question: 'Z czego składa się zestaw B-7425 z wieczkiem?', answer: 'Z prostokątnej etykiety na ściankę i okrągłego krążka na wieczko fiolki. Na rolce jest 1500 zestawów.' },
     { question: 'Czy zestawy B-7425 można naklejać na zamrożone fiolki?', answer: 'Nie. Do zamrażarki zestaw trzeba nakleić przed zamrożeniem próbki. Materiał pracuje od −80 do 70 °C.' },
-    { question: 'Jaką taśmę barwiącą zamówić do zestawów B-7425?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Zestawy drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz i5300. Ze starszych drukarek pasuje BBP33.' },
+    { question: 'Jaką taśmę barwiącą zamówić do zestawów B-7425?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Zestawy drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz [Brady i5300](/produkt/brady-i5300). Ze starszych drukarek pasuje BBP33.' },
   ],
   applications: ['Fiolki z oznaczonym wieczkiem', 'Probówki wirówkowe i stożkowe', 'Próbki przechowywane w zamrażarce'],
 }
@@ -540,7 +540,7 @@ export const bradyB33Nylon499Wieczko: Product = {
   faq: [
     { question: 'Czym zestawy B-499 różnią się od zestawów z polipropylenu B-7425?', answer: 'B-499 to cienka tkanina nylonowa z agresywnym klejem, odporna na ścieranie i UV, a B-7425 to folia polipropylenowa. B-499 pracuje od −40 do 90 °C.' },
     { question: 'Czy tkanina B-499 ma atesty?', answer: 'Biała wersja ma uznanie UL i akceptację CSA oraz spełnia wymagania bezhalogenowości DIN VDE 0472, część 815.' },
-    { question: 'Jaką taśmę barwiącą zamówić do zestawów B-499?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Zestawy drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz i5300. Ze starszych drukarek pasuje BBP33.' },
+    { question: 'Jaką taśmę barwiącą zamówić do zestawów B-499?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Zestawy drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz [Brady i5300](/produkt/brady-i5300). Ze starszych drukarek pasuje BBP33.' },
   ],
   applications: ['Fiolki z oznaczonym wieczkiem', 'Probówki kriogeniczne i butelki', 'Próbki w zamrażarce i autoklawie'],
 }
@@ -597,7 +597,7 @@ export const bradyB33StainerBondz481Waskie: Product = {
   faq: [
     { question: 'Z jaką taśmą barwiącą etykiety B-481 są najbardziej odporne?', answer: 'Po zadrukowaniu taśmą z serii R6400 materiał wytrzymuje płyny i warunki procesów laboratoryjnych. Zaleca się B30-R6400.' },
     { question: 'W jakim zakresie temperatur pracuje materiał B-481?', answer: 'Od −80 do 130 °C. Znosi zamrażarkę i kąpiel w temperaturze 100 °C.' },
-    { question: 'Jakie drukarki obsługują etykiety B33-213-481 i B33-199-481?', answer: 'Etykiety drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz i5300. Ze starszych drukarek pasuje BBP33.' },
+    { question: 'Jakie drukarki obsługują etykiety B33-213-481 i B33-199-481?', answer: 'Etykiety drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz [Brady i5300](/produkt/brady-i5300). Ze starszych drukarek pasuje BBP33.' },
   ],
   applications: ['Identyfikacja laboratoryjna z systemem BSP31', 'Oznaczenia odporne na chemikalia i oleje', 'Etykiety w szpitalach'],
 }
@@ -670,7 +670,7 @@ export const bradyB33FreezerBondzWieczka: Product = {
   faq: [
     { question: 'Który krążek wybrać na fiolkę 2 ml?', answer: 'Krążek Ø 12,7 mm, czyli B33-144-492. Leży po trzy w rzędzie, a opakowanie mieści 1500 sztuk.' },
     { question: 'Czy zestawy z krążkiem na wieczko nadają się do ciekłego azotu?', answer: 'Nie zaleca się tego, bo wieczko nie pozwala na zakładkę etykiety. Wyjątkiem jest krążek B33-144-492, który można naklejać na zamrożoną powierzchnię z zakładką.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet FreezerBondz na wieczka?', answer: 'Do wersji B-492 zaleca się B30-R6400, a do B33-126-490 taśmę B30-R4300. Wieczka drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz i5300. Ze starszych drukarek pasuje BBP33.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet FreezerBondz na wieczka?', answer: 'Do wersji B-492 zaleca się B30-R6400, a do B33-126-490 taśmę B30-R4300. Wieczka drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz [Brady i5300](/produkt/brady-i5300). Ze starszych drukarek pasuje BBP33.' },
   ],
   applications: ['Wieczka fiolek i probówek', 'Zestawy etykiety i krążka na naczynia 0,5–4 ml', 'Próbki w zamrażarce'],
 }
@@ -740,7 +740,7 @@ export const bradyB33Kolorowe494: Product = {
   faq: [
     { question: 'Czy kolorowe oznaczenie na etykiecie B-494 wyblaknie?', answer: 'Nie. Kolor jest drukowany pod powierzchnią folii, więc nie blednie ani się nie rozmazuje. Etykieta zostaje czytelna po kontakcie z chemikaliami.' },
     { question: 'W jakim zakresie temperatur pracuje B-494?', answer: 'Od −196 do 70 °C. Folia znosi zamrażarkę, gorącą kąpiel (100 °C) i ciekły azot.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-494?', answer: 'Zaleca się taśmę barwiącą B30-R6400. Etykiety drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz i5300. Ze starszych drukarek pasuje BBP33.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-494?', answer: 'Zaleca się taśmę barwiącą B30-R6400. Etykiety drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz [Brady i5300](/produkt/brady-i5300). Ze starszych drukarek pasuje BBP33.' },
   ],
   applications: ['Kolorowe kodowanie próbek w probówkach 2 ml', 'Fiolki z oznaczonym wieczkiem', 'Próbki przechowywane w ciekłym azocie'],
 }
@@ -805,7 +805,7 @@ export const bradyB33Sterylizacja7425: Product = {
   faq: [
     { question: 'Co pokazuje nagłówek etykiety B-7425-AC?', answer: 'Po działaniu warunków autoklawu pojawia się na nim napis STERILIZED. Etykieta wskazuje sterylizację parową.' },
     { question: 'Do jakich powierzchni przylega etykieta B-7425-AC?', answer: 'Do stali nierdzewnej, szkła i polipropylenu. Pracuje od −80 do 70 °C i znosi zamrażarkę.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-7425-AC?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Etykiety drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz i5300. Ze starszych drukarek pasuje BBP33.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-7425-AC?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Etykiety drukują przemysłowe [Brady i3300](/produkt/brady-i3300) i [Brady i4311](/produkt/brady-i4311) oraz [Brady i5300](/produkt/brady-i5300). Ze starszych drukarek pasuje BBP33.' },
   ],
   applications: ['Fiolki, probówki i kolby po sterylizacji parowej', 'Śledzenie próbek i ewidencja zapasów', 'Oznaczanie stojaków i materiałów laboratoryjnych'],
 }

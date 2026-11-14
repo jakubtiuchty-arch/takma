@@ -5,5 +5,5 @@ import { wspolneM6 } from './brady-m6-wspolne'
 // Jedna karta na rodzinę materiału z brady.eu; rozmiary i kolory jako warianty. Na zapytanie (brak cen w /api/stock). 14.11.2026.
 export const wspolneB30: typeof wspolneM6 = {
   ...wspolneM6,
-  relatedProducts: ['brady-s3100', 'brady-s3700', 'brady-i3300', 'brady-i4311'],
+  relatedProducts: ['brady-s3100', 'brady-s3700', 'brady-i3300', 'brady-i4311', 'brady-i5300'],
 }

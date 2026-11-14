@@ -45,7 +45,7 @@ export const bradyB33Zawieszka7597: Product = {
   faq: [
     { question: 'W jakim zakresie temperatur pracuje zawieszka B33-7597W-2050?', answer: 'Od −40 do 100 °C. Polietylen B-7597 jest odporny na wilgoć i promieniowanie UV.' },
     { question: 'Czy materiał B-7597 zawiera halogeny?', answer: 'Nie. Materiał jest bezhalogenowy i spełnia DIN VDE 0472, część 815.' },
-    { question: 'Jaką taśmę barwiącą zamówić do zawieszek B-7597?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Zawieszki drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do zawieszek B-7597?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Zawieszki drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Zawieszki na przewodach i kablach', 'Oznaczanie instalacji elektrycznych'],
 }
@@ -131,7 +131,7 @@ export const bradyB33PermaSleeve342Dwustronne: Product = {
   faq: [
     { question: 'Na jakie przewody pasują koszulki PermaSleeve B-342?', answer: 'Zależnie od rozmiaru, na przewody o średnicy od 0,58 do 36,83 mm. Koszulka kurczy się w stosunku 3:1, więc przylega do izolacji po ogrzaniu.' },
     { question: 'Co oznacza, że koszulki są dwustronne?', answer: 'Nadruk można wykonać po obu stronach koszulki. Wersja jednostronna ma nadruk po jednej stronie.' },
-    { question: 'Jaką taśmę barwiącą zamówić do koszulek B-342?', answer: 'Do białych i żółtych zaleca się B30-R4300, a do czarnych B30-R6700-WT. Koszulki drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do koszulek B-342?', answer: 'Do białych i żółtych zaleca się B30-R4300, a do czarnych B30-R6700-WT. Koszulki drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Znakowanie elektryczne', 'Oznaczanie przewodów i kabli'],
 }
@@ -194,7 +194,7 @@ export const bradyB33QuickFlag483: Product = {
   faq: [
     { question: 'Dlaczego ogon flagi QuickFlag jest zwężany?', answer: 'Zwężony ogon owija się na przewodzie bez niedopasowanych krawędzi i bez odsłoniętego kleju. Dzięki temu flagę zakłada się szybciej.' },
     { question: 'Jakie normy spełniają flagi B-483A?', answer: 'Mają uznanie UL (UL 969) oraz akceptację CSA. Spełniają też RoHS 2011/65/UE.' },
-    { question: 'Jaką taśmę barwiącą zamówić do flag QuickFlag?', answer: 'Zaleca się taśmę barwiącą B30-R6000. Flagi drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do flag QuickFlag?', answer: 'Zaleca się taśmę barwiącą B30-R6000. Flagi drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Flagi na przewodach i kablach', 'Oznaczanie kabli komunikacyjnych, w tym CAT 6', 'Znakowanie elektryczne'],
 }
@@ -338,7 +338,7 @@ export const bradyB33FlagiPolipropylenowe425: Product = {
   faq: [
     { question: 'Czy flagi B-425A nadają się do zamrażarek?', answer: 'Tak. Zakres temperatur pracy zaczyna się od −70 °C. Polipropylen jest też odporny na wilgoć, olej i rozpuszczalniki.' },
     { question: 'Na jaki przewód pasują flagi B33FP-01-425 i B33FT-01-425?', answer: 'Na przewody o średnicy do 5,4 mm. Ogon flagi ma 20 mm długości, a klej akrylowy wiąże z powierzchniami gładkimi.' },
-    { question: 'Jaką taśmę barwiącą zamówić do flag B-425A?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Flagi drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do flag B-425A?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Flagi drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Flagi na przewodach i kablach', 'Oznaczanie komponentów, urządzeń i próbek laboratoryjnych', 'Znakowanie w zamrażarkach'],
 }
@@ -429,7 +429,7 @@ export const bradyB33PermaSleeve342Jednostronne: Product = {
   faq: [
     { question: 'Czym różnią się koszulki B33-125-2-342 i B33-125-2-342-2?', answer: 'Długością i układem na nośniku. Wersja z końcówką -2 ma 25,4 mm długości i leży w dwóch rzędach, a pozostałe mają 50,8 mm i leżą w jednym.' },
     { question: 'Po ilu stronach można drukować na koszulkach B-342 w tej wersji?', answer: 'Po jednej. Wersja dwustronna ma nadruk po obu stronach koszulki.' },
-    { question: 'Jaką taśmę barwiącą zamówić do koszulek B-342?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Koszulki drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do koszulek B-342?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Koszulki drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Znakowanie elektryczne', 'Oznaczanie przewodów i kabli'],
 }
@@ -497,7 +497,7 @@ export const bradyB33ZawieszkiTransportSzynowy348: Product = {
   faq: [
     { question: 'Jakie wymagania dla pojazdów szynowych spełniają zawieszki B-348?', answer: 'Materiał spełnia EN 45545-2, wymaganie 24, dla kategorii pojazdu HL3. Jest bezhalogenowy i wydziela mało dymu.' },
     { question: 'Ile otworów mają zawieszki B-348?', answer: 'Cztery owalne otwory o wymiarach 5 × 2 mm.' },
-    { question: 'Jaką taśmę barwiącą zamówić do zawieszek B-348?', answer: 'Zaleca się taśmę barwiącą B30-R6000. Zawieszki drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do zawieszek B-348?', answer: 'Zaleca się taśmę barwiącą B30-R6000. Zawieszki drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Znakowanie kabli w transporcie szynowym', 'Oznaczanie kabli w sieciach danych i telekomunikacji'],
 }
@@ -574,7 +574,7 @@ export const bradyB33PermaSleeveHX: Product = {
   faq: [
     { question: 'Czym różni się PermaSleeve HX od koszulek 3:1?', answer: 'Koszulki HX kurczą się w stosunku 2:1 i pracują w zakresie od −40 do 120 °C. Poliolefina jest samogasnąca i elastyczna.' },
     { question: 'Jakie normy spełniają koszulki B-7642?', answer: 'SAE AS-81531 i SAE-AMS-DTL-23053/5 w klasach 1 i 3. Materiał przeszedł też badania ASTM E162 i ASTM E662.' },
-    { question: 'Jaką taśmę barwiącą zamówić do koszulek HX?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Koszulki drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do koszulek HX?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Koszulki drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Znakowanie elektryczne', 'Oznaczanie przewodów i kabli'],
 }
@@ -645,7 +645,7 @@ export const bradyB33HeatexOznaczniki7643: Product = {
   faq: [
     { question: 'Czy oznaczniki Heatex B-7643 zawierają halogeny?', answer: 'Nie. Poliuretan jest bezhalogenowy i spełnia wymagania IEC 61249-2-21.' },
     { question: 'Ile otworów mają oznaczniki Heatex?', answer: 'Cztery owalne otwory o wymiarach 5 × 2 mm.' },
-    { question: 'Jaką taśmę barwiącą zamówić do oznaczników Heatex?', answer: 'Zaleca się taśmę barwiącą B30-R6000. Oznaczniki drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do oznaczników Heatex?', answer: 'Zaleca się taśmę barwiącą B30-R6000. Oznaczniki drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Oznaczanie przewodów i kabli', 'Znakowanie kabli w sieciach danych i telekomunikacji'],
 }
@@ -727,7 +727,7 @@ export const bradyB33ZawieszkiPoliester7598: Product = {
   faq: [
     { question: 'Które zawieszki B-7598 są bezhalogenowe?', answer: 'Wersje białe i czarne spełniają IEC 61249-2-21. Pozostałe kolory nie mają takiego potwierdzenia.' },
     { question: 'W jakim zakresie temperatur pracują poliestrowe zawieszki B-7598?', answer: 'Od −40 do 100 °C. Folia ma 0,20 mm grubości i błyszczącą powierzchnię.' },
-    { question: 'Jaką taśmę barwiącą zamówić do zawieszek B-7598?', answer: 'Do białych i kolorowych zaleca się B30-R6000, a do czarnych B30-R4400-WT. Zawieszki drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do zawieszek B-7598?', answer: 'Do białych i kolorowych zaleca się B30-R6000, a do czarnych B30-R4400-WT. Zawieszki drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Zawieszki na kablach i przewodach', 'Oznaczanie kabli w sieciach danych i telekomunikacji'],
 }
@@ -806,7 +806,7 @@ export const bradyB33PermaSleeveLSZH: Product = {
   faq: [
     { question: 'Co oznacza skrót LSZH w nazwie koszulek?', answer: 'To materiał o niskiej emisji dymu i bez halogenów. Spala się z minimalnym wydzielaniem dymu, dlatego stosuje się go tam, gdzie ważne jest bezpieczeństwo pożarowe.' },
     { question: 'Jakie normy dla pojazdów szynowych spełniają koszulki B-7641?', answer: 'BS 6853 (1999) dla kategorii pojazdu 1A oraz EN 45545-2, wymaganie 24, dla kategorii HL3.' },
-    { question: 'Jaką taśmę barwiącą zamówić do koszulek LSZH?', answer: 'Zaleca się bezhalogenową taśmę barwiącą B30-R6000. Koszulki drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do koszulek LSZH?', answer: 'Zaleca się bezhalogenową taśmę barwiącą B30-R6000. Koszulki drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Oznaczanie przewodów i kabli tam, gdzie wymagane są materiały bezhalogenowe', 'Znakowanie elektryczne'],
 }
@@ -877,7 +877,7 @@ export const bradyB33PermaSleevePVDF345: Product = {
   faq: [
     { question: 'Do jakiej temperatury można stosować koszulki PermaSleeve PVDF B-345?', answer: 'Od −55 do 225 °C. To najwyższy zakres wśród koszulek B33 w tej ofercie.' },
     { question: 'Co oznacza niskie odgazowanie koszulek B-345?', answer: 'Materiał uwalnia bardzo mało gazów w próżni i spełnia wymagania NASA SP-R-0022A. Dzięki temu nadaje się do zastosowań próżniowych.' },
-    { question: 'Jaką taśmę barwiącą zamówić do koszulek PVDF?', answer: 'Zaleca się taśmę barwiącą B30-R6000. Koszulki drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do koszulek PVDF?', answer: 'Zaleca się taśmę barwiącą B30-R6000. Koszulki drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Znakowanie przewodów w wysokiej temperaturze', 'Oznaczanie przewodów w zastosowaniach próżniowych', 'Znakowanie elektryczne'],
 }
@@ -935,7 +935,7 @@ export const bradyB33Rapido7599: Product = {
   faq: [
     { question: 'Ile sztuk oznaczników Rapido jest na rolce?', answer: 'W każdej wersji 2500 sztuk. Oznaczniki mają po dwa otwory w kształcie dziurki od klucza.' },
     { question: 'W jakich temperaturach pracują oznaczniki Rapido B-7599?', answer: 'Od −40 do 50 °C. Polietylen jest odporny na wilgoć i promieniowanie UV.' },
-    { question: 'Jaką taśmę barwiącą zamówić do oznaczników Rapido?', answer: 'Do nadruku pasuje taśma barwiąca B30-R4300 albo B30-R6200. Oznaczniki drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do oznaczników Rapido?', answer: 'Do nadruku pasuje taśma barwiąca B30-R4300 albo B30-R6200. Oznaczniki drukuje przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują je też BBP33, [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300).' },
   ],
   applications: ['Oznaczanie przewodów i kabli', 'Znakowanie kabli w sieciach danych i telekomunikacji'],
 }

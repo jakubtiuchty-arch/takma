@@ -5,5 +5,5 @@ import { wspolneM6 } from './brady-m6-wspolne'
 // (także starsza BBP33). Taśma barwiąca w osobnej kasecie serii B30. Jedna karta na rodzinę z brady.eu, PN jako warianty. 14.11.2026.
 export const wspolneB33: typeof wspolneM6 = {
   ...wspolneM6,
-  relatedProducts: ['brady-i3300', 'brady-i4311'],
+  relatedProducts: ['brady-i3300', 'brady-i4311', 'brady-i5300'],
 }

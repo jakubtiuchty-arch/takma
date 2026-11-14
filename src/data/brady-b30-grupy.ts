@@ -38,4 +38,6 @@ export const BRADY_B30_DO_I3300: string[] = [...idsSekcji('ciagle'), ...idsSekcj
 // i4311: jak i3300 bez kart, których żaden numer PN nie pasuje do i4311
 const NIE_DO_I4311 = new Set(['brady-b30-25-7569-wt', 'brady-b30-17-7563', 'brady-b30-r6000oc'])
 export const BRADY_B30_DO_I4311: string[] = BRADY_B30_DO_I3300.filter((id) => !NIE_DO_I4311.has(id))
+// i5300: jak i3300 bez ToughWash B-855 (żaden PN nie pasuje do i5300)
+export const BRADY_B30_DO_I5300: string[] = BRADY_B30_DO_I3300.filter((id) => id !== 'brady-b30c-4000-855-yl')
 export const BRADY_B30_DO_S3700: string[] = [...idsSekcji('ciagle'), ...idsSekcji('etykiety'), ...idsSekcji('zestawy'), ...Array.from(TYLKO_S3700), ...tasmyJednokolorowe].filter((id) => !NIE_DO_S3700.has(id))
