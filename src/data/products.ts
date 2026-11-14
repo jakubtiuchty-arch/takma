@@ -537,9 +537,9 @@ export const subcategories: Subcategory[] = [
       // Dopisane 19.09.2026
       'tsc-ml341p',
       // Dopisane 14.11.2026 — drukarki znaków i etykiet Brady
-      'brady-s3100', 'brady-s3700', 'brady-j7300', 'brady-j4000',
+      'brady-s3100', 'brady-s3700', 'brady-j7300', 'brady-j4000', 'brady-i3300',
     ],
-    productCount: 59,
+    productCount: 60,
   },
   {
     id: 'termotransferowe-drukarki-etykiet',
@@ -560,8 +560,9 @@ export const subcategories: Subcategory[] = [
       // Dopisane 14.11.2026
       'brady-s3100',
       'brady-s3700',
+      'brady-i3300',
     ],
-    productCount: 75,
+    productCount: 76,
   },
   {
     id: 'termiczne-drukarki-etykiet',

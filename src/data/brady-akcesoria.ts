@@ -1,6 +1,6 @@
 import type { Product } from './products'
 
-// Akcesoria Brady do drukarek etykiet M210, M211, M410, M510, M511, M610, M611, M710, S3100 i S3700: zasilanie, mocowanie, przenoszenie i łączność.
+// Akcesoria Brady do drukarek etykiet M210, M211, M410, M510, M511, M610, M611, M710, S3100, S3700 i i3300: zasilanie, mocowanie, przenoszenie i łączność.
 // Brady nie ma cen ani stanów w /api/stock, więc karty są na zapytanie, jak kasety M21. 13.11.2026.
 
 type Akcesorium = Pick<Product, 'id' | 'name' | 'seoTitle' | 'seoDescription' | 'shortDescription' | 'description' | 'images' | 'imageDescriptions' | 'specifications' | 'applications' | 'relatedAccessories' | 'relatedProducts' | 'faq' | 'gtin13'> & { sameAs: string }
@@ -505,7 +505,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Druk etykiet z systemów wysyłających polecenia ZPL', 'Wymiana drukarki ZPL na drukarkę Brady bez zmiany szablonów w systemie'],
     relatedAccessories: ['brady-usb-cable-103788'],
-    relatedProducts: ['brady-m510', 'brady-m410', 'brady-m511', 'brady-m610', 'brady-m611', 'brady-m710', 'brady-s3100', 'brady-s3700'],
+    relatedProducts: ['brady-m510', 'brady-m410', 'brady-m511', 'brady-m610', 'brady-m611', 'brady-m710', 'brady-s3100', 'brady-s3700', 'brady-i3300'],
     faq: [
       { question: 'Czy Brady M510 drukuje w języku ZPL?', answer: 'Tak, z akcesorium Brady Script Emulator for ZPL. Bez emulatora [Brady M510](/produkt/brady-m510) drukuje z programu Brady Workstation albo z programów innych firm przez sterownik Windows.' },
     ],
@@ -1008,7 +1008,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Usuwanie kleju z ostrza noża', 'Konserwacja drukarek S3100 i S3700 przy częstym cięciu etykiet'],
     relatedAccessories: ['brady-b31-wiper', 'brady-pck-6'],
-    relatedProducts: ['brady-s3100', 'brady-s3700'],
+    relatedProducts: ['brady-s3100', 'brady-s3700', 'brady-i3300'],
     faq: [
       { question: 'Jak często czyści się nóż drukarki Brady S3100?', answer: 'Gdy na ostrzu zbiera się klej i nóż gorzej tnie materiał. Częste cięcie etykiet z mocnym klejem szybciej brudzi ostrze. Narzędzie B31-CCT jest w zestawie z [Brady S3100](/produkt/brady-s3100), a ta karta dotyczy narzędzia zapasowego.' },
     ],
@@ -1033,7 +1033,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Wymiana zużytej wycieraczki w drukarkach S3100 i S3700', 'Zapas części eksploatacyjnych drukarki'],
     relatedAccessories: ['brady-b31-cct', 'brady-media-wiper-148703'],
-    relatedProducts: ['brady-s3100', 'brady-s3700'],
+    relatedProducts: ['brady-s3100', 'brady-s3700', 'brady-i3300'],
     faq: [
       { question: 'Jak wymienia się wycieraczkę nośnika w Brady S3100?', answer: 'Po odłączeniu zasilania i wyjęciu materiału podnosi się ramię wycieraczki za uchwyt wkładki. Starą wkładkę wysuwa się, a nową wsuwa do otworu w ramieniu aż do zatrzaśnięcia. Opakowanie B31-WIPER zawiera 5 wkładek do [Brady S3100](/produkt/brady-s3100).' },
     ],
@@ -1083,7 +1083,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Czyszczenie głowicy drukarek S3100 i S3700', 'Konserwacja drukarek przemysłowych Brady i7100 i i5300'],
     relatedAccessories: ['brady-b31-cct', 'brady-b31-wiper'],
-    relatedProducts: ['brady-s3700', 'brady-s3100'],
+    relatedProducts: ['brady-s3700', 'brady-s3100', 'brady-i3300'],
     faq: [
       { question: 'Czym czyści się głowicę drukarki Brady S3700?', answer: 'Nasączonym wacikiem z zestawu PCK-6. Przed czyszczeniem drukarkę odłącza się od zasilania i wyjmuje taśmę barwiącą oraz materiał. Zestaw jest w opakowaniu [Brady S3700](/produkt/brady-s3700), a ta karta dotyczy zestawu zapasowego.' },
     ],
@@ -1105,15 +1105,40 @@ const akcesoria: Akcesorium[] = [
       { name: 'Materiał', value: 'tworzywo sztuczne' },
       { name: 'Wymiary', value: '101,6 × 69,85 mm' },
       { name: 'Kolor', value: 'niebieski' },
-      { name: 'Zgodne drukarki', value: 'S3700, BBP30, BBP31, BBP35, BBP37' },
+      { name: 'Zgodne drukarki', value: 'S3700, i3300, BBP30, BBP31, BBP35, BBP37' },
     ],
     applications: ['Naklejanie dużych znaków i etykiet', 'Przenoszenie liter wyciętych ploterem XY'],
     relatedAccessories: ['brady-pck-6'],
-    relatedProducts: ['brady-s3700'],
+    relatedProducts: ['brady-s3700', 'brady-i3300'],
     faq: [
       { question: 'Do czego służy rakla Brady 036612?', answer: 'Do dociskania do podłoża znaków, dużych etykiet i liter wyciętych ploterem XY. Z [Brady S3700](/produkt/brady-s3700) rakla pozwala nakleić wycięty napis równo i bez przesunięć.' },
     ],
     sameAs: 'https://www.brady.eu/label-printers/squeegee-pid-036612',
+  },
+  {
+    id: 'brady-b30-trolley',
+    name: 'Walizka na kółkach Brady B30-TROLLEY do drukarek S3100 i i3300',
+    seoTitle: 'Brady B30-TROLLEY — walizka na kółkach do drukarek S3100 i i3300',
+    seoDescription: 'Walizka na kółkach Brady B30-TROLLEY do przewożenia drukarek etykiet S3100 i i3300 z materiałami; pasuje też do BBP3x, S3000 i i4311. Nr art. 120994.',
+    shortDescription: 'Brady B30-TROLLEY — czarna walizka na kółkach z wysuwaną rączką do przewożenia drukarek etykiet Brady S3100 i i3300 razem z materiałami i akcesoriami.',
+    description: 'Brady B30-TROLLEY to czarna, miękka walizka na kółkach z wysuwaną rączką. Mieści stacjonarną drukarkę etykiet Brady S3100 albo przemysłową i3300. Boczne i przednie kieszenie mieszczą przewody, kasety z materiałami i taśmy barwiące.\n\nWalizka ułatwia przenoszenie drukarki między halami, budynkami albo do pracy u klienta. Ma wymiary 457,2 × 482,6 × 533,4 mm (szerokość × wysokość × głębokość).\n\nOprócz S3100 i i3300 walizka pasuje do drukarek S3000, i4311, GlobalMark oraz BBP30, BBP31 i BBP33.',
+    images: ['/images/products/brady/b30-trolley.png'],
+    imageDescriptions: ['Czarna walizka na kółkach Brady B30-TROLLEY z wysuwaną rączką i kieszeniami'],
+    specifications: [
+      { name: 'Part Number', value: 'B30-TROLLEY' },
+      { name: 'Numer artykułu Brady', value: '120994' },
+      { name: 'Typ', value: 'Walizka na kółkach do drukarki etykiet' },
+      { name: 'Kolor', value: 'czarny' },
+      { name: 'Wymiary (szer. × wys. × gł.)', value: '457,2 × 482,6 × 533,4 mm' },
+      { name: 'Zgodne drukarki', value: 'S3100, i3300, S3000, i4311, GlobalMark, BBP30, BBP31, BBP33' },
+    ],
+    applications: ['Przewożenie drukarki S3100 lub i3300 z materiałami', 'Praca z drukarką w różnych miejscach zakładu'],
+    relatedAccessories: ['brady-b31-wiper', 'brady-pck-6'],
+    relatedProducts: ['brady-s3100', 'brady-i3300'],
+    faq: [
+      { question: 'Do których drukarek pasuje walizka B30-TROLLEY?', answer: 'Do [Brady S3100](/produkt/brady-s3100) i przemysłowej i3300, a także do S3000, i4311, GlobalMark oraz BBP30, BBP31 i BBP33. Do S3700 walizka nie jest przeznaczona.' },
+    ],
+    sameAs: 'https://www.brady.eu/label-printers/trolley-for-bbp3xs3xxxi3300-pid-120994',
   },
 ]
 

@@ -308,7 +308,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Biurkowa', pattern: '(^|[^0-9])12[0-9] ?mm', specs: ['Max średnica rolki', 'Maks. średnica rolki', 'Maks. średnica rolki mediów'] },
         { value: 'Biurkowa', slugs: ['zebra-zd421t', 'honeywell-pc45t', 'honeywell-pc42e-t'] },
         { value: 'Przemysłowa', pattern: '^(?!.*wewn)(.*[^0-9])?2[0-9][0-9](,[0-9])? ?mm', specs: ['Max średnica rolki', 'Maks. średnica rolki', 'Maks. średnica rolki mediów'] },
-        { value: 'Przemysłowa', slugs: ['zebra-zt231', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'brady-s3100', 'brady-s3700'] },
+        { value: 'Przemysłowa', slugs: ['zebra-zt231', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'brady-s3100', 'brady-s3700', 'brady-i3300'] },
       ],
     },
     {
@@ -766,7 +766,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Biurkowa', pattern: '(^|[^0-9])12[0-9] ?mm', specs: ['Max średnica rolki', 'Maks. średnica rolki', 'Maks. średnica rolki mediów'], notSpecs: ['Bateria', 'Bateria standardowa'] },
         { value: 'Biurkowa', slugs: ['zebra-zd421t', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pc45d', 'brother-td-2020a'] },
         { value: 'Przemysłowa', pattern: '^(?!.*wewn)(.*[^0-9])?2[0-9][0-9](,[0-9])? ?mm', specs: ['Max średnica rolki', 'Maks. średnica rolki', 'Maks. średnica rolki mediów'] },
-        { value: 'Przemysłowa', slugs: ['zebra-zt231', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'brady-s3100', 'brady-s3700', 'brady-j7300', 'brady-j4000'] },
+        { value: 'Przemysłowa', slugs: ['zebra-zt231', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'brady-s3100', 'brady-s3700', 'brady-j7300', 'brady-j4000', 'brady-i3300'] },
         { value: 'Mobilna (na baterię)', pattern: '\\S', specs: ['Bateria', 'Bateria standardowa'] },
       ],
     },

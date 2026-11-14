@@ -31,4 +31,6 @@ const tasmyJednokolorowe = idsSekcji('tasmy').filter((id) => !TYLKO_S3700.has(id
 
 // Kolejność na kartach drukarek: taśmy ciągłe, etykiety i znaki, zestawy, taśmy barwiące (w S3700 najpierw wielokolorowe).
 export const BRADY_B30_DO_S3100: string[] = [...idsSekcji('ciagle'), ...idsSekcji('etykiety'), ...idsSekcji('zestawy'), ...tasmyJednokolorowe]
+// i3300 przyjmuje te same materiały i taśmy B30 co S3100 (bez taśm wielokolorowych); seria B33 dochodzi osobno.
+export const BRADY_B30_DO_I3300: string[] = [...BRADY_B30_DO_S3100]
 export const BRADY_B30_DO_S3700: string[] = [...idsSekcji('ciagle'), ...idsSekcji('etykiety'), ...idsSekcji('zestawy'), ...Array.from(TYLKO_S3700), ...tasmyJednokolorowe].filter((id) => !NIE_DO_S3700.has(id))

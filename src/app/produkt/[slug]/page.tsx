@@ -501,8 +501,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     const laboratoryjne = compatibleConsumables.filter((p) => KASETY_LAB_IDS.has(p!.id))
     const tasmy = compatibleConsumables.filter((p) => TASMY_BARWIACE_IDS.has(p!.id))
     const pozostale = compatibleConsumables.filter((p) => !KASETY_NA_KABLE_IDS.has(p!.id) && !KASETY_LAB_IDS.has(p!.id) && !TASMY_BARWIACE_IDS.has(p!.id))
-    // Drukarki znaków S3100 i S3700 (materiały B30): taśmy ciągłe, etykiety i znaki, zestawy, taśmy barwiące.
-    if (product.id === 'brady-s3100' || product.id === 'brady-s3700') {
+    // Drukarki S3100, S3700 i i3300 (materiały B30): taśmy ciągłe, etykiety i znaki, zestawy, taśmy barwiące.
+    if (product.id === 'brady-s3100' || product.id === 'brady-s3700' || product.id === 'brady-i3300') {
       const ciagle = compatibleConsumables.filter((p) => BRADY_B30_CIAGLE_IDS.has(p!.id))
       const zestawyB30 = compatibleConsumables.filter((p) => BRADY_B30_ZESTAWY_IDS.has(p!.id))
       const etykietyB30 = compatibleConsumables.filter((p) => !BRADY_B30_CIAGLE_IDS.has(p!.id) && !BRADY_B30_ZESTAWY_IDS.has(p!.id) && !TASMY_BARWIACE_IDS.has(p!.id))

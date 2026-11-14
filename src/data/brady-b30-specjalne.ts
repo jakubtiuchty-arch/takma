@@ -40,7 +40,7 @@ export const bradyB30Tedlar437: Product = {
   faq: [
     { question: 'Co oznacza, że folia Tedlar B-437 jest samogasnąca?', answer: 'Materiał nie podtrzymuje palenia po odsunięciu źródła ognia. Dlatego nadaje się do oznaczania przewodów i miejsc, w których wymagana jest taka właściwość.' },
     { question: 'W jakim zakresie temperatur pracuje taśma B30C-4000-437?', answer: 'Od −70 do 135 °C. Folia jest matowa, a klej akrylowy wiąże z powierzchniami gładkimi i chropowatymi.' },
-    { question: 'Jaką taśmę barwiącą zamówić do taśmy Tedlar?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Materiał drukują [Brady S3100](/produkt/brady-s3100) i [Brady S3700](/produkt/brady-s3700) oraz starsze drukarki serii BBP3x, S3000 i i3300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do taśmy Tedlar?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Materiał drukują [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i przemysłowa [Brady i3300](/produkt/brady-i3300). Obsługują go też starsze drukarki serii BBP3x i S3000.' },
   ],
   applications: ['Znakowanie przewodów i kabli', 'Owijki na przewodach', 'Oznaczanie elementów elektrycznych i urządzeń'],
 }
@@ -70,7 +70,7 @@ export const bradyB30Magnetyczna509: Product = {
   seoTitle: 'Brady B30C-4250-509-WT — taśma magnetyczna do S3100 i S3700',
   seoDescription: 'Taśma magnetyczna Brady B-509 do S3100 i S3700, bez kleju, wielokrotnego użytku: 63,5 i 107,95 mm × 7,62 m. PN: B30C-4250-509-WT, B30C-2500-509-YL.',
   shortDescription: 'Brady B30C-4250-509-WT i trzy inne rolki magnetycznej taśmy B-509 o szerokości 63,5 lub 107,95 mm, białe albo żółte, bez kleju. Do drukarek Brady S3100 i S3700.',
-  description: 'Magnetyczna taśma B-509 jest wykonana z poliestru i nie ma kleju. Etykieta trzyma się dzięki magnesowi, więc można ją przestawić lub zdjąć i użyć ponownie. Takie oznaczenia pasują do półek, regałów i szuflad, na których zawartość często się zmienia. Materiał pomaga wdrażać metody lean i 5S i nadaje się też do znakowania ogólnego oraz oznaczeń bezpieczeństwa. Nadruk wykonuje się termotransferem.\n\nRolka mieści 7,62 m taśmy. Szerokość wynosi 63,5 mm albo 107,95 mm, a kolor jest biały lub żółty. Folia ma 0,457 mm grubości i matową powierzchnię. Wszystkie cztery wersje różnią się tylko szerokością oraz kolorem. Długość każdej etykiety zależy od projektu, bo rolka nie ma podziałów.\n\nNa wolnym powietrzu taśma zachowuje trwałość średnio przez 3–5 lat. Nie szkodzą jej woda, olej, ścieranie, łagodne chemikalia ani umiarkowane ciepło. Taśma pracuje w temperaturach od −18 do 70 °C. Kasetę z taśmą barwiącą B30-R10000 kupuje się osobno. Rolki pasują do S3100 i S3700, do starszej S3000, a także do i3300, i4311, i5300 oraz do pięciu modeli BBP (30, 31, 33, 35 i 37).',
+  description: 'Magnetyczna taśma B-509 jest wykonana z poliestru i nie ma kleju. Etykieta trzyma się dzięki magnesowi, więc można ją przestawić lub zdjąć i użyć ponownie. Takie oznaczenia pasują do półek, regałów i szuflad, na których zawartość często się zmienia. Materiał pomaga wdrażać metody lean i 5S i nadaje się też do znakowania ogólnego oraz oznaczeń bezpieczeństwa. Nadruk wykonuje się termotransferem.\n\nRolka mieści 7,62 m taśmy. Szerokość wynosi 63,5 mm albo 107,95 mm, a kolor jest biały lub żółty. Folia ma 0,457 mm grubości i matową powierzchnię. Wszystkie cztery wersje różnią się tylko szerokością oraz kolorem. Długość każdej etykiety zależy od projektu, bo rolka nie ma podziałów.\n\nNa wolnym powietrzu taśma zachowuje trwałość średnio przez 3–5 lat. Nie szkodzą jej woda, olej, ścieranie, łagodne chemikalia ani umiarkowane ciepło. Taśma pracuje w temperaturach od −18 do 70 °C. Kasetę z taśmą barwiącą B30-R10000 kupuje się osobno. Rolki obsługują S3100 i S3700, a z przemysłowych także i3300, i4311 i i5300. Starsza S3000 i pięć modeli BBP (30, 31, 33, 35 i 37) też je drukują.',
   sameAs: 'https://www.brady.eu/labels/b30-series-magnetic-labels-cps-3069352',
   images: [
     '/images/products/brady/b30c-4250-509-wt.png',
@@ -112,7 +112,7 @@ export const bradyB30Magnetyczna509: Product = {
   faq: [
     { question: 'Dlaczego taśma magnetyczna B-509 nie ma kleju?', answer: 'Etykieta trzyma się dzięki magnesowi. Można ją zdjąć, przestawić i użyć ponownie, na przykład na półkach i regałach przy metodzie 5S.' },
     { question: 'Jak długo taśma B-509 służy na zewnątrz?', answer: 'Średnio od 3 do 5 lat. Zakres temperatur pracy to od −18 do 70 °C, a materiał znosi olej, wodę i łagodne chemikalia.' },
-    { question: 'Jaką taśmę barwiącą zamówić do taśmy magnetycznej?', answer: 'Zaleca się taśmę barwiącą B30-R10000. Materiał drukują [Brady S3100](/produkt/brady-s3100) i [Brady S3700](/produkt/brady-s3700) oraz starsze modele serii BBP3x, S3000 i i3300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do taśmy magnetycznej?', answer: 'Zaleca się taśmę barwiącą B30-R10000. Drukarki [Brady S3100](/produkt/brady-s3100) i [Brady S3700](/produkt/brady-s3700) oraz przemysłowa [Brady i3300](/produkt/brady-i3300) drukują ten materiał. Ze starszych modeli współpracują seria BBP3x i S3000.' },
   ],
   applications: ['Półki, regały i szuflady z oznaczeniami do przestawiania', 'Wdrażanie metod lean i 5S', 'Znakowanie ogólne i oznaczenia bezpieczeństwa'],
 }
@@ -267,7 +267,7 @@ export const bradyB30Papier403: Product = {
   faq: [
     { question: 'Co dzieje się z etykietą B-403 w kontakcie z wodą?', answer: 'Papier i klej rozpuszczają się w wodzie. Dzięki temu etykietę można usunąć z podłoża, na przykład w laboratorium.' },
     { question: 'Jaki zakres temperatur obejmuje papier B-403?', answer: 'Od −70 do 100 °C. Klej akrylowy wiąże z powierzchniami gładkimi, a wykończenie papieru jest matowe.' },
-    { question: 'Jaką taśmę barwiącą zamówić do papieru B-403?', answer: 'Zaleca się B30-R4300. Taśmę drukują [Brady S3100](/produkt/brady-s3100) i [Brady S3700](/produkt/brady-s3700) oraz starsze modele serii BBP3x, S3000 i i3300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do papieru B-403?', answer: 'Zaleca się B30-R4300. Taśmę drukują [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) oraz przemysłowa drukarka [Brady i3300](/produkt/brady-i3300). Starsze modele BBP3x i S3000 też ją przyjmują.' },
   ],
   applications: ['Znakowanie laboratoryjne', 'Oznaczanie w magazynie', 'Śledzenie środków trwałych'],
 }
@@ -347,7 +347,7 @@ export const bradyB30ToughWash855: Product = {
   faq: [
     { question: 'Jakie mycie wytrzymuje materiał ToughWash B-855?', answer: 'Materiał sprawdzono w temperaturze mycia do 80 °C i przy ciśnieniu do 1500 PSI, czyli około 103 bar. Temperatura użytkowania wynosi od −40 do 110 °C.' },
     { question: 'Czym taśma ciągła różni się od etykiet CAUTION i WARNING?', answer: 'Z taśmy ciągłej drukarka wykonuje etykiety o ustawionej długości. Etykiety wykrawane mają stały rozmiar 101,6 × 152,4 mm i fabryczny nagłówek.' },
-    { question: 'Jaką taśmę barwiącą zamówić do materiału B-855?', answer: 'Zaleca się taśmę barwiącą B30-R6000. Materiał drukują [Brady S3100](/produkt/brady-s3100) i [Brady S3700](/produkt/brady-s3700) oraz starsze modele serii BBP3x, S3000 i i3300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do materiału B-855?', answer: 'Zaleca się taśmę barwiącą B30-R6000. Materiał przyjmują [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i przemysłowa [Brady i3300](/produkt/brady-i3300). Z drukarek starszych pasują też BBP3x i S3000.' },
   ],
   applications: ['Oznaczenia w zakładach spożywczych i napojów', 'Znakowanie obiektów i miejsc pracy', 'Oznaczenia bezpieczeństwa'],
 }
@@ -403,7 +403,7 @@ export const bradyB30Poliimid: Product = {
   faq: [
     { question: 'Czym różnią się materiały B-797 i B-724?', answer: 'B-797 jest biały i błyszczący, z wzmocnioną powłoką wierzchnią. B-724 jest bursztynowy i matowy, a jego odporność obejmuje lutowanie na fali. Zalecane taśmy barwiące to B30-R6300 i B30-R4300.' },
     { question: 'Do czego służy taśma poliimidowa UltraTemp?', answer: 'Do znakowania płytek drukowanych i podzespołów elektronicznych oraz do ogólnej identyfikacji. Poliimid znosi temperatury do 300 °C.' },
-    { question: 'Do jakich drukarek pasują rolki UltraTemp?', answer: 'Do [Brady S3100](/produkt/brady-s3100) i [Brady S3700](/produkt/brady-s3700) oraz do modeli S3000, i3300, i4311, i5300, BBP35 i BBP37.' },
+    { question: 'Do jakich drukarek pasują rolki UltraTemp?', answer: 'Do [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i [Brady i3300](/produkt/brady-i3300) oraz do modeli S3000, i4311, i5300, BBP35 i BBP37.' },
   ],
   applications: ['Znakowanie płytek drukowanych', 'Oznaczanie podzespołów po lutowaniu', 'Identyfikacja ogólna'],
 }
@@ -477,7 +477,7 @@ export const bradyB30Odblaskowa584: Product = {
   faq: [
     { question: 'Co oznacza, że folia B-584 jest odblaskowa?', answer: 'Folia odbija padające światło z powrotem w stronę jego źródła. Oznaczenie wyraźnie świeci w świetle latarki lub reflektora.' },
     { question: 'Jak długo taśma B-584 służy na zewnątrz?', answer: 'Średnio od 4 do 6 lat. Zakres temperatur pracy to od −40 do 70 °C, a naklejać ją można od 10 °C na powierzchnie gładkie.' },
-    { question: 'Jaką taśmę barwiącą zamówić do taśmy odblaskowej?', answer: 'Zaleca się taśmę barwiącą B30-R10000. Materiał drukują [Brady S3100](/produkt/brady-s3100) i [Brady S3700](/produkt/brady-s3700) oraz starsze modele serii BBP3x, S3000 i i3300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do taśmy odblaskowej?', answer: 'Zaleca się taśmę barwiącą B30-R10000. Do tego materiału służą drukarki [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i przemysłowa [Brady i3300](/produkt/brady-i3300). Dodatkowo zgodne są starsze S3000 i seria BBP3x.' },
   ],
   applications: ['Narzędzia, kaski i sprzęt na budowie', 'Obudowy, słupy i sprzęt na dachach', 'Regały i półki'],
 }
@@ -605,7 +605,7 @@ export const bradyB30Zawieszki551: Product = {
   faq: [
     { question: 'Czy materiał B-551 ma klej?', answer: 'Nie. To półsztywny poliester bez kleju, przeznaczony na zawieszki. Otwór do zawieszenia wykonuje się dziurkaczem.' },
     { question: 'Czy zawieszki z materiału B-551 spełniają wymagania OSHA?', answer: 'Spełniają OSHA 1910.145(f), jeśli wydrukuje się na nich wymagane słowo sygnałowe i główny komunikat.' },
-    { question: 'Jaką taśmę barwiącą zamówić do zawieszek B-551?', answer: 'Zaleca się taśmę barwiącą B30-R10000. Materiał drukują [Brady S3100](/produkt/brady-s3100) i [Brady S3700](/produkt/brady-s3700) oraz starsze modele serii BBP3x, S3000 i i3300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do zawieszek B-551?', answer: 'Zaleca się taśmę barwiącą B30-R10000. Zawieszki można drukować w [Brady S3100](/produkt/brady-s3100) i [Brady S3700](/produkt/brady-s3700) albo w przemysłowej [Brady i3300](/produkt/brady-i3300). Starsze S3000 i BBP3x także je obsługują.' },
   ],
   applications: ['Zawieszki bezpieczeństwa i blokady', 'Zawieszki ostrzegawcze o niebezpiecznych stanach', 'Zawieszki ogólnego użytku'],
 }

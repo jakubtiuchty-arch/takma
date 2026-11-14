@@ -1,7 +1,7 @@
 import type { Product } from './products'
 import { wspolneB30 } from './brady-b30-wspolne'
 
-// Zestawy materiałów B30 i taśmy barwiące B30-R… do drukarek S3100 i S3700 (także starsze BBP3x, S3000, i3300).
+// Zestawy materiałów B30 i taśmy barwiące B30-R… do drukarek S3100, S3700 i i3300 (także starsze BBP3x i S3000).
 // Zestawy: jedna karta z jednym PN. Taśmy: jedna karta na serię; kolory serii R10000 jako warianty.
 // Taśmy B30 nie pasują do drukarek przenośnych M610/M710 (kasety M61 i M7-R) i odwrotnie. 14.11.2026.
 
@@ -48,7 +48,7 @@ export const bradyB30FloorKit: Product = {
   seoTitle: 'Brady B30-FLOOR-KIT — zestaw do oznaczania podłóg, S3100 i S3700',
   seoDescription: 'Zestaw Brady B30-FLOOR-KIT do oznaczeń podłogowych: biała i żółta taśma, laminat B-634 i taśma R6000HF do S3100, S3700 i BBP3x. PN: B30-FLOOR-KIT, B30-R6000HF.',
   shortDescription: 'Brady B30-FLOOR-KIT to komplet do wykonania własnych oznaczeń na podłodze: dwie rolki taśmy, rolka laminatu B-634 i czarna taśma barwiąca. Napisy drukuje się na miejscu. Do drukarek Brady S3100 i S3700.',
-  description: 'B30-FLOOR-KIT umożliwia samodzielne przygotowanie oznaczeń podłogowych z dowolnym napisem. W zestawie są dwie rolki taśmy do oznaczania podłóg: biała (B30C-4000-483WT-KT) i żółta (B30C-4000-483YL-KT). Treść drukuje się w drukarce serii B30, a gotowy znak przykleja się do posadzki. Znak powstaje wtedy, gdy jest potrzebny. Największy wydruk z S3100 ma 101,6 mm szerokości i 1,5 m długości.\n\nDo kompletu należy osobna rolka laminatu OVERLam B-634. Laminat jest poliestrowy, a rolka ma wymiary 101,6 mm × 30,48 m. Zabezpiecza on nadruk na podłodze. Do wykonania napisów dołączono czarną bezhalogenową taśmę barwiącą B30-R6000HF. Po jej zużyciu kasetę zamawia się osobno.\n\nZestaw ma trzy kolory materiałów: bezbarwny laminat oraz taśmy białą i żółtą. Numer artykułu Brady to 199986. Komplet pasuje do drukarek S3100 i S3700, do starszych modeli BBP30–BBP37 oraz do i3300, i4311 i i5300.',
+  description: 'B30-FLOOR-KIT umożliwia samodzielne przygotowanie oznaczeń podłogowych z dowolnym napisem. W zestawie są dwie rolki taśmy do oznaczania podłóg: biała (B30C-4000-483WT-KT) i żółta (B30C-4000-483YL-KT). Treść drukuje się w drukarce serii B30, a gotowy znak przykleja się do posadzki. Znak powstaje wtedy, gdy jest potrzebny. Największy wydruk z S3100 ma 101,6 mm szerokości i 1,5 m długości.\n\nDo kompletu należy osobna rolka laminatu OVERLam B-634. Laminat jest poliestrowy, a rolka ma wymiary 101,6 mm × 30,48 m. Zabezpiecza on nadruk na podłodze. Do wykonania napisów dołączono czarną bezhalogenową taśmę barwiącą B30-R6000HF. Po jej zużyciu kasetę zamawia się osobno.\n\nZestaw ma trzy kolory materiałów: bezbarwny laminat oraz taśmy białą i żółtą. Numer artykułu Brady to 199986. Komplet pasuje do S3100 i S3700, do przemysłowych i3300, i4311 i i5300 oraz do starszych modeli BBP30–BBP37.',
   sameAs: 'https://www.brady.eu/labels/floor-marking-kit-for-bbp35-bbp37-s3xxx-i3300-printers-pid-b30-floor-kit',
   images: ['/images/products/brady/b30-floor-kit.png'],
   imageDescriptions: ['Zestaw Brady B30-FLOOR-KIT: żółta i biała taśma do oznaczania podłóg, dwie rolki laminatu i kaseta z czarną taśmą barwiącą'],
@@ -63,7 +63,7 @@ export const bradyB30FloorKit: Product = {
   faq: [
     { question: 'Po co w zestawie B30-FLOOR-KIT jest laminat B-634?', answer: 'Laminat chroni nadruk na podłodze. To osobna rolka laminatu poliestrowego, 101,6 mm × 30,48 m, którą nakłada się na wydrukowany znak.' },
     { question: 'Czy w zestawie jest taśma barwiąca?', answer: 'Tak. Komplet zawiera czarną taśmę barwiącą B30-R6000HF. Kolejne kasety zamawia się osobno.' },
-    { question: 'Do jakiej drukarki jest ten zestaw?', answer: 'Do [Brady S3100](/produkt/brady-s3100) i [Brady S3700](/produkt/brady-s3700), a także do starszych BBP30, BBP31, BBP33, BBP35, BBP37, i3300, i4311 i i5300. Do drukarek przenośnych serii M6 i M7 zestaw nie pasuje.' },
+    { question: 'Do jakiej drukarki jest ten zestaw?', answer: 'Do [Brady S3100](/produkt/brady-s3100) i [Brady S3700](/produkt/brady-s3700), a także do przemysłowych [Brady i3300](/produkt/brady-i3300), i4311 i i5300. Obsługują go również starsze BBP30, BBP31, BBP33, BBP35 i BBP37. Do drukarek przenośnych serii M6 i M7 zestaw nie pasuje.' },
   ],
   applications: ['Oznaczanie podłóg', 'Własne napisy i znaki na posadzce'],
 }
@@ -76,7 +76,7 @@ export const bradyB30ClpKit: Product = {
   seoTitle: 'Brady B30-CLP-KIT — zestaw etykiet GHS/CLP do S3100 i S3700',
   seoDescription: 'Zestaw Brady B30-CLP-KIT: trzy rolki etykiet GHS/CLP z czerwonym nadrukiem i taśma R10000 do S3100 i S3700. PN: B30-CLP-KIT, B30-260-7569-CLP4B, B30-R10000.',
   shortDescription: 'Brady B30-CLP-KIT zawiera trzy rolki etykiet GHS/CLP z czerwonym nadrukiem fabrycznym i kasetę z taśmą barwiącą R10000. Ułatwia przygotowanie etykiet chemicznych. Do drukarek Brady S3100 i S3700.',
-  description: 'Zestaw B30-CLP-KIT ułatwia dostosowanie etykiet chemikaliów do rozporządzenia CLP 1272/2008 i systemu GHS. Etykiety mają czerwony nadruk fabryczny, a ich treść uzupełnia się w drukarce serii B30 w dowolnym momencie. Drukarka S3100 ma w pamięci szablony oraz symbole GHS/CLP, więc projekt etykiety powstaje na jej ekranie. Na etykiecie GHS/CLP umieszcza się piktogramy zagrożeń, hasło ostrzegawcze, zwroty o zagrożeniach i dane dostawcy.\n\nW zestawie są trzy rolki etykiet: B30-260-7569-CLP4B, B30-261-7569-CLP4B i B30-262-7569-CLP4B. Czwartym elementem jest kaseta B30-R10000 z czarną taśmą, którą drukuje się dane substancji. Etykiety są czerwone i białe.\n\nNumer artykułu Brady to 195961. Zestaw działa z S3100, z S3700 i ze starszymi modelami: BBP30–BBP37, i3300, i4311 oraz i5300. Drukarki przenośne Brady mają inne materiały, więc ten komplet do nich nie pasuje.',
+  description: 'Zestaw B30-CLP-KIT ułatwia dostosowanie etykiet chemikaliów do rozporządzenia CLP 1272/2008 i systemu GHS. Etykiety mają czerwony nadruk fabryczny, a ich treść uzupełnia się w drukarce serii B30 w dowolnym momencie. Drukarka S3100 ma w pamięci szablony oraz symbole GHS/CLP, więc projekt etykiety powstaje na jej ekranie. Na etykiecie GHS/CLP umieszcza się piktogramy zagrożeń, hasło ostrzegawcze, zwroty o zagrożeniach i dane dostawcy.\n\nW zestawie są trzy rolki etykiet: B30-260-7569-CLP4B, B30-261-7569-CLP4B i B30-262-7569-CLP4B. Czwartym elementem jest kaseta B30-R10000 z czarną taśmą, którą drukuje się dane substancji. Etykiety są czerwone i białe.\n\nNumer artykułu Brady to 195961. Zestaw działa z S3100, z S3700 i z przemysłową i3300, a także z i4311 i i5300. Ze starszych drukarek obsługują go modele BBP30–BBP37. Drukarki przenośne Brady mają inne materiały, więc ten komplet do nich nie pasuje.',
   sameAs: 'https://www.brady.eu/labels/pre-printed-ghs-clp-chemical-labels-kit-for-bbp3x-printers-pid-b30-clp-kit',
   images: ['/images/products/brady/b30-clp-kit.png'],
   imageDescriptions: ['Zestaw Brady B30-CLP-KIT: trzy rolki białych etykiet z czerwonymi ramkami piktogramów GHS i kaseta z czarną taśmą barwiącą'],
@@ -106,7 +106,7 @@ export const bradyB30SafetyKit: Product = {
   seoTitle: 'Brady B30-SAFETY-KIT — zestaw do znaków BHP, S3100 i S3700',
   seoDescription: 'Zestaw Brady B30-SAFETY-KIT: żółta i biała taśma B30C-4000-595 oraz pięć taśm R10000 do znaków BHP i Lean w S3100 i S3700. PN: B30-SAFETY-KIT, B30-R10000.',
   shortDescription: 'Brady B30-SAFETY-KIT to komplet do drukowania znaków bezpieczeństwa i oznaczeń Lean na miejscu. Zawiera dwie rolki taśmy i pięć kaset z taśmą barwiącą. Do drukarek Brady S3100 i S3700.',
-  description: 'B30-SAFETY-KIT pozwala wykonywać trwałe znaki bezpieczeństwa i oznaczenia usprawniające pracę, czyli oznaczenia Lean, bezpośrednio w zakładzie. Zestaw składa się z dwóch rolek taśmy ciągłej oraz pięciu taśm barwiących. Kolor napisu można więc dobrać do koloru znaku, ponieważ S3100 drukuje jednym kolorem naraz. Do znaku wstawia się symbole zapisane w pamięci S3100, np. ostrzegawcze i ochrony osobistej.\n\nRolki B30C-4000-595 są żółta (-YL) i biała (-WT). Taśmy barwiące należą do serii R10000: czarna (B30-R10000), niebieska (-BL), czerwona (-RD), zielona (-GN) i żółta (-YL). Zestaw obejmuje więc materiały w wielu kolorach.\n\nNumer artykułu Brady to 195963, a zakres zastosowania to identyfikacja obiektu. Zgodne z zestawem są S3100 i S3700 oraz starsze BBP30, BBP31, BBP33, BBP35, BBP37, i3300, i4311 i i5300.',
+  description: 'B30-SAFETY-KIT pozwala wykonywać trwałe znaki bezpieczeństwa i oznaczenia usprawniające pracę, czyli oznaczenia Lean, bezpośrednio w zakładzie. Zestaw składa się z dwóch rolek taśmy ciągłej oraz pięciu taśm barwiących. Kolor napisu można więc dobrać do koloru znaku, ponieważ S3100 drukuje jednym kolorem naraz. Do znaku wstawia się symbole zapisane w pamięci S3100, np. ostrzegawcze i ochrony osobistej.\n\nRolki B30C-4000-595 są żółta (-YL) i biała (-WT). Taśmy barwiące należą do serii R10000: czarna (B30-R10000), niebieska (-BL), czerwona (-RD), zielona (-GN) i żółta (-YL). Zestaw obejmuje więc materiały w wielu kolorach.\n\nNumer artykułu Brady to 195963, a zakres zastosowania to identyfikacja obiektu. Zgodne z zestawem są S3100 i S3700 oraz przemysłowe i3300, i4311 i i5300; ze starszych modele od BBP30 do BBP37.',
   sameAs: 'https://www.brady.eu/labels/general-safety-kit-for-bbp3x-printers-pid-b30-safety-kit',
   images: ['/images/products/brady/b30-safety-kit.png'],
   imageDescriptions: ['Zestaw Brady B30-SAFETY-KIT: biała i żółta rolka taśmy oraz pięć kaset z taśmą barwiącą w kolorach czarnym, czerwonym, niebieskim, żółtym i zielonym'],
@@ -145,7 +145,7 @@ export const bradyB30PmKit: Product = {
   ),
   faq: [
     { question: 'Jakie kolory taśm są w zestawie B30-PM-KIT?', answer: 'Żółty, niebieski, czerwony, zielony, brązowy i fioletowy. Do nadruku dołączono białą taśmę barwiącą i dwie czarne.' },
-    { question: 'Czy zestaw jest do wszystkich drukarek Brady?', answer: 'Nie. Pasuje do [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700), i3300, i4311, i5300 oraz do starszych BBP30–BBP37. Drukarki przenośne M610 i M710 nie obsługują kaset B30.' },
+    { question: 'Czy zestaw jest do wszystkich drukarek Brady?', answer: 'Nie. Pasuje do [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700), [Brady i3300](/produkt/brady-i3300), i4311, i5300 oraz do starszych BBP30–BBP37. Drukarki przenośne M610 i M710 nie obsługują kaset B30.' },
   ],
   applications: ['Oznaczanie rur i zaworów', 'Znaczniki rurociągów'],
 }
@@ -173,7 +173,7 @@ export const bradyB30RigidSignKit: Product = {
   faq: [
     { question: 'Ile znaków mieści panel z zestawu B30-RIGID SIGN-KIT?', answer: 'Panel mieści do czterech znaków. W komplecie są cztery puste wkładki A5 do suwaków i jeden pusty suwak tytułowy.' },
     { question: 'Czy części zestawu można dokupić osobno?', answer: 'Tak. Części zestawu, czyli tablicę, wkładki, suwak, taśmę i kasety, zamawia się też osobno.' },
-    { question: 'Do jakiej drukarki jest ten zestaw?', answer: 'Znaki drukuje się w [Brady S3100](/produkt/brady-s3100) lub [Brady S3700](/produkt/brady-s3700) albo w starszych modelach serii BBP3x i i3300. Drukarki przenośne M610 i M710 nie pasują.' },
+    { question: 'Do jakiej drukarki jest ten zestaw?', answer: 'Znaki drukuje się w [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) lub [Brady i3300](/produkt/brady-i3300). Zgodne są też starsze modele serii BBP3x. Drukarki przenośne M610 i M710 nie pasują.' },
   ],
   applications: ['Sztywne znaki bezpieczeństwa w obiekcie', 'Tablice z komunikatami dla pracowników i gości'],
 }
@@ -190,7 +190,7 @@ export const bradyB30R6000HF: Product = {
   seoTitle: 'Brady B30-R6000HF — czarna taśma barwiąca do S3100 i S3700',
   seoDescription: 'Czarna bezhalogenowa taśma barwiąca Brady B30-R6000HF, 110 mm × 60 m, odporna na rozmazanie, do drukarek S3100, S3700 i BBP3x. PN: B30-R6000HF. Nr art. 118093.',
   shortDescription: 'Brady B30-R6000HF to kaseta z czarną bezhalogenową taśmą barwiącą, 110 mm × 60 m. Taśma wchodzi w skład wersji S3100 z materiałami F&B. Do drukarek Brady S3100 i S3700.',
-  description: 'Brady B30-R6000HF to bezhalogenowa taśma barwiąca R6000 w kolorze czarnym. Wydruk nie rozmazuje się i zachowuje czytelność przez lata, w zakładzie przemysłowym oraz na zewnątrz. Ta sama kaseta jest dołączona do drukarki S3100 w wersji F&B i do zestawu B30-FLOOR-KIT do oznaczania podłóg.\n\nRolka ma 60 m długości, 110 mm szerokości i 0,008 mm grubości. Taśmy R4300, R6200 i R6400 są cieńsze, bo mają po 0,0045 mm. Szerokość 110 mm obejmuje materiały do 101,6 mm, czyli największą szerokość druku S3100. Kolor druku jest jeden: czarny.\n\nS3100 drukuje jednym kolorem, który wynika z założonej taśmy. Drukarka rozpoznaje kasetę i pokazuje na ekranie jej kolor oraz pozostałą ilość. Nie trzeba przewlekać taśmy ani kalibrować drukarki. Pracuje w temperaturze 5–35 °C. Kasetę zakłada się w S3100 lub S3700; starsze S3000, i3300, i4311, i5300 i modele serii BBP3x też ją przyjmują.',
+  description: 'Brady B30-R6000HF to bezhalogenowa taśma barwiąca R6000 w kolorze czarnym. Wydruk nie rozmazuje się i zachowuje czytelność przez lata, w zakładzie przemysłowym oraz na zewnątrz. Ta sama kaseta jest dołączona do drukarki S3100 w wersji F&B i do zestawu B30-FLOOR-KIT do oznaczania podłóg.\n\nRolka ma 60 m długości, 110 mm szerokości i 0,008 mm grubości. Taśmy R4300, R6200 i R6400 są cieńsze, bo mają po 0,0045 mm. Szerokość 110 mm obejmuje materiały do 101,6 mm, czyli największą szerokość druku S3100. Kolor druku jest jeden: czarny.\n\nS3100 drukuje jednym kolorem, który wynika z założonej taśmy. Drukarka rozpoznaje kasetę i pokazuje na ekranie jej kolor oraz pozostałą ilość. Nie trzeba przewlekać taśmy ani kalibrować drukarki. Pracuje w temperaturze 5–35 °C. Kasetę zakłada się w S3100, S3700 lub i3300. Przyjmują ją także i4311 i i5300 oraz starsze S3000 i modele serii BBP3x.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/black-heavy-duty-print-ribbon-for-bbp3x-s3xxx-i3300-printers-pid-b30-r6000hf',
   images: ['/images/products/brady/b30-r6000hf.png'],
   imageDescriptions: ['Kaseta Brady B30-R6000HF z czarną bezhalogenową taśmą barwiącą do drukarek serii B30'],
@@ -323,14 +323,14 @@ export const bradyB30R6400: Product = {
   specifications: specyfikacjaTasmy('B30-R6400', '143118', 'R6400', 'czarny', '0,0045 mm', 'bezhalogenowa', 'ścieranie, chemikalia'),
   faq: [
     { question: 'Czym wyróżnia się taśma B30-R6400?', answer: 'Odpornością nadruku na ścieranie. Taśma jest też odporna na chemikalia i nie zawiera halogenów.' },
-    { question: 'Czy taśma B30-R6400 działa w drukarkach M610 i M710?', answer: 'Nie. Pasuje tylko do drukarek z materiałami B30: [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700), S3000, i3300 i do starszych BBP3x. Modele M610 i M710 mają osobne kasety.' },
+    { question: 'Czy taśma B30-R6400 działa w drukarkach M610 i M710?', answer: 'Nie. Pasuje tylko do drukarek z materiałami B30: [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700), [Brady i3300](/produkt/brady-i3300) oraz do starszych S3000 i BBP3x. Modele M610 i M710 mają osobne kasety.' },
   ],
   applications: ['Znaki narażone na tarcie', 'Oznaczenia odporne na ścieranie'],
 }
 
 export const bradyB30R6700WT: Product = {
   ...wspolneB30,
-  relatedProducts: ['brady-s3100'],
+  relatedProducts: ['brady-s3100', 'brady-i3300'],
   id: 'brady-b30-r6700-wt',
   slug: 'brady-b30-r6700-wt',
   name: 'Taśma barwiąca Brady B30-R6700-WT seria R6700 do S3100',
@@ -347,7 +347,7 @@ export const bradyB30R6700WT: Product = {
   }),
   faq: [
     { question: 'Na jakich materiałach drukuje się białą taśmą B30-R6700-WT?', answer: 'Na czarnych materiałach PermaSleeve. Biały nadruk jest odporny na zarysowanie, rozmazanie i agresywne chemikalia.' },
-    { question: 'Czy taśma B30-R6700-WT pasuje do Brady M710?', answer: 'Nie. To kaseta B30 do [Brady S3100](/produkt/brady-s3100), S3000, i3300, i4311, i5300 i BBP30–BBP37. Drukarki M610 i M710 używają osobnych kaset.' },
+    { question: 'Czy taśma B30-R6700-WT pasuje do Brady M710?', answer: 'Nie. To kaseta B30 do [Brady S3100](/produkt/brady-s3100) i [Brady i3300](/produkt/brady-i3300) oraz do i4311 i i5300, a ze starszych do S3000 i BBP30–BBP37. Drukarki M610 i M710 używają osobnych kaset.' },
   ],
   applications: ['Biały nadruk na czarnych koszulkach PermaSleeve', 'Oznaczenia odporne na chemikalia'],
 }
