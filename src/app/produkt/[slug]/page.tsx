@@ -456,7 +456,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   const printerRibbonIds = isSatoPrinter
     ? ['sato-swx95', 'sato-swr100', 'sato-srs100']
     : ['zebra-2300-wax', 'zebra-3200-wax-resin', 'zebra-5095-resin']
-  const printerRibbons = isTTprinter
+  // Drukarki na własne materiały (Brady, Brother) nie dostają standardowych taśm i etykiet Zebra —
+  // np. S3100 drukuje tylko na materiałach B30 z taśmami B30, pokazanych w sekcjach kaset.
+  const printerRibbons = isTTprinter && !brotherWlasneMaterialy
     ? printerRibbonIds
         .map((id) => products.find((p) => p.id === id))
         .filter(Boolean)
@@ -466,10 +468,10 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   // Zebra do każdej drukarki, a TT bez etykiet nie ma sensu.
   const STANDARD_TT_PAPER = ['zebra-z-perform-1000t', 'zebra-z-select-2000t']
   const STANDARD_TT_FOIL = ['zebra-z-ultimate-3000t-white', 'zebra-z-ultimate-3000t-silver']
-  const ttPaperIds = isTTprinter && !labelsDontFit
+  const ttPaperIds = isTTprinter && !brotherWlasneMaterialy && !labelsDontFit
     ? (compatibleConsumables.length ? compatibleConsumables.map((c) => c!.id) : STANDARD_TT_PAPER)
     : []
-  const ttFoilIds = isTTprinter && !labelsDontFit
+  const ttFoilIds = isTTprinter && !brotherWlasneMaterialy && !labelsDontFit
     ? (compatibleFoilLabels.length ? compatibleFoilLabels.map((c) => c!.id) : STANDARD_TT_FOIL)
     : []
 
