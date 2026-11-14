@@ -1650,13 +1650,13 @@ export const bradyLabelPrinters: Product[] = [
     quoteOnly: true,
     availability: 'unavailable',
     images: [
-      '/images/products/brady/i5300-c-eu.png',
+      '/images/products/brady/i5300-c-eu-v2.png',
       '/images/products/brady-i5300-kaseta-z-etykietami.webp',
       '/images/products/brady-i5300-wydruk-etykiety.webp',
       '/images/products/brady-i5300-arkusz-etykiet.webp',
     ],
     imageDescriptions: [
-      'Brady i5300 od przodu — niebiesko-szara obudowa, kolorowy ekran dotykowy i szczelina wyjścia etykiet',
+      'Brady i5300 obrócona w prawo — niebiesko-szara obudowa, żółty uchwyt pokrywy, kolorowy ekran dotykowy i szczelina wyjścia etykiet',
       'Wnętrze otwartej drukarki Brady i5300 z rolką białych etykiet w kasecie',
       'Pasek etykiet laboratoryjnych z kodami 2D wysuwający się z drukarki Brady i5300',
       'Pasek małych etykiet kontroli jakości wydrukowanych na Brady i5300, w tle ekran drukarki',
