@@ -1,6 +1,6 @@
 import type { Product } from './products'
 
-// Akcesoria Brady do drukarek etykiet M210, M211, M410, M510 i M511: zasilanie, mocowanie, przenoszenie i łączność.
+// Akcesoria Brady do drukarek etykiet M210, M211, M410, M510, M511 i M610: zasilanie, mocowanie, przenoszenie i łączność.
 // Brady nie ma cen ani stanów w /api/stock, więc karty są na zapytanie, jak kasety M21. 13.11.2026.
 
 type Akcesorium = Pick<Product, 'id' | 'name' | 'seoTitle' | 'seoDescription' | 'shortDescription' | 'description' | 'images' | 'imageDescriptions' | 'specifications' | 'applications' | 'relatedAccessories' | 'relatedProducts' | 'faq' | 'gtin13'> & { sameAs: string }
@@ -316,7 +316,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Akumulator zapasowy do drukarki M510', 'Wymiana akumulatora NiMH na akumulator o większej wydajności'],
     relatedAccessories: ['brady-m-nimh-battery', 'brady-m41-51-61-ac-eu'],
-    relatedProducts: ['brady-m510'],
+    relatedProducts: ['brady-m510', 'brady-m610'],
     faq: [
       { question: 'Czym różni się M-LION-BATTERY od akumulatora NiMH?', answer: 'M-LION-BATTERY to akumulator litowo-jonowy 2700 mAh. W drukarce [Brady M510](/produkt/brady-m510) wystarcza na do 4400 etykiet. [Akumulator NiMH M-NIMH-BATTERY](/produkt/brady-m-nimh-battery) ma 1200 mAh i wystarcza na do 1700 etykiet. Oba akumulatory pasują do tej samej komory i ładują się w drukarce.' },
     ],
@@ -345,7 +345,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Akumulator zapasowy do drukarki M510', 'Praca na zmianę na dwóch akumulatorach'],
     relatedAccessories: ['brady-m-lion-battery', 'brady-m41-51-61-ac-eu'],
-    relatedProducts: ['brady-m510'],
+    relatedProducts: ['brady-m510', 'brady-m610'],
     faq: [
       { question: 'Czy w drukarce Brady M510 można zamienić akumulator NiMH na litowo-jonowy?', answer: 'Tak. Do tej samej komory pasuje [akumulator litowo-jonowy M-LION-BATTERY](/produkt/brady-m-lion-battery) 2700 mAh, który wystarcza na do 4400 etykiet. Akumulator NiMH wystarcza na do 1700 etykiet.' },
     ],
@@ -374,7 +374,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Zasilanie drukarki M510 z sieci', 'Ładowanie akumulatora w drukarce M510'],
     relatedAccessories: ['brady-m-lion-battery', 'brady-m-nimh-battery'],
-    relatedProducts: ['brady-m510', 'brady-m410'],
+    relatedProducts: ['brady-m510', 'brady-m410', 'brady-m610'],
     faq: [
       { question: 'Czy zasilacz M41-51-61-AC-EU ładuje akumulator drukarki M510?', answer: 'Tak. Akumulator ładuje się w drukarce [Brady M510](/produkt/brady-m510) podłączonej do zasilacza. Pierwsze ładowanie trwa ok. 4 godziny, a drukarka w tym czasie może drukować.' },
     ],
@@ -504,7 +504,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Druk etykiet z systemów wysyłających polecenia ZPL', 'Wymiana drukarki ZPL na drukarkę Brady bez zmiany szablonów w systemie'],
     relatedAccessories: ['brady-usb-cable-103788'],
-    relatedProducts: ['brady-m510', 'brady-m410', 'brady-m511'],
+    relatedProducts: ['brady-m510', 'brady-m410', 'brady-m511', 'brady-m610'],
     faq: [
       { question: 'Czy Brady M510 drukuje w języku ZPL?', answer: 'Tak, z akcesorium Brady Script Emulator for ZPL. Bez emulatora [Brady M510](/produkt/brady-m510) drukuje z programu Brady Workstation albo z programów innych firm przez sterownik Windows.' },
     ],
@@ -679,6 +679,32 @@ const akcesoria: Akcesorium[] = [
       { question: 'Jaka walizka pasuje do drukarki Brady M510?', answer: 'Do [Brady M510](/produkt/brady-m510) służy [walizka M510-HC](/produkt/brady-m510-hc). Brady podaje M511-HC jako walizkę do M511.' },
     ],
     sameAs: 'https://www.brady.eu/label-printers/m511-hard-case-pid-m511-hc',
+  },
+  {
+    id: 'brady-m610-hc',
+    name: 'Walizka Brady M610-HC do drukarki etykiet M610',
+    seoTitle: 'Brady M610-HC — twarda walizka do drukarki etykiet M610',
+    seoDescription: 'Twarda walizka Brady M610-HC z polipropylenu o dużej gęstości do drukarki etykiet M610 lub BMP61 z akcesoriami, etykietami i taśmami barwiącymi. Nr art. 175671.',
+    shortDescription: 'Brady M610-HC — twarda walizka do drukarek etykiet Brady M610 i BMP61. Drukarka, zapasowe etykiety, taśmy barwiące i zasilacz są w niej w jednym miejscu podczas przewozu.',
+    description: 'Brady M610-HC to twarda walizka z polipropylenu o dużej gęstości do drukarki etykiet M610. Pasuje też do starszej drukarki BMP61. Walizka zabezpiecza drukarkę przed uderzeniami i kurzem, gdy technik przewozi ją między obiektami.\n\nDo walizki zmieszczą się drukarka, zapasowe kasety z etykietami, taśmy barwiące, zasilacz i drugi akumulator. Dzięki temu cały sprzęt do oznaczania jest pod ręką na miejscu pracy.\n\nWalizka ma rączkę i wymiary zewnętrzne 431,8 × 444,5 × 165,1 mm. Drukarka M610 jest dostarczana w twardej walizce, więc M610-HC służy jako walizka zapasowa albo zamienna.',
+    images: ['/images/products/brady/m610-hc.png'],
+    imageDescriptions: ['Twarda walizka Brady M610-HC z rączką i logo Brady'],
+    specifications: [
+      { name: 'Part Number', value: 'M610-HC' },
+      { name: 'Numer artykułu Brady', value: '175671' },
+      { name: 'Typ', value: 'Twarda walizka transportowa' },
+      { name: 'Materiał', value: 'polipropylen o dużej gęstości' },
+      { name: 'Wymiary', value: '431,8 × 444,5 × 165,1 mm' },
+      { name: 'Zgodne drukarki', value: 'M610, BMP61' },
+    ],
+    applications: ['Przewóz drukarki M610 z etykietami i taśmami', 'Walizka zapasowa do drukarki M610 lub BMP61'],
+    relatedAccessories: ['brady-m-lion-battery', 'brady-m41-51-61-ac-eu'],
+    relatedProducts: ['brady-m610'],
+    faq: [
+      { question: 'Czy walizka jest w zestawie z drukarką Brady M610?', answer: 'Tak. Każda wersja drukarki [Brady M610](/produkt/brady-m610) jest dostarczana w twardej walizce. M610-HC to walizka do kupienia osobno, np. jako zapasowa.' },
+      { question: 'Czy walizka M610-HC pasuje do Brady BMP61?', answer: 'Tak. Walizka pasuje do drukarek M610 i BMP61.' },
+    ],
+    sameAs: 'https://www.brady.eu/label-printers/hard-case-for-m610-label-printer-pid-m610-hc',
   },
 ]
 

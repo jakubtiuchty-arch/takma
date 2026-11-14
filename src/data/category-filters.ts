@@ -550,6 +550,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Brady M410', namePattern: 'Brady M410' },
         { value: 'Brady M510', namePattern: 'Brady M510' },
         { value: 'Brady M511', namePattern: 'Brady M511' },
+        { value: 'Brady M610', namePattern: 'Brady M610' },
       ],
     },
     {
@@ -563,6 +564,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: '25 mm', pattern: '25,4 mm', specs: ['Maksymalna szerokość etykiety'] },
         { value: '36 mm', pattern: '\\b36 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy'] },
         { value: '38 mm', pattern: '38,1 mm', specs: ['Maksymalna szerokość etykiety'] },
+        { value: '50 mm', pattern: '50,8 mm', specs: ['Maksymalna szerokość etykiety'] },
       ],
     },
     {
@@ -610,6 +612,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: '25 mm', pattern: '25,4 mm', specs: ['Maksymalna szerokość etykiety'] },
         { value: '36 mm', pattern: '\\b36 mm', specs: ['Szerokości taśm TZe', 'Szerokość taśmy', 'Maksymalna szerokość taśmy'] },
         { value: '38 mm', pattern: '38,1 mm', specs: ['Maksymalna szerokość etykiety'] },
+        { value: '50 mm', pattern: '50,8 mm', specs: ['Maksymalna szerokość etykiety'] },
       ],
     },
     {
