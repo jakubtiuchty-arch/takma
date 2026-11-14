@@ -1,7 +1,7 @@
 import type { Product } from './products'
 import { wspolneB30 } from './brady-b30-wspolne'
 
-// Taśmy ciągłe B30C do drukarki Brady S3100 (także BBP30, BBP31, BBP33, BBP35, BBP37, S3000, S3700, i3300). Kaseta B30C nie ma taśmy barwiącej —
+// Taśmy ciągłe B30C do drukarek Brady S3100 i S3700 (także starsze BBP30, BBP31, BBP33, BBP35, BBP37, S3000, i3300). Kaseta B30C nie ma taśmy barwiącej —
 // zalecaną taśmę B30-R… podaje specyfikacja, a kolor nadruku dymek kolumny „Kolor”.
 // Rodziny Brady: cps-3069347 (B-595), 3079460 (B-7569), 3069348 (B-569), 3069358, 4578480, 3069354 (B-581), 3069357 (B-549), 3079459 (B-565), 3079464 (B-484A). 14.11.2026.
 
@@ -27,7 +27,7 @@ const KOLORY: Record<string, [string, string]> = {
   SL: ['Srebrny', 'srebrna'],
 }
 
-const DRUKARKI_B30 = 'S3100, S3000, S3700, i3300, i4311, i5300; BBP30, BBP31, BBP33, BBP35, BBP37'
+const DRUKARKI_B30 = 'S3100, S3700, S3000, i3300, i4311, i5300; BBP30, BBP31, BBP33, BBP35, BBP37'
 
 // Szerokość taśmy według członu PN (B30C-<człon>-…): cale × 1000, np. 4000 = 4 cale = 101,6 mm.
 const SZEROKOSC: Record<string, string> = {
@@ -131,11 +131,11 @@ export const bradyB30Winyl595: Product = {
   ...wspolneB30,
   id: 'brady-b30c-4000-595-wt',
   slug: 'brady-b30c-4000-595-wt',
-  name: 'Taśma winylowa do pracy na zewnątrz Brady B30C-4000-595-WT — materiał B30 do S3100',
-  seoTitle: 'Brady B30C-4000-595-WT — winyl na zewnątrz do S3100',
-  seoDescription: 'Winyl Brady B-595 do S3100: taśma ciągła 12,7–101,6 mm × 30,48 m, 14 kolorów, praca od −40 do 82 °C. PN: B30C-4000-595-WT, B30C-2250-595-YL, B30C-500-595-RD.',
-  shortDescription: 'Brady B30C-4000-595-WT i pozostałe kasety z winylem B-595 na bardzo mocnym kleju akrylowym, w 14 kolorach i pięciu szerokościach od 12,7 do 101,6 mm. Do drukarki Brady S3100.',
-  description: 'Winyl Brady B-595 ma mały skurcz i bardzo mocny klej akrylowy. Klej trzyma także na podłożach brudnych, szorstkich i mocno teksturowanych. Przykłady to malowany pustak i drewno, tworzywo z fakturą oraz rury w papierowej osłonie. Materiał jest giętki. Powierzchnia jest błyszcząca, a taśma wytrzymuje użytkowanie na zewnątrz. Z taśmy wykonuje się oznaczenia rur, zaworów, urządzeń i półek, znaki podłogowe, oznaczenia magazynu oraz etykiety Lean i 5S.\n\nW kasecie B30C jest rolka długości 30,48 m, a grubość taśmy wynosi 0,102 mm. Rolki są szerokie na 12,7, 28,58, 57,15, 76,2 albo 101,6 mm. Szerokość 76,2 mm występuje wyłącznie jako biała i żółta. Taśma 12,7 mm ma 13 kolorów. Pozostałe szerokości, bez 76,2 mm, mają po 14 kolorów, z ochrowym włącznie.\n\nWinyl znosi ścieranie, chemikalia, oleje, smary, wodę, mgłę solną i detergenty. Taśma pracuje w zamrażarce, od −40 °C aż do 82 °C. Naklejanie jest możliwe już od −18 °C. Winyl spełnia wymagania normy BS 5609:1986 w sekcjach 2 i 3. Na taśmach jasnych drukuje czarna taśma barwiąca B30-R10000, a na ciemnych biała B30-R10000-WT. Kolor nadruku każdej wersji opisuje dymek kolumny Kolor. Kaseta B30C działa w S3100 oraz w starszych modelach: i5300, i4311, i3300, S3700, S3000, BBP37, BBP35, BBP33, BBP31 i BBP30.',
+  name: 'Taśma winylowa do pracy na zewnątrz Brady B30C-4000-595-WT — materiał B30 do S3100 i S3700',
+  seoTitle: 'Brady B30C-4000-595-WT — winyl na zewnątrz do S3100 i S3700',
+  seoDescription: 'Winyl Brady B-595 do S3100 i S3700: taśma ciągła 12,7–101,6 mm × 30,48 m, 14 kolorów, od −40 do 82 °C. PN: B30C-4000-595-WT, B30C-2250-595-YL, B30C-500-595-RD.',
+  shortDescription: 'Brady B30C-4000-595-WT i pozostałe kasety z winylem B-595 na bardzo mocnym kleju akrylowym, w 14 kolorach i pięciu szerokościach od 12,7 do 101,6 mm. Do drukarek Brady S3100 i S3700.',
+  description: 'Winyl Brady B-595 ma mały skurcz i bardzo mocny klej akrylowy. Klej trzyma także na podłożach brudnych, szorstkich i mocno teksturowanych. Przykłady to malowany pustak i drewno, tworzywo z fakturą oraz rury w papierowej osłonie. Materiał jest giętki. Powierzchnia jest błyszcząca, a taśma wytrzymuje użytkowanie na zewnątrz. Z taśmy wykonuje się oznaczenia rur, zaworów, urządzeń i półek, znaki podłogowe, oznaczenia magazynu oraz etykiety Lean i 5S.\n\nW kasecie B30C jest rolka długości 30,48 m, a grubość taśmy wynosi 0,102 mm. Rolki są szerokie na 12,7, 28,58, 57,15, 76,2 albo 101,6 mm. Szerokość 76,2 mm występuje wyłącznie jako biała i żółta. Taśma 12,7 mm ma 13 kolorów. Pozostałe szerokości, bez 76,2 mm, mają po 14 kolorów, z ochrowym włącznie.\n\nWinyl znosi ścieranie, chemikalia, oleje, smary, wodę, mgłę solną i detergenty. Taśma pracuje w zamrażarce, od −40 °C aż do 82 °C. Naklejanie jest możliwe już od −18 °C. Winyl spełnia wymagania normy BS 5609:1986 w sekcjach 2 i 3. Na taśmach jasnych drukuje czarna taśma barwiąca B30-R10000, a na ciemnych biała B30-R10000-WT. Kolor nadruku każdej wersji opisuje dymek kolumny Kolor. Kaseta B30C jest obsługiwana przez S3100 i S3700. Działa też w starszych modelach: i5300, i4311, i3300, S3000, BBP37, BBP35, BBP33, BBP31 i BBP30.',
   sameAs: 'https://www.brady.eu/labels/b30-series-continuous-indoor-outdoor-vinyl-labels-cps-3069347',
   images: [
     '/images/products/brady/b30c-4000-595-wt.png',
@@ -180,7 +180,7 @@ export const bradyB30Winyl595: Product = {
   faq: [
     { question: 'Na jakich powierzchniach trzyma winyl B-595?', answer: 'Na podłożach gładkich, szorstkich i teksturowanych, także brudnych. Przykłady to malowany pustak, malowane drewno, tworzywo z fakturą, rury w papierowej osłonie i obudowy formowane z tworzywa.' },
     { question: 'Którą taśmę barwiącą wybrać do kolorowego winylu B-595?', answer: 'Na jasnych kolorach drukuje czarna taśma B30-R10000. Na ciemnych kolorach drukuje biała B30-R10000-WT. Dla każdej wersji kolor nadruku podaje nazwa wariantu i dymek kolumny Kolor.' },
-    { question: 'Do jakich drukarek pasuje taśma B30C-595?', answer: 'Do [Brady S3100](/produkt/brady-s3100) oraz do starszych S3000, S3700, i3300, i4311, i5300, BBP30, BBP31, BBP33, BBP35 i BBP37. Taśma barwiąca jest w osobnej kasecie B30-R.' },
+    { question: 'Do jakich drukarek pasuje taśma B30C-595?', answer: 'Do [Brady S3100](/produkt/brady-s3100) i [Brady S3700](/produkt/brady-s3700) oraz do starszych S3000, i3300, i4311, i5300, BBP30, BBP31, BBP33, BBP35 i BBP37. Taśma barwiąca jest w osobnej kasecie B30-R.' },
   ],
   applications: ['Oznaczanie rur, zaworów i urządzeń', 'Znaki podłogowe i oznaczenia magazynu', 'Etykiety Lean i 5S'],
 }
@@ -229,10 +229,10 @@ export const bradyB30Winyl7569: Product = {
   ...wspolneB30,
   id: 'brady-b30c-4000-7569-wt',
   slug: 'brady-b30c-4000-7569-wt',
-  name: 'Ciągła taśma winylowa Brady B30C-4000-7569-WT — materiał B30 do S3100',
-  seoTitle: 'Brady B30C-4000-7569-WT — ciągły winyl do S3100',
-  seoDescription: 'Ciągły winyl Brady B-7569 do S3100: 12,7–101 mm × 30 m, 7 kolorów, znaki BHP i oznaczenia rur. PN: B30C-4000-7569-WT, B30C-2250-7569-YL, B30C-500-7569-RD.',
-  shortDescription: 'Brady B30C-4000-7569-WT i pozostałe kasety z ciągłym winylem B-7569 na mocnym kleju akrylowym, w siedmiu kolorach i pięciu szerokościach od 12,7 do 101 mm. Do drukarki Brady S3100.',
+  name: 'Ciągła taśma winylowa Brady B30C-4000-7569-WT — materiał B30 do S3100 i S3700',
+  seoTitle: 'Brady B30C-4000-7569-WT — ciągły winyl do S3100 i S3700',
+  seoDescription: 'Ciągły winyl Brady B-7569 do S3100 i S3700: 12,7–101 mm × 30 m, 7 kolorów, znaki BHP i rury. PN: B30C-4000-7569-WT, B30C-2250-7569-YL, B30C-500-7569-RD.',
+  shortDescription: 'Brady B30C-4000-7569-WT i pozostałe kasety z ciągłym winylem B-7569 na mocnym kleju akrylowym, w siedmiu kolorach i pięciu szerokościach od 12,7 do 101 mm. Do drukarek Brady S3100 i S3700.',
   description: 'Brady B-7569 to błyszczący winyl o standardowej jakości, przeznaczony do trwałych oznaczeń w zakładzie. Klej jest akrylowy, mocny i trwały, a materiał przykleja się do powierzchni gładkich, teksturowanych i szorstkich. Z taśmy powstają znaki bezpieczeństwa i ostrzeżenia, oznaczenia rur i zaworów oraz etykiety urządzeń. Nadaje się też do oznaczeń Lean i 5S, identyfikacji obiektów, znaków podłogowych i oznaczeń magazynu, wewnątrz i na zewnątrz budynków.\n\nRolka w kasecie B30C ma 30 m, a taśma 0,102 mm grubości. Szerokości to 12,7, 29, 57, 75 i 101 mm. Szerokość 75 mm jest tylko biała albo żółta. Pozostałe szerokości mają siedem kolorów: czerwony, zielony, niebieski i czarny oraz biały, żółty i pomarańczowy.\n\nDolna granica pracy etykiet to −20 °C, a górna 75 °C. Naklejanie wymaga temperatury od 10 °C. Norma BS 5609 obejmuje tu sekcje 2 oraz 3. Czarna taśma barwiąca B30-R10000 jest zalecana do taśmy białej, żółtej i pomarańczowej. Biała B30-R10000-WT jest przeznaczona dla wersji czerwonych, zielonych, niebieskich i czarnych. Dymek kolumny Kolor podaje kolor nadruku wersji. Kasety obsługują drukarki S3100 i S3700, BBP30 i BBP31 oraz BBP33, BBP35 i BBP37, a ponadto S3000, i3300, i4311 i i5300.',
   sameAs: 'https://www.brady.eu/labels/continuous-vinyl-tape-for-bbp3x-s3xxx-i3300-printers-cps-3079460',
   images: [
@@ -276,7 +276,7 @@ export const bradyB30Winyl7569: Product = {
   faq: [
     { question: 'Jaki zakres temperatur obejmuje winyl B-7569?', answer: 'Etykiety pracują w temperaturze od −20 do 75 °C. Taśmę można naklejać od 10 °C.' },
     { question: 'Którą taśmę barwiącą zamówić do taśmy B-7569?', answer: 'Do białej, żółtej i pomarańczowej zalecana jest czarna B30-R10000. Do czerwonej, zielonej, niebieskiej i czarnej zalecana jest biała B30-R10000-WT.' },
-    { question: 'Do jakich drukarek pasują kasety B30C-7569?', answer: 'Do [Brady S3100](/produkt/brady-s3100) oraz do starszych S3000, S3700, i3300, i4311, i5300, BBP30, BBP31, BBP33, BBP35 i BBP37. Taśma barwiąca jest w osobnej kasecie B30-R.' },
+    { question: 'Do jakich drukarek pasują kasety B30C-7569?', answer: 'Do [Brady S3100](/produkt/brady-s3100) i [Brady S3700](/produkt/brady-s3700) oraz do starszych S3000, i3300, i4311, i5300, BBP30, BBP31, BBP33, BBP35 i BBP37. Taśma barwiąca jest w osobnej kasecie B30-R.' },
   ],
   applications: ['Znaki bezpieczeństwa i ostrzeżenia', 'Oznaczenia rur i zaworów', 'Znaki podłogowe i oznaczenia magazynu'],
 }
@@ -313,11 +313,11 @@ export const bradyB30Poliester569: Product = {
   ...wspolneB30,
   id: 'brady-b30c-4000-569-wt',
   slug: 'brady-b30c-4000-569-wt',
-  name: 'Taśma poliestrowa o niskiej zawartości halogenków Brady B30C-4000-569-WT — materiał B30 do S3100',
-  seoTitle: 'Brady B30C-4000-569-WT — poliester do stali nierdzewnej do S3100',
-  seoDescription: 'Poliester Brady B-569 do S3100: mało halogenków, 12,7–101,6 mm × 30,48 m, 16 kolorów, do 100 °C. PN: B30C-4000-569-WT, B30C-2250-569-YL, B30C-500-569-BL.',
-  shortDescription: 'Brady B30C-4000-569-WT i pozostałe kasety z poliestrem B-569 o niskiej zawartości halogenków, do oznaczania rur ze stali nierdzewnej i gładkich powierzchni, w 16 kolorach. Do drukarki Brady S3100.',
-  description: 'Poliester Brady B-569 zawiera mało halogenków, dlatego przeznaczono go do oznaczania rur ze stali nierdzewnej, szczególnie w trudnych warunkach. Etykieta ma bardzo gładką powierzchnię. Klej akrylowy jest trwały i silnie przylega. Najlepiej trzyma na gładkich podłożach, także na sztywnych panelach. Poliester nadaje się do druku termotransferowego i do użytku na zewnątrz. Taśma służy do identyfikacji obiektów oraz do oznaczania rur i zaworów.\n\nRolka w kasecie ma 30,48 m, a materiał jest cienki: 0,076 mm. Rolki mają szerokość 12,7, 28,58, 57,15 lub 101,6 mm, a także 76,2 mm, wyłącznie w bieli. Paleta liczy 16 kolorów, między innymi biały, żółty, brązowy, fioletowy, czarny i przezroczysty. Taśma 12,7 mm nie występuje w kolorze ochrowym.\n\nEtykiety wytrzymują ścieranie, olej, wodę i łagodne chemikalia. Zakres pracy zaczyna się na poziomie −40 °C i kończy na 100 °C. Naklejać ją można od −18 °C. Do jasnych kolorów zaleca się czarną taśmę barwiącą B30-R10000, do ciemnych białą B30-R10000-WT, a do ochrowej B30-R6000OC. Szczegóły podaje dymek kolumny Kolor. Kasety B30C-569 działają w S3100, S3000 i S3700. Pasują też do BBP30 i BBP31, BBP33, BBP35 i BBP37, a także do i3300, i4311 oraz i5300.',
+  name: 'Taśma poliestrowa o niskiej zawartości halogenków Brady B30C-4000-569-WT — materiał B30 do S3100 i S3700',
+  seoTitle: 'Brady B30C-4000-569-WT — poliester do rur, do S3100 i S3700',
+  seoDescription: 'Poliester Brady B-569 do S3100 i S3700: mało halogenków, 12,7–101,6 mm, 16 kolorów, do 100 °C. PN: B30C-4000-569-WT, B30C-2250-569-YL, B30C-500-569-BL.',
+  shortDescription: 'Brady B30C-4000-569-WT i pozostałe kasety z poliestrem B-569 o niskiej zawartości halogenków, do oznaczania rur ze stali nierdzewnej i gładkich powierzchni, w 16 kolorach. Do drukarek Brady S3100 i S3700.',
+  description: 'Poliester Brady B-569 zawiera mało halogenków, dlatego przeznaczono go do oznaczania rur ze stali nierdzewnej, szczególnie w trudnych warunkach. Etykieta ma bardzo gładką powierzchnię. Klej akrylowy jest trwały i silnie przylega. Najlepiej trzyma na gładkich podłożach, także na sztywnych panelach. Poliester nadaje się do druku termotransferowego i do użytku na zewnątrz. Taśma służy do identyfikacji obiektów oraz do oznaczania rur i zaworów.\n\nRolka w kasecie ma 30,48 m, a materiał jest cienki: 0,076 mm. Rolki mają szerokość 12,7, 28,58, 57,15 lub 101,6 mm, a także 76,2 mm, wyłącznie w bieli. Paleta liczy 16 kolorów, między innymi biały, żółty, brązowy, fioletowy, czarny i przezroczysty. Taśma 12,7 mm nie występuje w kolorze ochrowym.\n\nEtykiety wytrzymują ścieranie, olej, wodę i łagodne chemikalia. Zakres pracy zaczyna się na poziomie −40 °C i kończy na 100 °C. Naklejać ją można od −18 °C. Do jasnych kolorów zaleca się czarną taśmę barwiącą B30-R10000, do ciemnych białą B30-R10000-WT, a do ochrowej B30-R6000OC. Szczegóły podaje dymek kolumny Kolor. Kasety B30C-569 działają w S3100 i S3700, a także w starszej S3000. Pasują też do BBP30 i BBP31, BBP33, BBP35 i BBP37, a także do i3300, i4311 oraz i5300.',
   sameAs: 'https://www.brady.eu/labels/b30-series-low-halide-polyester-labels-cps-3069348',
   images: [
     '/images/products/brady/b30c-4000-569-gn.png',
@@ -359,7 +359,7 @@ export const bradyB30Poliester569: Product = {
   faq: [
     { question: 'Do czego służy poliester B-569 o niskiej zawartości halogenków?', answer: 'Do oznaczania rur ze stali nierdzewnej i innych gładkich powierzchni, zwłaszcza w trudnych warunkach. Materiał ma mało halogenków.' },
     { question: 'Którą taśmę barwiącą zamówić do ochrowej taśmy B-569?', answer: 'Zalecana jest taśma B30-R6000OC. Do pozostałych kolorów służy czarna B30-R10000 albo biała B30-R10000-WT, zależnie od koloru taśmy.' },
-    { question: 'Na jakich podłożach należy naklejać taśmę B-569?', answer: 'Na gładkich, na przykład na stali nierdzewnej i sztywnych panelach. Materiał jest przeznaczony do podłoży gładkich i używa się go w [Brady S3100](/produkt/brady-s3100) oraz w starszych drukarkach B30.' },
+    { question: 'Na jakich podłożach należy naklejać taśmę B-569?', answer: 'Na gładkich, na przykład na stali nierdzewnej i sztywnych panelach. Materiał jest przeznaczony do podłoży gładkich i używa się go w [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) oraz w starszych drukarkach B30.' },
   ],
   applications: ['Oznaczanie rur ze stali nierdzewnej', 'Oznaczenia rur i zaworów', 'Identyfikacja obiektów'],
 }
@@ -385,11 +385,11 @@ export const bradyB30TrudneWarunki: Product = {
   ...wspolneB30,
   id: 'brady-b30c-4000-423',
   slug: 'brady-b30c-4000-423',
-  name: 'Wielozadaniowe taśmy ciągłe do trudnych warunków Brady B30C-4000-423 — materiał B30 do S3100',
-  seoTitle: 'Brady B30C-4000-423 — taśmy ciągłe do trudnych warunków do S3100',
-  seoDescription: 'Taśmy ciągłe Brady 101,6 mm do S3100: poliester, metalizowany poliester, papier i PVF, od −70 do 180 °C. PN: B30C-4000-423, B30C-4000-434, B30C-4000-787.',
-  shortDescription: 'Brady B30C-4000-423 i osiem pozostałych kaset z taśmą ciągłą 101,6 mm z poliestru, poliestru metalizowanego, papieru albo PVF, do oznaczeń w trudnych warunkach. Do drukarki Brady S3100.',
-  description: 'Rodzina obejmuje dziewięć kaset B30C z taśmą 101,6 mm do oznaczeń w trudnych warunkach. Materiały to poliestry (B-423, B-432, B-483A, B-488), poliestry metalizowane lub o wyglądzie metalicznym (B-428, B-434A, B-480A), papier B-424 i folia PVF B-787. Etykiety z tych taśm służą do kodów kreskowych, oznaczania płytek drukowanych, podzespołów, aparatury laboratoryjnej oraz instalacji elektrycznych i telekomunikacyjnych. Nadają się też do inwentaryzacji, kontroli i oznaczeń Lean i 5S.\n\nRolki mają różną długość: 45,72 m (B-423, B-424), 39,62 m (B-428, B-434A, B-483A, B-488), 36,58 m (B-432), 35,05 m (B-480A) i 18,29 m (B-787). Taśmy są białe, jasnoszare, srebrne albo przezroczyste. Grubości, kleje i wykończenia poszczególnych materiałów podaje specyfikacja.\n\nZakres temperatur pracy sięga od −70 do 180 °C, zależnie od materiału. B-423 i B-488 nadają się do autoklawu, a B-488 także do przechowywania kriogenicznego. B-787 ma oznaczenie Boeing BMS 10-26. Taśma barwiąca B30-R6000 pasuje do większości materiałów, a B30-R4300 do B-424, B-428 i B-488. Kasety obsługują S3100, S3000 i S3700 oraz starsze i5300, i4311, i3300, BBP37 i BBP35.',
+  name: 'Wielozadaniowe taśmy ciągłe do trudnych warunków Brady B30C-4000-423 — materiał B30 do S3100 i S3700',
+  seoTitle: 'Brady B30C-4000-423 — taśmy ciągłe do S3100 i S3700',
+  seoDescription: 'Taśmy ciągłe Brady 101,6 mm do S3100 i S3700: poliester, metalizowany poliester, papier, PVF, od −70 do 180 °C. PN: B30C-4000-423, B30C-4000-434, B30C-4000-787.',
+  shortDescription: 'Brady B30C-4000-423 i osiem pozostałych kaset z taśmą ciągłą 101,6 mm z poliestru, poliestru metalizowanego, papieru albo PVF, do oznaczeń w trudnych warunkach. Do drukarek Brady S3100 i S3700.',
+  description: 'Rodzina obejmuje dziewięć kaset B30C z taśmą 101,6 mm do oznaczeń w trudnych warunkach. Materiały to poliestry (B-423, B-432, B-483A, B-488), poliestry metalizowane lub o wyglądzie metalicznym (B-428, B-434A, B-480A), papier B-424 i folia PVF B-787. Etykiety z tych taśm służą do kodów kreskowych, oznaczania płytek drukowanych, podzespołów, aparatury laboratoryjnej oraz instalacji elektrycznych i telekomunikacyjnych. Nadają się też do inwentaryzacji, kontroli i oznaczeń Lean i 5S.\n\nRolki mają różną długość: 45,72 m (B-423, B-424), 39,62 m (B-428, B-434A, B-483A, B-488), 36,58 m (B-432), 35,05 m (B-480A) i 18,29 m (B-787). Taśmy są białe, jasnoszare, srebrne albo przezroczyste. Grubości, kleje i wykończenia poszczególnych materiałów podaje specyfikacja.\n\nZakres temperatur pracy sięga od −70 do 180 °C, zależnie od materiału. B-423 i B-488 nadają się do autoklawu, a B-488 także do przechowywania kriogenicznego. B-787 ma oznaczenie Boeing BMS 10-26. Taśma barwiąca B30-R6000 pasuje do większości materiałów, a B30-R4300 do B-424, B-428 i B-488. Rodzina jest przeznaczona dla drukarek S3100 i S3700, a z modelami starszymi współdziałają S3000, i5300, i4311, i3300, BBP37 i BBP35.',
   sameAs: 'https://www.brady.eu/labels/b30-series-product-identification-labels-cps-3069358',
   images: [
     '/images/products/brady/b30c-4000-423.png',
@@ -419,7 +419,7 @@ export const bradyB30TrudneWarunki: Product = {
     { name: 'Format', value: 'taśma ciągła' },
     { name: 'Normy', value: 'UL Recognized: B-423, B-428, B-432, B-434A, B-480A (cUL), B-483A; CSA: B-423, B-428, B-432, B-434A, B-483A; AGA: B-428; bezhalogenowe wg DIN VDE 0472 cz. 815: B-423, B-428; B-787: Boeing BMS 10-26 typ I klasa A, kolor biały zgodny z FED-STD-595C (17875)' },
     { name: 'Zalecana taśma barwiąca', value: 'B30-R6000: B-423, B-432, B-434A, B-480A, B-483A, B-787; B30-R4300: B-424, B-428, B-488' },
-    { name: 'Zgodne drukarki', value: 'S3100, S3000, S3700, i3300, i4311, i5300; BBP35, BBP37' },
+    { name: 'Zgodne drukarki', value: 'S3100, S3700, S3000, i3300, i4311, i5300; BBP35, BBP37' },
     { name: 'Numery artykułów Brady', value: TASMY_TRUDNE.map(([pn, art]) => `${pn}: ${art}`).join('; ') },
   ],
   variants: TASMY_TRUDNE.map(([pn, , mat, kolor, dlugosc, tasma]) => ({
@@ -436,7 +436,7 @@ export const bradyB30TrudneWarunki: Product = {
   faq: [
     { question: 'Które taśmy z tej rodziny nadają się do autoklawu?', answer: 'Do autoklawu przeznaczone są B-423 i B-488. B-488 pracuje do 160 °C i nadaje się też do przechowywania kriogenicznego.' },
     { question: 'Którą taśmę barwiącą wybrać do taśm 101,6 mm z tej rodziny?', answer: 'Do B-423, B-432, B-434A, B-480A, B-483A i B-787 zalecana jest B30-R6000. Do B-424, B-428 i B-488 zalecana jest B30-R4300. Nazwa każdego wariantu podaje właściwą taśmę.' },
-    { question: 'Do jakich drukarek pasują te kasety B30C?', answer: 'Do [Brady S3100](/produkt/brady-s3100) oraz do starszych S3000, S3700, BBP35, BBP37, i3300, i4311 i i5300. Taśma barwiąca jest w osobnej kasecie B30-R.' },
+    { question: 'Do jakich drukarek pasują te kasety B30C?', answer: 'Do [Brady S3100](/produkt/brady-s3100) i [Brady S3700](/produkt/brady-s3700) oraz do starszych S3000, BBP35, BBP37, i3300, i4311 i i5300. Taśma barwiąca jest w osobnej kasecie B30-R.' },
   ],
   applications: ['Kody kreskowe i oznaczenia inwentarzowe', 'Płytki drukowane i podzespoły elektroniczne', 'Oznaczenia laboratoryjne i śledzenie wyposażenia'],
 }
@@ -458,10 +458,10 @@ export const bradyB30OznaczanieProduktow: Product = {
   ...wspolneB30,
   id: 'brady-b30c-2000-423',
   slug: 'brady-b30c-2000-423',
-  name: 'Taśma do oznaczania produktów Brady B30C-2000-423 — materiał B30 do S3100',
-  seoTitle: 'Brady B30C-2000-423 — taśma do oznaczania produktów do S3100',
-  seoDescription: 'Taśma ciągła Brady do S3100: poliester B-423 i metalizowany B-434A, 50,8 i 76,2 mm. PN: B30C-2000-423, B30C-3000-423, B30C-2000-434, B30C-2000-428.',
-  shortDescription: 'Brady B30C-2000-423 i cztery pozostałe kasety z taśmą ciągłą 30,48 m z białego poliestru B-423 albo poliestru metalizowanego B-434A i B-428, do oznaczania produktów i podzespołów. Do drukarki Brady S3100.',
+  name: 'Taśma do oznaczania produktów Brady B30C-2000-423 — materiał B30 do S3100 i S3700',
+  seoTitle: 'Brady B30C-2000-423 — taśma ciągła do S3100 i S3700',
+  seoDescription: 'Taśma ciągła Brady do S3100 i S3700: poliester B-423 i metalizowany B-434A, 50,8 i 76,2 mm. PN: B30C-2000-423, B30C-3000-423, B30C-2000-434, B30C-2000-428.',
+  shortDescription: 'Brady B30C-2000-423 i cztery pozostałe kasety z taśmą ciągłą 30,48 m z białego poliestru B-423 albo poliestru metalizowanego B-434A i B-428, do oznaczania produktów i podzespołów. Do drukarek Brady S3100 i S3700.',
   description: 'Biały poliester B-423 jest przeznaczony do identyfikacji płytek drukowanych i podzespołów elektronicznych, etykiet z kodami kreskowymi, tabliczek znamionowych oraz paneli fotowoltaicznych. Powierzchnia jest błyszcząca, a klej akrylowy trwały. Materiał nie zawiera halogenów w rozumieniu DIN VDE 0472 cz. 815 i drukuje się na nim termotransferowo.\n\nObok bieli dostępne są dwa poliestry metalizowane. B-434A ma srebrny, błyszczący wygląd, a B-428 jasnoszary i matowy. Cała rodzina służy do oznaczania urządzeń i sprzętu telekomunikacyjnego, do identyfikacji zasobów, do kontroli i inwentaryzacji oraz do oznaczeń elektrycznych. Każda kaseta B30C ma rolkę 30,48 m. Taśma jest szeroka na 50,8 mm albo 76,2 mm, przy czym B-428 jest tylko w pierwszej szerokości.\n\nDolna granica pracy B-423 i B-434A to −70 °C, górna 110 i 130 °C. B-428 pracuje w przedziale między −40 a 120 °C. Do B-423 i B-434A zalecana jest taśma barwiąca B30-R6000, a do B-428 taśma B30-R4300. Obsługują je drukarki S3100, S3700, i3300, i4311, i5300 oraz seria BBP (modele 31, 33, 35 i 37).',
   sameAs: 'https://www.brady.eu/labels/product-identification-label-tape-for-b30-printers-cps-4578480',
   images: [
@@ -507,7 +507,7 @@ export const bradyB30OznaczanieProduktow: Product = {
   faq: [
     { question: 'Do czego służy biały poliester B-423?', answer: 'Do oznaczania płytek drukowanych i podzespołów, etykiet z kodami kreskowymi, tabliczek znamionowych i paneli fotowoltaicznych. Materiał jest bezhalogenowy i nadaje się do autoklawu.' },
     { question: 'Którą taśmę barwiącą zamówić do tej rodziny?', answer: 'Do B-423 i B-434A zalecana jest B30-R6000, a do B-428 zalecana jest B30-R4300. Nazwa każdego wariantu podaje właściwą taśmę.' },
-    { question: 'Do jakich drukarek pasują te kasety?', answer: 'Do [Brady S3100](/produkt/brady-s3100), S3700, BBP31, BBP33, BBP35, BBP37, i3300, i4311 i i5300.' },
+    { question: 'Do jakich drukarek pasują te kasety?', answer: 'Do [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700), BBP31, BBP33, BBP35, BBP37, i3300, i4311 i i5300.' },
   ],
   applications: ['Płytki drukowane i podzespoły elektroniczne', 'Etykiety z kodami kreskowymi i tabliczki znamionowe', 'Panele fotowoltaiczne'],
 }
@@ -526,11 +526,11 @@ export const bradyB30Metalizowana565: Product = {
   ...wspolneB30,
   id: 'brady-b30c-4000-565-sl',
   slug: 'brady-b30c-4000-565-sl',
-  name: 'Metalizowana taśma poliestrowa Brady B30C-4000-565-SL — materiał B30 do S3100',
-  seoTitle: 'Brady B30C-4000-565-SL — metalizowany poliester do S3100',
-  seoDescription: 'Poliester metalizowany Brady B-565 do S3100: srebrny, matowy, 28,58–101,6 mm, od −40 do 110 °C. PN: B30C-4000-565-SL, B30C-2250-565-SL, B30C-1125-565-SL.',
-  shortDescription: 'Brady B30C-4000-565-SL i dwie pozostałe kasety z matowym, srebrnym poliestrem metalizowanym B-565 na tabliczki informacyjne i etykiety z kodami kreskowymi. Do drukarki Brady S3100.',
-  description: 'Brady B-565 to matowy poliester metalizowany w kolorze srebrnym. Z taśmy powstają własne tabliczki instrukcyjne i informacyjne oraz etykiety do identyfikacji ogólnej, także z kodami kreskowymi. Nadruk wykonuje się termotransferowo, taśmą barwiącą z osobnej kasety. Materiał stosuje się do identyfikacji zasobów, podzespołów i urządzeń oraz do oznaczeń inwentarzowych i kontrolnych. Taśma nie ma nadruku fabrycznego.\n\nKaseta B30C zawiera 30,48 m taśmy o grubości 0,071 mm. Rolki różnią się tylko szerokością: 28,58, 57,15 albo 101,6 mm. Wszystkie wersje mają ten sam materiał i trwały klej akrylowy, który łączy się z gładkim podłożem. Kolor jest tylko jeden, więc o wyborze decyduje szerokość. Długość etykiety określa projekt w drukarce.\n\nPoliester znosi ścieranie i chemikalia. Dolna granica pracy to −40 °C, górna 110 °C, a naklejanie jest możliwe od −18 °C. Do tego materiału zalecana jest czarna taśma barwiąca B30-R10000. Obsługują go drukarki S3100, S3000, S3700, BBP37, BBP35, BBP33, BBP31, BBP30 oraz i5300, i4311 i i3300.',
+  name: 'Metalizowana taśma poliestrowa Brady B30C-4000-565-SL — materiał B30 do S3100 i S3700',
+  seoTitle: 'Brady B30C-4000-565-SL — metalizowany poliester do S3100 i S3700',
+  seoDescription: 'Poliester metalizowany Brady B-565 do S3100 i S3700: srebrny, matowy, 28,58–101,6 mm, do 110 °C. PN: B30C-4000-565-SL, B30C-2250-565-SL, B30C-1125-565-SL.',
+  shortDescription: 'Brady B30C-4000-565-SL i dwie pozostałe kasety z matowym, srebrnym poliestrem metalizowanym B-565 na tabliczki informacyjne i etykiety z kodami kreskowymi. Do drukarek Brady S3100 i S3700.',
+  description: 'Brady B-565 to matowy poliester metalizowany w kolorze srebrnym. Z taśmy powstają własne tabliczki instrukcyjne i informacyjne oraz etykiety do identyfikacji ogólnej, także z kodami kreskowymi. Nadruk wykonuje się termotransferowo, taśmą barwiącą z osobnej kasety. Materiał stosuje się do identyfikacji zasobów, podzespołów i urządzeń oraz do oznaczeń inwentarzowych i kontrolnych. Taśma nie ma nadruku fabrycznego.\n\nKaseta B30C zawiera 30,48 m taśmy o grubości 0,071 mm. Rolki różnią się tylko szerokością: 28,58, 57,15 albo 101,6 mm. Wszystkie wersje mają ten sam materiał i trwały klej akrylowy, który łączy się z gładkim podłożem. Kolor jest tylko jeden, więc o wyborze decyduje szerokość. Długość etykiety określa projekt w drukarce.\n\nPoliester znosi ścieranie i chemikalia. Dolna granica pracy to −40 °C, górna 110 °C, a naklejanie jest możliwe od −18 °C. Do tego materiału zalecana jest czarna taśma barwiąca B30-R10000. Drukują go S3100 i S3700, a z modeli starszych także S3000, BBP37, BBP35, BBP33, BBP31, BBP30, i5300, i4311 i i3300.',
   sameAs: 'https://www.brady.eu/labels/metallised-polyester-tape-for-bbp3x-s3xxx-i3300-s3xxx-i3300-printers-cps-3079459',
   images: [
     '/images/products/brady/b30c-4000-565-sl.png',
@@ -572,7 +572,7 @@ export const bradyB30Metalizowana565: Product = {
   faq: [
     { question: 'Do czego służy metalizowany poliester B-565?', answer: 'Do własnych tabliczek informacyjnych, etykiet z kodami kreskowymi i oznaczeń ogólnych. Stosuje się go też do identyfikacji zasobów i podzespołów oraz do oznaczeń inwentarzowych i kontrolnych.' },
     { question: 'Którą taśmę barwiącą zamówić do materiału B-565?', answer: 'Zalecana jest czarna taśma barwiąca B30-R10000 w osobnej kasecie serii B30.' },
-    { question: 'Do jakich drukarek pasuje materiał B-565?', answer: 'Do [Brady S3100](/produkt/brady-s3100) oraz do starszych drukarek BBP30, BBP31, BBP33, BBP35, BBP37, S3000, S3700, i3300, i4311 i i5300.' },
+    { question: 'Do jakich drukarek pasuje materiał B-565?', answer: 'Do [Brady S3100](/produkt/brady-s3100) i [Brady S3700](/produkt/brady-s3700) oraz do starszych drukarek BBP30, BBP31, BBP33, BBP35, BBP37, S3000, i3300, i4311 i i5300.' },
   ],
   applications: ['Tabliczki informacyjne', 'Etykiety z kodami kreskowymi', 'Oznaczenia zasobów i podzespołów'],
 }
@@ -592,11 +592,11 @@ export const bradyB30WinylPrzeklejany581: Product = {
   ...wspolneB30,
   id: 'brady-b30c-4000-581-yl',
   slug: 'brady-b30c-4000-581-yl',
-  name: 'Taśma winylowa do przeklejania Brady B30C-4000-581-YL — materiał B30 do S3100',
-  seoTitle: 'Brady B30C-4000-581-YL — winyl do przeklejania do S3100',
-  seoDescription: 'Winyl Brady B-581 do S3100: etykiety do przeklejania bez śladów kleju, 12,7–101,6 mm, biały i żółty. PN: B30C-4000-581-YL, B30C-4000-581-WT, B30C-2250-581-WT.',
-  shortDescription: 'Brady B30C-4000-581-YL i siedem pozostałych kaset z błyszczącym winylem B-581 na kleju, który pozwala przeklejać etykiety bez śladów, w kolorze białym albo żółtym. Do drukarki Brady S3100.',
-  description: 'Brady B-581 to giętki winyl o wysokim połysku, który można przeklejać. Akrylowa warstwa klejąca utrzymuje etykietę na powierzchni, a po zdjęciu schodzi bez śladów. Taśma jest przeznaczona do oznaczeń wewnątrz pomieszczeń, w których etykiety trzeba często przeklejać. Sprawdza się przy wdrażaniu 5S i w inwentaryzacji, a także w identyfikacji obiektów, identyfikacji ogólnej i znakach bezpieczeństwa. Nadruk termotransferowy powstaje przy użyciu taśmy barwiącej z osobnej kasety. Przeciętna trwałość na zewnątrz to pięć lat.\n\nKaseta B30C mieści rolkę 30,48 m o grubości 0,125 mm. Szerokości taśmy to 101,6 mm, 57,15 mm, 28,58 mm i 12,7 mm. Każdą szerokość oferuje się w bieli i w żółci. Klej przylega do gładkich podłoży.\n\nOdporność obejmuje ścieranie i chemikalia. Materiał pracuje między −40 a 82 °C, a naklejać go można przy 10 °C lub więcej. Czarna taśma barwiąca B30-R10000 drukuje na obu kolorach. Kasety obsługują drukarkę S3100 oraz starsze modele: S3700, S3000, i3300, i4311, i5300, BBP31, BBP30, BBP33, BBP37 i BBP35.',
+  name: 'Taśma winylowa do przeklejania Brady B30C-4000-581-YL — materiał B30 do S3100 i S3700',
+  seoTitle: 'Brady B30C-4000-581-YL — winyl do przeklejania do S3100 i S3700',
+  seoDescription: 'Winyl Brady B-581 do S3100 i S3700: etykiety do przeklejania bez śladów, 12,7–101,6 mm, biały i żółty. PN: B30C-4000-581-YL, B30C-4000-581-WT, B30C-2250-581-WT.',
+  shortDescription: 'Brady B30C-4000-581-YL i siedem pozostałych kaset z błyszczącym winylem B-581 na kleju, który pozwala przeklejać etykiety bez śladów, w kolorze białym albo żółtym. Do drukarek Brady S3100 i S3700.',
+  description: 'Brady B-581 to giętki winyl o wysokim połysku, który można przeklejać. Akrylowa warstwa klejąca utrzymuje etykietę na powierzchni, a po zdjęciu schodzi bez śladów. Taśma jest przeznaczona do oznaczeń wewnątrz pomieszczeń, w których etykiety trzeba często przeklejać. Sprawdza się przy wdrażaniu 5S i w inwentaryzacji, a także w identyfikacji obiektów, identyfikacji ogólnej i znakach bezpieczeństwa. Nadruk termotransferowy powstaje przy użyciu taśmy barwiącej z osobnej kasety. Przeciętna trwałość na zewnątrz to pięć lat.\n\nKaseta B30C mieści rolkę 30,48 m o grubości 0,125 mm. Szerokości taśmy to 101,6 mm, 57,15 mm, 28,58 mm i 12,7 mm. Każdą szerokość oferuje się w bieli i w żółci. Klej przylega do gładkich podłoży.\n\nOdporność obejmuje ścieranie i chemikalia. Materiał pracuje między −40 a 82 °C, a naklejać go można przy 10 °C lub więcej. Czarna taśma barwiąca B30-R10000 drukuje na obu kolorach. Do kaset B-581 przeznaczone są S3100 i S3700; starsze modele z tej listy to S3000, i3300, i4311, i5300, BBP31, BBP30, BBP33, BBP37 i BBP35.',
   sameAs: 'https://www.brady.eu/labels/b30-series-repositionable-vinyl-labels-cps-3069354',
   images: [
     '/images/products/brady/b30c-4000-581-yl.png',
@@ -640,7 +640,7 @@ export const bradyB30WinylPrzeklejany581: Product = {
   faq: [
     { question: 'Czy etykiety z winylu B-581 zostawiają ślady kleju?', answer: 'Nie. Klej akrylowy trzyma etykietę na miejscu, a po zdjęciu schodzi czysto. Etykietę można przykleić w nowym miejscu.' },
     { question: 'Gdzie stosuje się winyl B-581?', answer: 'Wewnątrz pomieszczeń, tam gdzie etykiety trzeba często przesuwać: przy wdrażaniu 5S, w inwentaryzacji i przy znakach bezpieczeństwa. Średnia trwałość na zewnątrz wynosi pięć lat.' },
-    { question: 'Którą taśmę barwiącą zamówić do winylu B-581?', answer: 'Do obu kolorów zalecana jest czarna taśma B30-R10000. Kasety pasują do [Brady S3100](/produkt/brady-s3100) i starszych drukarek B30.' },
+    { question: 'Którą taśmę barwiącą zamówić do winylu B-581?', answer: 'Do obu kolorów zalecana jest czarna taśma B30-R10000. Kasety pasują do [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i starszych drukarek B30.' },
   ],
   applications: ['Oznaczenia metodą 5S', 'Inwentaryzacja i identyfikacja ogólna', 'Znaki bezpieczeństwa i oznaczenia obiektów'],
 }
@@ -659,10 +659,10 @@ export const bradyB30PoliesterZimno549: Product = {
   ...wspolneB30,
   id: 'brady-b30c-4000-549-wt',
   slug: 'brady-b30c-4000-549-wt',
-  name: 'Taśma poliestrowa do naklejania w niskiej temperaturze Brady B30C-4000-549-WT — materiał B30 do S3100',
-  seoTitle: 'Brady B30C-4000-549-WT — poliester do niskich temperatur do S3100',
-  seoDescription: 'Poliester Brady B-549 do S3100: naklejanie od −23 °C, praca do 100 °C, 28,58–101,6 mm, biały i żółty. PN: B30C-4000-549-WT, B30C-4000-549-YL, B30C-2250-549-WT.',
-  shortDescription: 'Brady B30C-4000-549-WT i cztery pozostałe kasety z błyszczącym poliestrem B-549, który można naklejać już od −23 °C, w kolorze białym i żółtym. Do drukarki Brady S3100.',
+  name: 'Taśma poliestrowa do naklejania w niskiej temperaturze Brady B30C-4000-549-WT — materiał B30 do S3100 i S3700',
+  seoTitle: 'Brady B30C-4000-549-WT — poliester do S3100 i S3700',
+  seoDescription: 'Poliester Brady B-549 do S3100 i S3700: naklejanie od −23 °C, praca do 100 °C, 28,58–101,6 mm. PN: B30C-4000-549-WT, B30C-4000-549-YL, B30C-2250-549-WT.',
+  shortDescription: 'Brady B30C-4000-549-WT i cztery pozostałe kasety z błyszczącym poliestrem B-549, który można naklejać już od −23 °C, w kolorze białym i żółtym. Do drukarek Brady S3100 i S3700.',
   description: 'Brady B-549 to błyszczący poliester, który można naklejać w zimnym otoczeniu. Minimalna temperatura naklejania wynosi −23 °C. Klej akrylowy jest agresywny i trwale łączy się z gładkim podłożem. Z taśmy powstają etykiety do identyfikacji ogólnej, oznaczeń bezpieczeństwa oraz wskaźników temperatury. Materiał sprawdza się w trudnych warunkach pracy.\n\nRolka ma 30,48 m długości, a materiał 0,076 mm grubości. Szerokości taśmy to 101,6, 57,15 i 28,58 mm. Taśma jest biała, a w szerokościach 101,6 i 57,15 mm występuje także w kolorze żółtym. Wybór wersji sprowadza się więc do szerokości i koloru. Długość każdej etykiety wynika z projektu, a nadruk wykonuje się termotransferowo. Materiał, klej i grubość są w każdej wersji identyczne.\n\nPo naklejeniu etykieta znosi ciepło do 100 °C i mróz do −40 °C. Do nadruku na obu kolorach służy czarna taśma barwiąca B30-R10000, umieszczona w oddzielnej kasecie. Z kasetami współpracują drukarki S3100 i S3700 oraz starsze S3000, BBP33, BBP30, BBP35, BBP31, BBP37, i3300, i4311 i i5300.',
   sameAs: 'https://www.brady.eu/labels/b30-series-cold-temperature-application-brady-material-type-cps-3069357',
   images: [
@@ -706,7 +706,7 @@ export const bradyB30PoliesterZimno549: Product = {
   faq: [
     { question: 'W jakiej temperaturze można naklejać taśmę B-549?', answer: 'Już od −23 °C. Po naklejeniu etykieta pracuje w zakresie od −40 do 100 °C.' },
     { question: 'Do czego służy poliester B-549?', answer: 'Do etykiet identyfikacyjnych i oznaczeń bezpieczeństwa, które naklejają się w niskiej temperaturze, a także do wskaźników temperatury.' },
-    { question: 'Którą taśmę barwiącą zamówić do poliestru B-549?', answer: 'Zalecana jest czarna taśma B30-R10000. Kasety pasują do [Brady S3100](/produkt/brady-s3100) i starszych drukarek B30.' },
+    { question: 'Którą taśmę barwiącą zamówić do poliestru B-549?', answer: 'Zalecana jest czarna taśma B30-R10000. Kasety działają w [Brady S3100](/produkt/brady-s3100) i [Brady S3700](/produkt/brady-s3700) oraz w starszych drukarkach B30.' },
   ],
   applications: ['Etykiety naklejane w niskiej temperaturze', 'Oznaczenia bezpieczeństwa', 'Wskaźniki temperatury i identyfikacja ogólna'],
 }
@@ -726,11 +726,11 @@ export const bradyB30PoliesterKauczuk: Product = {
   ...wspolneB30,
   id: 'brady-b30c-4000-484',
   slug: 'brady-b30c-4000-484',
-  name: 'Taśma poliestrowa Brady ToughBond B30C-4000-484 — materiał B30 do S3100',
-  seoTitle: 'Brady B30C-4000-484 — taśma poliestrowa 101,6 mm do S3100',
-  seoDescription: 'Taśmy poliestrowe Brady do S3100: B-484A, B-486B i B-489A, 101,6 mm, klej kauczukowy, do 120 °C. PN: B30C-4000-484, B30C-4000-486, B30C-4000-489.',
-  shortDescription: 'Brady B30C-4000-484, B30C-4000-486 i B30C-4000-489 — kasety z poliestrem 101,6 mm na agresywnym kleju kauczukowym, do podłoży nierównych i szorstkich. Do drukarki Brady S3100.',
-  description: 'Trzy poliestry w tej rodzinie mają agresywny klej kauczukowy i są przeznaczone do podłoży nierównych, zakrzywionych i szorstkich. B-484A to biała, błyszcząca taśma ToughBond na powierzchnie zakrzywione i pochylone, na przykład tabliczki znamionowe i oznaczenia paneli wewnątrz pomieszczeń. B-489A jest biała i matowa. Dobrze przylega do mocno teksturowanych powierzchni, takich jak malowane proszkowo obudowy i urządzenia. B-486B to jasnoszary, matowy poliester metalizowany do oznaczania produktów i zasobów na bardzo szorstkich podłożach.\n\nSzerokość każdej taśmy wynosi 101,6 mm. Długość rolki zależy od materiału: 45,72 m dla B-484A, 39,62 m dla B-489A i 35,05 m dla B-486B. Grubość to odpowiednio 0,076, 0,1295 i 0,142 mm.\n\nWszystkie trzy materiały mają ten sam zakres pracy: od −40 do 120 °C. B-484A i B-489A są odporne na chemikalia i korozję, a także na wilgoć, promieniowanie UV oraz pogodę. Materiał B-484A drukuje się taśmą barwiącą B30-R6000, a pozostałe taśmą B30-R4300. Zgodne są drukarki S3100, S3700 i S3000 oraz starsze i5300, BBP37, i3300, BBP35 i i4311.',
+  name: 'Taśma poliestrowa Brady ToughBond B30C-4000-484 — materiał B30 do S3100 i S3700',
+  seoTitle: 'Brady B30C-4000-484 — taśma poliestrowa 101,6 mm do S3100 i S3700',
+  seoDescription: 'Taśmy poliestrowe Brady do S3100 i S3700: B-484A, B-486B i B-489A, 101,6 mm, klej kauczukowy, do 120 °C. PN: B30C-4000-484, B30C-4000-486, B30C-4000-489.',
+  shortDescription: 'Brady B30C-4000-484, B30C-4000-486 i B30C-4000-489 — kasety z poliestrem 101,6 mm na agresywnym kleju kauczukowym, do podłoży nierównych i szorstkich. Do drukarek Brady S3100 i S3700.',
+  description: 'Trzy poliestry w tej rodzinie mają agresywny klej kauczukowy i są przeznaczone do podłoży nierównych, zakrzywionych i szorstkich. B-484A to biała, błyszcząca taśma ToughBond na powierzchnie zakrzywione i pochylone, na przykład tabliczki znamionowe i oznaczenia paneli wewnątrz pomieszczeń. B-489A jest biała i matowa. Dobrze przylega do mocno teksturowanych powierzchni, takich jak malowane proszkowo obudowy i urządzenia. B-486B to jasnoszary, matowy poliester metalizowany do oznaczania produktów i zasobów na bardzo szorstkich podłożach.\n\nSzerokość każdej taśmy wynosi 101,6 mm. Długość rolki zależy od materiału: 45,72 m dla B-484A, 39,62 m dla B-489A i 35,05 m dla B-486B. Grubość to odpowiednio 0,076, 0,1295 i 0,142 mm.\n\nWszystkie trzy materiały mają ten sam zakres pracy: od −40 do 120 °C. B-484A i B-489A są odporne na chemikalia i korozję, a także na wilgoć, promieniowanie UV oraz pogodę. Materiał B-484A drukuje się taśmą barwiącą B30-R6000, a pozostałe taśmą B30-R4300. Pasują do nich modele S3100 i S3700 oraz wcześniejsze S3000, i5300, BBP37, i3300, BBP35 i i4311.',
   sameAs: 'https://www.brady.eu/labels/polyester-tape-for-bbp35-bbp37-s3xxx-i3300-printers-cps-3079464',
   images: [
     '/images/products/brady/b30c-4000-484.png',
@@ -755,7 +755,7 @@ export const bradyB30PoliesterKauczuk: Product = {
     { name: 'Format', value: 'taśma ciągła' },
     { name: 'Normy', value: 'UL Recognized: B-484A, B-486B, B-489A; CSA: B-486B, B-489A' },
     { name: 'Zalecana taśma barwiąca', value: 'B30-R6000: B-484A; B30-R4300: B-486B, B-489A' },
-    { name: 'Zgodne drukarki', value: 'S3100, S3000, S3700, i3300, i4311, i5300; BBP35, BBP37' },
+    { name: 'Zgodne drukarki', value: 'S3100, S3700, S3000, i3300, i4311, i5300; BBP35, BBP37' },
     { name: 'Numery artykułów Brady', value: TASMY_KAUCZUK.map(([pn, art]) => `${pn}: ${art}`).join('; ') },
   ],
   variants: TASMY_KAUCZUK.map(([pn, , mat, kolor, dlugosc, tasma]) => ({
@@ -772,7 +772,7 @@ export const bradyB30PoliesterKauczuk: Product = {
   faq: [
     { question: 'Który materiał z tej rodziny przykleja się do mocno teksturowanych powierzchni?', answer: 'B-489A, na przykład do malowanych proszkowo obudów i urządzeń wewnątrz pomieszczeń. Do bardzo szorstkich podłoży przeznaczony jest metalizowany B-486B.' },
     { question: 'Którą taśmę barwiącą zamówić do tych materiałów?', answer: 'Do B-484A zalecana jest B30-R6000. Do B-486B i B-489A zalecana jest B30-R4300. Nazwa każdego wariantu podaje właściwą taśmę.' },
-    { question: 'Do jakich drukarek pasują te kasety B30C?', answer: 'Do [Brady S3100](/produkt/brady-s3100) oraz do starszych S3000, S3700, BBP35, BBP37, i3300, i4311 i i5300. Taśma barwiąca jest w osobnej kasecie B30-R.' },
+    { question: 'Do jakich drukarek pasują te kasety B30C?', answer: 'Do [Brady S3100](/produkt/brady-s3100) i [Brady S3700](/produkt/brady-s3700) oraz do starszych S3000, BBP35, BBP37, i3300, i4311 i i5300. Taśma barwiąca jest w osobnej kasecie B30-R.' },
   ],
   applications: ['Tabliczki znamionowe i oznaczenia paneli', 'Obudowy i urządzenia o chropowatej powierzchni', 'Oznaczenia produktów i zasobów'],
 }
