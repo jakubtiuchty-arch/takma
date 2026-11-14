@@ -483,6 +483,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Termiczna (bez taśmy)', pattern: 'termiczn|direct thermal', specs: ['Rodzaj druku', 'Metoda druku'] },
         { value: 'Termotransferowa (z taśmą)', pattern: 'termotransfer', specs: ['Rodzaj druku', 'Metoda druku'] },
         { value: 'Termotransferowa (z taśmą)', slugs: ['brady-s3100', 'brady-s3700'] },
+        { value: 'Atramentowa (kolorowa)', slugs: ['brady-j7300'] },
       ],
     },
     {
@@ -740,6 +741,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Brother', manufacturer: 'brother' },
         { value: 'Epson', manufacturer: 'epson' },
         { value: 'SATO', manufacturer: 'sato' },
+        { value: 'Brady', manufacturer: 'brady' },
       ],
     },
     {
@@ -748,7 +750,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       description: 'Gdzie drukarka pracuje.\n• Biurkowa — przy komputerze lub w sieci, rolki do 127 mm; sklep, biuro, mały magazyn\n• Przemysłowa — rolki 200 mm, metalowa konstrukcja, praca ciągła; produkcja, logistyka\n• Mobilna — na baterię, przy pasku lub w aucie; kurierzy, inwentaryzacja',
       derived: [
         { value: 'Biurkowa', pattern: '(^|[^0-9])12[0-9] ?mm', specs: ['Max średnica rolki', 'Maks. średnica rolki', 'Maks. średnica rolki mediów'], notSpecs: ['Bateria', 'Bateria standardowa'] },
-        { value: 'Biurkowa', slugs: ['zebra-zd421t', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pc45d', 'brother-td-2020a'] },
+        { value: 'Biurkowa', slugs: ['zebra-zd421t', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pc45d', 'brother-td-2020a', 'brady-s3100', 'brady-s3700', 'brady-j7300'] },
         { value: 'Przemysłowa', pattern: '^(?!.*wewn)(.*[^0-9])?2[0-9][0-9](,[0-9])? ?mm', specs: ['Max średnica rolki', 'Maks. średnica rolki', 'Maks. średnica rolki mediów'] },
         { value: 'Przemysłowa', slugs: ['zebra-zt231', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45'] },
         { value: 'Mobilna (na baterię)', pattern: '\\S', specs: ['Bateria', 'Bateria standardowa'] },
@@ -762,6 +764,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Termiczna (bez taśmy)', pattern: 'termiczn|direct thermal', specs: ['Rodzaj druku', 'Metoda druku'] },
         { value: 'Termotransferowa (z taśmą)', pattern: 'termotransfer', specs: ['Rodzaj druku', 'Metoda druku'] },
         { value: 'Atramentowa (kolorowa)', manufacturer: 'epson' },
+        { value: 'Atramentowa (kolorowa)', slugs: ['brady-j7300'] },
       ],
     },
     {

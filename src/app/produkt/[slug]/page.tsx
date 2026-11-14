@@ -110,6 +110,7 @@ import { bradyLabelPrinters } from '@/data/brady-label-printers'
 import { BRADY_OZNACZNIKI_KABLI_IDS, BRADY_ETYKIETY_LAB_IDS, BRADY_DRUKARKI_LAB_IDS } from '@/data/brady-m21-kasety'
 import { BRADY_M6_KABLE_IDS, BRADY_M6_LAB_IDS, BRADY_M6_TASMY_IDS } from '@/data/brady-m6-grupy'
 import { BRADY_B30_CIAGLE_IDS, BRADY_B30_ZESTAWY_IDS, BRADY_B30_TASMY_IDS } from '@/data/brady-b30-grupy'
+import { BRADY_J7300_TUSZE_IDS, BRADY_J7300_LAB_IDS, BRADY_J7300_ZAWIESZKI_IDS } from '@/data/brady-j7300-grupy'
 import { BRADY_M45_KABLE_IDS, BRADY_M45_LAB_IDS } from '@/data/brady-m45-kasety'
 import StarterKits from '@/components/product/StarterKits'
 import MobileCta from './MobileCta'
@@ -509,6 +510,19 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
         { klucz: 'etykiety', tytul: 'Etykiety, znaki i zawieszki', pozycje: etykietyB30 },
         { klucz: 'zestawy', tytul: 'Zestawy materiałów', pozycje: zestawyB30 },
         { klucz: 'tasmy', tytul: 'Taśmy barwiące', pozycje: tasmy },
+      ].filter((g) => g.pozycje.length > 0)
+    }
+    // Kolorowa drukarka atramentowa J7300: tusze, etykiety ogólne, laboratoryjne, zawieszki (bez taśm barwiących).
+    if (product.id === 'brady-j7300') {
+      const tuszeJ = compatibleConsumables.filter((p) => BRADY_J7300_TUSZE_IDS.has(p!.id))
+      const labJ = compatibleConsumables.filter((p) => BRADY_J7300_LAB_IDS.has(p!.id))
+      const zawieszkiJ = compatibleConsumables.filter((p) => BRADY_J7300_ZAWIESZKI_IDS.has(p!.id))
+      const ogolneJ = compatibleConsumables.filter((p) => !BRADY_J7300_TUSZE_IDS.has(p!.id) && !BRADY_J7300_LAB_IDS.has(p!.id) && !BRADY_J7300_ZAWIESZKI_IDS.has(p!.id))
+      return [
+        { klucz: 'tusze', tytul: 'Tusze i rolka wyrównująca', pozycje: tuszeJ },
+        { klucz: 'etykiety', tytul: 'Etykiety ogólne i przemysłowe', pozycje: ogolneJ },
+        { klucz: 'lab', tytul: 'Etykiety laboratoryjne', pozycje: labJ },
+        { klucz: 'zawieszki', tytul: 'Zawieszki i opaski z rzepem', pozycje: zawieszkiJ },
       ].filter((g) => g.pozycje.length > 0)
     }
     const grupy = BRADY_DRUKARKI_LAB_IDS.has(product.id)

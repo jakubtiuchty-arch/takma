@@ -74,6 +74,7 @@ import { bradyM45KasetyKable } from './brady-m45-kasety-kable'
 import { bradyM45KasetyOgolne } from './brady-m45-kasety-ogolne'
 import { bradyM6Materialy } from './brady-m6-grupy'
 import { bradyB30Materialy } from './brady-b30-grupy'
+import { bradyJ7300Materialy } from './brady-j7300-grupy'
 import { bradyAkcesoria } from './brady-akcesoria'
 import { getacTabletProducts, getacTabletAccessories } from './getac-tablet-products'
 import { bluebirdTabletProducts, bluebirdTabletAccessories } from './bluebird-tablet-products'
@@ -517,8 +518,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Kompaktowe drukarki etykiet biurkowe do 4 cali szerokości. Idealne do biura, punktu sprzedaży i magazynu. Modele Zebra, Honeywell, TSC. Ceny, porównanie, doradztwo.',
     longDescription: 'Drukarki biurkowe (desktop) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — to kompaktowe urządzenia zaprojektowane do pracy na biurku lub stanowisku roboczym. Zajmują minimum miejsca, a jednocześnie oferują niezawodny druk etykiet z kodami kreskowymi do 4 cali (108 mm) szerokości. Sprawdzają się w biurach, punktach sprzedaży, aptekach, małych magazynach i wszędzie tam, gdzie liczy się niewielki rozmiar i łatwość obsługi. W ofercie modele czołowych producentów: Zebra, Honeywell, TSC i innych.',
     icon: 'printer',
-    productIds: [...bixolonLabelProducts.filter(p => p.subcategoryIds?.includes('biurkowe-drukarki-etykiet')).map(p => p.id), ...brotherQlProducts.map(p => p.id), 'bixolon-xd5-40tr', 'sato-ct4-lx-rfid', 'tsc-th240r', 'tsc-th340r', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr', 'zebra-zd220d', 'zebra-zd230d', 'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411d', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd421d', 'zebra-zd621t', 'zebra-zd621r', 'zebra-zd611r', 'zebra-zd621d', 'honeywell-pc45d', 'honeywell-pc45t', 'honeywell-pc42e-t', 'brother-td-4d', 'brother-td-2020a', 'brother-td-4t', 'citizen-cl-e300', 'citizen-cl-e303', 'citizen-cl-e321', 'citizen-cl-s521ii', 'citizen-cl-s531ii', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-s400dt', 'brady-s3100', 'brady-s3700'],
-    productCount: 34,
+    productIds: [...bixolonLabelProducts.filter(p => p.subcategoryIds?.includes('biurkowe-drukarki-etykiet')).map(p => p.id), ...brotherQlProducts.map(p => p.id), 'bixolon-xd5-40tr', 'sato-ct4-lx-rfid', 'tsc-th240r', 'tsc-th340r', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr', 'zebra-zd220d', 'zebra-zd230d', 'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411d', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd421d', 'zebra-zd621t', 'zebra-zd621r', 'zebra-zd611r', 'zebra-zd621d', 'honeywell-pc45d', 'honeywell-pc45t', 'honeywell-pc42e-t', 'brother-td-4d', 'brother-td-2020a', 'brother-td-4t', 'citizen-cl-e300', 'citizen-cl-e303', 'citizen-cl-e321', 'citizen-cl-s521ii', 'citizen-cl-s531ii', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-s400dt', 'brady-s3100', 'brady-s3700', 'brady-j7300'],
+    productCount: 35,
   },
   {
     id: 'przemyslowe-drukarki-etykiet',
@@ -95748,6 +95749,7 @@ const rawProductList: Product[] = [
   ...bradyM45KasetyLab,
   ...bradyM6Materialy,
   ...bradyB30Materialy,
+  ...bradyJ7300Materialy,
   ...bradyAkcesoria,
   ...bradyRt710Accessories,
   ...getacTabletProducts,
