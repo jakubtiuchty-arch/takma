@@ -686,14 +686,14 @@ export const bradyLabelPrinters: Product[] = [
     quoteOnly: true,
     availability: 'unavailable',
     images: [
-      '/images/products/brady/m610-1.png',
+      '/images/products/brady/m610-qwerty-eu.png',
       '/images/products/brady-m610-panel-krosowy.webp',
       '/images/products/brady-m610-szafa-sterownicza.webp',
       '/images/products/brady-m610-instalacja.webp',
       '/images/products/brady-m610-szafa-rack.webp',
     ],
     imageDescriptions: [
-      'Brady M610 — żółto-szara drukarka z klawiaturą QWERTY i wyświetlaczem, widok z boku',
+      'Brady M610 — widok z przodu, żółto-czarna obudowa z gumowym otokiem, klawiatura QWERTY i kolorowy wyświetlacz',
       'Technik z drukarką Brady M610 przy szafie teleinformatycznej z panelami krosowniczymi',
       'Technik drukuje oznaczenie na Brady M610 przy otwartej szafie z armaturą',
       'Oznaczanie zaworu w instalacji, drukarka Brady M610 zawieszona obok na ścianie',
