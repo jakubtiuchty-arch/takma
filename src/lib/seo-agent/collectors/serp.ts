@@ -409,6 +409,41 @@ const TRACKED_KEYWORDS: { keyword: string; group: string }[] = [
   { keyword: 'drukarka kart plastikowych cena', group: 'generyczne' },
 
   // =====================================================
+  // DRUKARKI BRADY (19) — modele M, marka i poprzednicy BMP (14.11.2026)
+  // Wolumeny PL z Planera Google Ads: m211 50, m210 40, m610 20, pozostałe modele M ~10,
+  // etykiety brady 50, drukarka brady 40, brady workstation 40, bmp71 30, bmp61 20, bmp21 plus 20
+  // =====================================================
+  { keyword: 'brady m211', group: 'drukarki-brady' },
+  { keyword: 'brady m210', group: 'drukarki-brady' },
+  { keyword: 'brady m210 lab', group: 'drukarki-brady' },
+  { keyword: 'brady m410', group: 'drukarki-brady' },
+  { keyword: 'brady m510', group: 'drukarki-brady' },
+  { keyword: 'brady m511', group: 'drukarki-brady' },
+  { keyword: 'brady m610', group: 'drukarki-brady' },
+  { keyword: 'brady m611', group: 'drukarki-brady' },
+  { keyword: 'brady m710', group: 'drukarki-brady' },
+  { keyword: 'drukarka brady', group: 'drukarki-brady' },
+  { keyword: 'drukarki brady', group: 'drukarki-brady' },
+  { keyword: 'drukarka etykiet brady', group: 'drukarki-brady' },
+  { keyword: 'etykiety brady', group: 'drukarki-brady' },
+  { keyword: 'brady workstation', group: 'drukarki-brady' },
+  { keyword: 'brady bmp21 plus', group: 'drukarki-brady' },
+  { keyword: 'brady bmp41', group: 'drukarki-brady' },
+  { keyword: 'brady bmp51', group: 'drukarki-brady' },
+  { keyword: 'brady bmp61', group: 'drukarki-brady' },
+  { keyword: 'brady bmp71', group: 'drukarki-brady' },
+
+  // =====================================================
+  // DRUKARKI DO OZNACZANIA KABLI (5) — podkategoria /drukarki-do-oznaczania-kabli
+  // Wolumeny PL: oznaczników kablowych 140, do kabli 90, koszulek termokurczliwych 70, oznaczania kabli 50, rurek 50
+  // =====================================================
+  { keyword: 'drukarka do oznaczników kablowych', group: 'drukarki-kable' },
+  { keyword: 'drukarka do kabli', group: 'drukarki-kable' },
+  { keyword: 'drukarka do koszulek termokurczliwych', group: 'drukarki-kable' },
+  { keyword: 'drukarka do oznaczania kabli', group: 'drukarki-kable' },
+  { keyword: 'drukarka do rurek termokurczliwych', group: 'drukarki-kable' },
+
+  // =====================================================
   // LONG-TAIL / PORADNIKI (15)
   // =====================================================
   { keyword: 'drukarka termiczna vs termotransferowa', group: 'long-tail' },
@@ -504,8 +539,8 @@ function findPosition(results: SerperOrganicResult[], domain: string): number | 
 const GROUP_ROTATION: string[][] = [
   // Batch 0 — Sun: brand + generyczne + long-tail (34 fraz)
   ['brand', 'generyczne', 'long-tail'],
-  // Batch 1 — Mon: drukarki biurkowe + kart (42 fraz)
-  ['drukarki-biurkowe', 'drukarki-kart'],
+  // Batch 1 — Mon: drukarki biurkowe + kart + Brady + do kabli (66 fraz)
+  ['drukarki-biurkowe', 'drukarki-kart', 'drukarki-brady', 'drukarki-kable'],
   // Batch 2 — Tue: drukarki przemysłowe + mobilne (54 fraz)
   ['drukarki-przemyslowe', 'drukarki-mobilne'],
   // Batch 3 — Wed: skanery Zebra (60 fraz)
