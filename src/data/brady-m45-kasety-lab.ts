@@ -6,13 +6,14 @@ import { wspolne, DRUKARKI_M5, DRUKARKI_M4_M5 } from './brady-m45-kasety'
 
 export const bradyM45Samolam461: Product = {
   ...wspolne,
+  relatedProducts: ['brady-m510', 'brady-m410'],
   tags: ['healthcare'],
   id: 'brady-m5c-1000-461',
   slug: 'brady-m5c-1000-461',
-  name: 'Poliestrowe etykiety kriogeniczne Brady M5C-1000-461 — kasety M4 i M5 do M510',
+  name: 'Poliestrowe etykiety kriogeniczne Brady M5C-1000-461 — kasety M4 i M5 do M410 i M510',
   seoTitle: 'Brady M5C-1000-461 — etykiety kriogeniczne B-461 do M510',
   seoDescription: 'Poliester Brady B-461 do M510: etykiety samolaminujące i taśma 9,53–31,75 mm, od −196 do 110 °C, ciekły azot, autoklaw. PN: M5C-1000-461, M5-75-461, M4-72-461.',
-  shortDescription: 'Brady M5C-1000-461 i pozostałe kasety B-461 zawierają matowy poliester do przechowywania kriogenicznego i do autoklawu. W rodzinie są taśmy ciągłe i wykrawane etykiety samolaminujące do drukarki Brady M510.',
+  shortDescription: 'Brady M5C-1000-461 i pozostałe kasety B-461 zawierają matowy poliester do przechowywania kriogenicznego i do autoklawu. W rodzinie są taśmy ciągłe i wykrawane etykiety samolaminujące do drukarek Brady M410 i M510.',
   description: 'Kasety Brady B-461 służą do oznaczania próbek laboratoryjnych przechowywanych w bardzo niskiej temperaturze. Materiał to biały, matowy poliester z trwałym klejem akrylowym, a nadruk jest czarny. Etykiety przylegają do powierzchni zakrzywionych: fiolek, probówek, probówek wirówkowych, słomek i szkiełek. Etykiety wykrawane są samolaminujące. Etykietę owija się wokół pojemnika, a jej przezroczysta część zakrywa nadruk i chroni go.\n\nRodzina obejmuje 11 kaset z etykietami wykrawanymi i 4 kasety z taśmą ciągłą. Etykiety mają wymiary od 28,58 × 9,53 mm do 95,25 × 38,1 mm. W kasecie jest od 80 do 360 etykiet. Taśma ciągła ma szerokość 9,53, 12,7, 25,4 albo 31,75 mm i długość 7,62 m. Klej taśmy ciągłej jest agresywny.\n\nZakres temperatury pracy poliestru B-461 to od −196 do 110 °C. Etykiety wytrzymują zanurzenie w ciekłym azocie, zamrażarkę, łaźnię wodną i autoklaw. Materiał jest odporny na etanol, izopropanol, toluen, ksylen i DMSO. Wytrzymuje też 50% kwas octowy, 10% kwas solny i 10% roztwór wybielacza chlorowego. W drukarce M410 można użyć tylko kaset M4 i M4C. Wszystkie kasety tej rodziny pasują do M510 i M511.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/self-laminating-cryogenic-polyester-labels-for-m410-m510-m511-printers-cps-3069479',
   images: [
@@ -162,13 +163,14 @@ export const bradyM45Kolor494: Product = {
 
 export const bradyM45FreezerBondz492: Product = {
   ...wspolne,
+  relatedProducts: ['brady-m510', 'brady-m410'],
   tags: ['healthcare'],
   id: 'brady-m5-120-492',
   slug: 'brady-m5-120-492',
-  name: 'Ultracienkie etykiety kriogeniczne Brady FreezerBondz M5-120-492 — kasety M4 i M5 do M510',
+  name: 'Ultracienkie etykiety kriogeniczne Brady FreezerBondz M5-120-492 — kasety M4 i M5 do M410 i M510',
   seoTitle: 'Brady FreezerBondz M5-120-492 — ultracienkie etykiety do M510',
   seoDescription: 'Ultracienki poliester Brady FreezerBondz B-492 do M510: etykiety na zamrożone probówki, od −196 do 110 °C. PN: M5-120-492, M5-118-492, M4-131-492, M4C-500-492.',
-  shortDescription: 'Brady FreezerBondz M5-120-492 i pozostałe kasety B-492 zawierają ultracienkie, błyszczące etykiety poliestrowe na zamrożone, zakrzywione pojemniki. Do drukarki Brady M510.',
+  shortDescription: 'Brady FreezerBondz M5-120-492 i pozostałe kasety B-492 zawierają ultracienkie, błyszczące etykiety poliestrowe na zamrożone, zakrzywione pojemniki. Do drukarek Brady M410 i M510.',
   description: 'W kasetach Brady FreezerBondz B-492 jest ultracienki, błyszczący poliester z trwałym klejem akrylowym. Etykiety są przeznaczone na zamrożone, zakrzywione powierzchnie: probówki, fiolki, pipety słomkowe i kanki kriogeniczne. Cienki materiał ściśle przylega do zakrzywionej ścianki. Klej mocno wiąże się z gładkim szkłem i polipropylenem, także w niskiej temperaturze. Na białym tle drukuje się czarny tekst i kody kreskowe.\n\nRodzina ma 14 kaset z etykietami wykrawanymi i jedną kasetę z taśmą ciągłą. Etykiety prostokątne mają szerokość od 12,7 do 44,45 mm i wysokość od 6,35 do 48,26 mm. W kasecie jest od 100 do 360 takich etykiet. Kasety M4-82 i M4-83 zawierają same okrągłe etykiety o średnicy 9,53 i 12,7 mm. Cztery kasety M5 mają dodatkowe okrągłe etykiety na wieczko. Kaseta M4C-500-492 ma taśmę 12,7 mm × 7,62 m.\n\nMateriał B-492 jest przeznaczony do pracy w zakresie od −196 do 110 °C. Wytrzymuje zamrażarkę, łaźnię wodną (100 °C) i przechowywanie w ciekłym azocie. Materiał ma odporność na chemikalia i ścieranie. Nadruk jest odporny na rozmazanie. Do M410 pasuje pięć kaset M4 i M4C. Dziesięć kaset M5 wymaga drukarki M510 lub M511.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/freezerbondz-ultra-thin-cryogenic-polyester-labels-for-m410-m510-m511-printers-cps-4661498',
   images: [
@@ -234,13 +236,14 @@ export const bradyM45FreezerBondz492: Product = {
 
 export const bradyM45Polipropylen7425: Product = {
   ...wspolne,
+  relatedProducts: ['brady-m510', 'brady-m410'],
   tags: ['healthcare'],
   id: 'brady-m5-31-7425',
   slug: 'brady-m5-31-7425',
-  name: 'Etykiety polipropylenowe do niskich temperatur Brady M5-31-7425 — kasety M4 i M5 do M510',
+  name: 'Etykiety polipropylenowe do niskich temperatur Brady M5-31-7425 — kasety M4 i M5 do M410 i M510',
   seoTitle: 'Brady M5-31-7425 — etykiety polipropylenowe B-7425 do M510',
   seoDescription: 'Matowy polipropylen Brady B-7425 do M510: etykiety na próbki, od −80 do 70 °C, zamrażarka i autoklaw. PN: M5-31-7425, M5-118-7425, M5C-1500-7425, M4C-1000-7425.',
-  shortDescription: 'Brady M5-31-7425 i pozostałe kasety B-7425 zawierają biały, matowy polipropylen z trwałym klejem akrylowym do oznaczania pojemników na próbki. Do drukarki Brady M510.',
+  shortDescription: 'Brady M5-31-7425 i pozostałe kasety B-7425 zawierają biały, matowy polipropylen z trwałym klejem akrylowym do oznaczania pojemników na próbki. Do drukarek Brady M410 i M510.',
   description: 'Kasety Brady B-7425 zawierają biały polipropylen o matowej powierzchni. Materiał służy do oznaczania suchych pojemników na próbki i fiolek w temperaturze pokojowej. Trwały klej akrylowy przylega do gładkich powierzchni także w trudnych warunkach. Czarny nadruk jest czytelny na matowym tle. Etykiety są przeznaczone do codziennej pracy w laboratorium.\n\nW rodzinie są dwie kasety M5 z etykietami wykrawanymi, po 250 sztuk. Etykiety M5-31-7425 mają wymiary 38,1 × 25,4 mm. Etykiety M5-118-7425 mają wymiary 25,4 × 9,53 mm, a kaseta zawiera też okrągłe etykiety na wieczko o średnicy 9,53 mm. Dwie kolejne kasety zawierają 7,62 m taśmy ciągłej: M5C-1500-7425 o szerokości 38,1 mm i M4C-1000-7425 o szerokości 25,4 mm.\n\nPolipropylen B-7425 pracuje w temperaturze od −80 do 70 °C. Etykiety wytrzymują przechowywanie w zamrażarce i pracę w autoklawie. Materiał jest odporny na rozpuszczalniki, umiarkowany kontakt z chemikaliami i rozmazanie nadruku. Kasety M5 i M5C są przeznaczone do M510 i M511. Kasetę M4C-1000-7425 można stosować także w M410.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/chemical-resistant-cryogenic-polypropylene-labels-for-m410-m510-m511-printers-cps-3069497',
   images: [
@@ -345,13 +348,14 @@ export const bradyM45StainerBondz481: Product = {
 
 export const bradyM45Poliester488: Product = {
   ...wspolne,
+  relatedProducts: ['brady-m510', 'brady-m410'],
   tags: ['healthcare'],
   id: 'brady-m5-97-488',
   slug: 'brady-m5-97-488',
-  name: 'Etykiety poliestrowe odporne na rozpuszczalniki Brady M5-97-488 — kasety M4 i M5 do M510',
+  name: 'Etykiety poliestrowe odporne na rozpuszczalniki Brady M5-97-488 — kasety M4 i M5 do M410 i M510',
   seoTitle: 'Brady M5-97-488 — etykiety odporne na rozpuszczalniki do M510',
   seoDescription: 'Poliester Brady B-488 do M510: etykiety odporne na ksylen, DMSO i etanol, od −40 do 160 °C, na stal nierdzewną i polipropylen. PN: M5-97-488, M4-81-488.',
-  shortDescription: 'Brady M5-97-488 i M4-81-488 to kasety z wykrawanymi etykietami z matowego poliestru B-488, odpornego na rozpuszczalniki i zmienną temperaturę. Do drukarki Brady M510.',
+  shortDescription: 'Brady M5-97-488 i M4-81-488 to kasety z wykrawanymi etykietami z matowego poliestru B-488, odpornego na rozpuszczalniki i zmienną temperaturę. Do drukarek Brady M410 i M510.',
   description: 'Kasety Brady B-488 zawierają wykrawane etykiety z białego, matowego poliestru. Materiał jest przeznaczony do zastosowań laboratoryjnych, w których etykieta ma kontakt z rozpuszczalnikami. Trwały klej akrylowy mocno przylega do płaskich, gładkich powierzchni, np. stali nierdzewnej i polipropylenu. Nadruk jest czarny na białym tle. Materiał jest przeznaczony do pracy przy zmiennej temperaturze.\n\nW rodzinie są dwa rozmiary. Kaseta M5-97-488 ma 280 kwadratowych etykiet 22,86 × 22,86 mm. Kaseta M4-81-488 ma 160 wąskich etykiet 48,26 × 6,35 mm. Etykiety nakleja się w temperaturze od 10 °C. Poliester ma grubość 0,0914 mm. W kasecie jest taśma barwiąca R4300.\n\nPoliester B-488 pracuje w temperaturze od −40 do 160 °C. Etykiety wytrzymują pracę w zamrażarce i w autoklawie. Krótki kontakt z ksylenem, DMSO i etanolem nie uszkadza materiału. Wersja M4-81-488 ma uznanie UL i akceptację CSA. Jest też bezhalogenowa według DIN VDE 0472, część 815. Kasetę M5 obsługują drukarki M510 i M511, a kasetę M4 również M410.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/solvent-chemical-resistant-polyester-labels-for-m410-m510-m511-printers-cps-3069482',
   images: [
@@ -398,13 +402,14 @@ export const bradyM45Poliester488: Product = {
 
 export const bradyM45Rozpuszczalne403: Product = {
   ...wspolne,
+  relatedProducts: ['brady-m510', 'brady-m410'],
   tags: ['healthcare'],
   id: 'brady-m5c-1500-403',
   slug: 'brady-m5c-1500-403',
-  name: 'Etykiety papierowe rozpuszczalne w wodzie Brady M5C-1500-403 — kasety M4 i M5 do M510',
+  name: 'Etykiety papierowe rozpuszczalne w wodzie Brady M5C-1500-403 — kasety M4 i M5 do M410 i M510',
   seoTitle: 'Brady M5C-1500-403 — etykiety rozpuszczalne w wodzie do M510',
   seoDescription: 'Papier Brady B-403 do M510: etykiety rozpuszczalne w ciepłej wodzie w 30 sekund, bez śladów kleju, taśma 19,05 i 38,1 mm. PN: M5C-1500-403, M4C-750-403.',
-  shortDescription: 'Brady M5C-1500-403 i M4C-750-403 to kasety z taśmą z papieru B-403, który rozpuszcza się w ciepłej wodzie razem z klejem. Do drukarki Brady M510.',
+  shortDescription: 'Brady M5C-1500-403 i M4C-750-403 to kasety z taśmą z papieru B-403, który rozpuszcza się w ciepłej wodzie razem z klejem. Do drukarek Brady M410 i M510.',
   description: 'Kasety Brady B-403 zawierają taśmę z papieru rozpuszczalnego w wodzie. Etykieta mocno trzyma się podłoża, ale w ciepłej wodzie rozpuszcza się w ciągu 30 sekund. Klej akrylowy też ulega rozpuszczeniu, więc na pojemniku nie zostają ślady. Materiał służy do oznaczeń tymczasowych, które usuwa się podczas mycia. Etykiety B-403 stosuje się w laboratoriach, w gastronomii i do oznaczania produktów w toku produkcji.\n\nRodzina ma dwie kasety z taśmą ciągłą o długości 7,62 m. Kaseta M5C-1500-403 ma taśmę o szerokości 38,1 mm, a kaseta M4C-750-403 taśmę o szerokości 19,05 mm. Długość pojedynczej etykiety ustawia się w drukarce. Papier ma białą, matową powierzchnię, a nadruk jest czarny. Etykiety są przeznaczone do gładkich powierzchni. Grubość papieru wynosi 0,0762 mm.\n\nPapier B-403 pracuje w temperaturze od −70 do 100 °C. Kaseta M5C z taśmą 38,1 mm pasuje do drukarek M510 i M511. Taśmę 19,05 mm w kasecie M4C można drukować również na M410. Taśma barwiąca R4300 znajduje się w kasecie.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/water-soluble-paper-labels-ribbon-for-m410-m510-m511-printers-cps-4661488',
   images: [

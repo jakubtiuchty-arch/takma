@@ -33,12 +33,13 @@ const WARIANTY_499: [string, string, string, string][] = [
 
 export const bradyM45Nylon499: Product = {
   ...wspolne,
+  relatedProducts: ['brady-m510', 'brady-m410'],
   id: 'brady-m5c-1500-499',
   slug: 'brady-m5c-1500-499',
-  name: 'Etykiety z tkaniny nylonowej Brady M5C-1500-499 — kasety M4 i M5 do M510',
+  name: 'Etykiety z tkaniny nylonowej Brady M5C-1500-499 — kasety M4 i M5 do M410 i M510',
   seoTitle: 'Brady M5C-1500-499 — etykiety z tkaniny nylonowej do M510',
   seoDescription: 'Nylon Brady B-499 do M510: giętkie etykiety na przewody i panele, od −40 do 90 °C, autoklaw i ciekły azot. PN: M5C-1500-499, M4-131-499, M4-82-499, M5-120-499.',
-  shortDescription: 'Brady M5C-1500-499 i pozostałe kasety M4 i M5 z matową tkaniną nylonową B-499 z agresywnym klejem akrylowym. Taśma ciągła, etykiety wykrawane, okrągłe i zestawy laboratoryjne. Do drukarki Brady M510.',
+  shortDescription: 'Brady M5C-1500-499 i pozostałe kasety M4 i M5 z matową tkaniną nylonową B-499 z agresywnym klejem akrylowym. Taśma ciągła, etykiety wykrawane, okrągłe i zestawy laboratoryjne. Do drukarek Brady M410 i M510.',
   description: 'W kasetach Brady B-499 jest matowa tkanina nylonowa z trwałym, agresywnym klejem akrylowym. Materiał jest giętki i dobrze układa się na mocno zakrzywionych powierzchniach, np. na przewodach i kablach. Etykiety oznaczają też panele urządzeń, płytki czołowe, listwy zaciskowe i regały. Klej trzyma się powierzchni gładkich, chropowatych i o niskiej energii powierzchniowej.\n\nRodzina ma kilka form. Kasety ciągłe M4C i M5C mają 4,88 m taśmy o szerokości od 9,53 do 38,1 mm. Siedem kaset ma prostokątne etykiety wykrawane, od 20,96 × 9,53 mm do 25,4 × 76,2 mm, od 100 do 220 sztuk. Etykiety okrągłe Ø 9,53 i 12,7 mm są białe, czerwone, pomarańczowe albo żółte. Trzy kasety M5 mają zestawy: etykietę boczną i okrągłą etykietę na wieczko.\n\nNylon B-499 pracuje w temperaturze od −40 do 90 °C. Nadaje się do autoklawu, zamrażarki i ciekłego azotu. Jest odporny na ścieranie, chemikalia, oleje, wilgoć, promieniowanie UV i warunki atmosferyczne. Materiał jest bezhalogenowy. Białe etykiety, poza M4-22-499, mają uznanie UL i certyfikat CSA. Kasety M5 i M5C działają w M510 i M511, a kasety M4 i M4C także w M410.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/aggressive-adhesive-multi-purpose-nylon-labels-ribbon-for-m410-m510-m511-printers-cps-4850994',
   images: [
@@ -145,12 +146,13 @@ export const bradyM45Plomby351: Product = {
 
 export const bradyM45Winyl581: Product = {
   ...wspolne,
+  relatedProducts: ['brady-m510', 'brady-m410'],
   id: 'brady-m5c-1500-581-wt',
   slug: 'brady-m5c-1500-581-wt',
-  name: 'Taśma winylowa do przeklejania Brady M5C-1500-581-WT — kasety M4 i M5 do M510',
+  name: 'Taśma winylowa do przeklejania Brady M5C-1500-581-WT — kasety M4 i M5 do M410 i M510',
   seoTitle: 'Brady M5C-1500-581-WT — winyl do przeklejania do M510',
   seoDescription: 'Winyl Brady B-581 do M510: taśma z klejem do przeklejania, schodzi bez resztek kleju, do 5S i magazynu, od −40 do 82 °C. PN: M5C-1500-581-WT, M4C-1000-581-WT.',
-  shortDescription: 'Brady M5C-1500-581-WT i M4C-1000-581-WT — kasety z białą taśmą z błyszczącego winylu B-581 z klejem akrylowym do przeklejania. Etykietę można zdjąć bez resztek kleju i nakleić w innym miejscu. Do drukarki Brady M510.',
+  shortDescription: 'Brady M5C-1500-581-WT i M4C-1000-581-WT — kasety z białą taśmą z błyszczącego winylu B-581 z klejem akrylowym do przeklejania. Etykietę można zdjąć bez resztek kleju i nakleić w innym miejscu. Do drukarek Brady M410 i M510.',
   description: 'Kasety Brady B-581 zawierają białą taśmę z błyszczącego winylu z klejem akrylowym do przeklejania. Materiał jest trwały i giętki, a jego grubość wynosi 0,125 mm. Klej mocno trzyma etykietę na miejscu. Po zdjęciu etykieta nie zostawia resztek kleju. Etykietę można więc przenieść, gdy zmienia się układ stanowiska albo miejsce składowania towaru.\n\nMateriał służy do oznaczeń 5S i lean, oznaczeń magazynowych, oznaczeń posadzek, rur i zaworów oraz urządzeń elektrycznych. Etykiety pracują wewnątrz i na zewnątrz budynków. Na zewnątrz winyl wytrzymuje średnio 5 lat. Nadruk jest czarny.\n\nTaśma ma długość 7,62 m i szerokość 38,1 mm (kaseta M5C) albo 25,4 mm (kaseta M4C). Długość etykiety ustawia się w drukarce. Podłoże musi być gładkie, a temperatura przy naklejaniu nie może być niższa niż 10 °C. Zakres pracy wynosi od −40 do 82 °C, a etykieta znosi też zamrażarkę. Winyl jest odporny na ścieranie i chemikalia. Taśma barwiąca R6000HF jest w kasecie. Kaseta M5C pasuje do M510 i M511, a kaseta M4C także do M410.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/repositionable-multi-purpose-vinyl-labels-for-m410-m510-m511-printers-cps-4873987',
   images: [
@@ -196,12 +198,13 @@ export const bradyM45Winyl581: Product = {
 
 export const bradyM45Metalizowane428: Product = {
   ...wspolne,
+  relatedProducts: ['brady-m510', 'brady-m410'],
   id: 'brady-m5-30-428',
   slug: 'brady-m5-30-428',
-  name: 'Etykiety z metalizowanego poliestru Brady MetaLabel M5-30-428 — kasety M4 i M5 do M510',
+  name: 'Etykiety z metalizowanego poliestru Brady MetaLabel M5-30-428 — kasety M4 i M5 do M410 i M510',
   seoTitle: 'Brady MetaLabel M5-30-428 — etykiety metalizowane do M510',
   seoDescription: 'Brady MetaLabel B-428 do M510: matowe etykiety z metalizowanego poliestru na tabliczki znamionowe, od −40 do 120 °C. PN: M5-30-428, M5-29-428, M4-47-428.',
-  shortDescription: 'Brady MetaLabel M5-30-428 i pozostałe kasety M4 i M5 z wykrawanymi etykietami z metalizowanego poliestru B-428. Matowa, srebrzystoszara powierzchnia wygląda jak metalowa tabliczka. Do drukarki Brady M510.',
+  shortDescription: 'Brady MetaLabel M5-30-428 i pozostałe kasety M4 i M5 z wykrawanymi etykietami z metalizowanego poliestru B-428. Matowa, srebrzystoszara powierzchnia wygląda jak metalowa tabliczka. Do drukarek Brady M410 i M510.',
   description: 'Kasety Brady MetaLabel zawierają wykrawane etykiety z metalizowanego poliestru B-428. Matowa, srebrzystoszara powierzchnia wygląda jak metalowa tabliczka. Czarny nadruk jest na niej dobrze czytelny, także w kodach kreskowych i symbolach. Etykiety służą jako tabliczki znamionowe, etykiety z numerem seryjnym i oznaczenia środków trwałych.\n\nW szafach sterowniczych oznacza się nimi płyty montażowe, szyny DIN, przekaźniki, sterowniki PLC, łączniki i elektrozawory. Trwały klej akrylowy dobrze trzyma się gładkiego metalu i powierzchni malowanych proszkowo. W rodzinie jest pięć rozmiarów. Najwięcej etykiet, 480, ma kaseta z rozmiarem 25,4 × 12,7 mm. Najwyższe etykiety, 25,4 × 50,8 mm, są po 140 sztuk. Kasety M5 mają etykiety o szerokości 38,1 mm.\n\nPoliester B-428 pracuje w temperaturze od −40 do 120 °C. Wytrzymuje autoklaw i zamrażarkę. Jest odporny na ścieranie oraz rozpuszczalniki, np. paliwo i olej. Materiał ma uznanie UL, akceptację CSA i aprobatę AGA. Jest bezhalogenowy wg DIN VDE 0472 część 815. Kasety M5 pasują do M510 i M511, a kasety M4 również do M410.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/metallized-polyester-asset-panel-component-labels-for-m410-m510-m511-printers-cps-3069476',
   images: [
@@ -316,12 +319,13 @@ const WARIANTY_584: [string, string, 'Biały' | 'Żółty'][] = [
 
 export const bradyM45Odblaskowe584: Product = {
   ...wspolne,
+  relatedProducts: ['brady-m510', 'brady-m410'],
   id: 'brady-m5c-1500-584',
   slug: 'brady-m5c-1500-584',
-  name: 'Etykiety odblaskowe Brady M5C-1500-584 — kasety M4 i M5 do M510',
+  name: 'Etykiety odblaskowe Brady M5C-1500-584 — kasety M4 i M5 do M410 i M510',
   seoTitle: 'Brady M5C-1500-584 — odblaskowe etykiety do M510',
   seoDescription: 'Taśma odblaskowa Brady B-584 do M510: biała lub żółta, 12,7–38,1 mm × 6,1 m, na zewnątrz średnio 4–6 lat. PN: M5C-1500-584, M5C-1500-584-YL, M4C-750-584-YL.',
-  shortDescription: 'Brady M5C-1500-584 i pozostałe kasety M4C i M5C z białą albo żółtą taśmą odblaskową B-584. Oznaczenie odbija światło i jest dobrze widoczne. Do drukarki Brady M510.',
+  shortDescription: 'Brady M5C-1500-584 i pozostałe kasety M4C i M5C z białą albo żółtą taśmą odblaskową B-584. Oznaczenie odbija światło i jest dobrze widoczne. Do drukarek Brady M410 i M510.',
   description: 'Kasety Brady B-584 zawierają taśmę odblaskową. Materiał odbija światło w stronę źródła, np. latarki albo reflektora. Dzięki temu oznaczenie jest dobrze widoczne. Taśma służy do oznaczeń bezpieczeństwa: na sprzęcie gaśniczym, szafkach pierwszej pomocy, wyposażeniu pracowników i w obiektach.\n\nTaśma ciągła ma długość 6,1 m. Szerokość wynosi 12,7, 19,05, 25,4 albo 38,1 mm. Każda szerokość jest w wersji białej i żółtej, zawsze z czarnym nadrukiem. Długość pojedynczego oznaczenia wybiera się w drukarce. Taśma ma grubość 0,14 mm i błyszczącą powierzchnię. Trwały klej akrylowy jest przeznaczony do powierzchni gładkich. Klej znosi długotrwałe działanie trudnych warunków.\n\nMinimalna temperatura naklejania to 10 °C. Naklejona taśma działa w zakresie od −40 do 70 °C. Materiał jest odporny na ścieranie, chemikalia, rozpuszczalniki i warunki atmosferyczne. Na zewnątrz wytrzymuje średnio od 4 do 6 lat. Taśma barwiąca R6000HF jest w kasecie. Kasety M5C (25,4 i 38,1 mm) działają w M510 i M511. Kasety M4C (12,7 i 19,05 mm) obsługuje także M410.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/retro-reflective-all-weather-labels-for-m410-m510-m511-printers-cps-4661497',
   images: [
@@ -373,12 +377,13 @@ export const bradyM45Odblaskowe584: Product = {
 
 export const bradyM45Przezroczyste430: Product = {
   ...wspolne,
+  relatedProducts: ['brady-m510', 'brady-m410'],
   id: 'brady-m4c-1000-430',
   slug: 'brady-m4c-1000-430',
-  name: 'Przezroczysta taśma poliestrowa Brady M4C-1000-430 — kaseta M4 do M510',
+  name: 'Przezroczysta taśma poliestrowa Brady M4C-1000-430 — kaseta M4 do M410 i M510',
   seoTitle: 'Brady M4C-1000-430 — przezroczysta taśma poliestrowa do M510',
   seoDescription: 'Kaseta Brady M4C-1000-430 do M510: przezroczysty poliester B-430, 25,4 mm × 7,62 m, od −70 do 100 °C, autoklaw i kąpiel wodna. PN: M4C-1000-430, art. 177007.',
-  shortDescription: 'Brady M4C-1000-430 — kaseta z taśmą z optycznie przezroczystego poliestru B-430, 25,4 mm × 7,62 m, z agresywnym klejem akrylowym. Pracuje od −70 do 100 °C. Do drukarki Brady M510.',
+  shortDescription: 'Brady M4C-1000-430 — kaseta z taśmą z optycznie przezroczystego poliestru B-430, 25,4 mm × 7,62 m, z agresywnym klejem akrylowym. Pracuje od −70 do 100 °C. Do drukarek Brady M410 i M510.',
   description: 'Kaseta Brady M4C-1000-430 zawiera taśmę z przezroczystego poliestru B-430 i taśmę barwiącą R6200. Nadruk jest czarny, a materiał optycznie przezroczysty. Trwały klej akrylowy ma dużą siłę przylegania. Taśma służy do oznaczeń w laboratoriach, do ewidencji środków trwałych i do opisywania paneli czołowych. Na przezroczystym tle drukuje się też kody kreskowe. Taśma oznacza również płytki drukowane, urządzenia teleinformatyczne i elementy objęte przeglądami.\n\nTaśma ma szerokość 25,4 mm i długość 7,62 m. Grubość poliestru wynosi 0,076 mm. Długość etykiety ustawia się w drukarce. Klej trzyma się gładkich powierzchni, np. stali nierdzewnej, metalu malowanego proszkowo, emalii i tworzyw sztucznych. Etykiety pracują wewnątrz i na zewnątrz w każdych warunkach pogodowych.\n\nPoliester B-430 pracuje w temperaturze od −70 do 100 °C. Wytrzymuje autoklaw, zamrażarkę i kąpiel wodną w 100 °C. Jest odporny na ścieranie, chemikalia, paliwo, olej, środki odtłuszczające i myjące. Znosi też wilgoć, promieniowanie UV i warunki atmosferyczne. Kaseta ma numer M4C, więc działa w drukarkach M410, M510 i M511.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/harsh-environment-multi-purpose-clear-polyester-labels-for-m410-m510-m511-printers-pid-m4c-1000-430',
   images: ['/images/products/brady/m4c-1000-430.png'],
@@ -411,12 +416,13 @@ export const bradyM45Przezroczyste430: Product = {
 
 export const bradyM45Poliester423: Product = {
   ...wspolne,
+  relatedProducts: ['brady-m510', 'brady-m410'],
   id: 'brady-m4c-1000-423',
   slug: 'brady-m4c-1000-423',
-  name: 'Etykiety poliestrowe do trudnych warunków Brady M4C-1000-423 — kaseta M4 do M510',
+  name: 'Etykiety poliestrowe do trudnych warunków Brady M4C-1000-423 — kaseta M4 do M410 i M510',
   seoTitle: 'Brady M4C-1000-423 — poliester do trudnych warunków do M510',
   seoDescription: 'Kaseta Brady M4C-1000-423 do M510: biały, bezhalogenowy poliester B-423, 25,4 mm × 7,62 m, od −70 do 110 °C, na panele PV. PN: M4C-1000-423, art. 177006.',
-  shortDescription: 'Brady M4C-1000-423 — kaseta z białą taśmą z poliestru B-423 do trudnych warunków, 25,4 mm × 7,62 m. Materiał jest bezhalogenowy i pracuje od −70 do 110 °C. Do drukarki Brady M510.',
+  shortDescription: 'Brady M4C-1000-423 — kaseta z białą taśmą z poliestru B-423 do trudnych warunków, 25,4 mm × 7,62 m. Materiał jest bezhalogenowy i pracuje od −70 do 110 °C. Do drukarek Brady M410 i M510.',
   description: 'W kasecie Brady M4C-1000-423 jest biała taśma z poliestru B-423 i taśma barwiąca R6200. Materiał jest przeznaczony do pracy w trudnych warunkach, także w instalacjach energii odnawialnej. Typowe zastosowania to oznaczenia paneli fotowoltaicznych, urządzeń elektrycznych, płytek drukowanych i regałów magazynowych. Na białym, błyszczącym tle drukuje się czarny tekst i kody kreskowe. Taśma służy też do etykiet kontrolnych i inwentaryzacyjnych.\n\nSzerokość taśmy wynosi 25,4 mm, a długość 7,62 m. Materiał ma 0,076 mm grubości. Długość pojedynczej etykiety wybiera się przy projektowaniu, więc na jednej taśmie mieszczą się etykiety o różnej długości. Trwały, agresywny klej akrylowy jest przeznaczony do powierzchni gładkich.\n\nZakres temperatury pracy to od −70 do 110 °C. Etykiety znoszą autoklaw, zamrażarkę i kąpiel wodną w 100 °C. Poliester B-423 jest bezhalogenowy i odporny na korozję oraz chemikalia. Materiał nie ulega zniszczeniu pod wpływem promieniowania UV, paliwa, oleju, środków odtłuszczających i detergentów. Wytrzymuje też ścieranie, wilgoć i pracę na zewnątrz. Kasetę M4C obsługują drukarki M410, M510 i M511.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/harsh-environment-multi-purpose-polyester-labels-for-m410-m510-m511-printers-pid-m4c-1000-423',
   images: ['/images/products/brady/m4c-1000-423.png'],
@@ -449,12 +455,13 @@ export const bradyM45Poliester423: Product = {
 
 export const bradyM45ListwyCleanLift: Product = {
   ...wspolne,
+  relatedProducts: ['brady-m510', 'brady-m410'],
   id: 'brady-m4c-375-498',
   slug: 'brady-m4c-375-498',
-  name: 'Taśma do listew zaciskowych Brady CleanLift M4C-375-498 — kasety M4 do M510',
+  name: 'Taśma do listew zaciskowych Brady CleanLift M4C-375-498 — kasety M4 do M410 i M510',
   seoTitle: 'Brady CleanLift M4C-375-498 — taśma na listwy zaciskowe do M510',
   seoDescription: 'Brady CleanLift B-498 do M510: wąska taśma z tkaniny winylowej z klejem do przeklejania na listwy zaciskowe. PN: M4C-375-498, M4C-318-498, M4C-240-498.',
-  shortDescription: 'Brady CleanLift M4C-375-498, M4C-318-498 i M4C-240-498 — kasety z wąską taśmą ciągłą z tkaniny winylowej B-498 do opisywania listew zaciskowych. Opis można zdjąć i nakleić ponownie. Do drukarki Brady M510.',
+  shortDescription: 'Brady CleanLift M4C-375-498, M4C-318-498 i M4C-240-498 — kasety z wąską taśmą ciągłą z tkaniny winylowej B-498 do opisywania listew zaciskowych. Opis można zdjąć i nakleić ponownie. Do drukarek Brady M410 i M510.',
   description: 'Kasety Brady CleanLift M4C-498 zawierają wąską, ciągłą taśmę z tkaniny winylowej B-498. Taśma służy przede wszystkim do opisywania listew zaciskowych. Oznacza się nią też przewody, kable i puszki ścienne. Na taśmie drukuje się np. kolejne numery zacisków.\n\nKlej kauczukowy pozwala zdjąć opis i nakleić go ponownie na czystą, suchą powierzchnię. Po przebudowie listwy opis można więc przesunąć. Tkanina ma półbłyszczące wykończenie, białe tło i czarny nadruk. Klej przylega do podłoża gładkiego i szorstkiego. Tkanina ma grubość 0,185 mm i znosi skrajne temperatury.\n\nTaśma ma szerokość 6,1, 8,08 albo 9,53 mm. Kasety 6,1 i 8,08 mm mają 4,88 m taśmy, a kaseta 9,53 mm ma 6,1 m. Naklejanie wymaga co najmniej 10 °C. Opisy pracują od −40 do 80 °C. Materiał ma uznanie UL i jest odporny na ścieranie, chemikalia, wilgoć, UV i warunki atmosferyczne. Taśma barwiąca R6200 jest w kasecie. Wszystkie trzy kasety M4C działają w M410, M510 i M511.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/continuous-repositionable-vinyl-cloth-terminal-block-labels-for-m410-m510-m511-printers-cps-3069488',
   images: [
@@ -504,12 +511,13 @@ export const bradyM45ListwyCleanLift: Product = {
 
 export const bradyM45Wkladki412: Product = {
   ...wspolne,
+  relatedProducts: ['brady-m510', 'brady-m410'],
   id: 'brady-m4c-375-412',
   slug: 'brady-m4c-375-412',
-  name: 'Wkładki z polipropylenu do gniazd i paneli Brady M4C-375-412 — kasety M4 do M510',
+  name: 'Wkładki z polipropylenu do gniazd i paneli Brady M4C-375-412 — kasety M4 do M410 i M510',
   seoTitle: 'Brady M4C-375-412 — wkładki do gniazd i paneli do M510',
   seoDescription: 'Polipropylen Brady B-412 do M510: taśma bez kleju na wkładki do gniazd i paneli krosowych, 9,53–15,88 mm. PN: M4C-375-412, M4C-475-412, M4C-625-412.',
-  shortDescription: 'Brady M4C-375-412, M4C-475-412 i M4C-625-412 — kasety z taśmą z polipropylenu B-412 bez kleju. Wydrukowane wkładki wsuwa się w okienka gniazd, puszek i paneli krosowych. Do drukarki Brady M510.',
+  shortDescription: 'Brady M4C-375-412, M4C-475-412 i M4C-625-412 — kasety z taśmą z polipropylenu B-412 bez kleju. Wydrukowane wkładki wsuwa się w okienka gniazd, puszek i paneli krosowych. Do drukarek Brady M410 i M510.',
   description: 'Kasety Brady M4C-412 zawierają taśmę z polipropylenu B-412 bez kleju. Z taśmy drukuje się wkładki opisowe do portów, gniazd i płytek gniazdowych w instalacjach teleinformatycznych i elektrycznych. Na wkładce drukuje się np. numer gniazda albo portu. Wkładkę wsuwa się w okienko gniazda, puszki albo panelu krosowego. Opis łatwo wyjąć i wymienić na nowy. Wkładkę można też wyjąć i wsunąć ponownie w dowolnej chwili.\n\nPolipropylen ma grubość 0,201 mm, dużą wytrzymałość na rozciąganie i odporność na rozdarcie. Powierzchnia jest biała i matowa, a nadruk czarny. Materiał wytrzymuje paliwa, oleje, chemikalia, wilgoć, promieniowanie UV i warunki atmosferyczne. Temperatura pracy wynosi od −40 do 100 °C.\n\nTaśma ma długość 6,1 m i szerokość 9,53, 12,07 albo 15,88 mm. Szerokość dobiera się do wysokości okienka w gnieździe lub panelu. Długość wkładki ustawia się w drukarce, więc z jednej kasety powstają wkładki o różnej długości. Taśma barwiąca R4300 jest w kasecie. Wszystkie kasety mają numer M4C i działają w M410, M510 oraz M511.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/high-tensile-polypropylene-inserts-tags-for-m410-m510-m511-printers-cps-4661489',
   images: [
