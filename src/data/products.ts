@@ -77,7 +77,10 @@ import { bradyB30Materialy } from './brady-b30-grupy'
 import { bradyJ7300Materialy } from './brady-j7300-grupy'
 import { bradyJ4000Materialy } from './brady-j4000-grupy'
 import { bradyB33Materialy } from './brady-b33-grupy'
+import { bradyTHTMaterialy } from './brady-tht-grupy'
 import { bradyAkcesoria } from './brady-akcesoria'
+import { bradyI7100Akcesoria } from './brady-i7100'
+import { bradyI7500Akcesoria } from './brady-i7500'
 import { getacTabletProducts, getacTabletAccessories } from './getac-tablet-products'
 import { bluebirdTabletProducts, bluebirdTabletAccessories } from './bluebird-tablet-products'
 import { unitechTabletProducts } from './unitech-tablet-products'
@@ -538,9 +541,9 @@ export const subcategories: Subcategory[] = [
       // Dopisane 19.09.2026
       'tsc-ml341p',
       // Dopisane 14.11.2026 — drukarki znaków i etykiet Brady
-      'brady-s3100', 'brady-s3700', 'brady-j7300', 'brady-j4000', 'brady-i3300', 'brady-i4311', 'brady-i5300', 'brady-i6100',
+      'brady-s3100', 'brady-s3700', 'brady-j7300', 'brady-j4000', 'brady-i3300', 'brady-i4311', 'brady-i5300', 'brady-i6100', 'brady-i7100', 'brady-i7500',
     ],
-    productCount: 63,
+    productCount: 65,
   },
   {
     id: 'termotransferowe-drukarki-etykiet',
@@ -565,8 +568,10 @@ export const subcategories: Subcategory[] = [
       'brady-i4311',
       'brady-i5300',
       'brady-i6100',
+      'brady-i7100',
+      'brady-i7500',
     ],
-    productCount: 79,
+    productCount: 81,
   },
   {
     id: 'termiczne-drukarki-etykiet',
@@ -95592,7 +95597,7 @@ for (const subcategory of subcategories) {
 
 // Akcesoria Brother do etykieciarek P-touch i akcesoria Brady do M210 i M211 trafiają do akcesoriów drukarek etykiet według `subcategoryIds`.
 for (const subcategory of subcategories) {
-  const additions = [...brotherQlPtouchAccessories, ...bradyAkcesoria].filter(product => product.subcategoryIds?.includes(subcategory.id))
+  const additions = [...brotherQlPtouchAccessories, ...bradyAkcesoria, ...bradyI7100Akcesoria, ...bradyI7500Akcesoria].filter(product => product.subcategoryIds?.includes(subcategory.id))
   if (additions.length) {
     subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(product => product.id)]))
     subcategory.productCount = subcategory.productIds.length
@@ -95760,7 +95765,10 @@ const rawProductList: Product[] = [
   ...bradyJ7300Materialy,
   ...bradyJ4000Materialy,
   ...bradyB33Materialy,
+  ...bradyTHTMaterialy,
   ...bradyAkcesoria,
+  ...bradyI7100Akcesoria,
+  ...bradyI7500Akcesoria,
   ...bradyRt710Accessories,
   ...getacTabletProducts,
   ...getacTabletAccessories,

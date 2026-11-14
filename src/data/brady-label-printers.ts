@@ -4,6 +4,9 @@ import { BRADY_B30_DO_S3100, BRADY_B30_DO_S3700, BRADY_B30_DO_I3300, BRADY_B30_D
 import { BRADY_J7300_MATERIALY } from './brady-j7300-grupy'
 import { BRADY_J4000_MATERIALY } from './brady-j4000-grupy'
 import { BRADY_B33_DO_I3300, BRADY_B33_DO_I4311, BRADY_B33_DO_I5300 } from './brady-b33-grupy'
+import { BRADY_THT_DO_I6100 } from './brady-tht-grupy'
+import { bradyI7100 } from './brady-i7100'
+import { bradyI7500 } from './brady-i7500'
 
 // Drukarki etykiet Brady M210, M210-LAB i M211 (kasety M21) oraz M510 (kasety M4 i M5). Brady nie ma cen ani stanów w /api/stock,
 // dlatego karty są na zapytanie (quoteOnly) do czasu cennika partnerskiego. 13.11.2026.
@@ -1843,7 +1846,7 @@ export const bradyLabelPrinters: Product[] = [
       { question: 'Czym różnią się wersje Brady i6100?', answer: 'Wersje z BWS w numerze mają licencję Brady Workstation Pro zamiast Essentials. Zestaw V2200 ma przewodowy czytnik kodów kreskowych, a zestaw V3200 bezprzewodowy czytnik z podstawką Bluetooth i akumulatorem. Wersje P mają odklejak i nawijak. Kable USB i RS-232C trzeba dokupić.' },
       { question: 'Brady i6100 czy i5300 — którą drukarkę wybrać?', answer: 'i6100 drukuje na zwykłych rolkach etykiet do 114 mm szerokości i 203 mm średnicy, z taśmą barwiącą do 450 m, więc sprawdza się w długich seriach. [Brady i5300](/produkt/brady-i5300) korzysta z kaset B30 i B33, które wymienia się w kilka sekund bez kalibracji, i ma wersję 600 dpi do bardzo małych etykiet.' },
     ],
-    compatibleAccessories: [],
+    compatibleAccessories: BRADY_THT_DO_I6100,
     relatedAccessories: ['brady-i6100-peeler', 'brady-i6100-auto-cutter'],
     relatedProducts: ['brady-i5300', 'brady-i3300', 'brady-i4311'],
     downloads: [
@@ -1856,4 +1859,6 @@ export const bradyLabelPrinters: Product[] = [
     createdAt: '2026-11-14',
     updatedAt: '2026-11-14',
   },
+  bradyI7100,
+  bradyI7500,
 ]

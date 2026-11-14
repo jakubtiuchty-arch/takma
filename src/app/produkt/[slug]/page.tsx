@@ -113,6 +113,7 @@ import { BRADY_B30_CIAGLE_IDS, BRADY_B30_ZESTAWY_IDS, BRADY_B30_TASMY_IDS } from
 import { BRADY_J7300_TUSZE_IDS, BRADY_J7300_LAB_IDS, BRADY_J7300_ZAWIESZKI_IDS } from '@/data/brady-j7300-grupy'
 import { BRADY_J4000_TUSZE_IDS, BRADY_J4000_LAB_IDS, BRADY_J4000_LAMINATY_IDS, BRADY_J4000_ZAWIESZKI_IDS } from '@/data/brady-j4000-grupy'
 import { BRADY_B33_PRZEWODY_IDS, BRADY_B33_ELEKTRONIKA_IDS, BRADY_B33_LAB_IDS, BRADY_B33_OGOLNE_IDS } from '@/data/brady-b33-grupy'
+import { BRADY_THT_PRZEWODY_IDS, BRADY_THT_ELEKTRONIKA_IDS, BRADY_THT_LAB_IDS, BRADY_THT_RFID_IDS, BRADY_THT_TASMY_IDS } from '@/data/brady-tht-grupy'
 import { BRADY_M45_KABLE_IDS, BRADY_M45_LAB_IDS } from '@/data/brady-m45-kasety'
 import StarterKits from '@/components/product/StarterKits'
 import MobileCta from './MobileCta'
@@ -133,7 +134,7 @@ const accessoryNavigation = buildAccessoryNavigation(products)
 const KASETY_NA_KABLE_IDS = new Set([...Array.from(BRADY_OZNACZNIKI_KABLI_IDS), ...Array.from(BRADY_M45_KABLE_IDS), ...Array.from(BRADY_M6_KABLE_IDS)])
 const KASETY_LAB_IDS = new Set([...Array.from(BRADY_ETYKIETY_LAB_IDS), ...Array.from(BRADY_M45_LAB_IDS), ...Array.from(BRADY_M6_LAB_IDS)])
 // Taśmy barwiące M61 do M610 — osobna sekcja, bo w kasetach M6 nie ma taśmy.
-const TASMY_BARWIACE_IDS = new Set([...Array.from(BRADY_M6_TASMY_IDS), ...Array.from(BRADY_B30_TASMY_IDS)])
+const TASMY_BARWIACE_IDS = new Set([...Array.from(BRADY_M6_TASMY_IDS), ...Array.from(BRADY_B30_TASMY_IDS), ...Array.from(BRADY_THT_TASMY_IDS)])
 const brotherWlasneMaterialyIds = new Set([...brotherQlProducts, ...brotherPtouchProducts, ...bradyLabelPrinters].map((p) => p.id))
 
 /** Wyciągnięcie wariantu z searchParams (?pn=...) — używane do dynamic title/desc/canonical */
@@ -502,6 +503,19 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     const laboratoryjne = compatibleConsumables.filter((p) => KASETY_LAB_IDS.has(p!.id))
     const tasmy = compatibleConsumables.filter((p) => TASMY_BARWIACE_IDS.has(p!.id))
     const pozostale = compatibleConsumables.filter((p) => !KASETY_NA_KABLE_IDS.has(p!.id) && !KASETY_LAB_IDS.has(p!.id) && !TASMY_BARWIACE_IDS.has(p!.id))
+    // Drukarki na rolki z gilzą 76 mm (i6100, i7100, i7500): materiały THT i pokrewne, potem taśmy barwiące 25 mm.
+    if (product.id === 'brady-i6100' || product.id === 'brady-i7100' || product.id === 'brady-i7500') {
+      const zTHT = (ids: Set<string>) => compatibleConsumables.filter((p) => ids.has(p!.id))
+      const znane = new Set([...Array.from(BRADY_THT_PRZEWODY_IDS), ...Array.from(BRADY_THT_ELEKTRONIKA_IDS), ...Array.from(BRADY_THT_LAB_IDS), ...Array.from(BRADY_THT_RFID_IDS), ...Array.from(BRADY_THT_TASMY_IDS)])
+      return [
+        { klucz: 'przewody', tytul: 'Oznaczanie przewodów i kabli', pozycje: zTHT(BRADY_THT_PRZEWODY_IDS) },
+        { klucz: 'elektronika', tytul: 'Elektronika i płytki drukowane', pozycje: zTHT(BRADY_THT_ELEKTRONIKA_IDS) },
+        { klucz: 'lab', tytul: 'Etykiety laboratoryjne', pozycje: zTHT(BRADY_THT_LAB_IDS) },
+        { klucz: 'ogolne', tytul: 'Etykiety znamionowe, produktowe i specjalne', pozycje: compatibleConsumables.filter((p) => !znane.has(p!.id)) },
+        { klucz: 'rfid', tytul: 'Etykiety RFID', pozycje: zTHT(BRADY_THT_RFID_IDS) },
+        { klucz: 'tasmy', tytul: 'Taśmy barwiące', pozycje: zTHT(BRADY_THT_TASMY_IDS) },
+      ].filter((g) => g.pozycje.length > 0)
+    }
     // Przemysłowe i3300, i4311 i i5300: najpierw seria B33 (przewody, elektronika, laboratorium, etykiety ogólne), potem materiały B30 i taśmy.
     if (product.id === 'brady-i3300' || product.id === 'brady-i4311' || product.id === 'brady-i5300') {
       const zB33 = (ids: Set<string>) => compatibleConsumables.filter((p) => ids.has(p!.id))
