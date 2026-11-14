@@ -63,7 +63,7 @@ export const bradyB30FloorKit: Product = {
   faq: [
     { question: 'Po co w zestawie B30-FLOOR-KIT jest laminat B-634?', answer: 'Laminat chroni nadruk na podłodze. To osobna rolka laminatu poliestrowego, 101,6 mm × 30,48 m, którą nakłada się na wydrukowany znak.' },
     { question: 'Czy w zestawie jest taśma barwiąca?', answer: 'Tak. Komplet zawiera czarną taśmę barwiącą B30-R6000HF. Kolejne kasety zamawia się osobno.' },
-    { question: 'Do jakiej drukarki jest ten zestaw?', answer: 'Do [Brady S3100](/produkt/brady-s3100) i [Brady S3700](/produkt/brady-s3700), a także do przemysłowych [Brady i3300](/produkt/brady-i3300), i4311 i i5300. Obsługują go również starsze BBP30, BBP31, BBP33, BBP35 i BBP37. Do drukarek przenośnych serii M6 i M7 zestaw nie pasuje.' },
+    { question: 'Do jakiej drukarki jest ten zestaw?', answer: 'Do [Brady S3100](/produkt/brady-s3100) i [Brady S3700](/produkt/brady-s3700), a także do przemysłowych [Brady i3300](/produkt/brady-i3300), [Brady i4311](/produkt/brady-i4311) i i5300. Obsługują go również starsze BBP30, BBP31, BBP33, BBP35 i BBP37. Do drukarek przenośnych serii M6 i M7 zestaw nie pasuje.' },
   ],
   applications: ['Oznaczanie podłóg', 'Własne napisy i znaki na posadzce'],
 }
@@ -145,7 +145,7 @@ export const bradyB30PmKit: Product = {
   ),
   faq: [
     { question: 'Jakie kolory taśm są w zestawie B30-PM-KIT?', answer: 'Żółty, niebieski, czerwony, zielony, brązowy i fioletowy. Do nadruku dołączono białą taśmę barwiącą i dwie czarne.' },
-    { question: 'Czy zestaw jest do wszystkich drukarek Brady?', answer: 'Nie. Pasuje do [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700), [Brady i3300](/produkt/brady-i3300), i4311, i5300 oraz do starszych BBP30–BBP37. Drukarki przenośne M610 i M710 nie obsługują kaset B30.' },
+    { question: 'Czy zestaw jest do wszystkich drukarek Brady?', answer: 'Nie. Pasuje do [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700), [Brady i3300](/produkt/brady-i3300), [Brady i4311](/produkt/brady-i4311), i5300 oraz do starszych BBP30–BBP37. Drukarki przenośne M610 i M710 nie obsługują kaset B30.' },
   ],
   applications: ['Oznaczanie rur i zaworów', 'Znaczniki rurociągów'],
 }
@@ -224,6 +224,7 @@ export const bradyB30R4300: Product = {
 
 export const bradyB30R6000OC: Product = {
   ...wspolneB30,
+  relatedProducts: ['brady-s3100', 'brady-s3700', 'brady-i3300'],
   id: 'brady-b30-r6000oc',
   slug: 'brady-b30-r6000oc',
   name: 'Taśma barwiąca Brady B30-R6000OC seria R6000 — czarny nadruk na ochrowym B-595 do S3100 i S3700',
@@ -310,7 +311,7 @@ export const bradyB30R6200: Product = {
 
 export const bradyB30R6300: Product = {
   ...wspolneB30,
-  relatedProducts: ['brady-i3300', 'brady-s3700'],
+  relatedProducts: ['brady-i3300', 'brady-i4311', 'brady-s3700'],
   id: 'brady-b30-r6300',
   slug: 'brady-b30-r6300',
   name: 'Taśma barwiąca Brady B30-R6300 seria R6300 do i3300 i S3700',
@@ -351,7 +352,7 @@ export const bradyB30R6400: Product = {
 
 export const bradyB30R6700WT: Product = {
   ...wspolneB30,
-  relatedProducts: ['brady-s3100', 'brady-i3300'],
+  relatedProducts: ['brady-s3100', 'brady-i3300', 'brady-i4311'],
   id: 'brady-b30-r6700-wt',
   slug: 'brady-b30-r6700-wt',
   name: 'Taśma barwiąca Brady B30-R6700-WT seria R6700 do S3100',
@@ -368,7 +369,7 @@ export const bradyB30R6700WT: Product = {
   }),
   faq: [
     { question: 'Na jakich materiałach drukuje się białą taśmą B30-R6700-WT?', answer: 'Na czarnych materiałach PermaSleeve. Biały nadruk jest odporny na zarysowanie, rozmazanie i agresywne chemikalia.' },
-    { question: 'Czy taśma B30-R6700-WT pasuje do Brady M710?', answer: 'Nie. To kaseta B30 do [Brady S3100](/produkt/brady-s3100) i [Brady i3300](/produkt/brady-i3300) oraz do i4311 i i5300, a ze starszych do S3000 i BBP30–BBP37. Drukarki M610 i M710 używają osobnych kaset.' },
+    { question: 'Czy taśma B30-R6700-WT pasuje do Brady M710?', answer: 'Nie. To kaseta B30 do [Brady S3100](/produkt/brady-s3100) i [Brady i3300](/produkt/brady-i3300) oraz do [Brady i4311](/produkt/brady-i4311) i i5300, a ze starszych do S3000 i BBP30–BBP37. Drukarki M610 i M710 używają osobnych kaset.' },
   ],
   applications: ['Biały nadruk na czarnych koszulkach PermaSleeve', 'Oznaczenia odporne na chemikalia'],
 }

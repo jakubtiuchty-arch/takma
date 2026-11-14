@@ -403,7 +403,7 @@ export const bradyB30Poliimid: Product = {
   faq: [
     { question: 'Czym różnią się materiały B-797 i B-724?', answer: 'B-797 jest biały i błyszczący, z wzmocnioną powłoką wierzchnią. B-724 jest bursztynowy i matowy, a jego odporność obejmuje lutowanie na fali. Zalecane taśmy barwiące to B30-R6300 i B30-R4300.' },
     { question: 'Do czego służy taśma poliimidowa UltraTemp?', answer: 'Do znakowania płytek drukowanych i podzespołów elektronicznych oraz do ogólnej identyfikacji. Poliimid znosi temperatury do 300 °C.' },
-    { question: 'Do jakich drukarek pasują rolki UltraTemp?', answer: 'Do [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i [Brady i3300](/produkt/brady-i3300) oraz do modeli S3000, i4311, i5300, BBP35 i BBP37.' },
+    { question: 'Do jakich drukarek pasują rolki UltraTemp?', answer: 'Do [Brady S3100](/produkt/brady-s3100), [Brady S3700](/produkt/brady-s3700) i [Brady i3300](/produkt/brady-i3300) oraz do modeli S3000, [Brady i4311](/produkt/brady-i4311), i5300, BBP35 i BBP37.' },
   ],
   applications: ['Znakowanie płytek drukowanych', 'Oznaczanie podzespołów po lutowaniu', 'Identyfikacja ogólna'],
 }

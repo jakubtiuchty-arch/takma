@@ -35,4 +35,7 @@ const NIE_DO_S3100 = new Set(['brady-b30-r6300'])
 export const BRADY_B30_DO_S3100: string[] = [...idsSekcji('ciagle'), ...idsSekcji('etykiety'), ...idsSekcji('zestawy'), ...tasmyJednokolorowe].filter((id) => !NIE_DO_S3100.has(id))
 // i3300 przyjmuje materiały i jednokolorowe taśmy B30 (także B30-R6300); seria B33 dochodzi osobno.
 export const BRADY_B30_DO_I3300: string[] = [...idsSekcji('ciagle'), ...idsSekcji('etykiety'), ...idsSekcji('zestawy'), ...tasmyJednokolorowe]
+// i4311: jak i3300 bez kart, których żaden numer PN nie pasuje do i4311
+const NIE_DO_I4311 = new Set(['brady-b30-25-7569-wt', 'brady-b30-17-7563', 'brady-b30-r6000oc'])
+export const BRADY_B30_DO_I4311: string[] = BRADY_B30_DO_I3300.filter((id) => !NIE_DO_I4311.has(id))
 export const BRADY_B30_DO_S3700: string[] = [...idsSekcji('ciagle'), ...idsSekcji('etykiety'), ...idsSekcji('zestawy'), ...Array.from(TYLKO_S3700), ...tasmyJednokolorowe].filter((id) => !NIE_DO_S3700.has(id))

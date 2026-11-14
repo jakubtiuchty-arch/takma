@@ -74,7 +74,7 @@ export const bradyB33Metal428: Product = {
   faq: [
     { question: 'Na jakie powierzchnie nakleja się etykiety B-428?', answer: 'Trwały klej akrylowy jest przeznaczony do powierzchni gładkich. Etykieta pracuje w zakresie od −40 do 120 °C.' },
     { question: 'Jakie uznania mają etykiety z metalizowanego poliestru B-428?', answer: 'Mają uznanie UL, akceptację CSA i zatwierdzenie AGA. Materiał nie zawiera halogenów zgodnie z normą DIN VDE 0472, część 815.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-428?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300), a także BBP33, i4311 i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-428?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300), a także BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
   ],
   applications: ['Tabliczki znamionowe i seryjne urządzeń', 'Oznaczanie płytek drukowanych i elementów elektrycznych', 'Ewidencja mienia i inwentaryzacja'],
 }
@@ -148,7 +148,7 @@ export const bradyB33Metal434: Product = {
   faq: [
     { question: 'Czym B-434A różni się od matowego materiału metalizowanego B-428?', answer: 'Folia B-434A jest srebrna i błyszcząca, a klej akrylowy trzyma się też powierzchni chropowatych. Zakres temperatur sięga od −70 do 130 °C.' },
     { question: 'Czy etykiety B-434A znoszą warunki zewnętrzne?', answer: 'Folia jest odporna na ścieranie, wilgoć, promieniowanie UV i wpływ pogody. Ma uznanie UL i akceptację CSA.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-434A?', answer: 'Zaleca się taśmę barwiącą B30-R6000. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300) oraz BBP33, i4311 i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-434A?', answer: 'Zaleca się taśmę barwiącą B30-R6000. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300) oraz BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
   ],
   applications: ['Tabliczki znamionowe i seryjne urządzeń', 'Znakowanie sprzętu telekomunikacyjnego i elektrycznego', 'Oznaczanie wyposażenia na zewnątrz'],
 }
@@ -216,7 +216,7 @@ export const bradyB33Polipropylen425: Product = {
   faq: [
     { question: 'Do czego służy wersja B33-5-425?', answer: 'To najmniejsza wersja, na materiale B-425D, z trzema etykietami w rzędzie. Oznacza się nią probówki i fiolki do 50 ml oraz inne pojemniki laboratoryjne.' },
     { question: 'Czy etykiety B-425A znoszą mrożenie?', answer: 'Tak. Folia B-425A znosi mrożenie do −70 °C, a B-425D do −80 °C.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-425A?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300) oraz BBP33, i4311 i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-425A?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300) oraz BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
   ],
   applications: ['Znakowanie butelek, kolb i naczyń w laboratorium', 'Etykiety w miejscach z chemikaliami i olejami', 'Kody kreskowe na opakowaniach i regałach'],
 }
@@ -288,7 +288,7 @@ export const bradyB33Metal486: Product = {
   faq: [
     { question: 'Do jakich powierzchni nadaje się klej kauczukowy B-486B?', answer: 'Do gładkich i chropowatych, a także do metali o fakturze, powierzchni malowanych proszkowo i tworzyw o niskiej energii powierzchniowej.' },
     { question: 'Czym B-486B różni się od materiału B-428?', answer: 'B-486B ma klej kauczukowy zamiast akrylowego i folię grubszą o 0,02 mm. Zakres pracy od −40 do 120 °C jest taki sam.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-486B?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300), a także BBP33, i4311 i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-486B?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300), a także BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
   ],
   applications: ['Tabliczki znamionowe na metalu o fakturze', 'Znakowanie elementów malowanych proszkowo i tworzyw trudnych do oklejenia', 'Inwentaryzacja aparatury i wyposażenia'],
 }
@@ -358,7 +358,7 @@ export const bradyB33Tamper438: Product = {
   faq: [
     { question: 'Jak działa zabezpieczenie przed manipulacją w etykietach B-438?', answer: 'Po zerwaniu etykiety klej zostawia na podłożu wzór szachownicy. Wzór wskazuje, że oznaczenie próbowano zdjąć.' },
     { question: 'Dlaczego etykiet B-438 nie należy dotykać przed naklejeniem?', answer: 'Zbyt częste dotykanie może przedwcześnie ujawnić wzór szachownicy. Etykiety należy brać do ręki jak najmniej.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-438?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300), a także BBP33, i4311 i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-438?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300), a także BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
   ],
   applications: ['Tabliczki znamionowe zabezpieczone przed usunięciem', 'Znakowanie wyrobów i urządzeń z kontrolą ingerencji', 'Inwentaryzacja i identyfikacja przemysłowa'],
 }
@@ -426,7 +426,7 @@ export const bradyB33Papier424: Product = {
   faq: [
     { question: 'Do czego służą etykiety papierowe B-424?', answer: 'Do znakowania ogólnego i kodów kreskowych. Papier daje dobry kontrast, a nadruk się nie rozmazuje.' },
     { question: 'W jakiej temperaturze pracuje papier B-424?', answer: 'Od −40 do 50 °C. Klej kauczukowy jest trwały i przylega do gładkich powierzchni.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-424?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300), a także BBP33, i4311 i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-424?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300), a także BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
   ],
   applications: ['Znakowanie ogólne i kody kreskowe', 'Oznaczenia elektryczne i identyfikacja ogólna', 'Etykiety butelek, naczyń i probówek w laboratorium'],
 }
@@ -508,7 +508,7 @@ export const bradyB33Niemetal413: Product = {
   faq: [
     { question: 'Czy etykieta B-413 zawiera warstwę metalu?', answer: 'Nie. To poliester z powłoką, która wygląda jak metal. Wygląd etykiety przypomina tabliczkę znamionową.' },
     { question: 'Czym różnią się wersje B33 od B33C?', answer: 'Wersje B33 to etykiety pojedyncze na rolce. Wersje B33C to taśmy ciągłe o długości 30,48 m, z których długość etykiety ustawia się w projekcie.' },
-    { question: 'Jaką taśmę barwiącą zamówić do materiału B-413?', answer: 'Zaleca się taśmę barwiącą B30-R6000. Materiał drukuje przemysłowa [Brady i3300](/produkt/brady-i3300), a także BBP33, i4311 i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do materiału B-413?', answer: 'Zaleca się taśmę barwiącą B30-R6000. Materiał drukuje przemysłowa [Brady i3300](/produkt/brady-i3300), a także BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
   ],
   applications: ['Tabliczki znamionowe i etykiety kodów kreskowych', 'Ewidencja środków trwałych', 'Oznaczanie elementów i wyposażenia'],
 }
@@ -578,7 +578,7 @@ export const bradyB33Winyl439: Product = {
   faq: [
     { question: 'Czy etykiety winylowe B-439 nadają się na zewnątrz?', answer: 'Tak. Folia jest przeznaczona do wnętrz i na zewnątrz, a odpiera promieniowanie UV, wilgoć i wpływ pogody. Zakres pracy sięga od −70 do 80 °C.' },
     { question: 'Czy materiał B-439 występuje w innych kolorach?', answer: 'Standardowa wersja jest biała. Inne kolory są dostępne na indywidualne zamówienie.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-439?', answer: 'Wymagana jest taśma barwiąca B30-R6000. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300), a także BBP33, i4311 i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-439?', answer: 'Wymagana jest taśma barwiąca B30-R6000. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300), a także BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
   ],
   applications: ['Oznaczanie gotowych wyrobów', 'Tabliczki znamionowe', 'Znakowanie elementów i wyposażenia'],
 }
@@ -660,7 +660,7 @@ export const bradyB33Metal435: Product = {
   faq: [
     { question: 'Do jakich powierzchni nadaje się materiał B-435A?', answer: 'Do metali o fakturze, powierzchni malowanych proszkowo i tworzyw o niskiej energii powierzchniowej. Klej akrylowy trzyma się także powierzchni gładkich.' },
     { question: 'Kiedy wybrać taśmę ciągłą B33C zamiast etykiety?', answer: 'Taśma ciągła ma 30,48 m długości, a długość etykiety ustawia się w projekcie. Przydaje się, gdy żaden gotowy rozmiar nie pasuje.' },
-    { question: 'Jaką taśmę barwiącą zamówić do materiału B-435A?', answer: 'Wymagana jest taśma barwiąca B30-R6000. Materiał drukuje przemysłowa [Brady i3300](/produkt/brady-i3300), a także BBP33, i4311 i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do materiału B-435A?', answer: 'Wymagana jest taśma barwiąca B30-R6000. Materiał drukuje przemysłowa [Brady i3300](/produkt/brady-i3300), a także BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
   ],
   applications: ['Znakowanie metali o fakturze i powierzchni malowanych proszkowo', 'Oznaczanie sprzętu telekomunikacyjnego, elektrycznego i płytek', 'Ewidencja i inwentaryzacja urządzeń'],
 }
@@ -726,7 +726,7 @@ export const bradyB33Permashield428: Product = {
   faq: [
     { question: 'Czym jest etykieta PermaShield?', answer: 'To zestaw dwóch części: etykiety z metalizowanego poliestru B-428 i dopasowanej, przezroczystej nakładki z poliestru B-966, umieszczonej pod etykietą.' },
     { question: 'W jakiej temperaturze pracują etykiety PermaShield B-428?', answer: 'Zakres pracy wynosi od −70 do 120 °C. Poliester jest odporny na chemikalia, korozję, wilgoć, UV i wpływ pogody.' },
-    { question: 'Jaką taśmę barwiącą zamówić do etykiet PermaShield?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300), a także BBP33, i4311 i i5300.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet PermaShield?', answer: 'Zaleca się taśmę barwiącą B30-R4300. Etykiety drukuje przemysłowa [Brady i3300](/produkt/brady-i3300), a także BBP33, [Brady i4311](/produkt/brady-i4311) i i5300.' },
   ],
   applications: ['Tabliczki znamionowe z dodatkową warstwą ochronną', 'Znakowanie płytek drukowanych i sprzętu teleinformatycznego', 'Inwentaryzacja i ewidencja urządzeń'],
 }

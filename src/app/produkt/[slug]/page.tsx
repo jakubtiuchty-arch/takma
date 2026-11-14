@@ -502,8 +502,8 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     const laboratoryjne = compatibleConsumables.filter((p) => KASETY_LAB_IDS.has(p!.id))
     const tasmy = compatibleConsumables.filter((p) => TASMY_BARWIACE_IDS.has(p!.id))
     const pozostale = compatibleConsumables.filter((p) => !KASETY_NA_KABLE_IDS.has(p!.id) && !KASETY_LAB_IDS.has(p!.id) && !TASMY_BARWIACE_IDS.has(p!.id))
-    // Przemysłowa i3300: najpierw seria B33 (przewody, elektronika, laboratorium, etykiety ogólne), potem materiały B30 i taśmy.
-    if (product.id === 'brady-i3300') {
+    // Przemysłowe i3300 i i4311: najpierw seria B33 (przewody, elektronika, laboratorium, etykiety ogólne), potem materiały B30 i taśmy.
+    if (product.id === 'brady-i3300' || product.id === 'brady-i4311') {
       const zB33 = (ids: Set<string>) => compatibleConsumables.filter((p) => ids.has(p!.id))
       const ciagleI = compatibleConsumables.filter((p) => BRADY_B30_CIAGLE_IDS.has(p!.id))
       const zestawyI = compatibleConsumables.filter((p) => BRADY_B30_ZESTAWY_IDS.has(p!.id))

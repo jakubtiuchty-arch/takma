@@ -29,3 +29,4 @@ export const BRADY_B33_OGOLNE_IDS = new Set(idsSekcji('ogolne'))
 
 // Kolejność na karcie i3300: przewody, elektronika, laboratorium, etykiety ogólne B33.
 export const BRADY_B33_DO_I3300: string[] = [...idsSekcji('przewody'), ...idsSekcji('elektronika'), ...idsSekcji('lab'), ...idsSekcji('ogolne')]
+export const BRADY_B33_DO_I4311: string[] = BRADY_B33_DO_I3300
