@@ -1,5 +1,6 @@
 import type { Product } from './products'
 import { BRADY_M6_DO_M610, BRADY_M6_DO_M710 } from './brady-m6-grupy'
+import { BRADY_B30_DO_S3100 } from './brady-b30-grupy'
 
 // Drukarki etykiet Brady M210, M210-LAB i M211 (kasety M21) oraz M510 (kasety M4 i M5). Brady nie ma cen ani stanów w /api/stock,
 // dlatego karty są na zapytanie (quoteOnly) do czasu cennika partnerskiego. 13.11.2026.
@@ -1103,7 +1104,7 @@ export const bradyLabelPrinters: Product[] = [
       { question: 'Czy Brady S3100 drukuje z poleceń ZPL?', answer: 'Tak, z akcesorium [Brady Script Emulator for ZPL](/produkt/brady-m-script-adapt-int). Emulator przyjmuje polecenia ZPL z systemu i przekazuje gotowe etykiety do S3100.' },
       { question: 'Brady S3100 czy M710 — którą drukarkę wybrać?', answer: 'S3100 to drukarka stacjonarna do znaków i etykiet o szerokości do 101,6 mm, np. znaków BHP i oznaczeń rur. [Brady M710](/produkt/brady-m710) to drukarka przenośna z akumulatorem, drukuje etykiety do 50,8 mm i sprawdza się przy oznaczaniu kabli i urządzeń w terenie. Materiały obu drukarek nie są wymienne.' },
     ],
-    compatibleAccessories: [],
+    compatibleAccessories: BRADY_B30_DO_S3100,
     relatedAccessories: ['brady-b31-cct', 'brady-b31-wiper', 'brady-m-script-adapt-int'],
     relatedProducts: ['brady-m710', 'brady-m610', 'brady-m611'],
     downloads: [

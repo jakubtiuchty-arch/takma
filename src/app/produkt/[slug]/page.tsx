@@ -109,6 +109,7 @@ import { brotherQlProducts, brotherPtouchProducts } from '@/data/brother-ql-ptou
 import { bradyLabelPrinters } from '@/data/brady-label-printers'
 import { BRADY_OZNACZNIKI_KABLI_IDS, BRADY_ETYKIETY_LAB_IDS, BRADY_DRUKARKI_LAB_IDS } from '@/data/brady-m21-kasety'
 import { BRADY_M6_KABLE_IDS, BRADY_M6_LAB_IDS, BRADY_M6_TASMY_IDS } from '@/data/brady-m6-grupy'
+import { BRADY_B30_CIAGLE_IDS, BRADY_B30_ZESTAWY_IDS, BRADY_B30_TASMY_IDS } from '@/data/brady-b30-grupy'
 import { BRADY_M45_KABLE_IDS, BRADY_M45_LAB_IDS } from '@/data/brady-m45-kasety'
 import StarterKits from '@/components/product/StarterKits'
 import MobileCta from './MobileCta'
@@ -129,7 +130,7 @@ const accessoryNavigation = buildAccessoryNavigation(products)
 const KASETY_NA_KABLE_IDS = new Set([...Array.from(BRADY_OZNACZNIKI_KABLI_IDS), ...Array.from(BRADY_M45_KABLE_IDS), ...Array.from(BRADY_M6_KABLE_IDS)])
 const KASETY_LAB_IDS = new Set([...Array.from(BRADY_ETYKIETY_LAB_IDS), ...Array.from(BRADY_M45_LAB_IDS), ...Array.from(BRADY_M6_LAB_IDS)])
 // Taśmy barwiące M61 do M610 — osobna sekcja, bo w kasetach M6 nie ma taśmy.
-const TASMY_BARWIACE_IDS = BRADY_M6_TASMY_IDS
+const TASMY_BARWIACE_IDS = new Set([...Array.from(BRADY_M6_TASMY_IDS), ...Array.from(BRADY_B30_TASMY_IDS)])
 const brotherWlasneMaterialyIds = new Set([...brotherQlProducts, ...brotherPtouchProducts, ...bradyLabelPrinters].map((p) => p.id))
 
 /** Wyciągnięcie wariantu z searchParams (?pn=...) — używane do dynamic title/desc/canonical */
@@ -496,6 +497,18 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
     const laboratoryjne = compatibleConsumables.filter((p) => KASETY_LAB_IDS.has(p!.id))
     const tasmy = compatibleConsumables.filter((p) => TASMY_BARWIACE_IDS.has(p!.id))
     const pozostale = compatibleConsumables.filter((p) => !KASETY_NA_KABLE_IDS.has(p!.id) && !KASETY_LAB_IDS.has(p!.id) && !TASMY_BARWIACE_IDS.has(p!.id))
+    // Drukarka znaków S3100 (materiały B30): taśmy ciągłe, etykiety i znaki, zestawy, taśmy barwiące.
+    if (product.id === 'brady-s3100') {
+      const ciagle = compatibleConsumables.filter((p) => BRADY_B30_CIAGLE_IDS.has(p!.id))
+      const zestawyB30 = compatibleConsumables.filter((p) => BRADY_B30_ZESTAWY_IDS.has(p!.id))
+      const etykietyB30 = compatibleConsumables.filter((p) => !BRADY_B30_CIAGLE_IDS.has(p!.id) && !BRADY_B30_ZESTAWY_IDS.has(p!.id) && !TASMY_BARWIACE_IDS.has(p!.id))
+      return [
+        { klucz: 'ciagle', tytul: 'Taśmy ciągłe do znaków i oznaczeń', pozycje: ciagle },
+        { klucz: 'etykiety', tytul: 'Etykiety, znaki i zawieszki', pozycje: etykietyB30 },
+        { klucz: 'zestawy', tytul: 'Zestawy materiałów', pozycje: zestawyB30 },
+        { klucz: 'tasmy', tytul: 'Taśmy barwiące', pozycje: tasmy },
+      ].filter((g) => g.pozycje.length > 0)
+    }
     const grupy = BRADY_DRUKARKI_LAB_IDS.has(product.id)
       ? [
           { klucz: 'lab', tytul: 'Etykiety laboratoryjne', pozycje: laboratoryjne },
