@@ -5,6 +5,7 @@ import { wspolneM6 } from './brady-m6-wspolne'
 // Taśma barwiąca M61 jest osobno. Jedna karta = jedna rodzina materiału. 14.11.2026.
 
 const ZGODNE_M6 = 'M610, M611, BMP61; M710 i BMP71 z adapterem materiałów'
+const ZGODNE_M6_M7 = 'Kasety M6: M610, M611, BMP61; M710 i BMP71 z adapterem materiałów. Kasety M7: M710, BMP71'
 
 const KOLORY_PL: Record<string, string> = {
   Biały: 'białe',
@@ -21,14 +22,22 @@ const KOLORY_PL: Record<string, string> = {
 // [PN, rozmiar (szerokość × długość owijki, sztuk na rolce), średnica przewodu, kolor pola nadruku]
 type Owijka = [string, string, string, string]
 
-const wariantyOwijek = (lista: Owijka[], slowo: string) =>
+// zDrukarka = true: karta ma też kasety M7 do M710, więc każdy wariant dostaje kolumnę „Drukarka” (ostatnia).
+const wariantyOwijek = (lista: Owijka[], slowo: string, zDrukarka = false) =>
   lista.map(([pn, rozmiar, srednica, kolor]) => {
     const [wymiary, sztuk] = rozmiar.split(', ')
     const opisKoloru = kolor === 'Biały' ? '' : `, ${KOLORY_PL[kolor]}`
+    const m7 = pn.startsWith('M7')
     return {
       partNumber: pn,
-      name: `Brady ${pn} — ${sztuk.replace(' szt.', '')} ${slowo} ${wymiary}${opisKoloru}`,
-      attributes: { Rozmiar: rozmiar, 'Średnica kabla': srednica, Kolor: kolor },
+      name: `Brady ${pn} — ${sztuk.replace(' szt.', '')} ${slowo} ${wymiary}${opisKoloru}${zDrukarka && m7 ? ', kaseta do M710' : ''}`,
+      attributes: {
+        Rozmiar: rozmiar,
+        'Ø kabla': srednica,
+        // Miękki dywiz: najdłuższa nazwa koloru zawija się w kolumnie, a tabela mieści się przy 1024 px.
+        Kolor: kolor === 'Pomarańczowy' ? 'Poma\u00ADrań\u00ADczowy' : kolor,
+        ...(zDrukarka ? { Drukarka: m7 ? 'M710' : 'M610, M611' } : {}),
+      },
       availability: 'unavailable' as const,
     }
   })
@@ -148,15 +157,50 @@ const OWIJKI_M6_427: Owijka[] = [
   ['M6-235-427', '50,8 × 57,15 mm, 100 szt.', '6,1–12,19 mm', 'Biały'],
 ]
 
+const OWIJKI_M7_427: Owijka[] = [
+  ['M7-31-427', '25,4 × 38,1 mm, 250 szt.', '3,99–8,1 mm', 'Biały'],
+  ['M7-10-427', '6,35 × 19,05 mm, 750 szt.', '2,01–3 mm', 'Biały'],
+  ['M7-28-427', '6,35 × 38,1 mm, 750 szt.', '3,99–8,1 mm', 'Biały'],
+  ['M7-11-427', '12,7 × 19,05 mm, 500 szt.', '2,01–3 mm', 'Biały'],
+  ['M7-17-427', '12,7 × 25,4 mm, 500 szt.', '3,05–5,05 mm', 'Biały'],
+  ['M7-29-427', '12,7 × 38,1 mm, 500 szt.', '3,99–8,1 mm', 'Biały'],
+  ['M7-18-427', '19,05 × 25,4 mm, 250 szt.', '2,69–5,11 mm', 'Biały'],
+  ['M7-30-427', '19,05 × 38,1 mm, 250 szt.', '3,99–8,1 mm', 'Biały'],
+  ['M7-30-427-RD', '19,05 × 38,1 mm, 250 szt.', '3,99–8,1 mm', 'Czerwony'],
+  ['M7-30-427-BL', '19,05 × 38,1 mm, 250 szt.', '3,99–8,1 mm', 'Niebieski'],
+  ['M7-30-427-PL', '19,05 × 38,1 mm, 250 szt.', '3,99–8,1 mm', 'Fioletowy'],
+  ['M7-96-427', '25,4 × 19,05 mm, 250 szt.', '2,01–3 mm', 'Biały'],
+  ['M7-19-427', '25,4 × 25,4 mm, 250 szt.', '2,69–5,11 mm', 'Biały'],
+  ['M7-19-427-YL', '25,4 × 25,4 mm, 250 szt.', '2,69–5,11 mm', 'Żółty'],
+  ['M7-103-427', '25,4 × 31,75 mm, 250 szt.', '3,4–6,1 mm', 'Biały'],
+  ['M7-31-427-YL', '25,4 × 38,1 mm, 250 szt.', '3,99–8,1 mm', 'Żółty'],
+  ['M7-31-427-RD', '25,4 × 38,1 mm, 250 szt.', '3,99–8,1 mm', 'Czerwony'],
+  ['M7-31-427-GN', '25,4 × 38,1 mm, 250 szt.', '3,99–8,1 mm', 'Zielony'],
+  ['M7-21-427', '25,4 × 63,5 mm, 100 szt.', '6,71–14,2 mm', 'Biały'],
+  ['M7-21-427-YL', '25,4 × 63,5 mm, 100 szt.', '6,71–14,2 mm', 'Żółty'],
+  ['M7-64-427', '25,4 × 85,73 mm, 100 szt.', '9,09–18,21 mm', 'Biały'],
+  ['M7-23-427', '25,4 × 101,6 mm, 100 szt.', '10,8–24,31 mm', 'Biały'],
+  ['M7-104-427', '38,1 × 25,4 mm, 250 szt.', '2,69–5,11 mm', 'Biały'],
+  ['M7-32-427', '38,1 × 38,1 mm, 250 szt.', '3,99–8,1 mm', 'Biały'],
+  ['M7-32-427-YL', '38,1 × 38,1 mm, 250 szt.', '3,99–8,1 mm', 'Żółty'],
+  ['M7-109-427', '38,1 × 101,6 mm, 100 szt.', '10,8–20,19 mm', 'Biały'],
+  ['M7-33-427', '38,1 × 101,6 mm, 100 szt.', '10,8–24,31 mm', 'Biały'],
+  ['M7-33-427-YL', '38,1 × 101,6 mm, 100 szt.', '10,8–24,31 mm', 'Żółty'],
+  ['M7-34-427', '38,1 × 152,4 mm, 50 szt.', '16,21–36,4 mm', 'Biały'],
+  ['M7-88-427', '44,45 × 38,1 mm, 250 szt.', '3,99–8,1 mm', 'Biały'],
+  ['M7-66-427', '49,23 × 80 mm, 100 szt.', '8,5–17,4 mm', 'Biały'],
+  ['M7-107-427', '50,8 × 38,1 mm, 100 szt.', '3,99–8,1 mm', 'Biały'],
+]
+
 export const bradyM6Owijki427: Product = {
   ...wspolneM6,
   id: 'brady-m6-31-427',
   slug: 'brady-m6-31-427',
-  name: 'Owijki samolaminujące Brady M6-31-427 — kasety M6 do M610 i M611',
-  seoTitle: 'Brady M6-31-427 — owijki samolaminujące B-427 do M610',
-  seoDescription: 'Owijki z winylu samolaminującego Brady B-427 do M610: 27 rozmiarów, 9 kolorów pola nadruku, przewody 1,52–36,4 mm. PN: M6-31-427, M6-19-427-YL, M6-21-427-BL.',
-  shortDescription: 'Brady M6-31-427 i 111 innych kaset M6 zawierają owijki z trudnopalnego winylu samolaminującego B-427 z polem nadruku w dziewięciu kolorach. Do drukarek Brady M610 i M611.',
-  description: 'Owijka B-427 to wykrawana etykieta z cienkiego winylu o grubości 0,102 mm. Ma nieprzezroczyste pole nadruku i przezroczysty pas laminatu. Po nałożeniu na przewód ten pas zakrywa wydruk. Zabezpiecza go przed brudem, rozpuszczalnikami i częstym dotykaniem. Trwały klej akrylowy przylega do izolacji gładkiej i szorstkiej. Powierzchnia owijki jest matowa. Kaseta M6 nie zawiera taśmy barwiącej.\n\nW rodzinie jest 112 kaset w 27 rozmiarach. Najwęższa owijka ma 6,35 × 19,05 mm, a najdłuższa 38,1 × 152,4 mm. Na rolce jest od 50 do 750 sztuk. Wysokość pola nadruku wynosi od 9,53 do 38,1 mm. Pole nadruku może być białe, żółte, czerwone, pomarańczowe, zielone, niebieskie, brązowe, szare albo fioletowe. Zakres średnic przewodów dla całej rodziny to 1,52–36,4 mm.\n\nWinyl jest trudnopalny. Znosi chemikalia, olej, wodę, wilgoć i warunki atmosferyczne. Owijki działają od −70 do 70 °C. Wytrzymują przechowywanie w zamrażarce i kontakt z ciekłym azotem. Mają uznanie UL 969 przy wydruku taśmami serii R4300 i R6200. Taśma M61-R4310 drukuje czarny napis. Na polach niebieskich i brązowych stosuje się biały nadruk z taśmy M61-R4410-WT albo M61-R6710-WT. Kasety działają w M610, M611 i BMP61, a w M710 i BMP71 z adapterem materiałów.',
+  name: 'Owijki samolaminujące Brady M6-31-427 — kasety M6 i M7 do M610, M611 i M710',
+  seoTitle: 'Brady M6-31-427 — owijki samolaminujące B-427 do M610 i M710',
+  seoDescription: 'Owijki z winylu samolaminującego Brady B-427 do M610 i M710: 27 rozmiarów, 9 kolorów pola, przewody 1,52–36,4 mm. PN: M6-31-427, M7-19-427-YL, M7-21-427-YL.',
+  shortDescription: 'Brady M6-31-427 i 143 pozostałe kasety zawierają owijki z trudnopalnego winylu samolaminującego B-427 z polem nadruku w dziewięciu kolorach. Kasety M6 pasują do drukarek Brady M610 i M611, a kasety M7 do M710.',
+  description: 'Owijka B-427 to wykrawana etykieta z cienkiego winylu o grubości 0,102 mm. Ma nieprzezroczyste pole nadruku i przezroczysty pas laminatu. Po nałożeniu na przewód ten pas zakrywa wydruk. Trwały klej akrylowy przylega do izolacji gładkiej i szorstkiej.\n\nW rodzinie jest 144 kasety w 27 rozmiarach, w tym 112 w wersji M6 i 32 w wersji M7. Najmniejsza owijka mierzy 6,35 × 19,05 mm, największa 38,1 × 152,4 mm. Na rolce jest od 50 do 750 sztuk. Wysokość pola nadruku wynosi od 9,53 do 38,1 mm. Pole nadruku wersji M6 może być białe, żółte, czerwone, pomarańczowe, zielone, niebieskie, brązowe, szare albo fioletowe. Wersje M7 mają pole białe, a niektóre rozmiary także żółte, czerwone, zielone, niebieskie albo fioletowe. Zakres średnic przewodów dla całej rodziny to 1,52–36,4 mm.\n\nWinyl znosi chemikalia, olej, wodę, wilgoć i warunki atmosferyczne. Owijki działają od −70 do 70 °C. Wytrzymują przechowywanie w zamrażarce i kontakt z ciekłym azotem. Mają uznanie UL 969 przy wydruku taśmami serii R4300 i R6200. Taśma M61-R4310 drukuje czarny napis. Na polach niebieskich i brązowych stosuje się biały nadruk z taśmy M61-R4410-WT albo M61-R6710-WT. Wersje M7 przeznaczono dla M710. Drukuje się je taśmą M7-R4300, a na kolorowych polach biało taśmą M7-R4400-WT albo M7-R6700-WT. Wersje M6 obsługują trzy drukarki bez adaptera (M610, M611, BMP61), a dwie (M710, BMP71) tylko z adapterem materiałów.',
   sameAs: 'https://www.brady.eu/labels/self-laminating-vinyl-wrap-around-wire-cable-labels-for-m710-m610-m611-printers-cps-4554302',
   images: [
     '/images/products/brady/m6-31-427.png',
@@ -187,20 +231,22 @@ export const bradyM6Owijki427: Product = {
     { name: 'Zakres średnic przewodu', value: 'od 1,52 do 36,4 mm, zależnie od rozmiaru' },
     { name: 'Format', value: 'owijki wykrawane' },
     { name: 'Normy', value: 'UL 969 (plik UL MH17154) przy wydruku taśmami serii R4300 i R6200; wersję z uznaniem UL należy wskazać przy zamówieniu' },
-    { name: 'Zalecana taśma barwiąca', value: 'M61-R4310 (czarny nadruk); do pól niebieskich i brązowych M61-R4410-WT albo M61-R6710-WT (biały nadruk); do M710: M7-R4300, M7-R4400-WT, M7-R6700-WT' },
-    { name: 'Zgodne drukarki', value: ZGODNE_M6 },
-    { name: 'Numery artykułów Brady', value: 'M6-10-427: 173691; M6-10-427-YL: 173692; M6-28-427: 173780; M6-28-427-YL: 173788; M6-28-427-RD: 173787; M6-28-427-OR: 173785; M6-28-427-GR: 173783; M6-28-427-BL: 173781; M6-28-427-BR: 173782; M6-28-427-GY: 173784; M6-28-427-PL: 173786; M6-11-427: 174180; M6-11-427-YL: 174181; M6-17-427: 174208; M6-17-427-YL: 173727; M6-102-427: 173688; M6-29-427: 174257; M6-29-427-YL: 173801; M6-29-427-RD: 173800; M6-29-427-OR: 173798; M6-29-427-GR: 173796; M6-29-427-BL: 173794; M6-29-427-BR: 173795; M6-29-427-GY: 173797; M6-29-427-PL: 173799; M6-74-427: 173899; M6-18-427: 174216; M6-18-427-YL: 173734; M6-30-427: 174267; M6-30-427-YL: 173815; M6-30-427-RD: 173814; M6-30-427-OR: 173812; M6-30-427-GR: 173810; M6-30-427-BL: 173808; M6-30-427-BR: 173809; M6-30-427-GY: 173811; M6-30-427-PL: 173813; M6-96-427: 173917; M6-19-427: 174221; M6-19-427-YL: 173742; M6-19-427-RD: 173741; M6-19-427-OR: 173739; M6-19-427-GR: 173737; M6-19-427-BL: 173735; M6-19-427-BR: 173736; M6-19-427-GY: 173738; M6-19-427-PL: 173740; M6-103-427: 173689; M6-31-427: 174275; M6-31-427-YL: 174276; M6-31-427-RD: 173826; M6-31-427-OR: 173824; M6-31-427-GR: 173822; M6-31-427-BL: 173820; M6-31-427-BR: 173821; M6-31-427-GY: 173823; M6-31-427-PL: 173825; M6-21-427: 174236; M6-21-427-YL: 173755; M6-21-427-RD: 173754; M6-21-427-OR: 173752; M6-21-427-GR: 173750; M6-21-427-BL: 173748; M6-21-427-BR: 173749; M6-21-427-GY: 173751; M6-21-427-PL: 173753; M6-75-427: 173900; M6-64-427: 174338; M6-23-427: 174243; M6-23-427-YL: 173766; M6-23-427-RD: 173765; M6-23-427-OR: 173763; M6-23-427-GR: 173761; M6-23-427-BL: 173759; M6-23-427-BR: 173760; M6-23-427-GY: 173762; M6-23-427-PL: 173764; M6-104-427: 173694; M6-32-427: 174283; M6-32-427-YL: 173839; M6-32-427-RD: 173838; M6-32-427-OR: 173836; M6-32-427-GR: 173834; M6-32-427-BL: 173832; M6-32-427-BR: 173833; M6-32-427-GY: 173835; M6-32-427-PL: 173837; M6-157-427: 173716; M6-109-427: 173703; M6-33-427: 174285; M6-33-427-YL: 174286; M6-33-427-RD: 173850; M6-33-427-OR: 173848; M6-33-427-GR: 173846; M6-33-427-BL: 173844; M6-33-427-BR: 173845; M6-33-427-GY: 173847; M6-33-427-PL: 173849; M6-34-427: 174288; M6-34-427-YL: 173859; M6-34-427-RD: 173858; M6-34-427-OR: 173856; M6-34-427-GR: 173854; M6-34-427-BL: 173852; M6-34-427-BR: 173853; M6-34-427-GY: 173855; M6-34-427-PL: 173857; M6-87-427: 173914; M6-88-427: 173915; M6-66-427: 173894; M6-107-427: 173700; M6-235-427: 324905' },
+    { name: 'Zalecana taśma barwiąca', value: 'kasety M6: M61-R4310 (czarny nadruk); do pól niebieskich i brązowych M61-R4410-WT albo M61-R6710-WT (biały nadruk); kasety M7 i kasety M6 w M710: M7-R4300; do kolorowych pól także M7-R4400-WT, M7-R6700-WT (biały nadruk)' },
+    { name: 'Zgodne drukarki', value: ZGODNE_M6_M7 },
+    { name: 'Numery artykułów Brady', value: 'M6-10-427: 173691; M6-10-427-YL: 173692; M6-28-427: 173780; M6-28-427-YL: 173788; M6-28-427-RD: 173787; M6-28-427-OR: 173785; M6-28-427-GR: 173783; M6-28-427-BL: 173781; M6-28-427-BR: 173782; M6-28-427-GY: 173784; M6-28-427-PL: 173786; M6-11-427: 174180; M6-11-427-YL: 174181; M6-17-427: 174208; M6-17-427-YL: 173727; M6-102-427: 173688; M6-29-427: 174257; M6-29-427-YL: 173801; M6-29-427-RD: 173800; M6-29-427-OR: 173798; M6-29-427-GR: 173796; M6-29-427-BL: 173794; M6-29-427-BR: 173795; M6-29-427-GY: 173797; M6-29-427-PL: 173799; M6-74-427: 173899; M6-18-427: 174216; M6-18-427-YL: 173734; M6-30-427: 174267; M6-30-427-YL: 173815; M6-30-427-RD: 173814; M6-30-427-OR: 173812; M6-30-427-GR: 173810; M6-30-427-BL: 173808; M6-30-427-BR: 173809; M6-30-427-GY: 173811; M6-30-427-PL: 173813; M6-96-427: 173917; M6-19-427: 174221; M6-19-427-YL: 173742; M6-19-427-RD: 173741; M6-19-427-OR: 173739; M6-19-427-GR: 173737; M6-19-427-BL: 173735; M6-19-427-BR: 173736; M6-19-427-GY: 173738; M6-19-427-PL: 173740; M6-103-427: 173689; M6-31-427: 174275; M6-31-427-YL: 174276; M6-31-427-RD: 173826; M6-31-427-OR: 173824; M6-31-427-GR: 173822; M6-31-427-BL: 173820; M6-31-427-BR: 173821; M6-31-427-GY: 173823; M6-31-427-PL: 173825; M6-21-427: 174236; M6-21-427-YL: 173755; M6-21-427-RD: 173754; M6-21-427-OR: 173752; M6-21-427-GR: 173750; M6-21-427-BL: 173748; M6-21-427-BR: 173749; M6-21-427-GY: 173751; M6-21-427-PL: 173753; M6-75-427: 173900; M6-64-427: 174338; M6-23-427: 174243; M6-23-427-YL: 173766; M6-23-427-RD: 173765; M6-23-427-OR: 173763; M6-23-427-GR: 173761; M6-23-427-BL: 173759; M6-23-427-BR: 173760; M6-23-427-GY: 173762; M6-23-427-PL: 173764; M6-104-427: 173694; M6-32-427: 174283; M6-32-427-YL: 173839; M6-32-427-RD: 173838; M6-32-427-OR: 173836; M6-32-427-GR: 173834; M6-32-427-BL: 173832; M6-32-427-BR: 173833; M6-32-427-GY: 173835; M6-32-427-PL: 173837; M6-157-427: 173716; M6-109-427: 173703; M6-33-427: 174285; M6-33-427-YL: 174286; M6-33-427-RD: 173850; M6-33-427-OR: 173848; M6-33-427-GR: 173846; M6-33-427-BL: 173844; M6-33-427-BR: 173845; M6-33-427-GY: 173847; M6-33-427-PL: 173849; M6-34-427: 174288; M6-34-427-YL: 173859; M6-34-427-RD: 173858; M6-34-427-OR: 173856; M6-34-427-GR: 173854; M6-34-427-BL: 173852; M6-34-427-BR: 173853; M6-34-427-GY: 173855; M6-34-427-PL: 173857; M6-87-427: 173914; M6-88-427: 173915; M6-66-427: 173894; M6-107-427: 173700; M6-235-427: 324905; M7-31-427: 173345; M7-10-427: 174532; M7-28-427: 174593; M7-11-427: 173429; M7-17-427: 173411; M7-29-427: 173362; M7-18-427: 173403; M7-30-427: 173353; M7-30-427-RD: 174599; M7-30-427-BL: 174597; M7-30-427-PL: 174598; M7-96-427: 174660; M7-19-427: 173399; M7-19-427-YL: 174572; M7-103-427: 174531; M7-31-427-YL: 173344; M7-31-427-RD: 174604; M7-31-427-GN: 174603; M7-21-427: 173378; M7-21-427-YL: 174574; M7-64-427: 173316; M7-23-427: 173372; M7-104-427: 174533; M7-32-427: 173337; M7-32-427-YL: 174605; M7-109-427: 174535; M7-33-427: 173335; M7-33-427-YL: 173334; M7-34-427: 173332; M7-88-427: 174651; M7-66-427: 174640; M7-107-427: 174534' },
   ],
-  variants: wariantyOwijek(OWIJKI_M6_427, 'owijek'),
+  variants: [...wariantyOwijek(OWIJKI_M6_427, 'owijek', true), ...wariantyOwijek(OWIJKI_M7_427, 'owijek', true)],
   variantAttributeTooltips: {
     Rozmiar: 'Pierwsza liczba to szerokość owijki, druga to jej długość wokół przewodu. Na końcu jest liczba sztuk na rolce.\n\nWąskie owijki 6,35 mm są po 750 sztuk. Rolka owijek o długości 152,4 mm ma 50 sztuk.',
-    'Średnica kabla': 'Zakres średnic przewodu, na który pasuje owijka danego rozmiaru.\n\nNajcieńszy przewód, 1,52 mm, oznacza się owijką 12,7 × 19,05 mm. Największy przewód dla rozmiaru 38,1 × 152,4 mm ma 36,4 mm średnicy.',
-    Kolor: 'Kolor pola nadruku owijki.\n\nDziesięć rozmiarów ma wszystkie dziewięć kolorów. Cztery małe rozmiary są białe albo żółte, a reszta tylko biała. Na polach niebieskich i brązowych drukuje się białą taśmą barwiącą.',
+    'Ø kabla': 'Zakres średnic przewodu, na który pasuje owijka danego rozmiaru.\n\nNajcieńszy przewód, 1,52 mm, oznacza się owijką 12,7 × 19,05 mm. Największy przewód dla rozmiaru 38,1 × 152,4 mm ma 36,4 mm średnicy.',
+    Kolor: 'Kolor pola nadruku owijki.\n\nDziesięć rozmiarów M6 ma wszystkie dziewięć kolorów. Cztery małe rozmiary są białe albo żółte, a reszta tylko biała. Wersje M7 mają pole białe, a niektóre rozmiary także żółte, czerwone, zielone, niebieskie albo fioletowe. Na polach niebieskich i brązowych drukuje się białą taśmą barwiącą.',
+    Drukarka: 'Drukarki, w których działa dany numer.\n\nM610, M611 — kasety M6 i materiały BM. Pasują też do M710 po założeniu adaptera M71-ADAPT-BK z zestawu drukarki.\n\nM710 — kasety M7 i materiały BM7; nie pasują do M610 ani M611.',
   },
   faq: [
     { question: 'Jak dobrać rozmiar owijki B-427 do przewodu?', answer: 'Należy porównać średnicę przewodu z zakresem w tabeli wersji. Dla przewodu 1,52–3,02 mm właściwa jest owijka 12,7 × 19,05 mm. Przewód 3,99–8,1 mm wymaga owijki 25,4 × 38,1 mm. Najgrubsze przewody, 16,21–36,4 mm, oznacza się owijką 38,1 × 152,4 mm.' },
     { question: 'Jaka taśma barwiąca jest potrzebna do kaset M6-427?', answer: 'Kaseta M6 nie ma taśmy barwiącej, więc taśmę zamawia się osobno. Do owijek białych i większości kolorowych zalecana jest M61-R4310 z czarnym nadrukiem. Na niebieskie i brązowe pola nadruku przeznaczone są taśmy M61-R4410-WT i M61-R6710-WT z białym nadrukiem. Obie pasują do [Brady M610](/produkt/brady-m610) i M611.' },
     { question: 'Czy owijki B-427 mają uznanie UL?', answer: 'Tak. Owijki mają uznanie UL 969 przy wydruku taśmami serii R4300 i R6200. Brady sprzedaje owijki B-427 z uznaniem UL i bez niego. Wersję z uznaniem UL trzeba wskazać przy zamówieniu.' },
+    { question: 'Które owijki B-427 pasują do Brady M710?', answer: 'Kasety M7, na przykład M7-31-427, działają w [Brady M710](/produkt/brady-m710) bez adaptera. Kasety M6 pasują do M710 po założeniu [adaptera M71-ADAPT-BK](/produkt/brady-m71-adapt-bk) z zestawu drukarki. W M710 czarny nadruk wykonuje taśma M7-R4300, a biały taśma M7-R4400-WT albo M7-R6700-WT.' },
   ],
   applications: ['Oznaczanie przewodów i kabli', 'Instalacje elektryczne', 'Okablowanie teleinformatyczne'],
 }
@@ -265,7 +311,7 @@ export const bradyBmOwijki427: Product = {
   variants: wariantyOwijek(OWIJKI_BM_427, 'owijek').map(({ attributes: { Kolor: _kolor, ...attributes }, ...w }) => ({ ...w, attributes })),
   variantAttributeTooltips: {
     Rozmiar: 'Wymiary owijki w milimetrach (szerokość × długość) i liczba owijek na dużej rolce.\n\nRolki owijek o szerokości 12,7 mm mają po 5000 sztuk. Owijki o długości 101,6 i 152,4 mm są po 500 albo 1000 sztuk.',
-    'Średnica kabla': 'Przewody, które obejmuje owijka danej długości.\n\nNajmniejszy rozmiar, 12,7 × 19,05 mm, jest na przewody 2,01–3 mm. Rozmiar 38,1 × 152,4 mm jest na przewody 16,21–36,4 mm.',
+    'Ø kabla': 'Przewody, które obejmuje owijka danej długości.\n\nNajmniejszy rozmiar, 12,7 × 19,05 mm, jest na przewody 2,01–3 mm. Rozmiar 38,1 × 152,4 mm jest na przewody 16,21–36,4 mm.',
   },
   faq: [
     { question: 'Czym różni się materiał BM od kasety M6?', answer: 'Materiał BM to ten sam winyl B-427 na dużej rolce. Rolka mieści od 500 do 5000 owijek, a kaseta M6 z tym samym rozmiarem mniej. Rolki BM są przeznaczone do wydruku w dużych seriach.' },
@@ -287,15 +333,28 @@ const OWIJKI_M6_417: Owijka[] = [
   ['M6-33-417', '38,1 × 101,6 mm, 100 szt.', '10,8–24,31 mm', 'Biały'],
 ]
 
+const OWIJKI_M7_417: Owijka[] = [
+  ['M7-11-417', '12,7 × 19,05 mm, 500 szt.', '1,52–3,02 mm', 'Biały'],
+  ['M7-29-417', '12,7 × 38,1 mm, 500 szt.', '2,03–4,04 mm', 'Biały'],
+  ['M7-96-417', '25,4 × 19,05 mm, 250 szt.', '1,52–3,02 mm', 'Biały'],
+  ['M7-19-417', '25,4 × 25,4 mm, 250 szt.', '1,52–3,02 mm', 'Biały'],
+  ['M7-103-417', '25,4 × 31,75 mm, 250 szt.', '3,4–6,1 mm', 'Biały'],
+  ['M7-31-417', '25,4 × 38,1 mm, 250 szt.', '3,99–8,1 mm', 'Biały'],
+  ['M7-21-417', '25,4 × 63,5 mm, 100 szt.', '6,71–14,2 mm', 'Biały'],
+  ['M7-32-417', '38,1 × 38,1 mm, 250 szt.', '2,03–4,04 mm', 'Biały'],
+  ['M7-109-417', '38,1 × 101,6 mm, 100 szt.', '6,1–12,14 mm', 'Biały'],
+  ['M7-66-417', '49,23 × 80 mm, 100 szt.', '4,06–8,08 mm', 'Biały'],
+]
+
 export const bradyM6Owijki417: Product = {
   ...wspolneM6,
   id: 'brady-m6-31-417',
   slug: 'brady-m6-31-417',
-  name: 'Owijki samolaminujące z mocnym klejem Brady M6-31-417 — kasety M6 do M610 i M611',
-  seoTitle: 'Brady M6-31-417 — owijki B-417 z mocnym klejem do M610',
-  seoDescription: 'Owijki Brady B-417 do M610: winyl samolaminujący z mocnym klejem do teflonu, silikonu i PVC, przewody 2,01–24,31 mm. PN: M6-31-417, M6-11-417, M6-21-417.',
-  shortDescription: 'W kasecie Brady M6-31-417 i w dziewięciu pokrewnych kasetach M6 są samolaminujące owijki winylowe B-417 z klejem o dużej przyczepności. Do drukarek Brady M610 i M611.',
-  description: 'Owijki B-417 są przeznaczone do trudnych warunków. Klej akrylowy mocno trzyma się przewodów o małej średnicy i nie odkleja się przy dużej wilgotności. Dobrze przylega do izolacji z teflonu, silikonu, PVC i do przewodów w oplocie. Napis drukuje się na białym obszarze, a przezroczysty pas zakrywa go po owinięciu. Winyl ma grubość 0,107 mm i matową powierzchnię.\n\nW rodzinie jest 10 rozmiarów. Owijki mają od 12,7 × 19,05 do 38,1 × 101,6 mm. Na rolce jest 100, 250 albo 500 sztuk. Na pole nadruku przypada 9,53, 12,7, 19,05 albo 25,4 mm wysokości. Przewody mogą mieć średnicę od 2,01 do 24,31 mm. Napis jest czarny na białym tle.\n\nWinyl B-417 jest samogasnący. Temperatura pracy może spaść do −40 °C i wzrosnąć do 70 °C. Owijki wytrzymują też zamrażarkę i ciekły azot. Uznanie UL 969 obowiązuje dla wydruku taśmą serii R4300 albo R7950. Do drukarek M610 i M611 przeznaczona jest taśma M61-R4310. W M710 pracuje taśma M7-R4300. Kasetę zakłada się w M610, M611 albo BMP61. Drukarki M710 i BMP71 wymagają adaptera materiałów. Typowe miejsca użycia to panele sterownicze, rozdzielnice, wiązki przewodów i sieci teleinformatyczne.',
+  name: 'Owijki samolaminujące z mocnym klejem Brady M6-31-417 — kasety M6 i M7 do M610, M611 i M710',
+  seoTitle: 'Brady M6-31-417 — owijki B-417 z mocnym klejem do M610 i M710',
+  seoDescription: 'Owijki Brady B-417 do M610 i M710: winyl samolaminujący z mocnym klejem do teflonu, silikonu i PVC, przewody 1,52–24,31 mm. PN: M6-31-417, M7-11-417, M7-21-417.',
+  shortDescription: 'Brady M6-31-417, dziewięć pokrewnych kaset M6 i dziesięć kaset M7 zawierają samolaminujące owijki winylowe B-417 z klejem o dużej przyczepności. Kasety M6 pasują do drukarek Brady M610 i M611, a kasety M7 do M710.',
+  description: 'Owijki B-417 są przeznaczone do trudnych warunków. Klej akrylowy mocno trzyma się przewodów o małej średnicy i nie odkleja się przy dużej wilgotności. Dobrze przylega do izolacji z teflonu, silikonu, PVC i do przewodów w oplocie. Napis drukuje się na białym obszarze, a przezroczysty pas zakrywa go po owinięciu. Winyl ma grubość 0,107 mm i matową powierzchnię.\n\nW rodzinie jest 20 kaset: 10 w wersji M6 i 10 w wersji M7. Owijki mają od 12,7 × 19,05 do 49,23 × 80 mm. Na rolce jest 100, 250 albo 500 sztuk. Pole nadruku ma wysokość od 9,53 mm do 38,1 mm. Najwyższe jest w owijce M7-109-417. Przewody mogą mieć średnicę od 1,52 do 24,31 mm. Ten sam rozmiar ma w kasetach M6 i M7 inny zakres średnic. Napis jest czarny na białym tle.\n\nWinyl B-417 jest samogasnący. Temperatura pracy może spaść do −40 °C i wzrosnąć do 70 °C. Owijki wytrzymują też zamrażarkę i ciekły azot. Uznanie UL 969 obowiązuje dla wydruku taśmą serii R4300 albo R7950. Do drukarek M610 i M611 przeznaczona jest taśma M61-R4310. W M710 pracuje taśma M7-R4300. Kasety M6 zakłada się w M610, M611 albo BMP61. Kasety M7 pasują do M710 i BMP71 bez dodatkowych elementów. Kasety M6 potrzebują w tych drukarkach adaptera materiałów. Typowe miejsca użycia to panele sterownicze, rozdzielnice, wiązki przewodów i sieci teleinformatyczne.',
   sameAs: 'https://www.brady.eu/labels/self-laminating-aggressive-adhesive-vinyl-wrap-around-wire-cable-labels-for-m710-m610-m611-printers-cps-4554294',
   images: [
     '/images/products/brady/m6-19-417.png',
@@ -315,24 +374,25 @@ export const bradyM6Owijki417: Product = {
     { name: 'Temperatura pracy', value: 'od −40 do 70 °C' },
     { name: 'Warunki pracy', value: 'zamrażarka, ciekły azot, duża wilgotność' },
     { name: 'Kolor', value: 'białe pole nadruku, przezroczysta część laminująca' },
-    { name: 'Wymiary etykiety', value: 'od 12,7 × 19,05 mm do 38,1 × 101,6 mm, 10 rozmiarów' },
-    { name: 'Wysokość pola nadruku', value: 'od 9,53 do 25,4 mm, zależnie od rozmiaru' },
+    { name: 'Wymiary etykiety', value: 'szerokość od 12,7 do 49,23 mm, długość od 19,05 do 101,6 mm; 13 rozmiarów' },
+    { name: 'Wysokość pola nadruku', value: 'od 9,53 do 38,1 mm, zależnie od rozmiaru' },
     { name: 'Liczba sztuk na rolce', value: '100, 250 albo 500, zależnie od rozmiaru' },
-    { name: 'Zakres średnic przewodu', value: 'od 2,01 do 24,31 mm, zależnie od rozmiaru' },
+    { name: 'Zakres średnic przewodu', value: 'od 1,52 do 24,31 mm, zależnie od rozmiaru i wersji' },
     { name: 'Format', value: 'owijki wykrawane' },
     { name: 'Normy', value: 'UL 969 (plik UL MH62024) przy wydruku taśmami serii R4300 i R7950; wersję z uznaniem UL należy wskazać przy zamówieniu' },
-    { name: 'Zalecana taśma barwiąca', value: 'M61-R4310; do M710: M7-R4300' },
-    { name: 'Zgodne drukarki', value: ZGODNE_M6 },
-    { name: 'Numery artykułów Brady', value: 'M6-11-417: 174390; M6-17-417: 174386; M6-29-417: 174388; M6-18-417: 174393; M6-19-417: 174391; M6-31-417: 174389; M6-21-417: 174392; M6-23-417: 174387; M6-32-417: 174384; M6-33-417: 174385' },
+    { name: 'Zalecana taśma barwiąca', value: 'kasety M6: M61-R4310; kasety M7 i M6 w M710: M7-R4300' },
+    { name: 'Zgodne drukarki', value: ZGODNE_M6_M7 },
+    { name: 'Numery artykułów Brady', value: 'M6-11-417: 174390; M6-17-417: 174386; M6-29-417: 174388; M6-18-417: 174393; M6-19-417: 174391; M6-31-417: 174389; M6-21-417: 174392; M6-23-417: 174387; M6-32-417: 174384; M6-33-417: 174385; M7-11-417: 170484; M7-29-417: 170492; M7-96-417: 170490; M7-19-417: 170485; M7-103-417: 170491; M7-31-417: 170483; M7-21-417: 170486; M7-32-417: 170488; M7-109-417: 170489; M7-66-417: 170487' },
   ],
-  variants: wariantyOwijek(OWIJKI_M6_417, 'owijek').map(({ attributes: { Kolor: _kolor, ...attributes }, ...w }) => ({ ...w, attributes })),
+  variants: [...wariantyOwijek(OWIJKI_M6_417, 'owijek', true), ...wariantyOwijek(OWIJKI_M7_417, 'owijek', true)].map(({ attributes: { Kolor: _kolor, ...attributes }, ...w }) => ({ ...w, attributes })),
   variantAttributeTooltips: {
-    Rozmiar: 'Szerokość i długość owijki oraz liczba sztuk na rolce w kasecie.\n\nOwijki o szerokości 12,7 mm są po 500 sztuk. Owijki o długości 63,5 i 101,6 mm są po 100 sztuk.',
-    'Średnica kabla': 'Przedział średnic przewodu, który obejmuje owijka.\n\nOwijka 12,7 × 25,4 mm pasuje do przewodów od 3,05 do 3,81 mm. Owijki o długości 101,6 mm obejmują przewody do 24,31 mm.',
+    Rozmiar: 'Szerokość i długość owijki oraz liczba sztuk na rolce w kasecie.\n\nOwijki o szerokości 12,7 mm są po 500 sztuk. Owijki o długości od 63,5 mm są po 100 sztuk.',
+    'Ø kabla': 'Przedział średnic przewodu, który obejmuje owijka.\n\nOwijka 12,7 × 25,4 mm w kasecie M6 pasuje do przewodów od 3,05 do 3,81 mm. Ten sam rozmiar 12,7 × 38,1 mm obejmuje przewody od 3,99 do 8,1 mm w kasecie M6 i od 2,03 do 4,04 mm w kasecie M7.',
+    Drukarka: 'Drukarki, w których działa dany numer.\n\nM610, M611 — kasety M6 i materiały BM. Pasują też do M710 po założeniu adaptera M71-ADAPT-BK z zestawu drukarki.\n\nM710 — kasety M7 i materiały BM7; nie pasują do M610 ani M611.',
   },
   faq: [
     { question: 'Kiedy wybrać owijki B-417 zamiast B-427?', answer: 'Owijki B-417 mają klej o większej przyczepności. Są przeznaczone do przewodów o małej średnicy, do izolacji z teflonu i silikonu oraz do pomieszczeń o dużej wilgotności. Dopuszczalny zakres temperatury: od −40 do 70 °C.' },
-    { question: 'Czy kasety M6-417 pasują do drukarki M710?', answer: 'Tak, ale tylko z adapterem materiałów. Bez adaptera kasety działają w [Brady M610](/produkt/brady-m610), M611 i BMP61. Drukarka M710 pracuje z taśmą M7-R4300.' },
+    { question: 'Które kasety B-417 pasują do drukarki M710?', answer: 'Kasety M7 z tej rodziny działają w [Brady M710](/produkt/brady-m710) bez adaptera. Kasety M6 pasują do M710 po założeniu [adaptera M71-ADAPT-BK](/produkt/brady-m71-adapt-bk) z zestawu drukarki. Bez adaptera kasety M6 działają w [Brady M610](/produkt/brady-m610), M611 i BMP61. W M710 stosuje się taśmę M7-R4300.' },
   ],
   applications: ['Panele sterownicze i rozdzielnice', 'Wiązki przewodów', 'Przewody z izolacją z teflonu i silikonu'],
 }
@@ -391,7 +451,7 @@ export const bradyM6Obrotowe427: Product = {
   variants: wariantyOwijek(OWIJKI_M6_RO, 'owijek obrotowych').map(({ attributes: { Kolor: _kolor, ...attributes }, ...w }) => ({ ...w, attributes })),
   variantAttributeTooltips: {
     Rozmiar: 'Szerokość × długość owijki obrotowej oraz liczba sztuk na rolce.\n\nNajkrótsza owijka, 30,48 mm, jest po 100 sztuk. Owijki o długości 69,85 i 79,38 mm są po 50 sztuk.',
-    'Średnica kabla': 'Średnice przewodów, na których owijka luźno się obraca.\n\nNa przewody 2,01–4,04 mm przeznaczona jest owijka 25,4 × 30,48 mm. Owijki o długości 79,38 mm obejmują przewody do 10,11 mm.',
+    'Ø kabla': 'Średnice przewodów, na których owijka luźno się obraca.\n\nNa przewody 2,01–4,04 mm przeznaczona jest owijka 25,4 × 30,48 mm. Owijki o długości 79,38 mm obejmują przewody do 10,11 mm.',
   },
   faq: [
     { question: 'Jak założyć owijkę obrotową?', answer: 'Po wydruku owijkę zdejmuje się z podkładu, składa i owija wokół przewodu. Owijka nie przykleja się do izolacji, więc obraca się swobodnie. Napis można odczytać z każdej strony.' },
@@ -404,17 +464,18 @@ const OWIJKI_M6_AW: [string, string, string | null, string][] = [
   ['M6-30-427-AW', '38,1 × 19,05 mm, 250 szt.', '3,99–8 mm', '173807'],
   ['M6-78-427-AW', '48,26 × 25,4 mm, 250 szt.', null, '173903'],
   ['M6-105-427-AW', '27,94 × 6,35 mm, 750 szt.', null, '173695'],
+  ['M7-30-427-AW', '38,1 × 19,05 mm, 250 szt.', '3,99–8 mm', '174596'],
 ]
 
 export const bradyM6BialeOwijki427: Product = {
   ...wspolneM6,
   id: 'brady-m6-30-427-aw',
   slug: 'brady-m6-30-427-aw',
-  name: 'Białe owijki samolaminujące Brady M6-30-427-AW — kasety M6 do M610 i M611',
-  seoTitle: 'Brady M6-30-427-AW — całkowicie białe owijki B-427 do M610',
-  seoDescription: 'Całkowicie białe owijki Brady z winylu samolaminującego B-427 do M610: 3 rozmiary, od −70 do 70 °C. PN: M6-30-427-AW, M6-78-427-AW, M6-105-427-AW.',
-  shortDescription: 'Brady M6-30-427-AW, M6-78-427-AW i M6-105-427-AW to kasety z całkowicie białymi owijkami z winylu samolaminującego B-427. Do drukarek Brady M610 i M611.',
-  description: 'Owijki AW są w całości białe. Wykonano je z matowego winylu samolaminującego B-427 o grubości 0,102 mm. Winyl łatwo dopasowuje się do kształtu przewodu. Trwały klej akrylowy dobrze znosi wodę i olej. Klej przylega do powierzchni gładkich i szorstkich. Owijki służą do oznaczania przewodów i kabli. Nadają się też do ogólnych oznaczeń w laboratorium.\n\nRodzina ma trzy rozmiary. Owijka 38,1 × 19,05 mm jest po 250 sztuk na rolce. Jest przeznaczona na przewody od 3,99 do 8 mm. Owijka 48,26 × 25,4 mm także jest po 250 sztuk. Najmniejsza, 27,94 × 6,35 mm, jest po 750 sztuk. Kaseta M6 nie ma w środku taśmy barwiącej.\n\nMateriał jest trudnopalny. Dopuszczalna temperatura wynosi od −70 do 70 °C. Owijki można umieścić w zamrażarce albo w ciekłym azocie. Materiał znosi kontakt z olejem, wodą i chemikaliami. Odporność obejmuje też wilgoć i pogodę. Winyl B-427 ma uznanie UL 969 przy druku taśmami serii R4300 i R6200. Do wydruku służy taśma M61-R4310, a w drukarce M710 taśma M7-R4300. Drukarki M710 i BMP71 obsługują te kasety po założeniu adaptera materiałów, a M610, M611 i BMP61 bez adaptera.',
+  name: 'Białe owijki samolaminujące Brady M6-30-427-AW — kasety M6 i M7 do M610, M611 i M710',
+  seoTitle: 'Brady M6-30-427-AW — całkowicie białe owijki B-427 do M610 i M710',
+  seoDescription: 'Całkowicie białe owijki Brady z winylu samolaminującego B-427 do M610 i M710: 3 rozmiary, od −70 do 70 °C. PN: M6-30-427-AW, M6-78-427-AW, M7-30-427-AW.',
+  shortDescription: 'Brady M6-30-427-AW, M6-78-427-AW, M6-105-427-AW i M7-30-427-AW to kasety z całkowicie białymi owijkami z winylu samolaminującego B-427. Kasety M6 pasują do drukarek Brady M610 i M611, a kaseta M7 do M710.',
+  description: 'Owijki AW są w całości białe. Wykonano je z matowego winylu samolaminującego B-427 o grubości 0,102 mm. Winyl łatwo dopasowuje się do kształtu przewodu. Trwały klej akrylowy dobrze znosi wodę i olej. Klej przylega do powierzchni gładkich i szorstkich. Owijki służą do oznaczania przewodów i kabli. Nadają się też do ogólnych oznaczeń w laboratorium.\n\nRodzina ma trzy rozmiary w wersji M6 i jeden w wersji M7. Owijka 38,1 × 19,05 mm jest po 250 sztuk na rolce i występuje w obu wersjach. Jest przeznaczona na przewody od 3,99 do 8 mm. Owijka 48,26 × 25,4 mm także jest po 250 sztuk. Najmniejsza, 27,94 × 6,35 mm, jest po 750 sztuk. Kaseta nie ma w środku taśmy barwiącej.\n\nMateriał jest trudnopalny. Dopuszczalna temperatura wynosi od −70 do 70 °C. Owijki można umieścić w zamrażarce albo w ciekłym azocie. Materiał znosi kontakt z olejem, wodą i chemikaliami. Odporność obejmuje też wilgoć i pogodę. Winyl B-427 ma uznanie UL 969 przy druku taśmami serii R4300 i R6200. Do wydruku z kaset M6 służy taśma M61-R4310. W kasecie M7-30-427-AW, jedynej wersji M7 w tej rodzinie, zadrukowuje się owijki taśmą M7-R4300 w drukarce M710 lub BMP71. Wersje M6 owijek AW wchodzą do komory M710 po założeniu adaptera, a do M610, M611 i BMP61 bez niego.',
   sameAs: 'https://www.brady.eu/labels/self-laminating-vinyl-wrap-around-wire-cable-labels-all-white-for-m710-m610-m611-printers-cps-4554306',
   images: [
     '/images/products/brady/m6-30-427-aw.png',
@@ -439,31 +500,35 @@ export const bradyM6BialeOwijki427: Product = {
     { name: 'Kolor', value: 'cała owijka biała' },
     { name: 'Wymiary etykiety', value: '27,94 × 6,35 / 38,1 × 19,05 / 48,26 × 25,4 mm' },
     { name: 'Liczba sztuk na rolce', value: '250 albo 750, zależnie od rozmiaru' },
-    { name: 'Zakres średnic przewodu', value: 'od 3,99 do 8 mm (M6-30-427-AW)' },
+    { name: 'Zakres średnic przewodu', value: 'od 3,99 do 8 mm (M6-30-427-AW, M7-30-427-AW)' },
     { name: 'Format', value: 'owijki wykrawane' },
     { name: 'Normy', value: 'UL 969 (plik UL MH17154) przy wydruku taśmami serii R4300 i R6200; wersję z uznaniem UL należy wskazać przy zamówieniu' },
-    { name: 'Zalecana taśma barwiąca', value: 'M61-R4310; do M710: M7-R4300' },
-    { name: 'Zgodne drukarki', value: ZGODNE_M6 },
+    { name: 'Zalecana taśma barwiąca', value: 'kasety M6: M61-R4310; kaseta M7 i kasety M6 w M710: M7-R4300' },
+    { name: 'Zgodne drukarki', value: ZGODNE_M6_M7 },
     { name: 'Numery artykułów Brady', value: OWIJKI_M6_AW.map(([pn, , , art]) => `${pn}: ${art}`).join('; ') },
   ],
   variants: OWIJKI_M6_AW.map(([pn, rozmiar, srednica]) => {
     const [wymiary, sztuk] = rozmiar.split(', ')
+    const m7 = pn.startsWith('M7')
     const attributes: Record<string, string> = { Rozmiar: rozmiar }
-    if (srednica) attributes['Średnica kabla'] = srednica
+    if (srednica) attributes['Ø kabla'] = srednica
+    attributes.Drukarka = m7 ? 'M710' : 'M610, M611'
     return {
       partNumber: pn,
-      name: `Brady ${pn} — ${sztuk.replace(' szt.', '')} białych owijek ${wymiary}`,
+      name: `Brady ${pn} — ${sztuk.replace(' szt.', '')} białych owijek ${wymiary}${m7 ? ', kaseta do M710' : ''}`,
       attributes,
       availability: 'unavailable' as const,
     }
   }),
   variantAttributeTooltips: {
     Rozmiar: 'Wymiary owijki (szerokość × długość) i liczba sztuk na rolce.\n\nRozmiar 27,94 × 6,35 mm jest po 750 sztuk. Dwa większe rozmiary są po 250 sztuk.',
-    'Średnica kabla': 'Zakres średnic przewodu dla owijki.\n\nZakres podano tylko dla owijki 38,1 × 19,05 mm: od 3,99 do 8 mm.',
+    'Ø kabla': 'Zakres średnic przewodu dla owijki.\n\nZakres podano tylko dla owijki 38,1 × 19,05 mm: od 3,99 do 8 mm.',
+    Drukarka: 'Drukarki, w których działa dany numer.\n\nM610, M611 — kasety M6 i materiały BM. Pasują też do M710 po założeniu adaptera M71-ADAPT-BK z zestawu drukarki.\n\nM710 — kasety M7 i materiały BM7; nie pasują do M610 ani M611.',
   },
   faq: [
     { question: 'Czym owijki AW różnią się od standardowych owijek B-427?', answer: 'Owijki AW są białe na całej powierzchni. Materiał, klej i zakres temperatury pracy są takie same jak w pozostałych owijkach B-427.' },
-    { question: 'Którą taśmę barwiącą wybrać do kaset M6-427-AW?', answer: 'W [Brady M610](/produkt/brady-m610) i M611 stosuje się taśmę M61-R4310. W drukarce M710 z adapterem materiałów stosuje się taśmę M7-R4300.' },
+    { question: 'Którą taśmę barwiącą wybrać do owijek 427-AW?', answer: 'W [Brady M610](/produkt/brady-m610) i M611 stosuje się taśmę M61-R4310. W drukarce M710 stosuje się taśmę M7-R4300.' },
+    { question: 'Czy owijki AW pasują do Brady M710?', answer: 'Kaseta M7-30-427-AW działa w [Brady M710](/produkt/brady-m710) bez adaptera. Kasety M6 pasują do M710 po założeniu [adaptera M71-ADAPT-BK](/produkt/brady-m71-adapt-bk) z zestawu drukarki.' },
   ],
   applications: ['Oznaczanie przewodów i kabli', 'Ogólne oznaczenia w laboratorium', 'Okablowanie teleinformatyczne'],
 }
@@ -512,11 +577,11 @@ export const bradyM6Tedlar642: Product = {
   ...wspolneM6,
   id: 'brady-m6-31-642',
   slug: 'brady-m6-31-642',
-  name: 'Samogasnące owijki samolaminujące Brady Tedlar M6-31-642 — kasety M6 do M610 i M611',
-  seoTitle: 'Brady Tedlar M6-31-642 — owijki samolaminujące do M610',
-  seoDescription: 'Samolaminujące owijki Brady Tedlar B-642 z PVF do M610: samogasnące, odporne na rozpuszczalniki i UV, od −70 do 120 °C. PN: M6-31-642, M6-19-642, M6-21-642.',
-  shortDescription: 'Brady M6-31-642, M6-19-642 i M6-21-642 to kasety z samogasnącymi owijkami samolaminującymi z polifluorku winylu Tedlar B-642. Do drukarek Brady M610 i M611.',
-  description: 'Owijki B-642 są wykonane z półprzezroczystego polifluorku winylu (PVF) o grubości 0,055 mm. Cienki materiał jest bardzo giętki i łatwo owija przewody o małej średnicy. Wydruk trafia na biały obszar, a przezroczysta część owijki go laminuje. Klej jest trwały i akrylowy, a wykończenie matowe. Materiał jest samogasnący.\n\nWszystkie owijki mają szerokość 25,4 mm. Długość wynosi 25,4, 38,1 albo 63,5 mm. Krótsze owijki są po 250 sztuk na rolce, a owijki 63,5 mm po 100 sztuk. Obsługiwany zakres średnic przewodu to 3–14,2 mm. Klej jest przeznaczony do powierzchni gładkich. Najniższa temperatura naklejania to 10 °C.\n\nOwijki są odporne na rozpuszczalniki i czynniki korozyjne. Znoszą wilgoć, światło UV i warunki pogodowe. Owijki wytrzymują temperaturę od −70 do 120 °C. Materiał spełnia wymagania dyrektywy RoHS 2011/65/UE. Typowe branże to lotnictwo, obronność i transport publiczny. Wydruk wykonuje się taśmą M61-R4310, a w M710 taśmą M7-R4300. Kasety obsługują drukarki M610, M611 i BMP61. W M710 i BMP71 działają z adapterem materiałów.',
+  name: 'Samogasnące owijki samolaminujące Brady Tedlar M6-31-642 — kasety M6 i M7 do M610, M611 i M710',
+  seoTitle: 'Brady Tedlar M6-31-642 — owijki samolaminujące do M610 i M710',
+  seoDescription: 'Samolaminujące owijki Brady Tedlar B-642 do M610 i M710: samogasnące, odporne na UV i rozpuszczalniki, od −70 do 120 °C. PN: M6-31-642, M7-31-642, M7-21-642.',
+  shortDescription: 'Brady M6-31-642, M6-19-642, M6-21-642 oraz M7-31-642, M7-19-642 i M7-21-642 to kasety z samogasnącymi owijkami samolaminującymi z polifluorku winylu Tedlar B-642. Kasety M6 pasują do drukarek Brady M610 i M611, a kasety M7 do M710.',
+  description: 'Owijki B-642 są wykonane z półprzezroczystego polifluorku winylu (PVF) o grubości 0,055 mm. Cienki materiał jest bardzo giętki i łatwo owija przewody o małej średnicy. Wydruk trafia na biały obszar, a przezroczysta część owijki go laminuje. Klej jest trwały i akrylowy, a wykończenie matowe. Materiał jest samogasnący.\n\nWszystkie owijki mają szerokość 25,4 mm. Długość wynosi 25,4, 38,1 albo 63,5 mm. Krótsze owijki są po 250 sztuk na rolce, a owijki 63,5 mm po 100 sztuk. Każdy z trzech rozmiarów jest w wersji M6 i M7, co daje sześć kaset. Obsługiwany zakres średnic przewodu to 3–14,2 mm. Klej jest przeznaczony do powierzchni gładkich. Najniższa temperatura naklejania to 10 °C.\n\nOwijki są odporne na rozpuszczalniki i czynniki korozyjne. Znoszą wilgoć, światło UV i warunki pogodowe. Owijki wytrzymują temperaturę od −70 do 120 °C. Materiał spełnia wymagania dyrektywy RoHS 2011/65/UE. Typowe branże to lotnictwo, obronność i transport publiczny. Wydruk z kaset M6 wykonuje się taśmą M61-R4310. Taśmami barwiącymi dla kaset M7 są M7-R4300 oraz M7-R6200. Kasety M6 obsługują drukarki M610, M611 i BMP61. Wersje M6 wchodzą do M710 i BMP71 dopiero z adapterem, wersje M7 nie potrzebują go wcale.',
   sameAs: 'https://www.brady.eu/labels/self-laminating-self-extinguishing-tedlar-wrap-around-wire-cable-labels-for-m710-m610-m611-printers-cps-4554353',
   images: [
     '/images/products/brady/m6-31-642.png',
@@ -545,23 +610,28 @@ export const bradyM6Tedlar642: Product = {
     { name: 'Zakres średnic przewodu', value: 'od 3 do 14,2 mm, zależnie od rozmiaru' },
     { name: 'Format', value: 'owijki wykrawane' },
     { name: 'Normy', value: 'RoHS 2011/65/UE' },
-    { name: 'Zalecana taśma barwiąca', value: 'M61-R4310; do M710: M7-R4300' },
-    { name: 'Zgodne drukarki', value: ZGODNE_M6 },
-    { name: 'Numery artykułów Brady', value: 'M6-19-642: 174226; M6-31-642: 174281; M6-21-642: 174238' },
+    { name: 'Zalecana taśma barwiąca', value: 'kasety M6: M61-R4310, w M710 M7-R4300; kasety M7: M7-R4300 albo M7-R6200' },
+    { name: 'Zgodne drukarki', value: ZGODNE_M6_M7 },
+    { name: 'Numery artykułów Brady', value: 'M6-19-642: 174226; M6-31-642: 174281; M6-21-642: 174238; M7-31-642: 173339; M7-19-642: 173394; M7-21-642: 173375' },
   ],
   variants: [
-    { partNumber: 'M6-31-642', name: 'Brady M6-31-642 — 250 owijek 25,4 × 38,1 mm', attributes: { Rozmiar: '25,4 × 38,1 mm, 250 szt.', 'Średnica kabla': '3,99–8,1 mm' }, availability: 'unavailable' },
-    { partNumber: 'M6-19-642', name: 'Brady M6-19-642 — 250 owijek 25,4 × 25,4 mm', attributes: { Rozmiar: '25,4 × 25,4 mm, 250 szt.', 'Średnica kabla': '3–5,05 mm' }, availability: 'unavailable' },
-    { partNumber: 'M6-21-642', name: 'Brady M6-21-642 — 100 owijek 25,4 × 63,5 mm', attributes: { Rozmiar: '25,4 × 63,5 mm, 100 szt.', 'Średnica kabla': '6,71–14,2 mm' }, availability: 'unavailable' },
+    { partNumber: 'M6-31-642', name: 'Brady M6-31-642 — 250 owijek 25,4 × 38,1 mm', attributes: { Rozmiar: '25,4 × 38,1 mm, 250 szt.', 'Ø kabla': '3,99–8,1 mm', Drukarka: 'M610, M611' }, availability: 'unavailable' },
+    { partNumber: 'M6-19-642', name: 'Brady M6-19-642 — 250 owijek 25,4 × 25,4 mm', attributes: { Rozmiar: '25,4 × 25,4 mm, 250 szt.', 'Ø kabla': '3–5,05 mm', Drukarka: 'M610, M611' }, availability: 'unavailable' },
+    { partNumber: 'M6-21-642', name: 'Brady M6-21-642 — 100 owijek 25,4 × 63,5 mm', attributes: { Rozmiar: '25,4 × 63,5 mm, 100 szt.', 'Ø kabla': '6,71–14,2 mm', Drukarka: 'M610, M611' }, availability: 'unavailable' },
+    { partNumber: 'M7-31-642', name: 'Brady M7-31-642 — 250 owijek 25,4 × 38,1 mm, kaseta do M710', attributes: { Rozmiar: '25,4 × 38,1 mm, 250 szt.', 'Ø kabla': '3,99–8,1 mm', Drukarka: 'M710' }, availability: 'unavailable' },
+    { partNumber: 'M7-19-642', name: 'Brady M7-19-642 — 250 owijek 25,4 × 25,4 mm, kaseta do M710', attributes: { Rozmiar: '25,4 × 25,4 mm, 250 szt.', 'Ø kabla': '3–5,05 mm', Drukarka: 'M710' }, availability: 'unavailable' },
+    { partNumber: 'M7-21-642', name: 'Brady M7-21-642 — 100 owijek 25,4 × 63,5 mm, kaseta do M710', attributes: { Rozmiar: '25,4 × 63,5 mm, 100 szt.', 'Ø kabla': '6,71–14,2 mm', Drukarka: 'M710' }, availability: 'unavailable' },
   ],
   variantAttributeTooltips: {
     Rozmiar: 'Pierwszy wymiar to szerokość, drugi to długość owijki. Dalej podano liczbę owijek na rolce.\n\nWszystkie owijki B-642 mają szerokość 25,4 mm. Najdłuższa, 63,5 mm, jest po 100 sztuk.',
-    'Średnica kabla': 'Przewody, na które pasuje owijka danej długości.\n\nOwijka 25,4 × 25,4 mm obejmuje przewody od 3 do 5,05 mm. Owijka 25,4 × 63,5 mm pasuje do przewodów od 6,71 do 14,2 mm.',
+    'Ø kabla': 'Przewody, na które pasuje owijka danej długości.\n\nOwijka 25,4 × 25,4 mm obejmuje przewody od 3 do 5,05 mm. Owijka 25,4 × 63,5 mm pasuje do przewodów od 6,71 do 14,2 mm.',
+    Drukarka: 'Drukarki, w których działa dany numer.\n\nM610, M611 — kasety M6 i materiały BM. Pasują też do M710 po założeniu adaptera M71-ADAPT-BK z zestawu drukarki.\n\nM710 — kasety M7 i materiały BM7; nie pasują do M610 ani M611.',
   },
   faq: [
     { question: 'Gdzie stosuje się owijki Tedlar B-642?', answer: 'Głównie w lotnictwie, w obronności i w pojazdach transportu publicznego. Materiał jest samogasnący, odporny na rozpuszczalniki i promieniowanie UV. Pracuje od −70 do 120 °C.' },
     { question: 'W jakiej temperaturze można naklejać owijki B-642?', answer: 'Najniższa temperatura naklejania to 10 °C. Klej jest przeznaczony do powierzchni gładkich, na przykład do gładkiej izolacji przewodu.' },
-    { question: 'Jaka taśma barwiąca pasuje do owijek B-642?', answer: 'Owijki drukuje się taśmą M61-R4310 na [Brady M610](/produkt/brady-m610) i M611. Drukarka M710 z adapterem materiałów używa taśmy M7-R4300.' },
+    { question: 'Jaka taśma barwiąca pasuje do owijek B-642?', answer: 'Owijki w kasetach M6 drukuje się taśmą M61-R4310 na [Brady M610](/produkt/brady-m610) i M611. Kasety M7 wymagają w M710 taśmy M7-R4300 albo M7-R6200.' },
+    { question: 'Które owijki B-642 pasują do Brady M710?', answer: 'Kasety M7-19-642, M7-21-642 i M7-31-642 działają w [Brady M710](/produkt/brady-m710) bez adaptera. Kasety M6 pasują do M710 po założeniu [adaptera M71-ADAPT-BK](/produkt/brady-m71-adapt-bk) z zestawu drukarki.' },
   ],
   applications: ['Lotnictwo', 'Przemysł obronny', 'Pojazdy transportu publicznego'],
 }

@@ -21,11 +21,12 @@ const KOLORY: Record<string, [string, string]> = {
 // [PN, numer artykułu Brady, szerokość mm, długość mm, sztuk na rolce, kolor]
 type Zawieszka = [string, string, string, string, number, string]
 
-function warianty(rows: Zawieszka[], kolumny: ('Rozmiar' | 'Kolor')[]) {
+function warianty(rows: Zawieszka[], kolumny: ('Rozmiar' | 'Kolor')[], drukarka?: string) {
   return rows.map(([pn, , w, h, qty, kolor]) => {
     const attributes: Record<string, string> = {}
     if (kolumny.includes('Rozmiar')) attributes.Rozmiar = `${w} × ${h} mm, ${qty} szt.`
     if (kolumny.includes('Kolor')) attributes.Kolor = KOLORY[kolor][0]
+    if (drukarka) attributes.Drukarka = drukarka
     return {
       partNumber: pn,
       name: `Brady ${pn} — ${qty} zawieszek ${w} × ${h} mm, ${KOLORY[kolor][1]}`,
@@ -351,15 +352,33 @@ const BM_7643_KOLOROWE: Zawieszka[] = [
   ['BM-25x75-7643-BK', '312177', '25', '75', 250, 'BK'],
 ]
 
+// B-7643, rolki BM luzem w siedmiu kolorach, szerokość 10 mm (rodzina M710 z brady.eu cps-4556420).
+const BM_7643_10MM: Zawieszka[] = [
+  ['BM-10x60-7643-BL', '311960', '10', '60', 250, 'BL'],
+  ['BM-10x60-7643-WT', '311964', '10', '60', 250, 'WT'],
+  ['BM-10x60-7643-YL', '311965', '10', '60', 250, 'YL'],
+  ['BM-10x60-7643-OR', '311962', '10', '60', 250, 'OR'],
+  ['BM-10x60-7643-RD', '311963', '10', '60', 250, 'RD'],
+  ['BM-10x60-7643-GN', '311961', '10', '60', 250, 'GN'],
+  ['BM-10x60-7643-BK', '311959', '10', '60', 250, 'BK'],
+  ['BM-10x75-7643-BL', '311967', '10', '75', 250, 'BL'],
+  ['BM-10x75-7643-WT', '311971', '10', '75', 250, 'WT'],
+  ['BM-10x75-7643-YL', '311972', '10', '75', 250, 'YL'],
+  ['BM-10x75-7643-OR', '311969', '10', '75', 250, 'OR'],
+  ['BM-10x75-7643-RD', '311970', '10', '75', 250, 'RD'],
+  ['BM-10x75-7643-GN', '311968', '10', '75', 250, 'GN'],
+  ['BM-10x75-7643-BK', '311966', '10', '75', 250, 'BK'],
+]
+
 export const bradyM6ZawieszkiPoliuretanBmKolorowe: Product = {
   ...wspolneM6,
   id: 'brady-bm-15x75-7643-bl',
   slug: 'brady-bm-15x75-7643-bl',
-  name: 'Zawieszki z poliuretanu luzem Brady BM-15x75-7643-BL — materiał BM do M610 i M611',
+  name: 'Zawieszki z poliuretanu luzem Brady BM-15x75-7643-BL — materiał BM do M610, M611 i M710',
   seoTitle: 'Brady BM-15x75-7643-BL — kolorowe zawieszki PU luzem do M610',
-  seoDescription: 'Zawieszki Brady z poliuretanu B-7643 luzem, 7 kolorów, 15 × 75 i 25 × 75 mm, 250 szt. na rolce. PN: BM-15x75-7643-BL, BM-25x75-7643-OR, BM-15x75-7643-BK.',
-  shortDescription: 'Brady BM-15x75-7643-BL i 13 innych rolek BM zawierają zawieszki z poliuretanu B-7643 w siedmiu kolorach, po 250 sztuk. Do drukarek Brady M610 i M611.',
-  description: 'Brady BM-15x75-7643-BL to niebieskie zawieszki kablowe z poliuretanu B-7643, nawinięte luzem na rolkę. Rodzina obejmuje siedem kolorów zawieszek. Kolor ułatwia rozróżnienie grup przewodów. Matowy materiał ma grubość 0,45 mm. Zawieszkę mocuje się na kablu opaskami, przez otwory w jej końcach.\n\nZawieszki mają długość 75 mm i szerokość 15 albo 25 mm. Pole nadruku ma odpowiednio 15 × 55 albo 25 × 55 mm. Rolka zawiera 250 sztuk. Dostępne kolory to niebieski, biały, żółty, pomarańczowy, czerwony, zielony i czarny. Każdy kolor występuje w obu szerokościach. Białe i żółte zawieszki 10 mm są w innej rodzinie rolek BM.\n\nMateriał nie ma dodanych halogenów. Spełnia wymagania normy IEC 61249-2-21. Jest odporny na oleje, wodę i ścieranie. Znosi też chemikalia oraz wilgotne otoczenie. Materiał wytrzymuje ujemną temperaturę do −40 °C i dodatnią do 90 °C. Czarne zawieszki zadrukowuje się białą taśmą M61-R4410-WT. Na pozostałych kolorach drukuje taśma M61-R6010. Zgodne drukarki to M610, M611 i M710 oraz BMP61 i BMP71.',
+  seoDescription: 'Zawieszki Brady z poliuretanu B-7643 luzem do M610 i M710: 7 kolorów, 10, 15, 25 mm, 250 szt. PN: BM-15x75-7643-BL, BM-10x60-7643-OR, BM-25x75-7643-BK.',
+  shortDescription: 'Brady BM-15x75-7643-BL i 27 innych rolek BM zawierają zawieszki z poliuretanu B-7643 w siedmiu kolorach i czterech rozmiarach, po 250 sztuk. Rolki BM pasują do drukarek Brady M610, M611 i M710.',
+  description: 'Brady BM-15x75-7643-BL to niebieskie zawieszki kablowe z poliuretanu B-7643, nawinięte luzem na rolkę. Rodzina obejmuje siedem kolorów zawieszek. Kolor ułatwia rozróżnienie grup przewodów. Matowy materiał ma grubość 0,45 mm. Zawieszkę mocuje się na kablu opaskami, przez otwory w jej końcach.\n\nZawieszki mają szerokość 10, 15 albo 25 mm. Wersje 15 × 75 i 25 × 75 mm mają pole nadruku 55 mm długości. Zawieszki 10 mm występują w dwóch długościach: 10 × 60 mm z polem nadruku 10 × 40 mm i 10 × 75 mm z polem 10 × 55 mm. Rolka zawiera 250 sztuk. Dostępne kolory to niebieski, biały, żółty, pomarańczowy, czerwony, zielony i czarny. Każdy kolor występuje w czterech rozmiarach. Białe i żółte zawieszki 10 mm z numerami kończącymi się na -L należą do osobnej rodziny rolek BM.\n\nMateriał nie ma dodanych halogenów. Spełnia wymagania normy IEC 61249-2-21. Jest odporny na oleje, wodę i ścieranie. Znosi też chemikalia oraz wilgotne otoczenie. Materiał wytrzymuje ujemną temperaturę do −40 °C i dodatnią do 90 °C. Materiał luzem pasuje do M610 i M611, a także do M710 bez adaptera. Obsługują go też starsze BMP61 i BMP71. Taśmę barwiącą zamawia się osobno: do M610 i M611 jest to M61-R6010, do M710 M7-R6000. Na czarnych zawieszkach drukuje biała taśma M61-R4410-WT, a w M710 M7-R4400-WT.',
   sameAs: 'https://www.brady.eu/labels/m710-m610-m611-polyurethane-tags-bulk-cps-4556426',
   images: [
     '/images/products/brady/bm-15x75-7643-bl.png',
@@ -381,23 +400,27 @@ export const bradyM6ZawieszkiPoliuretanBmKolorowe: Product = {
     { name: 'Temperatura pracy', value: 'od −40 do 90 °C' },
     { name: 'Odporność', value: 'ścieranie, chemikalia, olej, woda, wilgoć' },
     { name: 'Kolory', value: 'niebieski, biały, żółty, pomarańczowy, czerwony, zielony, czarny' },
-    { name: 'Wymiary zawieszki', value: '15 × 75 / 25 × 75 mm' },
-    { name: 'Pole nadruku', value: '15 × 55 mm albo 25 × 55 mm' },
+    { name: 'Wymiary zawieszki', value: '10 × 60 / 10 × 75 / 15 × 75 / 25 × 75 mm' },
+    { name: 'Pole nadruku', value: '10 × 40 mm (zawieszka 10 × 60 mm), 10 × 55, 15 × 55 albo 25 × 55 mm' },
     { name: 'Liczba sztuk na rolce', value: '250' },
     { name: 'Format', value: 'zawieszki wykrawane na rolce BM' },
     { name: 'Normy', value: 'IEC 61249-2-21 (bezhalogenowe)' },
     { name: 'Zalecana taśma barwiąca', value: 'M61-R6010 (zawieszki kolorowe i białe), M61-R4410-WT (zawieszki czarne); do M710: M7-R6000, M7-R4400-WT' },
     { name: 'Zgodne drukarki', value: DRUKARKI_M6 },
-    { name: 'Numery artykułów Brady', value: numeryArtykulow(BM_7643_KOLOROWE) },
+    { name: 'Numery artykułów Brady', value: numeryArtykulow([...BM_7643_KOLOROWE, ...BM_7643_10MM]) },
   ],
-  variants: warianty(BM_7643_KOLOROWE, ['Rozmiar', 'Kolor']),
+  variants: [
+    ...warianty(BM_7643_KOLOROWE, ['Rozmiar', 'Kolor']),
+    ...warianty(BM_7643_10MM, ['Rozmiar', 'Kolor']),
+  ],
   variantAttributeTooltips: {
-    Rozmiar: 'Wymiary kolorowej zawieszki z poliuretanu i ilość sztuk na jednej rolce.\n\nZawieszka ma 15 albo 25 mm szerokości i zawsze 75 mm długości. Pole nadruku ma długość 55 mm.',
+    Rozmiar: 'Wymiary kolorowej zawieszki z poliuretanu i ilość sztuk na jednej rolce.\n\nZawieszka ma 10, 15 albo 25 mm szerokości. Długość wynosi 75 mm, a w wersji 10 × 60 mm 60 mm. Pole nadruku ma 55 mm długości, w zawieszce 10 × 60 mm 40 mm.',
     Kolor: 'Kolor poliuretanu zawieszki.\n\nSiedem kolorów pozwala oznaczyć różne grupy przewodów. Na czarnym poliuretanie drukuje biała taśma, na pozostałych kolorach taśma serii R6000HF.',
   },
   faq: [
     { question: 'Jaką taśmą drukować na czarnych zawieszkach z poliuretanu?', answer: 'Białą taśmą M61-R4410-WT. Do drukarki M710 służy taśma M7-R4400-WT.' },
-    { question: 'Ile miejsca na nadruk ma zawieszka 25 × 75 mm?', answer: 'Pole nadruku ma 25 × 55 mm. W zawieszce 15 × 75 mm pole ma 15 × 55 mm.' },
+    { question: 'Ile miejsca na nadruk mają zawieszki z poliuretanu?', answer: 'Zawieszka 25 × 75 mm ma pole nadruku 25 × 55 mm, a zawieszka 15 × 75 mm pole 15 × 55 mm. W zawieszce 10 × 75 mm pole ma 10 × 55 mm, a w najkrótszej, 10 × 60 mm, 10 × 40 mm.' },
+    { question: 'Czy rolki BM-7643 pasują do drukarki M710?', answer: 'Tak, bez adaptera materiałów. Rolki BM pasują do [Brady M610](/produkt/brady-m610), M611 i M710. W M710 zalecana jest taśma M7-R6000, a do czarnych zawieszek biała taśma M7-R4400-WT.' },
     { question: 'Czy zawieszki B-7643 są bezhalogenowe?', answer: 'Tak. Materiał nie ma dodanych halogenów i spełnia wymagania IEC 61249-2-21.' },
   ],
   applications: ['Kodowanie kabli kolorem', 'Okablowanie teleinformatyczne', 'Instalacje, w których liczy się mała emisja dymu'],

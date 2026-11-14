@@ -24,10 +24,14 @@ const KOLORY: Record<string, string> = {
   OC: 'Ochrowy',
   SL: 'Srebrny',
   CL: 'Przezroczysty',
+  PK: 'Różowy',
+  TN: 'Beżowy',
+  SB: 'Błękitny',
 }
 
 // Szerokość taśmy ciągłej według członu PN (M6C-<człon>-…).
 const SZEROKOSC: Record<string, string> = {
+  '250': '6,35 mm',
   '240': '6,1 mm',
   '318': '8,08 mm',
   '375': '9,53 mm',
@@ -47,8 +51,10 @@ const szerokoscZPn = (pn: string) => SZEROKOSC[pn.split('-')[1]]
 
 // Zalecany kolor nadruku wynika z zalecanej taśmy barwiącej: M61-R…10 = czarny, M61-R…10-WT = biały.
 type Nadruk = 'czarny' | 'biały' | 'biały lub czarny'
-// Kolumna tabeli wersji: kolor materiału i zalecany kolor nadruku (jedna kolumna, aby tabela mieściła się przy 1024 px).
-const kolorINadruk = (pn: string, nadruk: Nadruk) => `${kolorZPn(pn)}, nadruk ${nadruk}`
+// Kolumna tabeli wersji „Kolor”: kolor materiału i zalecany kolor nadruku (jedna kolumna, aby tabela mieściła się przy 1024 px).
+// W tabeli wersji długie nazwy kolorów mają miękkie dywizy, aby tabela mieściła się przy 1024 px (nazwy wariantów bez zmian).
+const kolorTabela = (pn: string) => kolorZPn(pn).replace('Jasnoniebieski', 'Jasno\u00ADniebieski').replace('Pomarańczowy', 'Poma\u00ADrań\u00ADczowy').replace('Przezroczysty', 'Prze\u00ADzro\u00ADczysty')
+const kolorINadruk = (pn: string, nadruk: Nadruk) => `${kolorTabela(pn)}, nadruk ${nadruk}`
 
 // ---------------------------------------------------------------------------
 // B-595 — taśma winylowa do pracy na zewnątrz (cps-4554350)
@@ -98,15 +104,83 @@ const TASMY_595: [string, string, Nadruk][] = [
   ['M6C-375-595-BL', '321863', 'czarny'],
 ]
 
+const TASMY_595_M7: [string, string, Nadruk][] = [
+  ['M7C-2000-595-WT', '173241', 'czarny'],
+  ['M7C-2000-595-YL', '173240', 'czarny'],
+  ['M7C-2000-595-OR', '173247', 'czarny'],
+  ['M7C-2000-595-GD', '173252', 'czarny'],
+  ['M7C-2000-595-LB', '173249', 'czarny'],
+  ['M7C-2000-595-CL', '173253', 'czarny'],
+  ['M7C-2000-595-GY', '173250', 'czarny'],
+  ['M7C-2000-595-PK', '173246', 'czarny'],
+  ['M7C-2000-595-TN', '173242', 'czarny'],
+  ['M7C-2000-595-OC', '173248', 'czarny'],
+  ['M7C-2000-595-SB', '173243', 'czarny'],
+  ['M7C-2000-595-RD', '173244', 'biały'],
+  ['M7C-2000-595-BR', '173254', 'biały'],
+  ['M7C-2000-595-GN', '173251', 'biały'],
+  ['M7C-2000-595-BL', '173255', 'biały'],
+  ['M7C-2000-595-PL', '173245', 'biały'],
+  ['M7C-2000-595-BK', '173256', 'biały'],
+  ['M7C-1000-595-WT', '173272', 'czarny'],
+  ['M7C-1000-595-YL', '173271', 'czarny'],
+  ['M7C-1000-595-OR', '173278', 'czarny'],
+  ['M7C-1000-595-GD', '173283', 'czarny'],
+  ['M7C-1000-595-LB', '173280', 'czarny'],
+  ['M7C-1000-595-CL', '173284', 'czarny'],
+  ['M7C-1000-595-GY', '173281', 'czarny'],
+  ['M7C-1000-595-PK', '173277', 'czarny'],
+  ['M7C-1000-595-TN', '173273', 'czarny'],
+  ['M7C-1000-595-OC', '173279', 'czarny'],
+  ['M7C-1000-595-SB', '173274', 'czarny'],
+  ['M7C-1000-595-RD', '173275', 'biały'],
+  ['M7C-1000-595-BR', '173285', 'biały'],
+  ['M7C-1000-595-GN', '173282', 'biały'],
+  ['M7C-1000-595-BL', '173286', 'biały'],
+  ['M7C-1000-595-PL', '173276', 'biały'],
+  ['M7C-1000-595-BK', '173287', 'biały'],
+  ['M7C-750-595-WT', '321854', 'czarny'],
+  ['M7C-750-595-YL', '321855', 'czarny'],
+  ['M7C-750-595-OR', '321856', 'czarny'],
+  ['M7C-750-595-RD', '321853', 'czarny'],
+  ['M7C-750-595-GN', '321858', 'czarny'],
+  ['M7C-750-595-BL', '321857', 'czarny'],
+  ['M7C-500-595-WT', '173205', 'czarny'],
+  ['M7C-500-595-YL', '173204', 'czarny'],
+  ['M7C-500-595-OR', '173211', 'czarny'],
+  ['M7C-500-595-GD', '173216', 'czarny'],
+  ['M7C-500-595-LB', '173213', 'czarny'],
+  ['M7C-500-595-CL', '173217', 'czarny'],
+  ['M7C-500-595-GY', '173214', 'czarny'],
+  ['M7C-500-595-PK', '173210', 'czarny'],
+  ['M7C-500-595-TN', '173206', 'czarny'],
+  ['M7C-500-595-OC', '173212', 'czarny'],
+  ['M7C-500-595-SB', '173207', 'czarny'],
+  ['M7C-500-595-RD', '173208', 'biały'],
+  ['M7C-500-595-BR', '173218', 'biały'],
+  ['M7C-500-595-GN', '173215', 'biały'],
+  ['M7C-500-595-BL', '173219', 'biały'],
+  ['M7C-500-595-PL', '173209', 'biały'],
+  ['M7C-500-595-BK', '173220', 'biały'],
+  ['M7C-375-595-WT', '321866', 'czarny'],
+  ['M7C-375-595-YL', '321867', 'czarny'],
+  ['M7C-375-595-OR', '321868', 'czarny'],
+  ['M7C-375-595-RD', '321865', 'czarny'],
+  ['M7C-375-595-GN', '321870', 'czarny'],
+  ['M7C-375-595-BL', '321869', 'czarny'],
+  ['M7C-250-595-WT', '173237', 'czarny'],
+  ['M7C-250-595-YL', '173236', 'czarny'],
+]
+
 export const bradyM6Winyl595: Product = {
   ...wspolneM6,
   id: 'brady-m6c-2000-595-wt',
   slug: 'brady-m6c-2000-595-wt',
-  name: 'Taśma winylowa do pracy na zewnątrz Brady M6C-2000-595-WT — kasety M6 do M610 i M611',
-  seoTitle: 'Brady M6C-2000-595-WT — taśma winylowa na zewnątrz do M610',
-  seoDescription: 'Winyl Brady B-595 do M610: taśma ciągła 9,53–50,8 mm × 15,24 m w 13 kolorach, do 10 lat na zewnątrz. PN: M6C-2000-595-WT, M6C-1000-595-YL, M6C-500-595-RD.',
-  shortDescription: 'Brady M6C-2000-595-WT i pozostałe kasety M6C z winylem B-595 o małym skurczu i bardzo mocnym kleju. Taśma ciągła od 9,53 do 50,8 mm w 13 kolorach, odporna na warunki zewnętrzne. Do drukarek Brady M610 i M611.',
-  description: 'Taśma Brady B-595 to winyl o małym skurczu, przeznaczony do oznaczeń na zewnątrz budynków. Na zewnątrz etykieta zachowuje trwałość do 10 lat. Bardzo mocny, trwały klej akrylowy dobrze trzyma zarówno na gładkim, jak i na szorstkim podłożu. Taśmę można nakleić na malowany pustak, malowane drewno, teksturowane tworzywo albo rury w płaszczu papierowym. Powierzchnia winylu jest błyszcząca.\n\nKaseta M6C zawiera 15,24 m taśmy ciągłej. Szerokość wynosi 9,53, 12,7, 19,05, 25,4 albo 50,8 mm. Długość każdej etykiety określa projekt w drukarce. W rodzinie jest 41 kaset w 13 kolorach. Taśma 50,8 mm ma 12 kolorów, w tym złoty, brązowy, fioletowy i jasnoniebieski. Taśma przezroczysta ma szerokość 12,7, 25,4 albo 50,8 mm.\n\nWinyl znosi promieniowanie UV, chemikalia, smary, oleje, mgłę solną i detergenty. Zakres pracy to od −40 do 82 °C, także w zamrażarce. Taśmę można naklejać już od −18 °C. Materiał ma zgodność z BS 5609 (sekcja 2 i sekcja 3) oraz z dyrektywą RoHS. Jasne taśmy wymagają czarnej taśmy barwiącej M61-R10010, a część ciemnych białej M61-R10010-WT. Kaseta działa w M610 i M611, a z adapterem materiałów także w M710.',
+  name: 'Taśma winylowa do pracy na zewnątrz Brady M6C-2000-595-WT — kasety M6 i M7 do M610, M611 i M710',
+  seoTitle: 'Brady M6C-2000-595-WT — taśma winylowa na zewnątrz do M610 i M710',
+  seoDescription: 'Winyl Brady B-595 do M610 i M710: taśma ciągła 6,35–50,8 mm × 15,24 m, do 10 lat na zewnątrz. PN: M6C-2000-595-WT, M7C-1000-595-YL, M6C-500-595-RD.',
+  shortDescription: 'Brady M6C-2000-595-WT i pozostałe kasety M6C oraz M7C z winylem B-595 o małym skurczu i bardzo mocnym kleju. Taśma ciągła od 6,35 do 50,8 mm, odporna na warunki zewnętrzne. Kasety M6 pasują do drukarek Brady M610 i M611, a kasety M7 do M710.',
+  description: 'Taśma Brady B-595 to winyl o małym skurczu, przeznaczony do oznaczeń na zewnątrz budynków. Na zewnątrz etykieta zachowuje trwałość do 10 lat. Bardzo mocny, trwały klej akrylowy dobrze trzyma zarówno na gładkim, jak i na szorstkim podłożu. Taśmę można nakleić na malowany pustak, malowane drewno, teksturowane tworzywo albo rury w płaszczu papierowym. Powierzchnia winylu jest błyszcząca.\n\nKażda kaseta mieści rolkę 15,24 m taśmy. Długość każdej etykiety określa projekt w drukarce. W rodzinie jest 41 kaset M6C w 13 kolorach i 65 kaset M7C w 17 kolorach. Kasety M6C występują w pięciu szerokościach: najwęższa ma 9,53 mm, najszersza 50,8 mm. Kasety M7C dochodzą jeszcze do szerokości 6,35 mm oraz kolorów różowego, beżowego, błękitnego i ochrowego. Taśma przezroczysta jest dostępna w trzech szerokościach, wymienionych w tabeli wersji.\n\nWinyl znosi promieniowanie UV, chemikalia, smary, oleje, mgłę solną i detergenty. Zakres pracy to od −40 do 82 °C, także w zamrażarce. Taśmę można naklejać już od −18 °C. Materiał ma zgodność z BS 5609 (sekcja 2 i sekcja 3) oraz z dyrektywą RoHS. W kasetach M6C jasne taśmy wymagają czarnej taśmy barwiącej M61-R10010, a część ciemnych białej M61-R10010-WT. Dla kaset M7C służą taśmy M7-R10000 i M7-R6000 (czarne) oraz M7-R10000-WT i M7-R4400-WT (białe). Kasety M6C obsługują drukarki M610 i M611, a do M710 wymagają adaptera materiałów. Kasety M7C pracują w M710 i starszej BMP71.',
   sameAs: 'https://www.brady.eu/labels/all-weather-permanent-adhesive-vinyl-label-tape-for-m710-m610-m611-printers-cps-4554350',
   images: [
     '/images/products/brady/m6c-2000-595-wt.png',
@@ -129,29 +203,38 @@ export const bradyM6Winyl595: Product = {
     { name: 'Temperatura naklejania', value: 'od −18 °C' },
     { name: 'Warunki pracy', value: 'na zewnątrz (do 10 lat), zamrażarka' },
     { name: 'Odporność', value: 'ścieranie, chemikalia, oleje, woda, UV, mgła solna, detergenty' },
-    { name: 'Kolory', value: 'biały, żółty, pomarańczowy, złoty, szary, jasnoniebieski, przezroczysty, czerwony, brązowy, zielony, niebieski, fioletowy, czarny (zależnie od szerokości)' },
-    { name: 'Szerokość taśmy', value: '9,53 / 12,7 / 19,05 / 25,4 / 50,8 mm, zależnie od wersji' },
+    { name: 'Kolory', value: 'biały, żółty, pomarańczowy, złoty, szary, jasnoniebieski, przezroczysty, czerwony, brązowy, zielony, niebieski, fioletowy, czarny; kasety M7C także różowy, beżowy, błękitny i ochrowy (zależnie od szerokości)' },
+    { name: 'Szerokość taśmy', value: '9,53 / 12,7 / 19,05 / 25,4 / 50,8 mm; kasety M7C także 6,35 mm; zależnie od wersji' },
     { name: 'Długość taśmy', value: '15,24 m' },
     { name: 'Format', value: 'taśma ciągła' },
     { name: 'Normy', value: 'BS 5609:1986, sekcje 2 i 3; RoHS 2011/65/EU (2015/863)' },
-    { name: 'Zalecana taśma barwiąca', value: 'M61-R10010 (czarna) albo M61-R10010-WT (biała), zależnie od koloru taśmy; do M710: M7-R10000 albo M7-R10000-WT' },
-    { name: 'Zgodne drukarki', value: DRUKARKI_M610 },
-    { name: 'Numery artykułów Brady', value: TASMY_595.map(([pn, art]) => `${pn}: ${art}`).join('; ') },
+    { name: 'Zalecana taśma barwiąca', value: 'kasety M6C: M61-R10010 (czarna) albo M61-R10010-WT (biała), zależnie od koloru taśmy; kasety M7C: M7-R10000 albo M7-R6000 (czarne), M7-R10000-WT albo M7-R4400-WT (białe)' },
+    { name: 'Zgodne drukarki', value: 'kasety M6C: M610, M611, BMP61; M710 i BMP71 z adapterem materiałów. Kasety M7C: M710, BMP71' },
+    { name: 'Numery artykułów Brady', value: [...TASMY_595, ...TASMY_595_M7].map(([pn, art]) => `${pn}: ${art}`).join('; ') },
   ],
-  variants: TASMY_595.map(([pn, , nadruk]) => ({
-    partNumber: pn,
-    name: `Brady ${pn} — winyl B-595 ${szerokoscZPn(pn)} × 15,24 m, ${kolorZPn(pn).toLowerCase()}`,
-    attributes: { Szerokość: szerokoscZPn(pn), 'Kolor i nadruk': kolorINadruk(pn, nadruk) },
-    availability: 'unavailable' as const,
-  })),
+  variants: [
+    ...TASMY_595.map(([pn, , nadruk]) => ({
+      partNumber: pn,
+      name: `Brady ${pn} — winyl B-595 ${szerokoscZPn(pn)} × 15,24 m, ${kolorZPn(pn).toLowerCase()}`,
+      attributes: { Szerokość: szerokoscZPn(pn), Kolor: kolorINadruk(pn, nadruk), Drukarka: 'M610, M611' },
+      availability: 'unavailable' as const,
+    })),
+    ...TASMY_595_M7.map(([pn, , nadruk]) => ({
+      partNumber: pn,
+      name: `Brady ${pn} — winyl B-595 ${szerokoscZPn(pn)} × 15,24 m, ${kolorZPn(pn).toLowerCase()}, kaseta do M710`,
+      attributes: { Szerokość: szerokoscZPn(pn), Kolor: kolorINadruk(pn, nadruk), Drukarka: 'M710' },
+      availability: 'unavailable' as const,
+    })),
+  ],
   variantAttributeTooltips: {
-    Szerokość: 'Szerokość taśmy ciągłej w kasecie.\n\nKażda kaseta ma 15,24 m taśmy. Szerokość wynosi od 9,53 do 50,8 mm. Długość etykiety wybiera się w projekcie.',
-    'Kolor i nadruk': 'Kolor winylu B-595 i kolor nadruku, do którego dobiera się taśmę barwiącą.\n\nNajwięcej kolorów, 12, ma taśma 50,8 mm. Na taśmie białej, żółtej i przezroczystej nadruk jest czarny, a na czarnej, brązowej i fioletowej biały.',
+    Szerokość: 'Szerokość taśmy ciągłej w kasecie.\n\nKażda kaseta ma 15,24 m taśmy. Kasety M6C mają od 9,53 do 50,8 mm, a kasety M7C od 6,35 do 50,8 mm. Długość etykiety wybiera się w projekcie.',
+    Kolor: 'Kolor winylu B-595 i kolor nadruku, do którego dobiera się taśmę barwiącą.\n\nNajwięcej kolorów ma taśma 50,8 mm: 12 w kasetach M6C i 17 w M7C. Na taśmie białej, żółtej i przezroczystej nadruk jest czarny, a na czarnej, brązowej i fioletowej biały.',
+    Drukarka: 'Drukarki, w których działa dany numer.\n\nM610, M611 — kasety M6 i materiały BM. Pasują też do M710 po założeniu adaptera M71-ADAPT-BK z zestawu drukarki.\n\nM710 — kasety M7 i materiały BM7; nie pasują do M610 ani M611.',
   },
   faq: [
     { question: 'Jak długo taśma B-595 wytrzymuje na zewnątrz?', answer: 'Do 10 lat. Winyl jest odporny na UV, mgłę solną, oleje i detergenty. Etykiety zachowują własności w temperaturach od −40 do 82 °C.' },
     { question: 'Którą taśmę barwiącą wybrać do kolorowej taśmy B-595?', answer: 'Na jasnym tle drukuje czarna taśma M61-R10010. Do taśmy czarnej, brązowej i fioletowej oraz części czerwonych, zielonych i niebieskich zalecana jest biała M61-R10010-WT. Kolor nadruku dla każdej kasety podaje tabela wariantów.' },
-    { question: 'Czy kaseta M6C z winylem B-595 pasuje do Brady M710?', answer: 'Tak, z adapterem materiałów. W M710 stosuje się taśmy barwiące M7-R10000 albo M7-R10000-WT. Podstawowe drukarki dla kaset M6 to [Brady M610](/produkt/brady-m610) i M611.' },
+    { question: 'Które kasety z winylem B-595 pasują do Brady M710?', answer: 'Kasety M7C działają w [Brady M710](/produkt/brady-m710) bez dodatków. Kasety M6C pasują do M710 po założeniu [adaptera M71-ADAPT-BK](/produkt/brady-m71-adapt-bk) z zestawu drukarki. W M710 stosuje się taśmy M7-R10000 i M7-R6000 oraz M7-R10000-WT i M7-R4400-WT, a taśm M61 nie stosuje się. Do M610 i M611 pasują tylko kasety M6C.' },
   ],
   applications: ['Oznaczenia instalacji na zewnątrz budynków', 'Oznaczanie rur, zaworów i urządzeń', 'Oznaczenia podłóg i magazynu'],
 }
@@ -230,12 +313,12 @@ export const bradyM6WorkHorse439: Product = {
   variants: TASMY_439.map(([pn, , nadruk]) => ({
     partNumber: pn,
     name: `Brady WorkHorse ${pn} — winyl ${szerokoscZPn(pn)} × 15,24 m, ${kolorZPn(pn).toLowerCase()}`,
-    attributes: { Szerokość: szerokoscZPn(pn), 'Kolor i nadruk': kolorINadruk(pn, nadruk) },
+    attributes: { Szerokość: szerokoscZPn(pn), Kolor: kolorINadruk(pn, nadruk) },
     availability: 'unavailable' as const,
   })),
   variantAttributeTooltips: {
     Szerokość: 'Szerokość taśmy w kasecie M6C.\n\nTaśma ma 15,24 m. Najwęższa ma 9,53 mm, najszersza 48,26 mm.',
-    'Kolor i nadruk': 'Kolor tła winylu WorkHorse i zalecany kolor nadruku.\n\nTaśma 9,53 mm jest tylko biała albo żółta. Taśma biała wymaga nadruku czarnego, a czarna białego. Na pozostałych kolorach można drukować oboma kolorami.',
+    Kolor: 'Kolor tła winylu WorkHorse i zalecany kolor nadruku.\n\nTaśma 9,53 mm jest tylko biała albo żółta. Taśma biała wymaga nadruku czarnego, a czarna białego. Na pozostałych kolorach można drukować oboma kolorami.',
   },
   faq: [
     { question: 'Jaki zakres temperatur wytrzymuje winyl WorkHorse B-439?', answer: 'Od −70 do 80 °C. Etykiety z tego winylu można stosować w zamrażarkach.' },
@@ -258,15 +341,25 @@ const TASMY_581: [string, string][] = [
   ['M6C-2000-581-YL', '177764'],
 ]
 
+// Kasety M7C do M710 — ten sam materiał B-581; taśma barwiąca M7-R6000.
+const TASMY_581_M7: [string, string][] = [
+  ['M7C-500-581-WT', '173222'],
+  ['M7C-500-581-YL', '173221'],
+  ['M7C-1000-581-WT', '173289'],
+  ['M7C-1000-581-YL', '173288'],
+  ['M7C-2000-581-WT', '173258'],
+  ['M7C-2000-581-YL', '173257'],
+]
+
 export const bradyM6Winyl581: Product = {
   ...wspolneM6,
   id: 'brady-m6c-500-581-wt',
   slug: 'brady-m6c-500-581-wt',
-  name: 'Taśma winylowa do przeklejania Brady M6C-500-581-WT — kasety M6 do M610 i M611',
+  name: 'Taśma winylowa do przeklejania Brady M6C-500-581-WT — kasety M6 i M7 do M610, M611 i M710',
   seoTitle: 'Brady M6C-500-581-WT — taśma winylowa do przeklejania do M610',
-  seoDescription: 'Winyl Brady B-581 do M610 z klejem do przeklejania, bez resztek. Taśma 12,7–50,8 mm, biała lub żółta. PN: M6C-500-581-WT, M6C-1000-581-YL, M6C-2000-581-WT.',
-  shortDescription: 'Brady M6C-500-581-WT i pozostałe kasety M6C z błyszczącym winylem B-581 na kleju do przeklejania. Po zdjęciu etykieta nie zostawia śladów kleju i można ją przenieść. Do drukarek Brady M610 i M611.',
-  description: 'Brady B-581 to błyszcząca folia winylowa z klejem do przeklejania. Klej trzyma etykietę na miejscu, a po zdjęciu nie zostawia resztek. Oznaczenie można więc przenieść albo wymienić. Materiał jest przeznaczony głównie do oznaczeń wewnątrz budynków, np. w systemie 5S, na regałach i w magazynie. Najlepiej przylega do gładkich powierzchni.\n\nW kasecie M6C jest 15,24 m taśmy o grubości 0,125 mm. Do wyboru są trzy szerokości: 12,7, 25,4 i 50,8 mm. Każda z tych szerokości jest biała albo żółta. Długość pojedynczej etykiety ustala się przy projektowaniu w drukarce. Z taśmy powstają oznaczenia obiektów, magazynu, regałów i bezpieczeństwa.\n\nFolia winylowa działa poprawnie w przedziale od −40 do 82 °C. Minimalna temperatura naklejania wynosi 10 °C. Winyl jest odporny na ścieranie oraz działanie chemikaliów. Na zewnątrz średnia trwałość wynosi pięć lat. Zalecane taśmy barwiące to M61-R10010 i M61-R6010, a w M710 taśma M7-R10000. Z kaset korzystają M610 i M611, a po założeniu adaptera także M710.',
+  seoDescription: 'Winyl Brady B-581 do M610 i M710 z klejem do przeklejania. Taśma 12,7–50,8 mm, biała lub żółta. PN: M6C-500-581-WT, M7C-1000-581-YL, M6C-2000-581-WT.',
+  shortDescription: 'Brady M6C-500-581-WT i pozostałe kasety M6C oraz M7C z błyszczącym winylem B-581 na kleju do przeklejania. Po zdjęciu etykieta nie zostawia śladów kleju i można ją przenieść. Kasety M6 pasują do drukarek Brady M610 i M611, a kasety M7 do M710.',
+  description: 'Brady B-581 to błyszcząca folia winylowa z klejem do przeklejania. Klej trzyma etykietę na miejscu, a po zdjęciu nie zostawia resztek. Oznaczenie można więc przenieść albo wymienić. Materiał jest przeznaczony głównie do oznaczeń wewnątrz budynków, np. w systemie 5S, na regałach i w magazynie. Najlepiej przylega do gładkich powierzchni.\n\nW kasecie M6C jest 15,24 m taśmy o grubości 0,125 mm. Do wyboru są trzy szerokości: 12,7, 25,4 i 50,8 mm. Każda z tych szerokości jest biała albo żółta. Długość pojedynczej etykiety ustala się przy projektowaniu w drukarce. Z taśmy powstają oznaczenia obiektów, magazynu, regałów i bezpieczeństwa.\n\nFolia winylowa działa poprawnie w przedziale od −40 do 82 °C. Minimalna temperatura naklejania wynosi 10 °C. Winyl jest odporny na ścieranie oraz działanie chemikaliów. Na zewnątrz średnia trwałość wynosi pięć lat. Do kaset M6C zaleca się taśmy barwiące M61-R10010 i M61-R6010, a do kaset M7C taśmę M7-R6000. Kasety M6C obsługują M610 i M611 oraz M710 z adapterem materiałów. Kasety M7C mają te same szerokości i kolory co M6C, lecz przeznaczone są do M710.',
   sameAs: 'https://www.brady.eu/labels/repositionable-multi-purpose-vinyl-label-tape-for-m610-m611-m710-printers-cps-5143111',
   images: [
     '/images/products/brady/m6c-500-581-wt.png',
@@ -293,24 +386,34 @@ export const bradyM6Winyl581: Product = {
     { name: 'Szerokość taśmy', value: '12,7 / 25,4 / 50,8 mm, zależnie od wersji' },
     { name: 'Długość taśmy', value: '15,24 m' },
     { name: 'Format', value: 'taśma ciągła' },
-    { name: 'Zalecana taśma barwiąca', value: 'M61-R10010 albo M61-R6010; do M710: M7-R10000' },
-    { name: 'Zgodne drukarki', value: DRUKARKI_M610 },
-    { name: 'Numery artykułów Brady', value: TASMY_581.map(([pn, art]) => `${pn}: ${art}`).join('; ') },
+    { name: 'Zalecana taśma barwiąca', value: 'kasety M6C: M61-R10010 albo M61-R6010 (w M710 z adapterem: M7-R10000); kasety M7C: M7-R6000' },
+    { name: 'Zgodne drukarki', value: 'kasety M6C: M610, M611, BMP61; M710 i BMP71 z adapterem materiałów. Kasety M7C: M710, BMP71' },
+    { name: 'Numery artykułów Brady', value: [...TASMY_581, ...TASMY_581_M7].map(([pn, art]) => `${pn}: ${art}`).join('; ') },
   ],
-  variants: TASMY_581.map(([pn]) => ({
-    partNumber: pn,
-    name: `Brady ${pn} — winyl do przeklejania ${szerokoscZPn(pn)} × 15,24 m, ${kolorZPn(pn).toLowerCase()}`,
-    attributes: { Rozmiar: `ciągła ${szerokoscZPn(pn)} × 15,24 m`, Kolor: kolorZPn(pn) },
-    availability: 'unavailable' as const,
-  })),
+  variants: [
+    ...TASMY_581.map(([pn]) => ({
+      partNumber: pn,
+      name: `Brady ${pn} — winyl do przeklejania ${szerokoscZPn(pn)} × 15,24 m, ${kolorZPn(pn).toLowerCase()}`,
+      attributes: { Rozmiar: `ciągła ${szerokoscZPn(pn)} × 15,24 m`, Kolor: kolorZPn(pn), Drukarka: 'M610, M611' },
+      availability: 'unavailable' as const,
+    })),
+    ...TASMY_581_M7.map(([pn]) => ({
+      partNumber: pn,
+      name: `Brady ${pn} — winyl do przeklejania ${szerokoscZPn(pn)} × 15,24 m, ${kolorZPn(pn).toLowerCase()}, kaseta do M710`,
+      attributes: { Rozmiar: `ciągła ${szerokoscZPn(pn)} × 15,24 m`, Kolor: kolorZPn(pn), Drukarka: 'M710' },
+      availability: 'unavailable' as const,
+    })),
+  ],
   variantAttributeTooltips: {
     Rozmiar: 'Szerokość i długość taśmy B-581 w kasecie.\n\nSą trzy szerokości: 12,7, 25,4 i 50,8 mm. W kasecie jest 15,24 m taśmy.',
     Kolor: 'Kolor folii winylowej.\n\nWszystkie trzy szerokości mają wersję białą i żółtą.',
+    Drukarka: 'Drukarki, w których działa dany numer.\n\nM610, M611 — kasety M6. Pasują też do M710 po założeniu adaptera M71-ADAPT-BK z zestawu drukarki.\n\nM710 — kasety M7; nie pasują do M610 ani M611.',
   },
   faq: [
     { question: 'Czy etykietę B-581 można zdjąć bez śladów?', answer: 'Tak. Klej akrylowy do przeklejania trzyma etykietę na miejscu, a po zdjęciu nie zostawia resztek. Etykietę można nakleić w nowym miejscu.' },
     { question: 'Gdzie stosować taśmę B-581?', answer: 'Głównie wewnątrz budynków: w oznaczeniach 5S, w magazynie, na regałach i w oznaczeniach bezpieczeństwa. Taśma najlepiej trzyma się gładkich powierzchni.' },
-    { question: 'Którą taśmą barwiącą drukować na B-581?', answer: 'W [Brady M610](/produkt/brady-m610) i M611 taśmą M61-R10010 albo M61-R6010. Do M710 z adapterem pasuje taśma M7-R10000.' },
+    { question: 'Którą taśmą barwiącą drukować na B-581?', answer: 'W [Brady M610](/produkt/brady-m610) i M611 taśmą M61-R10010 albo M61-R6010. Do kaset M7C zaleca się taśmę M7-R6000, a do kaset M6C w M710 z adapterem taśmę M7-R10000.' },
+    { question: 'Które kasety B-581 pasują do Brady M710?', answer: 'Kasety M7C są przeznaczone do [Brady M710](/produkt/brady-m710) i nie wymagają adaptera. Kasety M6C pasują do M710 po założeniu [adaptera M71-ADAPT-BK](/produkt/brady-m71-adapt-bk) z zestawu drukarki.' },
   ],
   applications: ['Oznaczenia 5S i lean', 'Oznaczenia magazynu i regałów', 'Oznaczenia bezpieczeństwa'],
 }
@@ -339,17 +442,39 @@ const PRZEGLADY_595: [string, string, Nadruk][] = [
   ['M6-226-595-BR', '323205', 'biały'],
   ['M6-226-595-BL', '323206', 'biały'],
 ]
-const srednicaPrzegladu = (pn: string) => (pn.startsWith('M6-225') ? '25 mm' : '35 mm')
+
+// Kasety M7 do M710 (rodzina Brady cps-5193089) — ten sam materiał B-595, te same średnice i kolory.
+const PRZEGLADY_595_M7: [string, string, Nadruk][] = [
+  ['M7-225-595-WT', '323221', 'czarny'],
+  ['M7-225-595-GY', '323217', 'czarny'],
+  ['M7-225-595-OR', '323219', 'czarny'],
+  ['M7-225-595-OC', '323218', 'czarny'],
+  ['M7-225-595-GN', '323216', 'biały'],
+  ['M7-225-595-PL', '323220', 'biały'],
+  ['M7-225-595-RD', '323222', 'biały'],
+  ['M7-225-595-BR', '323214', 'biały'],
+  ['M7-225-595-BL', '323215', 'biały'],
+  ['M7-226-595-WT', '323230', 'czarny'],
+  ['M7-226-595-GY', '323226', 'czarny'],
+  ['M7-226-595-OR', '323228', 'czarny'],
+  ['M7-226-595-OC', '323227', 'czarny'],
+  ['M7-226-595-GN', '323225', 'biały'],
+  ['M7-226-595-PL', '323229', 'biały'],
+  ['M7-226-595-RD', '323231', 'biały'],
+  ['M7-226-595-BR', '323223', 'biały'],
+  ['M7-226-595-BL', '323224', 'biały'],
+]
+const srednicaPrzegladu = (pn: string) => (pn.includes('-225-') ? '25 mm' : '35 mm')
 
 export const bradyM6PrzegladyData595: Product = {
   ...wspolneM6,
   id: 'brady-m6-225-595-wt',
   slug: 'brady-m6-225-595-wt',
-  name: 'Okrągłe etykiety winylowe z datą przeglądu Brady M6-225-595-WT — kasety M6 do M610 i M611',
-  seoTitle: 'Brady M6-225-595-WT — etykiety z datą przeglądu do M610',
-  seoDescription: 'Okrągłe etykiety Brady z winylu B-595 do M610 na daty przeglądów gaśnic: Ø 25 lub 35 mm, 250 szt., 9 kolorów. PN: M6-225-595-WT, M6-226-595-RD, M6-225-595-BL.',
-  shortDescription: 'Brady M6-225-595-WT i pozostałe kasety M6 z okrągłymi etykietami z winylu B-595 do oznaczania daty przeglądu. Średnica 25 albo 35 mm, dziewięć kolorów, rolka po 250 sztuk. Do drukarek Brady M610 i M611.',
-  description: 'Okrągłe etykiety Brady z datą przeglądu oznaczają termin kontroli maszyn i wyposażenia. Przykładem są gaśnice, które wymagają regularnych przeglądów. Datę i inne dane drukuje się na miejscu, w chwili kontroli. Etykiety są z winylu B-595 z błyszczącą powierzchnią. Klej akrylowy jest trwały i mocny, więc etykieta trzyma także na szorstkim podłożu.\n\nEtykiety mają średnicę 25 albo 35 mm. Rolka w kasecie M6 zawiera 250 etykiet. Każda średnica jest w dziewięciu kolorach: białym, szarym, pomarańczowym, ochrowym, zielonym, fioletowym, czerwonym, brązowym i niebieskim. Gotowe szablony etykiet przeglądowych zawiera program Brady Workstation.\n\nEtykieta wytrzymuje temperaturę od −40 do 82 °C i warunki w zamrażarce. Przy naklejaniu temperatura może spaść do −18 °C. Etykiety są odporne na ścieranie, oleje, wodę i chemikalia. Można je stosować na zewnątrz. Materiał spełnia normę BS 5609:1986. Na etykietach białych, szarych, pomarańczowych i ochrowych drukuje czarna taśma M61-R10010. Na pozostałych kolorach zalecana jest biała M61-R10010-WT. Kasety pasują do M610, M611 i M710 z adapterem materiałów.',
+  name: 'Okrągłe etykiety winylowe z datą przeglądu Brady M6-225-595-WT — kasety M6 i M7 do M610, M611 i M710',
+  seoTitle: 'Brady M6-225-595-WT — etykiety z datą przeglądu do M610 i M710',
+  seoDescription: 'Okrągłe etykiety Brady z winylu B-595 do M610 i M710 na daty przeglądów gaśnic: Ø 25 lub 35 mm, 250 szt. PN: M6-225-595-WT, M7-226-595-RD, M6-225-595-BL.',
+  shortDescription: 'Brady M6-225-595-WT i pozostałe kasety M6 oraz M7 z okrągłymi etykietami z winylu B-595 do oznaczania daty przeglądu. Średnica 25 albo 35 mm, dziewięć kolorów, rolka po 250 sztuk. Kasety M6 pasują do drukarek Brady M610 i M611, a kasety M7 do M710.',
+  description: 'Okrągłe etykiety Brady z datą przeglądu oznaczają termin kontroli maszyn i wyposażenia. Przykładem są gaśnice, które wymagają regularnych przeglądów. Datę i inne dane drukuje się na miejscu, w chwili kontroli. Etykiety są z winylu B-595 z błyszczącą powierzchnią. Klej akrylowy jest trwały i mocny, więc etykieta trzyma także na szorstkim podłożu.\n\nEtykiety mają średnicę 25 albo 35 mm. Rolka w kasecie M6 lub M7 zawiera 250 etykiet. Każda średnica jest w dziewięciu kolorach: białym, szarym, pomarańczowym, ochrowym, zielonym, fioletowym, czerwonym, brązowym i niebieskim. Gotowe szablony etykiet przeglądowych zawiera program Brady Workstation.\n\nEtykieta wytrzymuje temperaturę od −40 do 82 °C i warunki w zamrażarce. Przy naklejaniu temperatura może spaść do −18 °C. Etykiety są odporne na ścieranie, oleje, wodę i chemikalia. Można je stosować na zewnątrz. Materiał spełnia normę BS 5609:1986. W kasetach M6 na etykietach białych, szarych, pomarańczowych i ochrowych drukuje czarna taśma M61-R10010, a na pozostałych kolorach biała M61-R10010-WT. W kasetach M7 służą do tego odpowiednio taśmy M7-R10000 albo M7-R6000 oraz M7-R10000-WT albo M7-R4400-WT. Do M610 i M611 służą kasety M6. Drukarka M710 przyjmuje kasety M7, a kasety M6 tylko z adapterem materiałów.',
   sameAs: 'https://www.brady.eu/labels/all-weather-permanent-adhesive-vinyl-inspection-date-labels-for-m610-m611-m710-printers-cps-5193088',
   images: [
     '/images/products/brady/m6-225-595-wt.png',
@@ -379,23 +504,33 @@ export const bradyM6PrzegladyData595: Product = {
     { name: 'Liczba sztuk na rolce', value: '250' },
     { name: 'Format', value: 'etykiety wykrawane, okrągłe' },
     { name: 'Normy', value: 'BS 5609:1986, sekcje 2 i 3' },
-    { name: 'Zalecana taśma barwiąca', value: 'M61-R10010 (czarna) do etykiet białych, szarych, pomarańczowych i ochrowych; M61-R10010-WT (biała) do pozostałych' },
-    { name: 'Zgodne drukarki', value: DRUKARKI_M610 },
-    { name: 'Numery artykułów Brady', value: PRZEGLADY_595.map(([pn, art]) => `${pn}: ${art}`).join('; ') },
+    { name: 'Zalecana taśma barwiąca', value: 'kasety M6: M61-R10010 (czarna) do etykiet białych, szarych, pomarańczowych i ochrowych, M61-R10010-WT (biała) do pozostałych; kasety M7: M7-R10000 albo M7-R6000 (czarne) i M7-R10000-WT albo M7-R4400-WT (białe) w tych samych grupach kolorów' },
+    { name: 'Zgodne drukarki', value: 'kasety M6: M610, M611, BMP61; M710 i BMP71 z adapterem materiałów. Kasety M7: M710, BMP71' },
+    { name: 'Numery artykułów Brady', value: [...PRZEGLADY_595, ...PRZEGLADY_595_M7].map(([pn, art]) => `${pn}: ${art}`).join('; ') },
   ],
-  variants: PRZEGLADY_595.map(([pn, , nadruk]) => ({
-    partNumber: pn,
-    name: `Brady ${pn} — 250 okrągłych etykiet Ø ${srednicaPrzegladu(pn)}, ${kolorMnogi(pn)}`,
-    attributes: { Rozmiar: `Ø ${srednicaPrzegladu(pn)}, 250 szt.`, 'Kolor i nadruk': kolorINadruk(pn, nadruk) },
-    availability: 'unavailable' as const,
-  })),
+  variants: [
+    ...PRZEGLADY_595.map(([pn, , nadruk]) => ({
+      partNumber: pn,
+      name: `Brady ${pn} — 250 okrągłych etykiet Ø ${srednicaPrzegladu(pn)}, ${kolorMnogi(pn)}`,
+      attributes: { Rozmiar: `Ø ${srednicaPrzegladu(pn)}, 250 szt.`, Kolor: kolorINadruk(pn, nadruk), Drukarka: 'M610, M611' },
+      availability: 'unavailable' as const,
+    })),
+    ...PRZEGLADY_595_M7.map(([pn, , nadruk]) => ({
+      partNumber: pn,
+      name: `Brady ${pn} — 250 okrągłych etykiet Ø ${srednicaPrzegladu(pn)}, ${kolorMnogi(pn)}, kaseta do M710`,
+      attributes: { Rozmiar: `Ø ${srednicaPrzegladu(pn)}, 250 szt.`, Kolor: kolorINadruk(pn, nadruk), Drukarka: 'M710' },
+      availability: 'unavailable' as const,
+    })),
+  ],
   variantAttributeTooltips: {
     Rozmiar: 'Średnica okrągłej etykiety przeglądowej.\n\nSą dwie średnice: 25 i 35 mm. Rolka zawsze ma 250 etykiet.',
-    'Kolor i nadruk': 'Kolor tła etykiety przeglądowej i zalecany kolor nadruku.\n\nObie średnice mają te same dziewięć kolorów. Na tle białym, szarym, pomarańczowym i ochrowym nadruk jest czarny, a na pozostałych biały.',
+    Kolor: 'Kolor tła etykiety przeglądowej i zalecany kolor nadruku.\n\nObie średnice mają te same dziewięć kolorów. Na tle białym, szarym, pomarańczowym i ochrowym nadruk jest czarny, a na pozostałych biały.',
+    Drukarka: 'Drukarki, w których działa dany numer.\n\nM610, M611 — kasety M6. Pasują też do M710 po założeniu adaptera M71-ADAPT-BK z zestawu drukarki.\n\nM710 — kasety M7; nie pasują do M610 ani M611.',
   },
   faq: [
     { question: 'Do czego służą etykiety z datą przeglądu?', answer: 'Do oznaczania daty kontroli maszyn, urządzeń i wyposażenia, np. gaśnic. Datę drukuje się w chwili przeglądu, w dowolnym miejscu zakładu.' },
     { question: 'Jaką taśmą barwiącą drukować na etykietach przeglądowych?', answer: 'Na etykietach białych, szarych, pomarańczowych i ochrowych taśmą czarną M61-R10010. Na zielonych, fioletowych, czerwonych, brązowych i niebieskich taśmą białą M61-R10010-WT. Obie pasują do [Brady M610](/produkt/brady-m610) i M611.' },
+    { question: 'Czy etykiety z datą przeglądu pasują do Brady M710?', answer: 'Kasety M7 są przeznaczone do [Brady M710](/produkt/brady-m710) i nie wymagają adaptera. Kasety M6 pasują do M710 po założeniu [adaptera M71-ADAPT-BK](/produkt/brady-m71-adapt-bk) z zestawu drukarki. W M710 stosuje się taśmy M7-R10000 i M7-R6000 oraz M7-R10000-WT i M7-R4400-WT.' },
   ],
   applications: ['Daty przeglądów gaśnic', 'Kontrola maszyn i urządzeń', 'Oznaczenia inwentarzowe'],
 }
@@ -441,15 +576,38 @@ const CLEANLIFT_498: [string, string, string, string, string][] = [
   ['M6C-500-498', '173913', '12,7 mm × 9,14 m', '', ''],
 ]
 
+// Kasety M7 i M7C do M710 — ten sam materiał B-498; taśma barwiąca M7-R6200.
+const CLEANLIFT_498_M7: [string, string, string, string, string][] = [
+  ['M7-19-498', '173396', '25,4 × 25,4 mm', '250', '12–10 AWG'],
+  ['M7-10-498', '173431', '6,35 × 19,05 mm', '750', '16–10 AWG'],
+  ['M7-7-498', '173312', '12,7 × 12,7 mm', '500', '22–16 AWG'],
+  ['M7-11-498', '173428', '12,7 × 19,05 mm', '500', '16–10 AWG'],
+  ['M7-18-498', '173402', '19,05 × 25,4 mm', '250', '10–4 AWG'],
+  ['M7-30-498', '173348', '38,1 × 19,05 mm', '250', '10–4 AWG'],
+  ['M7-16-498', '174554', '25,4 × 9,53 mm', '500', '12–10 AWG'],
+  ['M7-17-498', '173405', '25,4 × 12,7 mm', '500', '12–10 AWG'],
+  ['M7-21-498', '173376', '25,4 × 63,5 mm', '100', ''],
+  ['M7-33-498', '174607', '38,1 × 101,6 mm', '100', ''],
+  ['M7-29-498', '173356', '38,1 × 12,7 mm', '500', '10–4 AWG'],
+  ['M7-31-498', '173341', '38,1 × 25,4 mm', '250', '10–4 AWG'],
+  ['M7-32-498', '174606', '38,1 × 38,1 mm', '250', '10–4 AWG'],
+  ['M7C-240-498', '173239', '6,1 mm × 9,14 m', '', ''],
+  ['M7C-318-498', '173235', '8,08 mm × 9,14 m', '', ''],
+  ['M7C-375-498', '173232', '9,53 mm × 9,14 m', '', ''],
+  ['M7C-500-498', '173225', '12,7 mm × 9,14 m', '', ''],
+  ['M7C-1000-498', '173293', '25,4 mm × 9,14 m', '', ''],
+  ['M7C-1900-498', '173264', '48,26 mm × 9,14 m', '', ''],
+]
+
 export const bradyM6CleanLift498: Product = {
   ...wspolneM6,
   id: 'brady-m6-19-498',
   slug: 'brady-m6-19-498',
-  name: 'Etykiety z tkaniny winylowej do przeklejania Brady CleanLift M6-19-498 — kasety M6 do M610 i M611',
-  seoTitle: 'Brady CleanLift M6-19-498 — etykiety do przeklejania do M610',
-  seoDescription: 'Tkanina winylowa Brady CleanLift B-498 do M610: 18 rozmiarów etykiet i 4 taśmy ciągłe, do przeklejania. PN: M6-19-498, M6-11-498, M6-7-498, M6C-500-498.',
-  shortDescription: 'Brady CleanLift M6-19-498 i pozostałe kasety M6 i M6C z tkaniną winylową B-498 na kleju do przeklejania. Etykiety wykrawane od 6,35 × 19,05 do 38,1 × 152,4 mm oraz taśma ciągła. Do drukarek Brady M610 i M611.',
-  description: 'CleanLift B-498 to tkanina winylowa z kauczukowym klejem do przeklejania. Po naklejeniu etykieta trzyma mocno, ale daje się zdjąć czysto i przenieść. Podłoże z tkaniny jest elastyczne, więc etykieta dobrze owija przewody. Specjalna warstwa wierzchnia daje wyraźny nadruk, a wykończenie jest półbłyszczące. Etykiety oznaczają przewody, płytki drukowane, urządzenia i środki trwałe.\n\nRodzina obejmuje 18 kaset M6 z białymi etykietami wykrawanymi. Do tego dochodzą 4 kasety M6C z taśmą ciągłą. Etykiety mają od 6,35 × 19,05 mm do 38,1 × 152,4 mm. Na rolce jest od 50 do 750 sztuk. Taśma ciągła ma 9,14 m długości i 6,1, 8,08, 9,53 albo 12,7 mm szerokości. Etykiety owijane obejmują przewody od 22 AWG do 500 MCM. Największa z nich, 38,1 × 101,6 mm, pasuje na przewody od 10,8 do 24,31 mm.\n\nGrubość tkaniny to 0,185 mm. Materiał ma uznanie UL. Etykiety można stosować od −40 do 80 °C oraz w zamrażarce. Etykiety nakleja się przy temperaturze nie niższej niż 10 °C. Tkanina znosi tarcie, działanie chemikaliów, korozję, wilgotność, promienie UV i pogodę. Do druku służy taśma barwiąca M61-R6210, a w M710 taśma M7-R6200. Kasety pasują do M610 i M611 oraz do M710 z adapterem materiałów.',
+  name: 'Etykiety z tkaniny winylowej do przeklejania Brady CleanLift M6-19-498 — kasety M6 i M7 do M610, M611 i M710',
+  seoTitle: 'Brady CleanLift M6-19-498 — etykiety do przeklejania do M710',
+  seoDescription: 'Tkanina winylowa Brady CleanLift B-498 do M610 i M710: etykiety i taśmy ciągłe do przeklejania. PN: M6-19-498, M7-11-498, M6-7-498, M7C-500-498.',
+  shortDescription: 'Brady CleanLift M6-19-498 i pozostałe kasety M6, M6C, M7 i M7C z tkaniną winylową B-498 na kleju do przeklejania. Etykiety wykrawane od 6,35 × 19,05 do 38,1 × 152,4 mm oraz taśma ciągła. Kasety M6 pasują do drukarek Brady M610 i M611, a kasety M7 do M710.',
+  description: 'CleanLift B-498 to tkanina winylowa z kauczukowym klejem do przeklejania. Po naklejeniu etykieta trzyma mocno, ale daje się zdjąć czysto i przenieść. Podłoże z tkaniny jest elastyczne, więc etykieta dobrze owija przewody. Specjalna warstwa wierzchnia daje wyraźny nadruk, a wykończenie jest półbłyszczące. Etykiety oznaczają przewody, płytki drukowane, urządzenia i środki trwałe.\n\nW części M6 jest 18 kaset z gotowymi etykietami oraz cztery z taśmą ciągłą. Dla M710 przygotowano 13 kaset M7 z etykietami oraz 6 kaset M7C z taśmą. Wymiary etykiet podaje tabela wersji. Na rolce jest od 50 do 750 sztuk. Taśma ciągła ma 9,14 m długości. W kasetach M6C jej szerokość sięga 12,7 mm, a w kasetach M7C aż 48,26 mm. Etykiety owijane obejmują przewody od 22 AWG do 500 MCM. Etykieta M6 38,1 × 101,6 mm pasuje na przewody od 10,8 do 24,31 mm.\n\nGrubość tkaniny to 0,185 mm. Materiał ma uznanie UL. Etykiety można stosować od −40 do 80 °C oraz w zamrażarce. Etykiety nakleja się przy temperaturze nie niższej niż 10 °C. Tkanina znosi tarcie, działanie chemikaliów, korozję, wilgotność, promienie UV i pogodę. Nadruk w M610 i M611 powstaje z taśmy barwiącej M61-R6210. Do M710 kasety M6 wymagają adaptera materiałów, natomiast kasety M7 go nie potrzebują. Dla kaset M7 przewidziano taśmę M7-R6200.',
   sameAs: 'https://www.brady.eu/labels/repositionable-multi-purpose-vinyl-cloth-labels-for-m710-m610-m611-printers-cps-4554334',
   images: [
     '/images/products/brady/m6-19-498.png',
@@ -475,35 +633,52 @@ export const bradyM6CleanLift498: Product = {
     { name: 'Warunki pracy', value: 'zamrażarka; powierzchnie gładkie i szorstkie' },
     { name: 'Odporność', value: 'ścieranie, chemikalia, korozja, wilgoć, UV, warunki atmosferyczne' },
     { name: 'Kolor', value: 'biały' },
-    { name: 'Wymiary etykiety', value: 'od 6,35 × 19,05 do 38,1 × 152,4 mm (18 rozmiarów); taśma ciągła 6,1 / 8,08 / 9,53 / 12,7 mm × 9,14 m' },
+    { name: 'Wymiary etykiety', value: 'od 6,35 × 19,05 do 38,1 × 152,4 mm (18 rozmiarów M6; kasety M7 także 12,7 × 19,05 mm); taśma ciągła 6,1 / 8,08 / 9,53 / 12,7 mm × 9,14 m; kasety M7C także 25,4 i 48,26 mm' },
     { name: 'Liczba sztuk na rolce', value: 'od 50 do 750, zależnie od rozmiaru' },
     { name: 'Zakres średnic przewodu', value: 'od 22 AWG do 500 MCM, zależnie od rozmiaru; np. 3,05–7,14 mm (M6-16-498), 3,81–11,18 mm (M6-28-498, M6-32-498), 10,8–24,31 mm (M6-33-498)' },
     { name: 'Pole nadruku', value: '38,1 × 25,4 mm (M6-33-498)' },
-    { name: 'Format', value: 'etykiety wykrawane (M6) albo taśma ciągła (M6C)' },
+    { name: 'Format', value: 'etykiety wykrawane (M6, M7) albo taśma ciągła (M6C, M7C)' },
     { name: 'Normy', value: 'uznanie UL' },
-    { name: 'Zalecana taśma barwiąca', value: 'M61-R6210; do M710: M7-R6200' },
-    { name: 'Zgodne drukarki', value: DRUKARKI_M610 },
-    { name: 'Numery artykułów Brady', value: CLEANLIFT_498.map(([pn, art]) => `${pn}: ${art}`).join('; ') },
+    { name: 'Zalecana taśma barwiąca', value: 'M61-R6210; do M710 (kasety M6 z adapterem i kasety M7): M7-R6200' },
+    { name: 'Zgodne drukarki', value: 'kasety M6 i M6C: M610, M611, BMP61; M710 i BMP71 z adapterem materiałów. Kasety M7 i M7C: M710, BMP71' },
+    { name: 'Numery artykułów Brady', value: [...CLEANLIFT_498, ...CLEANLIFT_498_M7].map(([pn, art]) => `${pn}: ${art}`).join('; ') },
   ],
-  variants: CLEANLIFT_498.map(([pn, , rozmiar, sztuk, awg]) => ({
-    partNumber: pn,
-    name: sztuk
-      ? `Brady CleanLift ${pn} — ${sztuk} etykiet ${rozmiar}, białe`
-      : `Brady CleanLift ${pn} — taśma ciągła ${rozmiar}, biała`,
-    attributes: {
-      Rozmiar: sztuk ? `${rozmiar}, ${sztuk} szt.` : `ciągła ${rozmiar}`,
-      ...(awg ? { 'Przewód (AWG)': awg } : {}),
-    },
-    availability: 'unavailable' as const,
-  })),
+  variants: [
+    ...CLEANLIFT_498.map(([pn, , rozmiar, sztuk, awg]) => ({
+      partNumber: pn,
+      name: sztuk
+        ? `Brady CleanLift ${pn} — ${sztuk} etykiet ${rozmiar}, białe`
+        : `Brady CleanLift ${pn} — taśma ciągła ${rozmiar}, biała`,
+      attributes: {
+        Rozmiar: sztuk ? `${rozmiar}, ${sztuk} szt.` : `ciągła ${rozmiar}`,
+        ...(awg ? { 'Przewód (AWG)': awg } : {}),
+        Drukarka: 'M610, M611',
+      },
+      availability: 'unavailable' as const,
+    })),
+    ...CLEANLIFT_498_M7.map(([pn, , rozmiar, sztuk, awg]) => ({
+      partNumber: pn,
+      name: sztuk
+        ? `Brady CleanLift ${pn} — ${sztuk} etykiet ${rozmiar}, białe, kaseta do M710`
+        : `Brady CleanLift ${pn} — taśma ciągła ${rozmiar}, biała, kaseta do M710`,
+      attributes: {
+        Rozmiar: sztuk ? `${rozmiar}, ${sztuk} szt.` : `ciągła ${rozmiar}`,
+        ...(awg ? { 'Przewód (AWG)': awg } : {}),
+        Drukarka: 'M710',
+      },
+      availability: 'unavailable' as const,
+    })),
+  ],
   variantAttributeTooltips: {
     Rozmiar: 'Wymiary etykiety i liczba etykiet na rolce albo wymiary taśmy ciągłej.\n\nEtykiety wykrawane mają od 6,35 × 19,05 do 38,1 × 152,4 mm, od 50 do 750 sztuk. Taśma ciągła ma 9,14 m.',
     'Przewód (AWG)': 'Przekrój przewodu w skali AWG, na który owija się etykietę. Mniejsza liczba AWG oznacza grubszy przewód.\n\nEtykiety 12,7 × 12,7 mm pasują na przewody 22–16 AWG. Etykieta 38,1 × 101,6 mm obejmuje przewody od 1 AWG do 500 MCM, czyli od 10,8 do 24,31 mm.',
+    Drukarka: 'Drukarki, w których działa dany numer.\n\nM610, M611 — kasety M6 i materiały BM. Pasują też do M710 po założeniu adaptera M71-ADAPT-BK z zestawu drukarki.\n\nM710 — kasety M7 i materiały BM7; nie pasują do M610 ani M611.',
   },
   faq: [
     { question: 'Jak dobrać etykietę CleanLift do przewodu?', answer: 'Na podstawie przekroju przewodu w AWG z tabeli wariantów. Najmniejsze etykiety, 12,7 × 12,7 mm i 25,4 × 6,99 mm, są na przewody 22–16 AWG. Etykieta 38,1 × 101,6 mm obejmuje przewody od 1 AWG do 500 MCM, czyli od 10,8 do 24,31 mm.' },
     { question: 'Czym różnią się kasety M6 i M6C z materiałem B-498?', answer: 'Kasety M6 mają gotowe etykiety wykrawane o stałym rozmiarze. Kasety M6C mają 9,14 m taśmy ciągłej, a o długości etykiety decyduje projekt w drukarce [Brady M610](/produkt/brady-m610).' },
-    { question: 'Którą taśmą barwiącą drukować na CleanLift B-498?', answer: 'Taśmą M61-R6210 w M610 i M611. W M710 z adapterem materiałów zalecana jest taśma M7-R6200.' },
+    { question: 'Którą taśmą barwiącą drukować na CleanLift B-498?', answer: 'Taśmą M61-R6210 w M610 i M611. W M710 zalecana jest taśma M7-R6200, zarówno do kaset M7, jak i do kaset M6 po założeniu adaptera.' },
+    { question: 'Które kasety CleanLift B-498 pasują do Brady M710?', answer: 'Kasety M7 i M7C działają w [Brady M710](/produkt/brady-m710) bez adaptera. Kasety M6 i M6C pasują do M710 po założeniu [adaptera M71-ADAPT-BK](/produkt/brady-m71-adapt-bk) z zestawu drukarki. Taśm M61 nie stosuje się w M710.' },
   ],
   applications: ['Oznaczanie przewodów i kabli', 'Płytki drukowane i podzespoły', 'Środki trwałe i kody kreskowe'],
 }
@@ -519,15 +694,21 @@ const CLEANLIFT_498_BM: [string, string, string, string, string][] = [
   ['BM-19-498', '174454', '25,4 × 25,4 mm', '2500', '12–10 AWG'],
 ]
 
+// [PN, nr art., szerokość taśmy] — taśmy ciągłe na rolce 83,82 m, tylko do M710 i BMP71.
+const CLEANLIFT_498_BM7: [string, string, string][] = [
+  ['BM7C-240-498', '173475', '6,1 mm'],
+  ['BMC-375-498', '173476', '9,53 mm'],
+]
+
 export const bradyBmCleanLift498: Product = {
   ...wspolneM6,
   id: 'brady-bm-11-498',
   slug: 'brady-bm-11-498',
-  name: 'Etykiety z tkaniny winylowej do przeklejania Brady CleanLift BM-11-498 — materiał BM do M610 i M611',
-  seoTitle: 'Brady CleanLift BM-11-498 — etykiety luzem do M610',
-  seoDescription: 'Etykiety Brady CleanLift B-498 luzem do M610: rolki po 2500 lub 5000 szt., tkanina winylowa do przeklejania. PN: BM-11-498, BM-18-498, BM-19-498, BM-29-498.',
-  shortDescription: 'Brady CleanLift BM-11-498 i pozostałe materiały BM z etykietami z tkaniny winylowej B-498 na dużych rolkach. Od 2500 do 5000 białych etykiet na przewody, z klejem do przeklejania. Do drukarek Brady M610 i M611.',
-  description: 'Materiał Brady BM-498 to etykiety CleanLift z tkaniny winylowej B-498 na dużych rolkach. Rolka luzem mieści 2500 albo 5000 etykiet. Taki zapas przydaje się przy oznaczaniu dużej liczby przewodów w jednym projekcie. Etykietę można zdjąć i przykleić drugi raz, a klej kauczukowy schodzi czysto.\n\nSą cztery rozmiary etykiet wykrawanych. Rozmiary 19,05 × 12,7 mm i 12,7 × 38,1 mm są po 5000 sztuk. Rozmiary 19,05 × 25,4 mm i 25,4 × 25,4 mm są po 2500 sztuk. Wszystkie etykiety są białe. Owija się je wokół przewodów o przekroju od 16 do 4 AWG.\n\nPowierzchnia tkaniny jest półbłyszcząca. Materiał ma uznanie UL i grubość 0,185 mm. Etykiety działają w temperaturach od −40 do 80 °C. Minimalna temperatura przy naklejaniu to 10 °C. Materiał wytrzymuje ścieranie, chemikalia, wilgoć i promieniowanie UV. Na tym materiale drukuje taśma barwiąca M61-R6210, a w drukarce M710 taśma M7-R6200. Rolki BM działają w M610, M611 i M710 oraz w starszych BMP61 i BMP71.',
+  name: 'Etykiety z tkaniny winylowej do przeklejania Brady CleanLift BM-11-498 — materiał BM i BM7 do M610, M611 i M710',
+  seoTitle: 'Brady CleanLift BM-11-498 — etykiety luzem do M610 i M710',
+  seoDescription: 'Etykiety Brady CleanLift B-498 luzem do M610 i M710: rolki po 2500 lub 5000 szt., tkanina winylowa do przeklejania. PN: BM-11-498, BM-18-498, BM7C-240-498.',
+  shortDescription: 'Brady CleanLift BM-11-498 i pozostałe materiały BM oraz BM7 z tkaniny winylowej B-498 na dużych rolkach. Od 2500 do 5000 białych etykiet na przewody i dwie taśmy ciągłe, z klejem do przeklejania. Etykiety wykrawane BM pasują do drukarek Brady M610, M611 i M710, a taśmy ciągłe BM7 do M710.',
+  description: 'Materiał Brady BM-498 to etykiety CleanLift z tkaniny winylowej B-498 na dużych rolkach. Rolka luzem mieści 2500 albo 5000 etykiet. Taki zapas przydaje się przy oznaczaniu dużej liczby przewodów w jednym projekcie. Etykietę można zdjąć i przykleić drugi raz, a klej kauczukowy schodzi czysto.\n\nSą cztery rozmiary etykiet wykrawanych. Rozmiary 19,05 × 12,7 mm i 12,7 × 38,1 mm są po 5000 sztuk. Rozmiary 19,05 × 25,4 mm i 25,4 × 25,4 mm są po 2500 sztuk. Wszystkie etykiety są białe. Owija się je wokół przewodów o przekroju od 16 do 4 AWG. Wersje BM7C-240-498 i BMC-375-498 to taśma ciągła o szerokości 6,1 i 9,53 mm na rolce 83,82 m.\n\nPowierzchnia tkaniny jest półbłyszcząca. Materiał ma uznanie UL i grubość 0,185 mm. Etykiety działają w temperaturach od −40 do 80 °C. Minimalna temperatura przy naklejaniu to 10 °C. Materiał wytrzymuje ścieranie, chemikalia, wilgoć i promieniowanie UV. Nadruk wykonuje taśma barwiąca: M61-R6210 przy M610 i M611 oraz M7-R6200 przy M710. Etykiety wykrawane działają w M610, M611 i M710 oraz w starszych BMP61 i BMP71. Taśmy ciągłe pracują tylko w M710 i BMP71.',
   sameAs: 'https://www.brady.eu/labels/repositionable-multi-purpose-vinyl-cloth-labels-bulk-for-m710-m610-m611-printers-cps-4554335',
   images: ['/images/products/brady/bm-11-498.png', '/images/products/brady/bm-29-498.png'],
   imageDescriptions: [
@@ -535,7 +716,7 @@ export const bradyBmCleanLift498: Product = {
     'Pudełko z dużą rolką etykiet CleanLift Brady BM-29-498 12,7 × 38,1 mm',
   ],
   specifications: [
-    { name: 'Typ', value: 'Materiał luzem na dużej rolce z wykrawanymi etykietami, bez taśmy barwiącej' },
+    { name: 'Typ', value: 'Materiał luzem na dużej rolce z wykrawanymi etykietami albo taśmą ciągłą, bez taśmy barwiącej' },
     { name: 'Materiał', value: 'CleanLift B-498' },
     { name: 'Typ materiału', value: 'tkanina winylowa' },
     { name: 'Wykończenie', value: 'półbłyszczące' },
@@ -546,27 +727,37 @@ export const bradyBmCleanLift498: Product = {
     { name: 'Warunki pracy', value: 'zamrażarka; powierzchnie gładkie i szorstkie' },
     { name: 'Odporność', value: 'ścieranie, chemikalia, korozja, wilgoć, UV, warunki atmosferyczne' },
     { name: 'Kolor', value: 'biały' },
-    { name: 'Wymiary etykiety', value: '19,05 × 12,7 / 12,7 × 38,1 / 19,05 × 25,4 / 25,4 × 25,4 mm, zależnie od wersji' },
+    { name: 'Wymiary etykiety', value: '19,05 × 12,7 / 12,7 × 38,1 / 19,05 × 25,4 / 25,4 × 25,4 mm; taśma ciągła 6,1 / 9,53 mm × 83,82 m; zależnie od wersji' },
     { name: 'Liczba sztuk na rolce', value: '2500 albo 5000, zależnie od rozmiaru' },
     { name: 'Zakres średnic przewodu', value: 'od 16 do 4 AWG, zależnie od rozmiaru' },
-    { name: 'Format', value: 'etykiety wykrawane luzem na dużej rolce (BM)' },
+    { name: 'Format', value: 'etykiety wykrawane luzem na dużej rolce (BM) albo taśma ciągła na dużej rolce (BM7C, BMC)' },
     { name: 'Normy', value: 'uznanie UL' },
     { name: 'Zalecana taśma barwiąca', value: 'M61-R6210; do M710: M7-R6200' },
-    { name: 'Zgodne drukarki', value: 'M610, M611, M710; starsze BMP61 i BMP71' },
-    { name: 'Numery artykułów Brady', value: CLEANLIFT_498_BM.map(([pn, art]) => `${pn}: ${art}`).join('; ') },
+    { name: 'Zgodne drukarki', value: 'etykiety wykrawane BM: M610, M611, M710; starsze BMP61 i BMP71. Taśmy ciągłe BM7C i BMC: M710, BMP71' },
+    { name: 'Numery artykułów Brady', value: [...CLEANLIFT_498_BM, ...CLEANLIFT_498_BM7].map(([pn, art]) => `${pn}: ${art}`).join('; ') },
   ],
-  variants: CLEANLIFT_498_BM.map(([pn, , rozmiar, sztuk, awg]) => ({
-    partNumber: pn,
-    name: `Brady CleanLift ${pn} — ${sztuk} etykiet ${rozmiar} luzem, białe`,
-    attributes: { Rozmiar: `${rozmiar}, ${sztuk} szt.`, 'Przewód (AWG)': awg },
-    availability: 'unavailable' as const,
-  })),
+  variants: [
+    ...CLEANLIFT_498_BM.map(([pn, , rozmiar, sztuk, awg]) => ({
+      partNumber: pn,
+      name: `Brady CleanLift ${pn} — ${sztuk} etykiet ${rozmiar} luzem, białe`,
+      attributes: { Rozmiar: `${rozmiar}, ${sztuk} szt.`, 'Przewód (AWG)': awg, Drukarka: 'M610, M611, M710' },
+      availability: 'unavailable' as const,
+    })),
+    ...CLEANLIFT_498_BM7.map(([pn, , szerokosc]) => ({
+      partNumber: pn,
+      name: `Brady CleanLift ${pn} — taśma ciągła ${szerokosc} × 83,82 m na dużej rolce, biała, materiał BM7 do M710`,
+      attributes: { Rozmiar: `ciągła ${szerokosc} × 83,82 m`, Drukarka: 'M710' },
+      availability: 'unavailable' as const,
+    })),
+  ],
   variantAttributeTooltips: {
-    Rozmiar: 'Format etykiety wykrawanej i ilość sztuk na dużej rolce.\n\nMniejsze etykiety są po 5000 sztuk, a 19,05 × 25,4 mm i 25,4 × 25,4 mm po 2500 sztuk.',
+    Rozmiar: 'Format etykiety wykrawanej i ilość sztuk na dużej rolce albo wymiary taśmy ciągłej.\n\nMniejsze etykiety są po 5000 sztuk, a 19,05 × 25,4 mm i 25,4 × 25,4 mm po 2500 sztuk. Taśmy ciągłe mają 83,82 m.',
     'Przewód (AWG)': 'Przekrój przewodu w skali AWG, który obejmuje owinięta etykieta.\n\nEtykiety 19,05 × 12,7 mm pasują na przewody 16–10 AWG, a 12,7 × 38,1 mm na grubsze, 10–4 AWG.',
+    Drukarka: 'Drukarki, w których działa dany numer.\n\nM610, M611, M710 — etykiety wykrawane na dużych rolkach.\n\nM710 — taśmy ciągłe z materiałem BM7; nie pasują do M610 ani M611.',
   },
   faq: [
     { question: 'Czym materiał BM różni się od kasety M6?', answer: 'Materiał BM to ta sama tkanina CleanLift B-498 na dużej rolce. Rolka ma 2500 albo 5000 etykiet, a kasety M6 z tym materiałem mają od 50 do 750 etykiet. Oba rodzaje pracują w [Brady M610](/produkt/brady-m610) i M611.' },
+    { question: 'Czy materiał BM-498 pasuje do Brady M710?', answer: 'Etykiety wykrawane BM-11-498, BM-18-498, BM-19-498 i BM-29-498 działają w [Brady M710](/produkt/brady-m710) oraz w M610 i M611. Taśmy ciągłe BM7C-240-498 i BMC-375-498 są tylko do M710 i BMP71. Do M710 służy taśma barwiąca M7-R6200, a taśmy M61 nie pasują.' },
     { question: 'Do jakich przewodów pasują etykiety BM-498?', answer: 'BM-11-498 do przewodów 16–10 AWG, BM-18-498 i BM-19-498 do 12–10 AWG, a BM-29-498 do 10–4 AWG.' },
   ],
   applications: ['Oznaczanie dużych serii przewodów', 'Kody kreskowe', 'Płytki drukowane i podzespoły'],

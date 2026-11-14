@@ -4,6 +4,7 @@ import { wspolneM6 } from './brady-m6-wspolne'
 // Koszulki termokurczliwe PermaSleeve do Brady M610 i M611: kasety M6 (zwykłe, obrócone na podkładzie,
 // wysokotemperaturowe B-345) i duże rolki BM (B-342 i klasa komercyjna B-312). Sekcja kabli na karcie M610.
 // Dane z rodzin cps-4554281, -283, -282, -286, -280; wycofane PN pominięte. 14.11.2026.
+// Karty B-342 (kasety M6 i rolki BM) mają też warianty M7 i BM7C do M710 oraz kolumnę „Drukarka”.
 
 type Kolor = 'WT' | 'YL' | 'OR' | 'RD' | 'BK' | 'GY' | 'GR' | 'BL' | 'PK' | 'VT'
 // [PN, nr artykułu Brady, średnica koszulki mm, długość odcinka mm, kolor, sztuk na rolce]
@@ -21,6 +22,20 @@ const KOLOR: Record<Kolor, [string, string]> = {
   BL: ['Niebieski', 'niebieskich'],
   PK: ['Różowy', 'różowych'],
   VT: ['Fioletowy', 'fioletowych'],
+}
+
+// Kolor koszulki w kolumnie Rozmiar (rodzaj żeński); miękki dywiz pozwala zawinąć najdłuższe słowo w wąskiej kolumnie.
+const KOLOR_ROZMIAR: Record<Kolor, string> = {
+  WT: 'biała',
+  YL: 'żółta',
+  OR: 'poma\u00ADrań\u00ADczowa',
+  RD: 'czerwona',
+  BK: 'czarna',
+  GY: 'szara',
+  GR: 'zielona',
+  BL: 'niebieska',
+  PK: 'różowa',
+  VT: 'fioletowa',
 }
 
 // Średnica koszulki → zakres średnic przewodu. B-342 i B-312 mają te same zakresy, B-345 węższe.
@@ -51,20 +66,41 @@ const ZGODNE_BM = 'Brady M610, M611, M710, BMP61, BMP71'
 const reprezentatywnyNajpierw = (dane: Wiersz[], pn: string) => [...dane.filter((w) => w[0] === pn), ...dane.filter((w) => w[0] !== pn)]
 const numeryArtykulow = (dane: Wiersz[]) => dane.map(([pn, art]) => `${pn}: ${art}`).join('; ')
 
-function warianty(dane: Wiersz[], pn: string, przewod: Record<string, string>, nazwa: (w: Wiersz) => string, zSztukami = true) {
+function warianty(dane: Wiersz[], pn: string, przewod: Record<string, string>, nazwa: (w: Wiersz) => string, zSztukami = true, drukarka?: string) {
   return reprezentatywnyNajpierw(dane, pn).map((w) => {
     const [partNumber, , srednica, dlugosc, kolor, sztuk] = w
     return {
       partNumber,
       name: nazwa(w),
-      attributes: {
-        'Ø kabla': przewod[srednica],
-        Rozmiar: zSztukami ? `${srednica} × ${dlugosc} mm, ${sztuk} szt.` : `${srednica} × ${dlugosc} mm`,
-        Kolor: KOLOR[kolor][0],
-      },
+      // Karty z kolumną Drukarka (M6 + M7) mają kolor w kolumnie Rozmiar, aby tabela mieściła się przy 1024 px.
+      attributes: (drukarka
+        ? {
+            'Ø kabla': przewod[srednica],
+            Rozmiar: zSztukami ? `${srednica} × ${dlugosc} mm, ${KOLOR_ROZMIAR[kolor]}, ${sztuk} szt.` : `${srednica} × ${dlugosc} mm, ${KOLOR_ROZMIAR[kolor]}`,
+            Drukarka: drukarka,
+          }
+        : {
+            'Ø kabla': przewod[srednica],
+            Rozmiar: zSztukami ? `${srednica} × ${dlugosc} mm, ${sztuk} szt.` : `${srednica} × ${dlugosc} mm`,
+            Kolor: KOLOR[kolor][0],
+          }) as Record<string, string>,
       availability: 'unavailable' as const,
     }
   })
+}
+
+// Rolki BM7C z koszulką ciągłą (bez liczby sztuk): [PN, nr artykułu, średnica koszulki mm, długość m, kolor, 0]
+function wariantyCiagle(dane: Wiersz[], przewod: Record<string, string>, drukarka: string) {
+  return dane.map(([partNumber, , srednica, dlugosc, kolor]) => ({
+    partNumber,
+    name: `Brady PermaSleeve ${partNumber} — rolka z koszulką ciągłą ${srednica} mm × ${dlugosc} m, do M710`,
+    attributes: {
+      'Ø kabla': przewod[srednica],
+      Rozmiar: `${srednica} mm × ${dlugosc} m, ciągła, ${KOLOR_ROZMIAR[kolor]}`,
+      Drukarka: drukarka,
+    },
+    availability: 'unavailable' as const,
+  }))
 }
 
 // cps-4554281 — kasety M6 z odcinkami PermaSleeve B-342, 10 kolorów
@@ -148,6 +184,38 @@ const DANE_342: Wiersz[] = [
   ['M6-1000-175-342-YL', '173600', '25,4', '44,45', 'YL', 50],
 ]
 
+// cps-4554281 — kasety M7 z odcinkami PermaSleeve B-342 do M710: białe i żółte, 7 średnic (bez 19,05 mm)
+const DANE_M7_342: Wiersz[] = [
+  ['M7-094-1-342', '174652', '2,39', '25,4', 'WT', 100],
+  ['M7-094-1-342-YL', '174653', '2,39', '25,4', 'YL', 100],
+  ['M7-094-175-342', '174654', '2,39', '44,45', 'WT', 100],
+  ['M7-094-175-342-YL', '174655', '2,39', '44,45', 'YL', 100],
+  ['M7-125-1-342', '174540', '3,18', '25,4', 'WT', 100],
+  ['M7-125-1-342-YL', '174541', '3,18', '25,4', 'YL', 100],
+  ['M7-125-175-342', '174544', '3,18', '44,45', 'WT', 100],
+  ['M7-125-175-342-YL', '174545', '3,18', '44,45', 'YL', 100],
+  ['M7-187-1-342', '174559', '4,75', '25,4', 'WT', 100],
+  ['M7-187-1-342-YL', '174560', '4,75', '25,4', 'YL', 100],
+  ['M7-187-175-342', '174563', '4,75', '44,45', 'WT', 100],
+  ['M7-187-175-342-YL', '174564', '4,75', '44,45', 'YL', 100],
+  ['M7-250-1-342', '174578', '6,35', '25,4', 'WT', 100],
+  ['M7-250-1-342-YL', '174579', '6,35', '25,4', 'YL', 100],
+  ['M7-250-175-342', '174582', '6,35', '44,45', 'WT', 100],
+  ['M7-250-175-342-YL', '174583', '6,35', '44,45', 'YL', 100],
+  ['M7-375-1-342', '174610', '9,53', '25,4', 'WT', 100],
+  ['M7-375-1-342-YL', '174611', '9,53', '25,4', 'YL', 100],
+  ['M7-375-175-342', '174614', '9,53', '44,45', 'WT', 100],
+  ['M7-375-175-342-YL', '174615', '9,53', '44,45', 'YL', 100],
+  ['M7-500-1-342', '174627', '12,7', '25,4', 'WT', 100],
+  ['M7-500-1-342-YL', '174628', '12,7', '25,4', 'YL', 100],
+  ['M7-500-175-342', '174631', '12,7', '44,45', 'WT', 100],
+  ['M7-500-175-342-YL', '174632', '12,7', '44,45', 'YL', 100],
+  ['M7-1000-1-342', '174523', '25,4', '25,4', 'WT', 50],
+  ['M7-1000-1-342-YL', '174524', '25,4', '25,4', 'YL', 50],
+  ['M7-1000-175-342', '174527', '25,4', '44,45', 'WT', 50],
+  ['M7-1000-175-342-YL', '174528', '25,4', '44,45', 'YL', 50],
+]
+
 // cps-4554283 — duże rolki BM z odcinkami PermaSleeve B-342
 const DANE_BM_342: Wiersz[] = [
   ['BM-094-1-342-2', '174498', '2,39', '12,7', 'WT', 5000],
@@ -189,6 +257,16 @@ const DANE_BM_342: Wiersz[] = [
   ['BM-500-175-342', '174489', '12,7', '44,45', 'WT', 1000],
   ['BM-500-175-342-YL', '174491', '12,7', '44,45', 'YL', 1000],
   ['BM-1000-175-342', '174410', '25,4', '44,45', 'WT', 500],
+]
+
+// cps-4554283 — rolki BM7C z koszulką ciągłą B-342 15,24 m do M710, białe (bez liczby sztuk)
+const DANE_BM7C_342: Wiersz[] = [
+  ['BM7C-125-342', '174511', '3,18', '15,24', 'WT', 0],
+  ['BM7C-187-342', '174512', '4,75', '15,24', 'WT', 0],
+  ['BM7C-250-342', '174516', '6,35', '15,24', 'WT', 0],
+  ['BM7C-375-342', '174517', '9,53', '15,24', 'WT', 0],
+  ['BM7C-500-342', '174518', '12,7', '15,24', 'WT', 0],
+  ['BM7C-1000-342', '174507', '25,4', '15,24', 'WT', 0],
 ]
 
 // cps-4554282 — kasety M6 z odcinkami B-342 obróconymi na podkładzie (końcówka -R)
@@ -278,11 +356,11 @@ export const bradyM6PermaSleeve342: Product = {
   ...wspolneM6,
   id: 'brady-m6-375-1-342-wt',
   slug: 'brady-m6-375-1-342-wt',
-  name: 'Koszulki termokurczliwe Brady PermaSleeve M6-375-1-342-WT — kasety M6 do M610 i M611',
+  name: 'Koszulki termokurczliwe Brady PermaSleeve M6-375-1-342-WT — kasety M6 i M7 do M610, M611 i M710',
   seoTitle: 'Brady PermaSleeve M6-375-1-342-WT — koszulki na przewody do M610',
-  seoDescription: 'PermaSleeve B-342 w kasetach M6 do Brady M610: skurcz 3:1, 10 kolorów, przewody 0,58–24,13 mm. PN: M6-375-1-342-WT, M6-250-1-342-WT, M6-187-1-342-YL.',
-  shortDescription: 'Brady PermaSleeve M6-375-1-342-WT i 76 innych kaset M6 zawierają odcinki koszulki termokurczliwej z poliolefiny B-342 w dziesięciu kolorach. Do drukarek Brady M610 i M611.',
-  description: 'Kasety Brady PermaSleeve M6 z materiałem B-342 zawierają gotowe odcinki koszulki termokurczliwej z poliolefiny. Spłaszczone odcinki leżą na podkładzie, a drukarka zadrukowuje je jak etykiety. Po wydruku odcinek zdejmuje się z podkładu i nasuwa na przewód. Podgrzanie zmniejsza średnicę koszulki do jednej trzeciej. Wtedy koszulka zaciska się na izolacji bez użycia kleju. Taśma barwiąca jest w osobnej kasecie M61.\n\nRodzina obejmuje 77 kaset. Koszulka ma średnicę od 2,39 do 25,4 mm, a po spłaszczeniu od 4,62 do 42,34 mm szerokości. Odcinki mają długość 25,4 albo 44,45 mm. W kasecie jest 100 odcinków, a przy średnicy 25,4 mm 50 odcinków. Kolory koszulek to biały, żółty, pomarańczowy, czerwony, czarny, szary, zielony, niebieski, różowy i fioletowy. Rodzina obejmuje przewody od 0,58 do 24,13 mm średnicy.\n\nPoliolefina B-342 jest trudnopalna i samogasnąca. Znosi promieniowanie UV, chemikalia, paliwa i olej. Napis nie ściera się i nie blaknie. Koszulki wytrzymują od −55 do 135 °C. Spełniają normy SAE-AMS-DTL-23053/5 (klasa 1) i SAE AS-81531. Mają uznanie UL 224. Koszulki w kolorach innych niż czarny wymagają taśmy M61-R4310 albo M61-R6610, a czarne białej taśmy M61-R6710-WT. Kasety działają w M610, M611 i BMP61, a po założeniu adaptera materiałów w M710 i BMP71.',
+  seoDescription: 'PermaSleeve B-342 w kasetach M6 i M7 do Brady M610 i M710: skurcz 3:1, przewody 0,58–24,13 mm. PN: M6-375-1-342-WT, M6-250-1-342-WT, M7-375-1-342.',
+  shortDescription: 'Brady PermaSleeve M6-375-1-342-WT i 76 innych kaset M6 oraz 28 kaset M7 zawierają odcinki koszulki termokurczliwej z poliolefiny B-342. Kasety M6 pasują do drukarek Brady M610 i M611, a kasety M7 do M710.',
+  description: 'Kasety Brady PermaSleeve M6 i M7 z materiałem B-342 zawierają gotowe odcinki koszulki termokurczliwej z poliolefiny. Spłaszczone odcinki leżą na podkładzie, a drukarka zadrukowuje je jak etykiety. Po wydruku odcinek zdejmuje się z podkładu i nasuwa na przewód. Podgrzanie zmniejsza średnicę koszulki do jednej trzeciej. Wtedy koszulka zaciska się na izolacji bez użycia kleju. Do nadruku służy osobna kaseta z taśmą M61.\n\nRodzina obejmuje 77 kaset M6 i 28 kaset M7. Koszulka ma średnicę od 2,39 do 25,4 mm, a po spłaszczeniu od 4,62 do 42,34 mm szerokości. Odcinki mają długość 25,4 albo 44,45 mm. W kasecie jest 100 odcinków, a przy średnicy 25,4 mm 50 odcinków. Kasety M6 występują w dziesięciu kolorach, od białego i żółtego po fioletowy. Wersje M7 nie obejmują koszulki 19,05 mm i są tylko białe albo żółte.\n\nPoliolefina B-342 jest trudnopalna i samogasnąca. Znosi promieniowanie UV, chemikalia, paliwa i olej. Koszulki wytrzymują od −55 do 135 °C. Spełniają normy SAE-AMS-DTL-23053/5 (klasa 1) i SAE AS-81531. Mają uznanie UL 224. Koszulki M6 w kolorach innych niż czarny wymagają taśmy M61-R4310 albo M61-R6610, a czarne białej taśmy M61-R6710-WT. Kasety M7 zadrukowuje się taśmą M7-R4300 albo M7-R6600. Do M610, M611 i BMP61 pasują kasety M6. Kasety M7 przeznaczono dla drukarek M710 i BMP71, a kasety M6 można w nich stosować po założeniu adaptera materiałów.',
   sameAs: 'https://www.brady.eu/labels/permasleeve-heat-shrink-wire-cable-labels-for-m710-m610-m611-printers-cps-4554281',
   images: [
     '/images/products/brady/m6-375-1-342-wt.png',
@@ -305,28 +383,31 @@ export const bradyM6PermaSleeve342: Product = {
     { name: 'Współczynnik skurczu', value: '3:1' },
     { name: 'Temperatura pracy', value: 'od −55 do 135 °C' },
     { name: 'Odporność', value: 'UV, chemikalia, paliwa, olej; nadruk odporny na ścieranie i blaknięcie' },
-    { name: 'Kolory', value: 'biały, żółty, pomarańczowy, czerwony, czarny, szary, zielony, niebieski, różowy, fioletowy' },
-    { name: 'Średnica koszulki', value: '2,39 / 3,18 / 4,75 / 6,35 / 9,53 / 12,7 / 19,05 / 25,4 mm' },
-    { name: 'Szerokość koszulki na płasko', value: '4,62 / 5,97 / 8,51 / 11,15 / 16,38 / 21,62 / 31,75 / 42,34 mm' },
+    { name: 'Kolory', value: 'biały, żółty, pomarańczowy, czerwony, czarny, szary, zielony, niebieski, różowy, fioletowy; kasety M7: biały i żółty' },
+    { name: 'Średnica koszulki', value: '2,39 / 3,18 / 4,75 / 6,35 / 9,53 / 12,7 / 19,05 / 25,4 mm; kasety M7 bez 19,05 mm' },
+    { name: 'Szerokość koszulki na płasko', value: '4,62 / 5,97 / 8,51 / 11,15 / 16,38 / 21,62 / 31,75 / 42,34 mm; kasety M7 przy średnicy 25,4 mm: 42,16 mm' },
     { name: 'Długość odcinka', value: '25,4 albo 44,45 mm' },
     { name: 'Liczba sztuk na rolce', value: '100; 50 przy średnicy koszulki 25,4 mm' },
     { name: 'Zakres średnic przewodu', value: 'od 0,58 do 24,13 mm, zależnie od średnicy koszulki' },
     { name: 'Format', value: 'odcinki koszulki na podkładzie' },
     { name: 'Normy', value: 'SAE AS-81531, SAE-AMS-DTL-23053/5 (klasa 1), uznanie UL 224' },
-    { name: 'Zalecana taśma barwiąca', value: 'M61-R4310, M61-R6610; do czarnych koszulek M61-R6710-WT; do M710: M7-R4300, M7-R6600, do czarnych M7-R6700-WT' },
-    { name: 'Zgodne drukarki', value: ZGODNE_Z_ADAPTEREM },
-    { name: 'Numery artykułów Brady', value: numeryArtykulow(DANE_342) },
+    { name: 'Zalecana taśma barwiąca', value: 'kasety M6: M61-R4310, M61-R6610, do czarnych koszulek M61-R6710-WT; kasety M7 oraz kasety M6 w M710: M7-R4300, M7-R6600, do czarnych koszulek M6: M7-R6700-WT' },
+    { name: 'Zgodne drukarki', value: 'kasety M6: Brady M610, M611, BMP61; M710 i BMP71 z adapterem materiałów. Kasety M7: M710, BMP71' },
+    { name: 'Numery artykułów Brady', value: numeryArtykulow([...DANE_342, ...DANE_M7_342]) },
   ],
-  variants: warianty(DANE_342, 'M6-375-1-342-WT', PRZEWOD_342, ([pn, , d, l, k, n]) => `Brady PermaSleeve ${pn} — ${n} ${KOLOR[k][1]} odcinków koszulki ${d} × ${l} mm`, false),
+  variants: [
+    ...warianty(DANE_342, 'M6-375-1-342-WT', PRZEWOD_342, ([pn, , d, l, k, n]) => `Brady PermaSleeve ${pn} — ${n} ${KOLOR[k][1]} odcinków koszulki ${d} × ${l} mm`, false, 'M610, M611'),
+    ...warianty(DANE_M7_342, '', PRZEWOD_342, ([pn, , d, l, k, n]) => `Brady PermaSleeve ${pn} — ${n} ${KOLOR[k][1]} odcinków koszulki ${d} × ${l} mm, kaseta do M710`, false, 'M710'),
+  ],
   variantAttributeTooltips: {
     'Ø kabla': 'Przewody, na których koszulka ciasno przylega po obkurczeniu.\n\nNajcieńsza koszulka, 2,39 mm, jest do przewodów od 0,58 mm. Koszulka 25,4 mm obejmuje przewody do 24,13 mm.',
-    Rozmiar: 'Średnica koszulki × długość odcinka. Liczbę odcinków w kasecie podaje nazwa wariantu.\n\nDo wyboru są odcinki krótsze, 25,4 mm, i dłuższe, 44,45 mm. Koszulka o średnicy 25,4 mm jest po 50 sztuk, pozostałe po 100.',
-    Kolor: 'Barwa materiału koszulki.\n\nRodzina ma dziesięć kolorów. Czarne koszulki zadrukowuje się białą taśmą barwiącą.',
+    Rozmiar: 'Średnica koszulki × długość odcinka. Liczbę odcinków w kasecie podaje nazwa wariantu.\n\nDo wyboru są odcinki krótsze, 25,4 mm, i dłuższe, 44,45 mm. Koszulka o średnicy 25,4 mm jest po 50 sztuk, pozostałe po 100. Na końcu jest kolor koszulki.\n\nRodzina ma dziesięć kolorów, ale kasety M7 są tylko białe i żółte. Czarne koszulki zadrukowuje się białą taśmą barwiącą.',
+    Drukarka: 'Drukarki, w których działa dany numer.\n\nM610, M611 — kasety M6. Pasują też do M710 po założeniu adaptera M71-ADAPT-BK z zestawu drukarki.\n\nM710 — kasety M7; nie pasują do M610 ani M611.',
   },
   faq: [
     { question: 'Jaką taśmę barwiącą wybrać do koszulek PermaSleeve B-342 w kasetach M6?', answer: 'Do koszulek w kolorze innym niż czarny służy taśma M61-R4310 albo M61-R6610. Do czarnych koszulek służy biała taśma M61-R6710-WT. Taśma barwiąca jest w osobnej kasecie M61.' },
     { question: 'Która koszulka pasuje do danego przewodu?', answer: 'Decyduje zewnętrzna średnica izolacji. Dla izolacji od 1,17 do 2,79 mm wybiera się koszulkę 3,18 mm. Dla izolacji od 2,39 do 5,46 mm odpowiednia jest koszulka 6,35 mm. Izolację od 8,46 do 24,13 mm obejmuje koszulka 25,4 mm.' },
-    { question: 'Czy kasety PermaSleeve M6-342 działają w drukarce M710?', answer: 'Tak, po założeniu adaptera materiałów. Bez adaptera kasety pasują do [Brady M610](/produkt/brady-m610), M611 i starszej BMP61.' },
+    { question: 'Które kasety PermaSleeve B-342 pasują do drukarki M710?', answer: 'Kasety M7, na przykład M7-375-1-342 i M7-250-175-342-YL, pasują do [Brady M710](/produkt/brady-m710) bez dodatków. Zalecana jest taśma barwiąca M7-R4300 albo M7-R6600. Kasety M6 działają w M710 po założeniu [adaptera M71-ADAPT-BK](/produkt/brady-m71-adapt-bk) z zestawu drukarki, a kasety M7 nie pasują do M610 ani M611.' },
   ],
   applications: ['Instalacje elektryczne', 'Szafy sterownicze i rozdzielnice', 'Wiązki przewodów w maszynach'],
 }
@@ -335,11 +416,11 @@ export const bradyBmPermaSleeve342: Product = {
   ...wspolneM6,
   id: 'brady-bm-375-1-342',
   slug: 'brady-bm-375-1-342',
-  name: 'Koszulki termokurczliwe Brady PermaSleeve BM-375-1-342 na dużej rolce — materiał BM do M610 i M611',
-  seoTitle: 'Brady PermaSleeve BM-375-1-342 — koszulki na rolce do M610',
-  seoDescription: 'Duże rolki koszulek PermaSleeve B-342 do Brady M610: od 500 do 5000 odcinków, skurcz 3:1, od −55 do 135 °C. PN: BM-375-1-342, BM-250-1-342, BM-187-175-342.',
-  shortDescription: 'Brady PermaSleeve BM-375-1-342 i 38 innych rolek BM zawierają od 500 do 5000 odcinków koszulki termokurczliwej z poliolefiny B-342. Do drukarek Brady M610 i M611.',
-  description: 'Materiały Brady BM-342 to odcinki koszulki termokurczliwej PermaSleeve na dużych rolkach. Materiałem jest ta sama trudnopalna poliolefina B-342 co w kasetach M6 z koszulkami. Jedna rolka mieści od 500 do 5000 odcinków. Po wydruku odcinek nasuwa się na przewód i obkurcza ciepłem. Skurcz wynosi 3:1, więc koszulka mocno obejmuje izolację. Rolka nie zawiera taśmy barwiącej.\n\nW rodzinie jest 39 rolek. Średnica koszulki wynosi od 2,39 do 25,4 mm. Odcinki mają długość od 11,1 do 44,45 mm. Rolki z krótszymi odcinkami mają od 2000 do 5000 sztuk. Odcinki 25,4 i 44,45 mm są po 1000 albo 2500 sztuk, a rolka z koszulką o średnicy 25,4 mm ma 500 sztuk. Większość rolek jest biała albo żółta. Pomarańczowa i czerwona jest koszulka 4,75 × 44,45 mm. Koszulki dobiera się do przewodów od 0,58 do 24,13 mm.\n\nZakres temperatury pracy koszulek BM-342 to od −55 do 135 °C. Poliolefina gaśnie samoczynnie i jest odporna na UV, chemikalia, paliwa oraz olej. Rolki spełniają normy UL 224, SAE AS-81531 oraz SAE-AMS-DTL-23053/5 (klasa 1). Zalecana taśma barwiąca to M61-R4310, a w drukarce M710 taśma M7-R6600. Rolki BM pasują do M610, M611, M710, BMP61 i BMP71.',
+  name: 'Koszulki termokurczliwe Brady PermaSleeve BM-375-1-342 na dużej rolce — materiał BM i BM7 do M610, M611 i M710',
+  seoTitle: 'Brady PermaSleeve BM-375-1-342 — koszulki na rolce do M610 i M710',
+  seoDescription: 'Rolki koszulek PermaSleeve B-342 do Brady M610 i M710: 500–5000 odcinków albo koszulka ciągła 15,24 m, skurcz 3:1. PN: BM-375-1-342, BM-250-1-342, BM7C-375-342.',
+  shortDescription: 'Brady PermaSleeve BM-375-1-342 i 38 innych rolek BM zawierają od 500 do 5000 odcinków koszulki termokurczliwej z poliolefiny B-342, a sześć rolek BM7C koszulkę ciągłą. Rolki BM pasują do drukarek Brady M610, M611 i M710, a rolki BM7C do M710.',
+  description: 'Materiały Brady BM-342 to koszulka termokurczliwa PermaSleeve na dużych rolkach: w odcinkach albo ciągła. Materiałem jest ta sama trudnopalna poliolefina B-342 co w kasetach z koszulkami. Jedna rolka z odcinkami mieści od 500 do 5000 sztuk. Po wydruku odcinek nasuwa się na przewód i obkurcza ciepłem. Skurcz wynosi 3:1. Rolka nie zawiera taśmy barwiącej.\n\nW rodzinie jest 39 rolek BM z odcinkami i 6 rolek BM7C z koszulką ciągłą. Średnica koszulki wynosi od 2,39 do 25,4 mm. Odcinki mają długość od 11,1 do 44,45 mm. Rolki z krótszymi odcinkami mają od 2000 do 5000 sztuk. Odcinki 25,4 i 44,45 mm są po 1000 albo 2500 sztuk, a rolka z koszulką o średnicy 25,4 mm ma 500 sztuk. Rolka BM7C mieści 15,24 m białej koszulki w jednej z sześciu średnic, od 3,18 do 25,4 mm. Większość rolek BM jest biała albo żółta.\n\nZakres temperatury pracy koszulek BM-342 to od −55 do 135 °C. Poliolefina gaśnie samoczynnie i jest odporna na UV, chemikalia, paliwa oraz olej. Rolki spełniają normy UL 224, SAE AS-81531 oraz SAE-AMS-DTL-23053/5 (klasa 1). W M610 i M611 rolki BM obsługuje taśma M61-R4310, a w M710 taśma M7-R6600. Koszulka ciągła BM7C wymaga taśmy M7-R4300 albo M7-R6600. Rolki BM są zgodne z M610, M611, M710 oraz starszymi BMP61 i BMP71, a koszulka ciągła tylko z M710 i BMP71.',
   sameAs: 'https://www.brady.eu/labels/permasleeve-heat-shrink-wire-cable-labels-bulk-for-m710-m610-m611-printers-cps-4554283',
   images: [
     '/images/products/brady/bm-375-1-342.png',
@@ -354,7 +435,7 @@ export const bradyBmPermaSleeve342: Product = {
     'Pudełko z rolką Brady PermaSleeve BM-187-175-342-4 z krótkimi białymi odcinkami 11,1 mm',
   ],
   specifications: [
-    { name: 'Typ', value: 'Duża rolka BM z odcinkami koszulki termokurczliwej, bez taśmy barwiącej' },
+    { name: 'Typ', value: 'Duża rolka BM z odcinkami koszulki termokurczliwej albo rolka BM7C z koszulką ciągłą, bez taśmy barwiącej' },
     { name: 'Materiał', value: 'PermaSleeve B-342' },
     { name: 'Typ materiału', value: 'poliolefina termokurczliwa, trudnopalna' },
     { name: 'Wykończenie', value: 'matowe' },
@@ -362,28 +443,33 @@ export const bradyBmPermaSleeve342: Product = {
     { name: 'Współczynnik skurczu', value: '3:1' },
     { name: 'Temperatura pracy', value: 'od −55 do 135 °C' },
     { name: 'Odporność', value: 'UV, chemikalia, paliwa, olej; materiał samogasnący' },
-    { name: 'Kolory', value: 'biały, żółty; pomarańczowy i czerwony (BM-187-175-342-OR, BM-187-175-342-RD)' },
+    { name: 'Kolory', value: 'biały, żółty; pomarańczowy i czerwony (BM-187-175-342-OR, BM-187-175-342-RD); rolki BM7C: biały' },
     { name: 'Średnica koszulki', value: '2,39 / 3,18 / 4,75 / 6,35 / 9,53 / 12,7 / 25,4 mm' },
     { name: 'Szerokość koszulki na płasko', value: '4,62 / 5,97 / 8,51 / 11,15 / 16,38 / 21,62 / 42,16 mm' },
     { name: 'Długość odcinka', value: 'od 11,1 do 44,45 mm, zależnie od wersji' },
-    { name: 'Liczba sztuk na rolce', value: 'od 500 do 5000' },
+    { name: 'Długość koszulki ciągłej', value: '15,24 m (rolki BM7C)' },
+    { name: 'Liczba sztuk na rolce', value: 'od 500 do 5000 (rolki BM z odcinkami)' },
     { name: 'Zakres średnic przewodu', value: 'od 0,58 do 24,13 mm' },
     { name: 'Format', value: 'odcinki koszulki na dużej rolce (materiał luzem)' },
     { name: 'Normy', value: 'SAE AS-81531, SAE-AMS-DTL-23053/5 (klasa 1), uznanie UL 224' },
-    { name: 'Zalecana taśma barwiąca', value: 'M61-R4310; do M710: M7-R6600' },
-    { name: 'Zgodne drukarki', value: ZGODNE_BM },
-    { name: 'Numery artykułów Brady', value: numeryArtykulow(DANE_BM_342) },
+    { name: 'Zalecana taśma barwiąca', value: 'M61-R4310; do M710: M7-R6600; rolki BM7C: M7-R4300, M7-R6600' },
+    { name: 'Zgodne drukarki', value: 'rolki BM: Brady M610, M611, M710, BMP61, BMP71. Rolki BM7C: M710, BMP71' },
+    { name: 'Numery artykułów Brady', value: numeryArtykulow([...DANE_BM_342, ...DANE_BM7C_342]) },
   ],
-  variants: warianty(DANE_BM_342, 'BM-375-1-342', PRZEWOD_342, ([pn, , d, l, k, n]) => `Brady PermaSleeve ${pn} — rolka, ${n} ${KOLOR[k][1]} odcinków ${d} × ${l} mm`, false),
+  variants: [
+    ...warianty(DANE_BM_342, 'BM-375-1-342', PRZEWOD_342, ([pn, , d, l, k, n]) => `Brady PermaSleeve ${pn} — rolka, ${n} ${KOLOR[k][1]} odcinków ${d} × ${l} mm`, false, 'M610, M611, M710'),
+    ...wariantyCiagle(DANE_BM7C_342, PRZEWOD_342, 'M710'),
+  ],
   variantAttributeTooltips: {
     'Ø kabla': 'Przewody, które dana koszulka obejmie po skurczu 3:1.\n\nRolki BM-342 mieszczą koszulki do przewodów od 0,58 do 24,13 mm.',
-    Rozmiar: 'Średnica koszulki × długość jednego odcinka. Liczbę odcinków na rolce, od 500 do 5000, podaje nazwa wariantu.\n\nNajkrótsze odcinki, 11,1 mm, są po 4000 sztuk. Po 5000 sztuk są dwie rolki z koszulką 2,39 mm.',
-    Kolor: 'Kolor koszulki na rolce.\n\nPodstawowe kolory to biały i żółty. Pomarańczową i czerwoną wersję ma tylko koszulka 4,75 mm z odcinkami 44,45 mm.',
+    Rozmiar: 'Średnica koszulki × długość jednego odcinka. Liczbę odcinków na rolce, od 500 do 5000, podaje nazwa wariantu.\n\nNajkrótsze odcinki, 11,1 mm, są po 4000 sztuk. Po 5000 sztuk są dwie rolki z koszulką 2,39 mm. Dla rolek BM7C podano średnicę koszulki i długość koszulki ciągłej, 15,24 m. Po wymiarach podany jest kolor koszulki.\n\nPodstawowe kolory to biały i żółty. Pomarańczową i czerwoną wersję ma tylko koszulka 4,75 mm z odcinkami 44,45 mm. Rolki BM7C są białe.',
+    Drukarka: 'Drukarki, w których działa dany numer.\n\nM610, M611, M710 — rolki BM z odcinkami; w M710 działają bez adaptera.\n\nM710 — rolki BM7C z koszulką ciągłą; nie pasują do M610 ani M611.',
   },
   faq: [
     { question: 'Czym rolka BM różni się od kasety M6 z koszulkami?', answer: 'Liczbą odcinków. Kaseta M6 ma 50 albo 100 odcinków, a rolka BM od 500 do 5000. Materiał B-342, skurcz 3:1 i temperatura pracy są takie same.' },
     { question: 'Co oznacza końcówka -2, -3 albo -4 w numerze rolki?', answer: 'Te rolki mają krótsze odcinki i więcej sztuk. Na przykład BM-187-175-342-4 ma 4000 odcinków o długości 11,1 mm. Zwykła rolka BM-187-175-342 ma 1000 odcinków o długości 44,45 mm.' },
-    { question: 'Która taśma barwiąca pasuje do rolek BM-342?', answer: 'W drukarkach [Brady M610](/produkt/brady-m610) i M611 zalecana jest taśma M61-R4310. W drukarce M710 zalecana jest taśma M7-R6600.' },
+    { question: 'Która taśma barwiąca pasuje do rolek BM-342?', answer: 'W drukarkach [Brady M610](/produkt/brady-m610) i M611 zalecana jest taśma M61-R4310. W drukarce M710 zalecana jest taśma M7-R6600. Dla rolek BM7C zalecane są taśmy M7-R4300 i M7-R6600.' },
+    { question: 'Które rolki BM-342 pasują do drukarki M710?', answer: 'Rolki BM z odcinkami i rolki BM7C z koszulką ciągłą pasują do [Brady M710](/produkt/brady-m710) bez adaptera. Rolki BM7C nie pasują do M610 ani M611. Rolka BM7C zawiera 15,24 m koszulki ciągłej, a rolka BM odcinki o stałej długości.' },
   ],
   applications: ['Seryjne oznaczanie przewodów', 'Produkcja szaf sterowniczych', 'Wiązki przewodów'],
 }
