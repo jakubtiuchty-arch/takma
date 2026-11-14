@@ -516,8 +516,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Kompaktowe drukarki etykiet biurkowe do 4 cali szerokości. Idealne do biura, punktu sprzedaży i magazynu. Modele Zebra, Honeywell, TSC. Ceny, porównanie, doradztwo.',
     longDescription: 'Drukarki biurkowe (desktop) — jeden z pięciu typów [drukarek etykiet](/drukarki-etykiet) — to kompaktowe urządzenia zaprojektowane do pracy na biurku lub stanowisku roboczym. Zajmują minimum miejsca, a jednocześnie oferują niezawodny druk etykiet z kodami kreskowymi do 4 cali (108 mm) szerokości. Sprawdzają się w biurach, punktach sprzedaży, aptekach, małych magazynach i wszędzie tam, gdzie liczy się niewielki rozmiar i łatwość obsługi. W ofercie modele czołowych producentów: Zebra, Honeywell, TSC i innych.',
     icon: 'printer',
-    productIds: [...bixolonLabelProducts.filter(p => p.subcategoryIds?.includes('biurkowe-drukarki-etykiet')).map(p => p.id), ...brotherQlProducts.map(p => p.id), 'bixolon-xd5-40tr', 'sato-ct4-lx-rfid', 'tsc-th240r', 'tsc-th340r', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr', 'zebra-zd220d', 'zebra-zd230d', 'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411d', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd421d', 'zebra-zd621t', 'zebra-zd621r', 'zebra-zd611r', 'zebra-zd621d', 'honeywell-pc45d', 'honeywell-pc45t', 'honeywell-pc42e-t', 'brother-td-4d', 'brother-td-2020a', 'brother-td-4t', 'citizen-cl-e300', 'citizen-cl-e303', 'citizen-cl-e321', 'citizen-cl-s521ii', 'citizen-cl-s531ii', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-s400dt'],
-    productCount: 32,
+    productIds: [...bixolonLabelProducts.filter(p => p.subcategoryIds?.includes('biurkowe-drukarki-etykiet')).map(p => p.id), ...brotherQlProducts.map(p => p.id), 'bixolon-xd5-40tr', 'sato-ct4-lx-rfid', 'tsc-th240r', 'tsc-th340r', 'brother-td-4650tnwbr', 'brother-td-4750tnwbr', 'zebra-zd220d', 'zebra-zd230d', 'zebra-zd220t', 'zebra-zd230t', 'zebra-zd411d', 'zebra-zd411t', 'zebra-zd421t', 'zebra-zd421d', 'zebra-zd621t', 'zebra-zd621r', 'zebra-zd611r', 'zebra-zd621d', 'honeywell-pc45d', 'honeywell-pc45t', 'honeywell-pc42e-t', 'brother-td-4d', 'brother-td-2020a', 'brother-td-4t', 'citizen-cl-e300', 'citizen-cl-e303', 'citizen-cl-e321', 'citizen-cl-s521ii', 'citizen-cl-s531ii', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-s400dt', 'brady-s3100'],
+    productCount: 33,
   },
   {
     id: 'przemyslowe-drukarki-etykiet',
@@ -552,8 +552,10 @@ export const subcategories: Subcategory[] = [
       'zebra-zt610', 'zebra-zt610-rfid', 'zebra-zt620', 'zebra-zt620-rfid', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'honeywell-px65', 'honeywell-px940', 'brother-td-4t', 'brother-tj-4020tn', 'brother-tj-4021tn', 'brother-tj-4120tn', 'brother-tj-4121tn', 'tsc-ml241p', 'tsc-mb241t', 'tsc-mb341t', 'tsc-mh241t', 'tsc-mh341t', 'tsc-mh641t', 'tsc-mh261t', 'tsc-ttp-286mt', 'tsc-ttp-384mt', 'citizen-cl-e321', 'citizen-cl-s621ii', 'citizen-cl-s631ii', 'citizen-cl-e720', 'citizen-cl-e730', 'citizen-cl-s700iii', 'citizen-cl-s703iii',
       // Dopisane 19.09.2026
       'tsc-ml341p',
+      // Dopisane 14.11.2026
+      'brady-s3100',
     ],
-    productCount: 73,
+    productCount: 74,
   },
   {
     id: 'termiczne-drukarki-etykiet',

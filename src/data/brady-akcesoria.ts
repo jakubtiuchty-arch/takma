@@ -1,6 +1,6 @@
 import type { Product } from './products'
 
-// Akcesoria Brady do drukarek etykiet M210, M211, M410, M510, M511, M610, M611 i M710: zasilanie, mocowanie, przenoszenie i łączność.
+// Akcesoria Brady do drukarek etykiet M210, M211, M410, M510, M511, M610, M611, M710 i S3100: zasilanie, mocowanie, przenoszenie i łączność.
 // Brady nie ma cen ani stanów w /api/stock, więc karty są na zapytanie, jak kasety M21. 13.11.2026.
 
 type Akcesorium = Pick<Product, 'id' | 'name' | 'seoTitle' | 'seoDescription' | 'shortDescription' | 'description' | 'images' | 'imageDescriptions' | 'specifications' | 'applications' | 'relatedAccessories' | 'relatedProducts' | 'faq' | 'gtin13'> & { sameAs: string }
@@ -505,7 +505,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Druk etykiet z systemów wysyłających polecenia ZPL', 'Wymiana drukarki ZPL na drukarkę Brady bez zmiany szablonów w systemie'],
     relatedAccessories: ['brady-usb-cable-103788'],
-    relatedProducts: ['brady-m510', 'brady-m410', 'brady-m511', 'brady-m610', 'brady-m611', 'brady-m710'],
+    relatedProducts: ['brady-m510', 'brady-m410', 'brady-m511', 'brady-m610', 'brady-m611', 'brady-m710', 'brady-s3100'],
     faq: [
       { question: 'Czy Brady M510 drukuje w języku ZPL?', answer: 'Tak, z akcesorium Brady Script Emulator for ZPL. Bez emulatora [Brady M510](/produkt/brady-m510) drukuje z programu Brady Workstation albo z programów innych firm przez sterownik Windows.' },
     ],
@@ -989,6 +989,55 @@ const akcesoria: Akcesorium[] = [
       { question: 'Jak czyści się głowicę drukarki Brady M710?', answer: 'Najpierw wyjmuje się taśmę barwiącą i etykiety. Kartę z zestawu M71-CLEAN zwilża się alkoholem izopropylowym. W menu drukarki [Brady M710](/produkt/brady-m710) wybiera się czyszczenie i wkłada kartę do komory etykiet. Po zakończeniu trzeba odczekać ok. 15 sekund, aż elementy wyschną.' },
     ],
     sameAs: 'https://www.brady.eu/label-printers/cleaning-kit-pid-m71-clean',
+  },
+  {
+    id: 'brady-b31-cct',
+    name: 'Narzędzie do czyszczenia noża Brady B31-CCT do drukarki S3100',
+    seoTitle: 'Brady B31-CCT — narzędzie do czyszczenia noża drukarki S3100',
+    seoDescription: 'Narzędzie Brady B31-CCT do czyszczenia noża drukarek znaków i etykiet S3100, S3700, i3300, i4311 oraz BBP30, BBP31, BBP33, BBP35 i BBP37. Nr art. 142116.',
+    shortDescription: 'Brady B31-CCT — niebieskie narzędzie do czyszczenia ostrza noża w drukarkach Brady S3100, S3700, i3300, i4311 i starszych BBP3x. Usuwa klej, który zbiera się na nożu przy cięciu etykiet.',
+    description: 'Brady B31-CCT to niebieskie narzędzie do czyszczenia automatycznego noża w drukarce znaków i etykiet S3100. Narzędzie służy także w modelach S3000, S3700, i3300, i4311 i w starszych BBP30, BBP31, BBP33, BBP35 oraz BBP37.\n\nPrzy cięciu etykiet na ostrzu noża zbiera się klej z materiału. Przed czyszczeniem drukarkę wyłącza się z sieci i wyjmuje z niej materiał. Mechanizm noża zwalnia się dwoma żółtymi uchwytami, a ostrze przeciera się narzędziem zwilżonym alkoholem izopropylowym. Przy tej czynności czyści się też czujniki materiału i noża.\n\nJedno narzędzie B31-CCT jest w zestawie z drukarką S3100. Ta karta dotyczy narzędzia zapasowego.',
+    images: ['/images/products/brady/b31-cct.png'],
+    imageDescriptions: ['Niebieskie narzędzie Brady B31-CCT do czyszczenia noża drukarki'],
+    specifications: [
+      { name: 'Part Number', value: 'B31-CCT' },
+      { name: 'Numer artykułu Brady', value: '142116' },
+      { name: 'Typ', value: 'Narzędzie do czyszczenia noża drukarki' },
+      { name: 'Kolor', value: 'niebieski' },
+      { name: 'Zgodne drukarki', value: 'S3100, S3000, S3700, i3300, i4311, BBP30, BBP31, BBP33, BBP35, BBP37' },
+    ],
+    applications: ['Usuwanie kleju z ostrza noża', 'Konserwacja drukarki S3100 przy częstym cięciu etykiet'],
+    relatedAccessories: ['brady-b31-wiper'],
+    relatedProducts: ['brady-s3100'],
+    faq: [
+      { question: 'Jak często czyści się nóż drukarki Brady S3100?', answer: 'Gdy na ostrzu zbiera się klej i nóż gorzej tnie materiał. Częste cięcie etykiet z mocnym klejem szybciej brudzi ostrze. Narzędzie B31-CCT jest w zestawie z [Brady S3100](/produkt/brady-s3100), a ta karta dotyczy narzędzia zapasowego.' },
+    ],
+    sameAs: 'https://www.brady.eu/labels/cutter-cleaning-tool-for-bbp30-bbp31-bbp33-s3100-i3300-printer-pid-b31-cct',
+  },
+  {
+    id: 'brady-b31-wiper',
+    name: 'Wycieraczki nośnika Brady B31-WIPER do drukarki S3100 (5 szt.)',
+    seoTitle: 'Brady B31-WIPER — wycieraczki nośnika do drukarki S3100',
+    seoDescription: 'Zapasowe wkładki wycieraczki nośnika Brady B31-WIPER do drukarek znaków i etykiet S3100, S3700, i3300, i4311 i BBP3x. Opakowanie 5 szt., kolor żółty. Nr art. 142114.',
+    shortDescription: 'Brady B31-WIPER — pięć zapasowych wkładek wycieraczki nośnika do drukarek Brady S3100, S3700, i3300, i4311 i BBP3x. Zużytą wkładkę wymienia się bez narzędzi.',
+    description: 'Brady B31-WIPER to opakowanie pięciu zapasowych wkładek do żółtej wycieraczki nośnika. Wycieraczka opiera się na materiale założonym w drukarce. Zużytą wkładkę zastępuje się nową, aby drukarka nadal pracowała bez zakłóceń.\n\nDo wymiany wkładki drukarkę odłącza się od prądu i wyciąga kasetę z materiałem. Ramię wycieraczki podnosi się za uchwyt wkładki, starą wkładkę wysuwa się, a nową wsuwa do otworu w ramieniu aż do zatrzaśnięcia. Nie każdy materiał wymaga użycia wycieraczki.\n\nWkładki pasują do drukarek S3100, S3000, S3700, i3300 i i4311 oraz BBP30, BBP31 i BBP33, a także GlobalMark i MiniMark.',
+    images: ['/images/products/brady/b31-wiper.png'],
+    imageDescriptions: ['Pięć wkładek wycieraczki nośnika Brady B31-WIPER z żółtą gąbką'],
+    specifications: [
+      { name: 'Part Number', value: 'B31-WIPER' },
+      { name: 'Numer artykułu Brady', value: '142114' },
+      { name: 'Typ', value: 'Wkładki wycieraczki nośnika' },
+      { name: 'Liczba sztuk w opakowaniu', value: '5' },
+      { name: 'Kolor', value: 'żółty' },
+      { name: 'Zgodne drukarki', value: 'S3100, S3000, S3700, i3300, i4311, BBP30, BBP31, BBP33, GlobalMark, MiniMark' },
+    ],
+    applications: ['Wymiana zużytej wycieraczki w drukarce S3100', 'Zapas części eksploatacyjnych drukarki'],
+    relatedAccessories: ['brady-b31-cct'],
+    relatedProducts: ['brady-s3100'],
+    faq: [
+      { question: 'Jak wymienia się wycieraczkę nośnika w Brady S3100?', answer: 'Po odłączeniu zasilania i wyjęciu materiału podnosi się ramię wycieraczki za uchwyt wkładki. Starą wkładkę wysuwa się, a nową wsuwa do otworu w ramieniu aż do zatrzaśnięcia. Opakowanie B31-WIPER zawiera 5 wkładek do [Brady S3100](/produkt/brady-s3100).' },
+    ],
+    sameAs: 'https://www.brady.eu/labels/media-wiper-5-pack-pid-b31-wiper',
   },
 ]
 

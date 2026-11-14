@@ -297,6 +297,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'TSC', manufacturer: 'tsc' },
         { value: 'Citizen', manufacturer: 'citizen' },
         { value: 'Brother', manufacturer: 'brother' },
+        { value: 'Brady', manufacturer: 'brady' },
       ],
     },
     {
@@ -305,7 +306,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       description: 'Do jakiego obciążenia drukarka jest zbudowana.\n• Biurkowa — rolki do 127 mm, kilkaset etykiet dziennie; sklep, biuro, mały magazyn\n• Przemysłowa — rolki 200 mm, metalowa konstrukcja, praca ciągła na kilka zmian; produkcja, logistyka',
       derived: [
         { value: 'Biurkowa', pattern: '(^|[^0-9])12[0-9] ?mm', specs: ['Max średnica rolki', 'Maks. średnica rolki', 'Maks. średnica rolki mediów'] },
-        { value: 'Biurkowa', slugs: ['zebra-zd421t', 'honeywell-pc45t', 'honeywell-pc42e-t'] },
+        { value: 'Biurkowa', slugs: ['zebra-zd421t', 'honeywell-pc45t', 'honeywell-pc42e-t', 'brady-s3100'] },
         { value: 'Przemysłowa', pattern: '^(?!.*wewn)(.*[^0-9])?2[0-9][0-9](,[0-9])? ?mm', specs: ['Max średnica rolki', 'Maks. średnica rolki', 'Maks. średnica rolki mediów'] },
         { value: 'Przemysłowa', slugs: ['zebra-zt231', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45'] },
       ],
@@ -471,6 +472,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'TSC', manufacturer: 'tsc' },
         { value: 'Citizen', manufacturer: 'citizen' },
         { value: 'Brother', manufacturer: 'brother' },
+        { value: 'Brady', manufacturer: 'brady' },
       ],
     },
     {
@@ -480,6 +482,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       derived: [
         { value: 'Termiczna (bez taśmy)', pattern: 'termiczn|direct thermal', specs: ['Rodzaj druku', 'Metoda druku'] },
         { value: 'Termotransferowa (z taśmą)', pattern: 'termotransfer', specs: ['Rodzaj druku', 'Metoda druku'] },
+        { value: 'Termotransferowa (z taśmą)', slugs: ['brady-s3100'] },
       ],
     },
     {
