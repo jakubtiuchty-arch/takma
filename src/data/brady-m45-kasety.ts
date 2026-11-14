@@ -6,10 +6,11 @@ import type { Product } from './products'
 // Stare kasety BMP51 (MC-, MC1-, M-) nie działają w M510 — pominięte.
 // Brady nie ma cen ani stanów w /api/stock → karty na zapytanie. 13.11.2026.
 
-const DRUKARKI_M4 = 'M410, M510, M511'
-const DRUKARKI_M4_M5 = 'M510 i M511 (kasety M5 i M5C); M410, M510 i M511 (kasety M4 i M4C)'
+export const DRUKARKI_M4 = 'M410, M510, M511'
+export const DRUKARKI_M5 = 'M510, M511'
+export const DRUKARKI_M4_M5 = 'M510 i M511 (kasety M5 i M5C); M410, M510 i M511 (kasety M4 i M4C)'
 
-const wspolne: Pick<Product, 'categoryId' | 'subcategoryIds' | 'manufacturerId' | 'quoteOnly' | 'availability' | 'tags' | 'isNew' | 'isBestseller' | 'compatibleAccessories' | 'relatedAccessories' | 'relatedProducts' | 'downloads' | 'createdAt' | 'updatedAt'> = {
+export const wspolne: Pick<Product, 'categoryId' | 'subcategoryIds' | 'manufacturerId' | 'quoteOnly' | 'availability' | 'tags' | 'isNew' | 'isBestseller' | 'compatibleAccessories' | 'relatedAccessories' | 'relatedProducts' | 'downloads' | 'createdAt' | 'updatedAt'> = {
   categoryId: 'materialy-eksploatacyjne',
   subcategoryIds: [],
   manufacturerId: 'brady',
@@ -488,7 +489,14 @@ export const bradyM45Kasety: Product[] = [
 ]
 
 // Kasety zakładane na kabel (koszulki, owijki, flagi, zawieszki, BradyGrip) — sekcja kabli na karcie M510.
-export const BRADY_M45_KABLE_IDS = new Set(['brady-m5-375-1-342', 'brady-m5-103-498', 'brady-m4c-500-414'])
+export const BRADY_M45_KABLE_IDS = new Set([
+  'brady-m5-375-1-342', 'brady-m5-103-498', 'brady-m4c-500-414',
+  'brady-m5c-1000-427', 'brady-m5-116-417', 'brady-m4-203-ro-427', 'brady-m4c-375-7641', 'brady-m4-214-483',
+  'brady-m5-152-499', 'brady-m5-12-109', 'brady-m5-01-425-ft', 'brady-m4-1-425-fp',
+])
 
 // Kasety laboratoryjne — osobna sekcja na karcie M510.
-export const BRADY_M45_LAB_IDS = new Set(['brady-m5-113-490'])
+export const BRADY_M45_LAB_IDS = new Set([
+  'brady-m5-113-490', 'brady-m5c-1000-461', 'brady-m5-49-494-yl', 'brady-m5-120-492', 'brady-m5-31-7425',
+  'brady-m5-97-481', 'brady-m5-97-488', 'brady-m5c-1500-403',
+])

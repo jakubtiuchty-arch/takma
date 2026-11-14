@@ -69,6 +69,9 @@ import { bradyRt710Products, bradyRt710Accessories } from './brady-rt710-product
 import { bradyLabelPrinters } from './brady-label-printers'
 import { bradyM21Kasety } from './brady-m21-kasety'
 import { bradyM45Kasety } from './brady-m45-kasety'
+import { bradyM45KasetyLab } from './brady-m45-kasety-lab'
+import { bradyM45KasetyKable } from './brady-m45-kasety-kable'
+import { bradyM45KasetyOgolne } from './brady-m45-kasety-ogolne'
 import { bradyAkcesoria } from './brady-akcesoria'
 import { getacTabletProducts, getacTabletAccessories } from './getac-tablet-products'
 import { bluebirdTabletProducts, bluebirdTabletAccessories } from './bluebird-tablet-products'
@@ -95735,6 +95738,9 @@ const rawProductList: Product[] = [
   ...bradyLabelPrinters,
   ...bradyM21Kasety,
   ...bradyM45Kasety,
+  ...bradyM45KasetyKable,
+  ...bradyM45KasetyOgolne,
+  ...bradyM45KasetyLab,
   ...bradyAkcesoria,
   ...bradyRt710Accessories,
   ...getacTabletProducts,
