@@ -28,9 +28,11 @@ export const BRADY_B30_TASMY_IDS = new Set(idsSekcji('tasmy'))
 const TYLKO_S3700 = new Set(bradyB30TasmyPanelowe.map((p) => p.id))
 const NIE_DO_S3700 = new Set(['brady-b30-r6700-wt'])
 const tasmyJednokolorowe = idsSekcji('tasmy').filter((id) => !TYLKO_S3700.has(id))
+// Taśma B30-R6300 (bezhalogenowa) nie ma S3100 na liście zgodnych drukarek.
+const NIE_DO_S3100 = new Set(['brady-b30-r6300'])
 
 // Kolejność na kartach drukarek: taśmy ciągłe, etykiety i znaki, zestawy, taśmy barwiące (w S3700 najpierw wielokolorowe).
-export const BRADY_B30_DO_S3100: string[] = [...idsSekcji('ciagle'), ...idsSekcji('etykiety'), ...idsSekcji('zestawy'), ...tasmyJednokolorowe]
-// i3300 przyjmuje te same materiały i taśmy B30 co S3100 (bez taśm wielokolorowych); seria B33 dochodzi osobno.
-export const BRADY_B30_DO_I3300: string[] = [...BRADY_B30_DO_S3100]
+export const BRADY_B30_DO_S3100: string[] = [...idsSekcji('ciagle'), ...idsSekcji('etykiety'), ...idsSekcji('zestawy'), ...tasmyJednokolorowe].filter((id) => !NIE_DO_S3100.has(id))
+// i3300 przyjmuje materiały i jednokolorowe taśmy B30 (także B30-R6300); seria B33 dochodzi osobno.
+export const BRADY_B30_DO_I3300: string[] = [...idsSekcji('ciagle'), ...idsSekcji('etykiety'), ...idsSekcji('zestawy'), ...tasmyJednokolorowe]
 export const BRADY_B30_DO_S3700: string[] = [...idsSekcji('ciagle'), ...idsSekcji('etykiety'), ...idsSekcji('zestawy'), ...Array.from(TYLKO_S3700), ...tasmyJednokolorowe].filter((id) => !NIE_DO_S3700.has(id))

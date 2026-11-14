@@ -308,6 +308,27 @@ export const bradyB30R6200: Product = {
   applications: ['Znaki odporne na ciepło i chemikalia', 'Etykiety narażone na zarysowanie'],
 }
 
+export const bradyB30R6300: Product = {
+  ...wspolneB30,
+  relatedProducts: ['brady-i3300', 'brady-s3700'],
+  id: 'brady-b30-r6300',
+  slug: 'brady-b30-r6300',
+  name: 'Taśma barwiąca Brady B30-R6300 seria R6300 do i3300 i S3700',
+  seoTitle: 'Brady B30-R6300 — bezhalogenowa taśma barwiąca do i3300 i S3700',
+  seoDescription: 'Czarna bezhalogenowa taśma barwiąca Brady B30-R6300, 109,98 mm × 60,96 m, odporna na chemikalia, mycie i ciepło, do i3300 i S3700. PN: B30-R6300.',
+  shortDescription: 'Brady B30-R6300 to kaseta z czarną, bezhalogenową taśmą żywiczną serii R6300 do przemysłowej i3300 i do S3700. Nadruk znosi chemikalia, rozpuszczalniki, mycie i wysoką temperaturę.',
+  description: 'B30-R6300 zawiera czarną, żywiczną taśmę barwiącą bez halogenów, zamkniętą w kasecie serii B30. Nadruk z tej taśmy wytrzymuje kontakt z chemikaliami, płynami i rozpuszczalnikami, czyszczenie, mycie wodą oraz wysoką temperaturę. Brady zaleca ją między innymi do etykiet z poliimidu na płytki drukowane i do części materiałów B33.\n\nRolka ma 60,96 m długości i 109,98 mm szerokości, a sama taśma 0,0045 mm grubości. Kasetę z układem Smart Cell zakłada się w drukarce jednym ruchem, bez przewlekania i kalibracji. Drukarka odczytuje jej numer i pokazuje, ile taśmy zostało.\n\nTaśmę przyjmują przemysłowe drukarki i3300, i4311 i i5300, a także S3700 oraz starsza BBP33. Drukarka S3100 nie jest na liście zgodnych urządzeń. Zakres temperatury przechowywania i pracy kasety to 5–35 °C.',
+  sameAs: 'https://www.brady.eu/ribbons-cartridges/b30-series-r6300-halogen-free-printer-ribbon-black-pid-b30-r6300',
+  images: ['/images/products/brady/b30-r6300.png'],
+  imageDescriptions: ['Kaseta z czarną taśmą barwiącą Brady serii B30 w przezroczystej obudowie'],
+  specifications: specyfikacjaTasmy('B30-R6300', '152848', 'R6300', 'czarny', '0,0045 mm', 'bezhalogenowa, formuła żywiczna', 'chemikalia, płyny, rozpuszczalniki, czyszczenie, mycie, wysoka temperatura', { drukarki: 'i3300, i4311, i5300, S3700, BBP33' }).map((s) => s.name === 'Szerokość taśmy' ? { name: s.name, value: '109,98 mm' } : s.name === 'Długość taśmy' ? { name: s.name, value: '60,96 m' } : s),
+  faq: [
+    { question: 'Do jakich etykiet przeznaczona jest taśma B30-R6300?', answer: 'Do etykiet, które mają znosić chemikalia, mycie i wysoką temperaturę, np. z poliimidu na płytki drukowane. Brady wskazuje ją jako zalecaną dla części materiałów B33 do [Brady i3300](/produkt/brady-i3300).' },
+    { question: 'Czy B30-R6300 pasuje do Brady S3100?', answer: 'Nie, S3100 nie ma jej na liście zgodnych drukarek. Kasetę przyjmują i3300, i4311, i5300, [Brady S3700](/produkt/brady-s3700) i BBP33.' },
+  ],
+  applications: ['Etykiety z poliimidu na płytki drukowane', 'Oznaczenia narażone na chemikalia i mycie'],
+}
+
 export const bradyB30R6400: Product = {
   ...wspolneB30,
   id: 'brady-b30-r6400',
@@ -410,6 +431,7 @@ const bradyB30Tasmy: Product[] = [
   bradyB30R4400WT,
   bradyB30R6600,
   bradyB30R6200,
+  bradyB30R6300,
   bradyB30R6400,
   bradyB30R6700WT,
 ]
