@@ -95,6 +95,7 @@ export const bradyM6Tabliczki7593: Product = {
 
 export const bradyM6Tabliczki7593Waskie: Product = {
   ...wspolneM6,
+  relatedProducts: ['brady-m610', 'brady-m611'],
   id: 'brady-m6-08-7593-wt',
   slug: 'brady-m6-08-7593-wt',
   name: 'Etykiety zastępujące tabliczki grawerowane Brady M6-08-7593-WT — kasety M6 do M610 i M611',
@@ -404,6 +405,7 @@ export const bradyM6CleanLift449: Product = {
 
 export const bradyM61R4310: Product = {
   ...wspolneM6,
+  relatedProducts: ['brady-m610', 'brady-m611'],
   id: 'brady-m61-r4310',
   slug: 'brady-m61-r4310',
   name: 'Taśma barwiąca Brady M61-R4310 seria R4300 do M610 i M611',
@@ -439,6 +441,7 @@ export const bradyM61R4310: Product = {
 
 export const bradyM61R4410: Product = {
   ...wspolneM6,
+  relatedProducts: ['brady-m610', 'brady-m611'],
   id: 'brady-m61-r4410-bl',
   slug: 'brady-m61-r4410-bl',
   name: 'Taśma barwiąca Brady M61-R4410-BL seria R4400 do M610 i M611',
@@ -487,6 +490,7 @@ export const bradyM61R4410: Product = {
 
 export const bradyM61R6010: Product = {
   ...wspolneM6,
+  relatedProducts: ['brady-m610', 'brady-m611'],
   id: 'brady-m61-r6010',
   slug: 'brady-m61-r6010',
   name: 'Taśma barwiąca Brady M61-R6010 seria R6000 do M610 i M611',
@@ -521,6 +525,7 @@ export const bradyM61R6010: Product = {
 
 export const bradyM61R6210: Product = {
   ...wspolneM6,
+  relatedProducts: ['brady-m610', 'brady-m611'],
   id: 'brady-m61-r6210',
   slug: 'brady-m61-r6210',
   name: 'Taśma barwiąca Brady M61-R6210 seria R6200 do M610 i M611',
@@ -555,6 +560,7 @@ export const bradyM61R6210: Product = {
 
 export const bradyM61R6310: Product = {
   ...wspolneM6,
+  relatedProducts: ['brady-m610', 'brady-m611'],
   id: 'brady-m61-r6310',
   slug: 'brady-m61-r6310',
   name: 'Taśma barwiąca Brady M61-R6310 seria R6300 do M610 i M611',
@@ -589,6 +595,7 @@ export const bradyM61R6310: Product = {
 
 export const bradyM61R6410: Product = {
   ...wspolneM6,
+  relatedProducts: ['brady-m610', 'brady-m611'],
   id: 'brady-m61-r6410',
   slug: 'brady-m61-r6410',
   name: 'Taśma barwiąca Brady M61-R6410 seria R6400 do M610 i M611',
@@ -622,6 +629,7 @@ export const bradyM61R6410: Product = {
 
 export const bradyM61R6610: Product = {
   ...wspolneM6,
+  relatedProducts: ['brady-m610', 'brady-m611'],
   id: 'brady-m61-r6610',
   slug: 'brady-m61-r6610',
   name: 'Taśma barwiąca Brady M61-R6610 seria R6600 do M610 i M611',
@@ -655,6 +663,7 @@ export const bradyM61R6610: Product = {
 
 export const bradyM61R6710: Product = {
   ...wspolneM6,
+  relatedProducts: ['brady-m610', 'brady-m611'],
   id: 'brady-m61-r6710-wt',
   slug: 'brady-m61-r6710-wt',
   name: 'Taśma barwiąca Brady M61-R6710-WT seria R6700 do M610 i M611',
@@ -688,6 +697,7 @@ export const bradyM61R6710: Product = {
 
 export const bradyM61R6810: Product = {
   ...wspolneM6,
+  relatedProducts: ['brady-m610', 'brady-m611'],
   id: 'brady-m61-r6810-wt',
   slug: 'brady-m61-r6810-wt',
   name: 'Taśma barwiąca Brady M61-R6810-WT seria R6800 do M610 i M611',
@@ -721,6 +731,7 @@ export const bradyM61R6810: Product = {
 
 export const bradyM61R10010: Product = {
   ...wspolneM6,
+  relatedProducts: ['brady-m610', 'brady-m611'],
   id: 'brady-m61-r10010',
   slug: 'brady-m61-r10010',
   name: 'Taśma barwiąca Brady M61-R10010 seria R10000 do M610 i M611',

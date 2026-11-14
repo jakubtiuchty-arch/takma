@@ -113,6 +113,7 @@ export const bradyM6Nylon499: Product = {
 
 export const bradyM6Nylon236: Product = {
   ...wspolneM6,
+  relatedProducts: ['brady-m610', 'brady-m611'],
   id: 'brady-m6-236-499-wt',
   slug: 'brady-m6-236-499-wt',
   name: 'Etykiety z tkaniny nylonowej Brady M6-236-499-WT — kasety M6 do M610 i M611',

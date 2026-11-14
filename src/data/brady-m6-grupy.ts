@@ -37,3 +37,8 @@ export const BRADY_M6_TASMY_IDS = new Set(idsSekcji('tasmy'))
 
 // Kolejność na karcie M610: kable, etykiety ogólne, laboratorium, taśmy barwiące.
 export const BRADY_M6_DO_M610: string[] = [...idsSekcji('kable'), ...idsSekcji('ogolne'), ...idsSekcji('lab'), ...idsSekcji('tasmy')]
+
+// M710: etykiety M6 / M6C / BM / BMC pasują po założeniu adaptera M71-ADAPT-BK (jest w komplecie z drukarką).
+// Taśmy M61 nie pasują (M710 ma taśmy M7-R…). Pominięte rodziny, dla których Brady nie podaje zgodności z M710.
+export const BRADY_M6_NIE_DO_M710 = new Set(['brady-m6-236-499-wt', 'brady-m6-08-7593-wt', 'brady-m6-15x75-348-yl', 'brady-m6-35x102-pia-wt', 'brady-m6-227-348-wt'])
+export const BRADY_M6_DO_M710: string[] = [...idsSekcji('kable'), ...idsSekcji('ogolne'), ...idsSekcji('lab')].filter((id) => !BRADY_M6_NIE_DO_M710.has(id))

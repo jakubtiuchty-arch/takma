@@ -552,6 +552,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Brady M511', namePattern: 'Brady M511' },
         { value: 'Brady M610', namePattern: 'Brady M610' },
         { value: 'Brady M611', namePattern: 'Brady M611' },
+        { value: 'Brady M710', namePattern: 'Brady M710' },
       ],
     },
     {

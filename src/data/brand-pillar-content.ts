@@ -37,13 +37,13 @@ export interface BrandPillarData {
 export const brandPillarContent: Record<string, BrandPillarData> = {
   sato: satoBrandContent,
   brady: {
-  "heroText": "Drukarki etykiet Brady do oznaczania kabli, rozdzielnic i paneli krosowych, etykieciarka laboratoryjna M210-LAB oraz tablet przemysłowy RT710 z akcesoriami. Porównaj M210 z klawiaturą, M211, M511 i M611 sterowane ze smartfona oraz M410, M510 i M610 na etykiety do 25, 38 i 50 mm. Sprawdź zestawy, ceny i dostępność.",
+  "heroText": "Drukarki etykiet Brady do oznaczania kabli, rozdzielnic i paneli krosowych, etykieciarka laboratoryjna M210-LAB oraz tablet przemysłowy RT710 z akcesoriami. Porównaj M210 z klawiaturą, M211, M511 i M611 sterowane ze smartfona oraz M410, M510, M610 i M710 na etykiety do 25, 38 i 50 mm. Sprawdź zestawy, ceny i dostępność.",
   "categoryTiles": [
     {
       "categoryId": "drukarki-etykiet",
       "name": "Drukarki etykiet Brady",
       "href": "/katalog?producent=brady&kategoria=drukarki-etykiet",
-      "description": "M210, M211 i M210-LAB na kasety M21 do 19 mm, M410 i M510 z klawiaturą QWERTY na kasety M4 i M5 do 25 i 38 mm oraz M511 sterowana z telefonu, a także M610 i M611 na etykiety M6 do 50,8 mm."
+      "description": "M210, M211 i M210-LAB na kasety M21 do 19 mm, M410 i M510 z klawiaturą QWERTY na kasety M4 i M5 do 25 i 38 mm oraz M511 sterowana z telefonu, a także M610 i M611 na etykiety M6 oraz M710 na etykiety M7 do 50,8 mm."
     },
     {
       "categoryId": "tablety-przemyslowe",
@@ -55,7 +55,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
       "categoryId": "akcesoria",
       "name": "Akcesoria Brady",
       "href": "/katalog?producent=brady&kategoria=akcesoria",
-      "description": "Akumulatory, ładowarki, zasilacze, walizki i uchwyty do M210, M211, M410, M510, M511, M610 i M611 oraz baterie, stacje, klawiatury i elementy montażowe do RT710."
+      "description": "Akumulatory, ładowarki, zasilacze, walizki i uchwyty do M210, M211, M410, M510, M511, M610, M611 i M710 oraz baterie, stacje, klawiatury i elementy montażowe do RT710."
     }
   ],
   "featuredSlugs": [
@@ -67,6 +67,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
     "brady-m511",
     "brady-m610",
     "brady-m611",
+    "brady-m710",
     "brady-rt710"
   ],
   "technologies": [
@@ -115,7 +116,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
   ],
   "timeline": [],
   "aboutParagraphs": [
-    "Brady dostarcza urządzenia i materiały do identyfikacji, gromadzenia danych oraz obsługi procesów przemysłowych. W ofercie TAKMA są drukarki etykiet Brady M210, M211, M210-LAB, M410, M510, M511, M610 i M611 oraz tablet RT710 z akcesoriami.",
+    "Brady dostarcza urządzenia i materiały do identyfikacji, gromadzenia danych oraz obsługi procesów przemysłowych. W ofercie TAKMA są drukarki etykiet Brady M210, M211, M210-LAB, M410, M510, M511, M610, M611 i M710 oraz tablet RT710 z akcesoriami.",
     "M210, M211 i M210-LAB drukują na tych samych kasetach M21 o szerokości do 19,05 mm. M210 ma klawiaturę i kreatory etykiet, a M211 drukuje z aplikacji na smartfonie przez Bluetooth. M210-LAB ma klawiaturę oraz kreatory dla fiolek, probówek i szkiełek. M410 i M510 drukują w 300 dpi i łączą się z komputerem przez USB: M410 na kasetach M4 do 25,4 mm, a M510 na kasetach M4 i M5 do 38,1 mm. M511 drukuje na tych samych kasetach co M510, ale bez klawiatury: z aplikacji na telefonie przez Bluetooth albo z komputera.",
     "RT710 łączy ekran 10,1 cala z Androidem 16, Wi-Fi 7 i obudową IP66/IP68. Konfiguracje różnią się pamięcią, skanerem i zawartością zestawu. Wybierz konkretny numer PN przed zamówieniem."
   ],
@@ -140,7 +141,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
   "faq": [
     {
       "question": "Jakie produkty Brady są w TAKMA?",
-      "answer": "Oferujemy drukarki etykiet [Brady M210](/produkt/brady-m210) i [Brady M211](/produkt/brady-m211) do oznaczania kabli, etykieciarkę laboratoryjną [Brady M210-LAB](/produkt/brady-m210-lab), drukarki [Brady M410](/produkt/brady-m410) i [Brady M510](/produkt/brady-m510) na etykiety do 25 i 38 mm, [Brady M511](/produkt/brady-m511) sterowaną z telefonu, [Brady M610](/produkt/brady-m610) z klawiaturą i [Brady M611](/produkt/brady-m611) z ekranem dotykowym na etykiety do 50 mm, kasety i akcesoria do tych drukarek oraz tablet przemysłowy RT710 z bateriami, stacjami, klawiaturami i elementami montażowymi."
+      "answer": "Oferujemy drukarki etykiet [Brady M210](/produkt/brady-m210) i [Brady M211](/produkt/brady-m211) do oznaczania kabli, etykieciarkę laboratoryjną [Brady M210-LAB](/produkt/brady-m210-lab), drukarki [Brady M410](/produkt/brady-m410) i [Brady M510](/produkt/brady-m510) na etykiety do 25 i 38 mm, [Brady M511](/produkt/brady-m511) sterowaną z telefonu, [Brady M610](/produkt/brady-m610) z klawiaturą i [Brady M611](/produkt/brady-m611) z ekranem dotykowym na etykiety do 50 mm, [Brady M710](/produkt/brady-m710) z obcinarką, drukującą do 76,2 mm/s, kasety i akcesoria do tych drukarek oraz tablet przemysłowy RT710 z bateriami, stacjami, klawiaturami i elementami montażowymi."
     },
     {
       "question": "Czym różni się Brady M210 od M211?",
@@ -182,7 +183,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
     }
   ],
   "technologiesTitle": "Technologie Brady",
-  "technologiesIntro": "Drukarki M210, M211 i M210-LAB korzystają z tych samych kaset M21, M410 z kaset M4, M510 i M511 z kaset M4 i M5, a M610 i M611 z etykiet M6 i BM z osobną taśmą barwiącą. Tablet RT710 działa na platformie Mobility Edge."
+  "technologiesIntro": "Drukarki M210, M211 i M210-LAB korzystają z tych samych kaset M21, M410 z kaset M4, M510 i M511 z kaset M4 i M5, a M610 i M611 z etykiet M6 i BM z osobną taśmą barwiącą. M710 korzysta z etykiet M7 i taśm M7-R, a z adapterem także z etykiet M6. Tablet RT710 działa na platformie Mobility Edge."
 },
   zebra: {
     heroText: 'Drukarki etykiet, terminale mobilne, skanery kodów kreskowych, tablety przemysłowe, materiały eksploatacyjne i akcesoria — pełna oferta Zebra Technologies z cenami netto i dostawą z magazynu w Polsce.',

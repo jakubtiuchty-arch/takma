@@ -483,6 +483,7 @@ export const bradyBMTransport348: Product = {
 
 export const bradyM6Transport348: Product = {
   ...wspolneM6,
+  relatedProducts: ['brady-m610', 'brady-m611'],
   id: 'brady-m6-15x75-348-yl',
   slug: 'brady-m6-15x75-348-yl',
   name: 'Zawieszki kablowe do transportu publicznego Brady M6-15x75-348-YL — kasety M6 do M610',
@@ -680,6 +681,7 @@ export const bradyBMRapido: Product = {
 
 export const bradyM6ZawieszkiPIA: Product = {
   ...wspolneM6,
+  relatedProducts: ['brady-m610', 'brady-m611'],
   id: 'brady-m6-35x102-pia-wt',
   slug: 'brady-m6-35x102-pia-wt',
   name: 'Zawieszki PIA w pełni zadrukowywalne Brady M6-35X102-PIA-WT — kasety M6 i materiał BM do M610',
@@ -772,6 +774,7 @@ export const bradyBMZawieszki109: Product = {
 
 export const bradyM6Hypertag: Product = {
   ...wspolneM6,
+  relatedProducts: ['brady-m610', 'brady-m611'],
   id: 'brady-m6-227-348-wt',
   slug: 'brady-m6-227-348-wt',
   name: 'Zawieszki Hypertag z poliolefiny Brady M6-227-348-WT — kasety M6 do M610 i M611',
