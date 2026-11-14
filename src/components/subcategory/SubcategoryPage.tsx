@@ -137,7 +137,7 @@ const heroImages: Record<string, { src: string; alt: string; lead: string }> = {
   'kolorowe-drukarki-etykiet': {
     src: '/images/kolorowe-drukarki-etykiet-hero-v5.webp',
     alt: 'Wstęga etykiet z tym samym projektem: po lewej wydruk czarno-biały, w środku wybuch pigmentu CMYK, po prawej ta sama etykieta w pełnym kolorze',
-    lead: 'Etykieta z logo, zdjęciem produktu albo piktogramem GHS powstaje na miejscu, w nakładzie na dziś. Sześć modeli Epson ColorWorks, od biurkowego C3500 po przemysłową C8000e, oraz Brady J7300.',
+    lead: 'Etykieta z logo, zdjęciem produktu albo piktogramem GHS powstaje na miejscu, w nakładzie na dziś. Sześć modeli Epson ColorWorks, od biurkowego C3500 po przemysłową C8000e, oraz Brady J7300 i J4000.',
   },
   'nawijarki-do-etykiet': {
     src: '/images/nawijarki-do-etykiet-hero-v2.webp',

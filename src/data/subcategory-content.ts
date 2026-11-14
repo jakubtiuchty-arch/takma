@@ -3459,10 +3459,10 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
   },
   "definition": {
     "heading": "Co to jest kolorowa drukarka etykiet?",
-    "content": "Kolorowa drukarka etykiet drukuje tekst, kody i grafikę na zgodnym materiale z rolki. Oferowane modele Epson ColorWorks i Brady J7300 drukują atramentowo w kolorach CMYK. Wybór rodziny zależy od szerokości nadruku, rodzaju tuszu, wielkości rolki i sposobu podania etykiety.\n\nDo nadruku do 104 mm porównaj C3500. C4000e oferuje rozdzielczość do 1200 × 1200 dpi. C6000 występuje z gilotyną lub odklejakiem, a C6500 drukuje do 212 mm. C8000e osiąga do 300 mm/s przy szerokości do 108 mm. D3800e wyróżnia tusz barwnikowy. Brady J7300 drukuje w 4800 dpi na etykietach Brady do druku atramentowego, także laboratoryjnych i odpornych na mycie.\n\nTa kategoria pomaga porównać urządzenia do etykiet. Tusze i etykiety kupisz w osobnych działach; parametry oraz PN sprawdzisz na karcie wybranego modelu."
+    "content": "Kolorowa drukarka etykiet drukuje tekst, kody i grafikę na zgodnym materiale z rolki. Oferowane modele Epson ColorWorks oraz Brady J7300 i J4000 drukują atramentowo w pełnym kolorze. Wybór rodziny zależy od szerokości nadruku, rodzaju tuszu, wielkości rolki i sposobu podania etykiety.\n\nDo nadruku do 104 mm porównaj C3500. C4000e oferuje rozdzielczość do 1200 × 1200 dpi. C6000 występuje z gilotyną lub odklejakiem, a C6500 drukuje do 212 mm. C8000e osiąga do 300 mm/s przy szerokości do 108 mm. D3800e wyróżnia tusz barwnikowy. Brady J7300 drukuje w 4800 dpi na etykietach Brady do druku atramentowego, także laboratoryjnych i odpornych na mycie. Brady J4000 drukuje do 203,2 mm szerokości z jednej kasety CMY.\n\nTa kategoria pomaga porównać urządzenia do etykiet. Tusze i etykiety kupisz w osobnych działach; parametry oraz PN sprawdzisz na karcie wybranego modelu."
   },
   "comparisonTable": {
-    "heading": "Sześć modeli ColorWorks i Brady J7300 — czym się różnią",
+    "heading": "Sześć modeli ColorWorks oraz Brady J7300 i J4000 — czym się różnią",
     "intro": "Porównaj obszar nadruku, tryb maksymalnej prędkości, rodzaj tuszu i format rolki. Zgodność materiału sprawdź dla konkretnego PN oraz wersji Ae lub Pe.",
     "columns": [
       "Szerokość druku",
@@ -3560,6 +3560,19 @@ Honeywell CBL-020-300-C00: RS-232, krętny (coiled), 3 m, DB9 Female. Krętny ka
           "30,48 mm/s",
           "4800 dpi",
           "P-CMY-1 32 ml i P-K-1 35 ml",
+          "6 cali",
+          "Gilotyna"
+        ]
+      },
+      {
+        "model": "Brady J4000",
+        "href": "/produkt/brady-j4000",
+        "role": "Szerokie znaki BHP i etykiety Brady do 203 mm",
+        "cells": [
+          "203,2 mm",
+          "114,3 mm/s",
+          "4800 dpi",
+          "J40-CMY, 48 ml",
           "6 cali",
           "Gilotyna"
         ]

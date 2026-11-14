@@ -409,6 +409,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: '6 cali (166–168 mm)', pattern: '16[0-9](,[0-9])? ?mm', specs: ['Szerokość druku', 'Maks. szerokość druku'] },
         { value: '6 cali (166–168 mm)', pattern: '–17[0-9](,[0-9])? ?mm', specs: ['Szerokość mediów'] },
         { value: '8 cali (216 mm)', pattern: '2[12][0-9](,[0-9])? ?mm', specs: ['Szerokość druku', 'Maks. szerokość druku'] },
+        { value: '8 cali (216 mm)', slugs: ['brady-j4000'] },
       ],
     },
     {
@@ -687,6 +688,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'do 108 mm (4 cale)', pattern: '10[48] ?mm', specs: ['Szerokość druku'] },
         { value: 'do 212 mm (8 cali)', pattern: '212 ?mm', specs: ['Szerokość druku'] },
         { value: 'do 108 mm (4 cale)', slugs: ['brady-j7300'] },
+        { value: 'do 212 mm (8 cali)', slugs: ['brady-j4000'] },
       ],
     },
     {
@@ -698,6 +700,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: '100–150 mm/s', pattern: '(10[1-9]|1[1-4][0-9]) ?mm/s', specs: ['Prędkość druku'] },
         { value: 'powyżej 150 mm/s', pattern: '(1[5-9][0-9]|[2-9][0-9]{2}) ?mm/s', specs: ['Prędkość druku'] },
         { value: 'do 100 mm/s', slugs: ['brady-j7300'] },
+        { value: '100–150 mm/s', slugs: ['brady-j4000'] },
       ],
     },
     {
@@ -717,7 +720,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Gilotyna', pattern: 'automatyczna|w zestawie|w standardzie', specs: ['Gilotyna'] },
         { value: 'Gilotyna', pattern: 'gilotyn', specs: ['Wersje'] },
         { value: 'Odklejak (wersja Pe)', pattern: 'odklejak', specs: ['Wersje'] },
-        { value: 'Gilotyna', slugs: ['brady-j7300'] },
+        { value: 'Gilotyna', slugs: ['brady-j7300', 'brady-j4000'] },
       ],
     },
     {
@@ -763,7 +766,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Biurkowa', pattern: '(^|[^0-9])12[0-9] ?mm', specs: ['Max średnica rolki', 'Maks. średnica rolki', 'Maks. średnica rolki mediów'], notSpecs: ['Bateria', 'Bateria standardowa'] },
         { value: 'Biurkowa', slugs: ['zebra-zd421t', 'honeywell-pc45t', 'honeywell-pc42e-t', 'honeywell-pc45d', 'brother-td-2020a'] },
         { value: 'Przemysłowa', pattern: '^(?!.*wewn)(.*[^0-9])?2[0-9][0-9](,[0-9])? ?mm', specs: ['Max średnica rolki', 'Maks. średnica rolki', 'Maks. średnica rolki mediów'] },
-        { value: 'Przemysłowa', slugs: ['zebra-zt231', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'brady-s3100', 'brady-s3700', 'brady-j7300'] },
+        { value: 'Przemysłowa', slugs: ['zebra-zt231', 'honeywell-pd45', 'honeywell-pd45s', 'honeywell-pm45', 'honeywell-pm65', 'honeywell-px45', 'brady-s3100', 'brady-s3700', 'brady-j7300', 'brady-j4000'] },
         { value: 'Mobilna (na baterię)', pattern: '\\S', specs: ['Bateria', 'Bateria standardowa'] },
       ],
     },
@@ -775,7 +778,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
         { value: 'Termiczna (bez taśmy)', pattern: 'termiczn|direct thermal', specs: ['Rodzaj druku', 'Metoda druku'] },
         { value: 'Termotransferowa (z taśmą)', pattern: 'termotransfer', specs: ['Rodzaj druku', 'Metoda druku'] },
         { value: 'Atramentowa (kolorowa)', manufacturer: 'epson' },
-        { value: 'Atramentowa (kolorowa)', slugs: ['brady-j7300'] },
+        { value: 'Atramentowa (kolorowa)', slugs: ['brady-j7300', 'brady-j4000'] },
       ],
     },
     {

@@ -75,6 +75,7 @@ import { bradyM45KasetyOgolne } from './brady-m45-kasety-ogolne'
 import { bradyM6Materialy } from './brady-m6-grupy'
 import { bradyB30Materialy } from './brady-b30-grupy'
 import { bradyJ7300Materialy } from './brady-j7300-grupy'
+import { bradyJ4000Materialy } from './brady-j4000-grupy'
 import { bradyAkcesoria } from './brady-akcesoria'
 import { getacTabletProducts, getacTabletAccessories } from './getac-tablet-products'
 import { bluebirdTabletProducts, bluebirdTabletAccessories } from './bluebird-tablet-products'
@@ -536,9 +537,9 @@ export const subcategories: Subcategory[] = [
       // Dopisane 19.09.2026
       'tsc-ml341p',
       // Dopisane 14.11.2026 — drukarki znaków i etykiet Brady
-      'brady-s3100', 'brady-s3700', 'brady-j7300',
+      'brady-s3100', 'brady-s3700', 'brady-j7300', 'brady-j4000',
     ],
-    productCount: 58,
+    productCount: 59,
   },
   {
     id: 'termotransferowe-drukarki-etykiet',
@@ -612,10 +613,10 @@ export const subcategories: Subcategory[] = [
     description: 'Drukarki etykiet w pełnym kolorze na żądanie: tusz pigmentowy CMYK, etykiety produktowe, GHS i bilety',
     seoTitle: "Kolorowe drukarki etykiet — porównanie Epson ColorWorks",
     seoDescription: "Kolorowe drukarki etykiet Epson ColorWorks: porównaj nadruk 104–212 mm, pigment i tusz barwnikowy, gilotynę oraz odklejak. Modele, PN i ceny.",
-    longDescription: 'Kolorowe drukarki etykiet drukują w pełnym kolorze na żądanie, więc etykieta z logo, zdjęciem produktu albo piktogramem ostrzegawczym powstaje na miejscu, w takim nakładzie, jaki jest dziś potrzebny. To piąty typ [drukarek etykiet](/drukarki-etykiet) obok biurkowych, przemysłowych, mobilnych i termicznych. W ofercie jest sześć modeli Epson ColorWorks — od biurkowego C3500 po przemysłową C8000e drukującą 300 mm/s — a do każdego [tusze](/tusze-do-kolorowych-drukarek) i [etykiety](/etykiety-do-kolorowych-drukarek). Uzupełnia je przemysłowa [Brady J7300](/produkt/brady-j7300), która drukuje na etykietach Brady do druku atramentowego.',
+    longDescription: 'Kolorowe drukarki etykiet drukują w pełnym kolorze na żądanie, więc etykieta z logo, zdjęciem produktu albo piktogramem ostrzegawczym powstaje na miejscu, w takim nakładzie, jaki jest dziś potrzebny. To piąty typ [drukarek etykiet](/drukarki-etykiet) obok biurkowych, przemysłowych, mobilnych i termicznych. W ofercie jest sześć modeli Epson ColorWorks — od biurkowego C3500 po przemysłową C8000e drukującą 300 mm/s — a do każdego [tusze](/tusze-do-kolorowych-drukarek) i [etykiety](/etykiety-do-kolorowych-drukarek). Uzupełniają je przemysłowe [Brady J7300](/produkt/brady-j7300) i [Brady J4000](/produkt/brady-j4000), które drukują na etykietach Brady do druku atramentowego.',
     icon: 'printer',
-    productIds: ['epson-colorworks-c3500', 'epson-colorworks-d3800e', 'epson-colorworks-c4000e', 'epson-colorworks-c6000', 'epson-colorworks-c6500', 'epson-colorworks-c8000e', 'brady-j7300'],
-    productCount: 7,
+    productIds: ['epson-colorworks-c3500', 'epson-colorworks-d3800e', 'epson-colorworks-c4000e', 'epson-colorworks-c6000', 'epson-colorworks-c6500', 'epson-colorworks-c8000e', 'brady-j7300', 'brady-j4000'],
+    productCount: 8,
   },
   {
     id: 'etykieciarki',
@@ -95752,6 +95753,7 @@ const rawProductList: Product[] = [
   ...bradyM6Materialy,
   ...bradyB30Materialy,
   ...bradyJ7300Materialy,
+  ...bradyJ4000Materialy,
   ...bradyAkcesoria,
   ...bradyRt710Accessories,
   ...getacTabletProducts,

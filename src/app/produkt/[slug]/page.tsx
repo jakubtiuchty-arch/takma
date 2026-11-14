@@ -111,6 +111,7 @@ import { BRADY_OZNACZNIKI_KABLI_IDS, BRADY_ETYKIETY_LAB_IDS, BRADY_DRUKARKI_LAB_
 import { BRADY_M6_KABLE_IDS, BRADY_M6_LAB_IDS, BRADY_M6_TASMY_IDS } from '@/data/brady-m6-grupy'
 import { BRADY_B30_CIAGLE_IDS, BRADY_B30_ZESTAWY_IDS, BRADY_B30_TASMY_IDS } from '@/data/brady-b30-grupy'
 import { BRADY_J7300_TUSZE_IDS, BRADY_J7300_LAB_IDS, BRADY_J7300_ZAWIESZKI_IDS } from '@/data/brady-j7300-grupy'
+import { BRADY_J4000_TUSZE_IDS, BRADY_J4000_LAB_IDS, BRADY_J4000_LAMINATY_IDS, BRADY_J4000_ZAWIESZKI_IDS } from '@/data/brady-j4000-grupy'
 import { BRADY_M45_KABLE_IDS, BRADY_M45_LAB_IDS } from '@/data/brady-m45-kasety'
 import StarterKits from '@/components/product/StarterKits'
 import MobileCta from './MobileCta'
@@ -523,6 +524,21 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
         { klucz: 'etykiety', tytul: 'Etykiety ogólne i przemysłowe', pozycje: ogolneJ },
         { klucz: 'lab', tytul: 'Etykiety laboratoryjne', pozycje: labJ },
         { klucz: 'zawieszki', tytul: 'Zawieszki i opaski z rzepem', pozycje: zawieszkiJ },
+      ].filter((g) => g.pozycje.length > 0)
+    }
+    // Kolorowa drukarka atramentowa J4000 (do 203,2 mm): tusz, etykiety, odporne na chemikalia, laminaty, zawieszki.
+    if (product.id === 'brady-j4000') {
+      const tuszJ4 = compatibleConsumables.filter((p) => BRADY_J4000_TUSZE_IDS.has(p!.id))
+      const labJ4 = compatibleConsumables.filter((p) => BRADY_J4000_LAB_IDS.has(p!.id))
+      const laminatyJ4 = compatibleConsumables.filter((p) => BRADY_J4000_LAMINATY_IDS.has(p!.id))
+      const zawieszkiJ4 = compatibleConsumables.filter((p) => BRADY_J4000_ZAWIESZKI_IDS.has(p!.id))
+      const ogolneJ4 = compatibleConsumables.filter((p) => !BRADY_J4000_TUSZE_IDS.has(p!.id) && !BRADY_J4000_LAB_IDS.has(p!.id) && !BRADY_J4000_LAMINATY_IDS.has(p!.id) && !BRADY_J4000_ZAWIESZKI_IDS.has(p!.id))
+      return [
+        { klucz: 'tusze', tytul: 'Tusz i nasadki', pozycje: tuszJ4 },
+        { klucz: 'etykiety', tytul: 'Etykiety ogólne i przemysłowe', pozycje: ogolneJ4 },
+        { klucz: 'lab', tytul: 'Etykiety odporne na chemikalia', pozycje: labJ4 },
+        { klucz: 'laminaty', tytul: 'Laminat i zestawy z laminatem', pozycje: laminatyJ4 },
+        { klucz: 'zawieszki', tytul: 'Zawieszki', pozycje: zawieszkiJ4 },
       ].filter((g) => g.pozycje.length > 0)
     }
     const grupy = BRADY_DRUKARKI_LAB_IDS.has(product.id)
