@@ -1,4 +1,5 @@
 import type { Product } from './products'
+import { BRADY_M6_DO_M610 } from './brady-m6-grupy'
 
 // Drukarki etykiet Brady M210, M210-LAB i M211 (kasety M21) oraz M510 (kasety M4 i M5). Brady nie ma cen ani stanów w /api/stock,
 // dlatego karty są na zapytanie (quoteOnly) do czasu cennika partnerskiego. 13.11.2026.
@@ -766,7 +767,7 @@ export const bradyLabelPrinters: Product[] = [
       { question: 'W jakiej temperaturze pracuje Brady M610?', answer: 'Od −18 do 46 °C, więc drukarka nadaje się do chłodni i do pracy na zewnątrz zimą. Obudowa wytrzymuje upadki z wysokości 1,8 m i wstrząsy według normy MIL-STD-810G.' },
       { question: 'Czy Brady M610 można podłączyć do komputera?', answer: 'Tak, kablem USB. Etykiety projektuje się wtedy w programie Brady Workstation, a do programów innych firm służy sterownik Windows. Polecenia ZPL drukarka przyjmuje z akcesorium [Brady Script Emulator for ZPL](/produkt/brady-m-script-adapt-int).' },
     ],
-    compatibleAccessories: [],
+    compatibleAccessories: BRADY_M6_DO_M610,
     relatedAccessories: ['brady-m-lion-battery', 'brady-m-nimh-battery', 'brady-m41-51-61-ac-eu', 'brady-m610-hc', 'brady-m-script-adapt-int'],
     relatedProducts: ['brady-m510', 'brady-m410', 'brady-m511', 'brother-pt-e920bt'],
     downloads: [

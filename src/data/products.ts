@@ -72,6 +72,7 @@ import { bradyM45Kasety } from './brady-m45-kasety'
 import { bradyM45KasetyLab } from './brady-m45-kasety-lab'
 import { bradyM45KasetyKable } from './brady-m45-kasety-kable'
 import { bradyM45KasetyOgolne } from './brady-m45-kasety-ogolne'
+import { bradyM6Materialy } from './brady-m6-grupy'
 import { bradyAkcesoria } from './brady-akcesoria'
 import { getacTabletProducts, getacTabletAccessories } from './getac-tablet-products'
 import { bluebirdTabletProducts, bluebirdTabletAccessories } from './bluebird-tablet-products'
@@ -95741,6 +95742,7 @@ const rawProductList: Product[] = [
   ...bradyM45KasetyKable,
   ...bradyM45KasetyOgolne,
   ...bradyM45KasetyLab,
+  ...bradyM6Materialy,
   ...bradyAkcesoria,
   ...bradyRt710Accessories,
   ...getacTabletProducts,
