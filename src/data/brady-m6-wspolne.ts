@@ -15,7 +15,7 @@ export const wspolneM6: Pick<Product, 'categoryId' | 'subcategoryIds' | 'manufac
   isBestseller: false,
   compatibleAccessories: [],
   relatedAccessories: [],
-  relatedProducts: ['brady-m610'],
+  relatedProducts: ['brady-m610', 'brady-m611'],
   downloads: [],
   createdAt: '2026-11-14',
   updatedAt: '2026-11-14',
