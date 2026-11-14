@@ -1564,7 +1564,7 @@ export const bradyLabelPrinters: Product[] = [
       { name: 'Prędkość druku', value: '101,6 mm/s' },
       { name: 'Kolor druku', value: 'jednokolorowy, kolor zależy od taśmy barwiącej' },
       { name: 'Materiały', value: 'B30-, B30C-, B30EP- oraz B33-, B33C-, B33D-, B33FP-, B33FT-, B33R-; ponad 1300 standardowych pozycji' },
-      { name: 'Taśma barwiąca', value: 'w osobnej kasecie serii B30 (np. B30-R4300, B30-R6000, B30-R10000)' },
+      { name: 'Taśma barwiąca', value: 'w osobnej kasecie serii B30 (np. B30-R4300, B30-R6000HF, B30-R10000)' },
       { name: 'Szerokość materiału', value: 'od 6,35 do 107,95 mm; podkład od 18,03 do 107,95 mm' },
       { name: 'Maks. szerokość druku', value: '101,6 mm (pole wydruku do 101,98 mm)' },
       { name: 'Maksymalna długość wydruku', value: '1,5 m (taśma ciągła)' },
