@@ -116,6 +116,7 @@ import { BRADY_B33_PRZEWODY_IDS, BRADY_B33_ELEKTRONIKA_IDS, BRADY_B33_LAB_IDS, B
 import { BRADY_THT_PRZEWODY_IDS, BRADY_THT_ELEKTRONIKA_IDS, BRADY_THT_LAB_IDS, BRADY_THT_RFID_IDS, BRADY_THT_TASMY_IDS } from '@/data/brady-tht-grupy'
 import { BRADY_A55_FLAGI_IDS, BRADY_A55_TASMY_IDS } from '@/data/brady-a5500'
 import { BRADY_A62_NYLON_IDS, BRADY_A62_TASMY_IDS } from '@/data/brady-a6200'
+import { BRADY_WRAP_NYLON_IDS, BRADY_WRAP_POLIIMID_IDS } from '@/data/brady-a6500'
 import { BRADY_M45_KABLE_IDS, BRADY_M45_LAB_IDS } from '@/data/brady-m45-kasety'
 import StarterKits from '@/components/product/StarterKits'
 import MobileCta from './MobileCta'
@@ -531,6 +532,15 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
       return [
         { klucz: 'owijki', tytul: 'Owijki samolaminujące', pozycje: compatibleConsumables.filter((p) => !BRADY_A62_NYLON_IDS.has(p!.id) && !TASMY_BARWIACE_IDS.has(p!.id)) },
         { klucz: 'nylon', tytul: 'Etykiety z tkaniny nylonowej', pozycje: compatibleConsumables.filter((p) => BRADY_A62_NYLON_IDS.has(p!.id)) },
+        { klucz: 'tasmy', tytul: 'Taśma barwiąca', pozycje: tasmy },
+      ].filter((g) => g.pozycje.length > 0)
+    }
+    // Drukarka z aplikatorem owijek Wraptor A6500: owijki winylowe B-427, etykiety nylonowe B-499, owijki z poliimidu B-472, taśma R4300.
+    if (product.id === 'brady-a6500') {
+      return [
+        { klucz: 'owijki', tytul: 'Owijki samolaminujące z winylu', pozycje: compatibleConsumables.filter((p) => !BRADY_WRAP_NYLON_IDS.has(p!.id) && !BRADY_WRAP_POLIIMID_IDS.has(p!.id) && !TASMY_BARWIACE_IDS.has(p!.id)) },
+        { klucz: 'nylon', tytul: 'Etykiety z tkaniny nylonowej', pozycje: compatibleConsumables.filter((p) => BRADY_WRAP_NYLON_IDS.has(p!.id)) },
+        { klucz: 'poliimid', tytul: 'Owijki z poliimidu', pozycje: compatibleConsumables.filter((p) => BRADY_WRAP_POLIIMID_IDS.has(p!.id)) },
         { klucz: 'tasmy', tytul: 'Taśma barwiąca', pozycje: tasmy },
       ].filter((g) => g.pozycje.length > 0)
     }

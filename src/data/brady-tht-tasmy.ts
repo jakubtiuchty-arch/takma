@@ -992,14 +992,14 @@ const R4300: Wiersz[] = [
 
 export const bradyR4300: Product = {
   ...wspolneTHT,
-  relatedProducts: REL_61_71,
+  relatedProducts: [...REL_61_71, 'brady-a6500'],
   id: 'brady-r4300',
   slug: 'brady-r4300',
-  name: 'Czarna taśma barwiąca Brady R4300 woskowo-żywiczna (gilza 25 mm) do drukarek i6100 i i7100',
+  name: 'Czarna taśma barwiąca Brady R4300 woskowo-żywiczna (gilza 25 mm) do drukarek i6100, i7100 i Wraptor A6500',
   seoTitle: 'Brady R4300 — taśma woskowo-żywiczna do drukarek i6100 i i7100',
   seoDescription: 'Czarna taśma barwiąca Brady R4300 do drukarek Brady i6100 i i7100: woskowo-żywiczna, na poliestrze, 25,4–110 mm × 300 m. PN: R4311-25X300/O, R4307-110X300/O.',
   shortDescription: 'Brady R4300 to czarna taśma woskowo-żywiczna na poliestrze, w pięciu szerokościach od 25,4 do 110 mm, po 300 m na rolce. Do drukarek Brady i6100 i i7100.',
-  description: 'R4300 jest czarną taśmą do druku termotransferowego, w której warstwa barwiąca łączy wosk z żywicą. Nośnikiem jest poliester, a całość nie zawiera halogenów. Taśma trafia do drukarki jako rolka bez kasety.\n\nSzerokości zaczynają się od wąskiej taśmy 25,4 mm i sięgają 110 mm; pośrednie rozmiary to 40, 60 i 83 mm. Każda rolka ma 300 m długości, a pas ma jeden kolor.\n\nObsługują ją drukarki i6100 i i7100. Materiały B-427, B-342 i B-499, czyli winyl, koszulki i tkanina nylonowa o powierzchni matowej lub szorstkiej, są typowymi podłożami dla tej serii.',
+  description: 'R4300 jest czarną taśmą do druku termotransferowego, w której warstwa barwiąca łączy wosk z żywicą. Nośnikiem jest poliester, a całość nie zawiera halogenów. Taśma trafia do drukarki jako rolka bez kasety.\n\nSzerokości zaczynają się od wąskiej taśmy 25,4 mm i sięgają 110 mm; pośrednie rozmiary to 40, 60 i 83 mm. Każda rolka ma 300 m długości, a pas ma jeden kolor.\n\nObsługują ją drukarki i6100 i i7100, a wersje R4311 (25,4 mm) i R4302 (60 mm) także drukarka z aplikatorem owijek Wraptor A6500. Materiały B-427, B-342 i B-499, czyli winyl, koszulki i tkanina nylonowa o powierzchni matowej lub szorstkiej, są typowymi podłożami dla tej serii.',
   sameAs: 'https://www.brady.eu/ribbons-cartridges/thermal-transfer-25-mm-core-r4300-series-printer-ribbon-cps-4394043',
   images: ['/images/products/brady/r4311.png', '/images/products/brady/r4300.png'],
   imageDescriptions: [
@@ -1020,7 +1020,7 @@ export const bradyR4300: Product = {
     zalecane: 'matowe i szorstkie materiały: B-427, B-342, B-499',
     gilza: '25,4 mm',
     format: RDZEN_25,
-    drukarki: D61_71,
+    drukarki: D61_71 + ', Wraptor A6500 (R4311-25X300/O, R4302-60X300/O)',
   }),
   variants: wariantyTasmy(R4300, 'czarna taśma barwiąca R4300'),
   variantAttributeTooltips: {
@@ -1028,7 +1028,7 @@ export const bradyR4300: Product = {
   },
   faq: [
     { question: 'Jaką formułę ma taśma R4300?', answer: 'Woskowo-żywiczną. Warstwa barwiąca leży na poliestrze, jest czarna i nie zawiera halogenów.' },
-    { question: 'W których drukarkach Brady używa się taśmy R4300?', answer: 'W drukarkach ' + LINKI_61_71 + '. Rolki mają gilzę 25,4 mm i do 110 mm szerokości.' },
+    { question: 'W których drukarkach Brady używa się taśmy R4300?', answer: 'W drukarkach ' + LINKI_61_71 + '. Rolki mają gilzę 25,4 mm i do 110 mm szerokości. Do [Brady Wraptor A6500](/produkt/brady-a6500) pasują R4311 (25,4 mm) i R4302 (60 mm).' },
   ],
   applications: ['Czarny nadruk na etykietach z rolki', 'Znakowanie przewodów i urządzeń'],
 }

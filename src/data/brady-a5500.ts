@@ -171,7 +171,7 @@ export const bradyA5500Akcesoria: Product[] = [
     applications: ['Wymiana zabrudzonego filtra wentylatora w drukarce A5500', 'Zapas filtrów do urządzeń Wraptor i Wraptor A6500'],
     compatibleAccessories: [],
     relatedAccessories: ['brady-pck-6'],
-    relatedProducts: ['brady-a5500'],
+    relatedProducts: ['brady-a5500', 'brady-a6500'],
     faq: [
       { question: 'Jak wyczyścić filtr wentylatora w Brady A5500?', answer: 'Należy zdjąć kratkę wentylatora z tyłu [Brady A5500](/produkt/brady-a5500) i wyjąć filtr. Filtr przedmuchuje się czystym powietrzem albo myje łagodnym detergentem i zostawia do wyschnięcia. Suchy filtr wkłada się z powrotem i zatrzaskuje kratkę.' },
     ],
