@@ -505,7 +505,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Druk etykiet z systemów wysyłających polecenia ZPL', 'Wymiana drukarki ZPL na drukarkę Brady bez zmiany szablonów w systemie'],
     relatedAccessories: ['brady-usb-cable-103788'],
-    relatedProducts: ['brady-m510', 'brady-m410', 'brady-m511', 'brady-m610', 'brady-m611', 'brady-m710', 'brady-s3100', 'brady-s3700', 'brady-i3300', 'brady-i5300'],
+    relatedProducts: ['brady-m510', 'brady-m410', 'brady-m511', 'brady-m610', 'brady-m611', 'brady-m710', 'brady-s3100', 'brady-s3700', 'brady-i3300', 'brady-i5300', 'brady-a5500'],
     faq: [
       { question: 'Czy Brady M510 drukuje w języku ZPL?', answer: 'Tak, z akcesorium Brady Script Emulator for ZPL. Bez emulatora [Brady M510](/produkt/brady-m510) drukuje z programu Brady Workstation albo z programów innych firm przez sterownik Windows.' },
     ],
@@ -1083,7 +1083,7 @@ const akcesoria: Akcesorium[] = [
     ],
     applications: ['Czyszczenie głowicy drukarek S3100 i S3700', 'Konserwacja drukarek przemysłowych Brady i7100 i i5300'],
     relatedAccessories: ['brady-b31-cct', 'brady-b31-wiper'],
-    relatedProducts: ['brady-s3700', 'brady-s3100', 'brady-i3300', 'brady-i4311', 'brady-i5300'],
+    relatedProducts: ['brady-s3700', 'brady-s3100', 'brady-i3300', 'brady-i4311', 'brady-i5300', 'brady-a5500'],
     faq: [
       { question: 'Czym czyści się głowicę drukarki Brady S3700?', answer: 'Nasączonym wacikiem z zestawu PCK-6. Przed czyszczeniem drukarkę odłącza się od zasilania i wyjmuje taśmę barwiącą oraz materiał. Zestaw jest w opakowaniu [Brady S3700](/produkt/brady-s3700), a ta karta dotyczy zestawu zapasowego.' },
     ],

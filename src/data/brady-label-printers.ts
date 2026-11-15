@@ -7,6 +7,7 @@ import { BRADY_B33_DO_I3300, BRADY_B33_DO_I4311, BRADY_B33_DO_I5300 } from './br
 import { BRADY_THT_DO_I6100 } from './brady-tht-grupy'
 import { bradyI7100 } from './brady-i7100'
 import { bradyI7500 } from './brady-i7500'
+import { bradyA5500 } from './brady-a5500'
 
 // Drukarki etykiet Brady M210, M210-LAB i M211 (kasety M21) oraz M510 (kasety M4 i M5). Brady nie ma cen ani stanów w /api/stock,
 // dlatego karty są na zapytanie (quoteOnly) do czasu cennika partnerskiego. 13.11.2026.
@@ -1861,4 +1862,5 @@ export const bradyLabelPrinters: Product[] = [
   },
   bradyI7100,
   bradyI7500,
+  bradyA5500,
 ]
