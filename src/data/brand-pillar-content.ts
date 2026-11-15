@@ -42,7 +42,7 @@ export const brandPillarContent: Record<string, BrandPillarData> = {
     {
       "categoryId": "drukarki-etykiet",
       "name": "Drukarki etykiet Brady",
-      "href": "/katalog?producent=brady&kategoria=drukarki-etykiet",
+      "href": "/drukarki-etykiet-brady",
       "description": "M210, M211 i M210-LAB na kasety M21 do 19 mm, M410 i M510 z klawiaturą QWERTY na kasety M4 i M5 do 25 i 38 mm oraz M511 sterowana z telefonu, a także M610 i M611 na etykiety M6, M710 na etykiety M7 do 50,8 mm oraz stacjonarne S3100 i wielokolorowa S3700 z ploterem tnącym na znaki do 101,6 mm, a także przemysłowa i3300 na materiały B30 i B33, przenośna i4311 z akumulatorem na te same materiały, i5300 z metalową ramą w wersjach 300 i 600 dpi, i6100, i7100 i i7500 na rolki etykiet z gilzą 76 mm oraz kolorowe atramentowe J7300 na etykiety do 108 mm i J4000 do 203,2 mm."
     },
     {

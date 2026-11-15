@@ -1698,6 +1698,69 @@ categoryFilters['drukarki-etykiet-brother'] = [
 ]
 categoryFilters['drukarki-kart-magicard'] = categoryFilters['drukarki-kart']
 
+// Brady (15.11.2026): własny zestaw filtrów strony marki. Filtry kategorii czytają wiersze, których karty
+// Brady nie mają („Interfejsy”, „Bateria”, „Metoda druku”), więc reguły poniżej czytają wiersze kart Brady.
+const BRADY_SZEROKOSC_DRUKU = ['Maksymalna szerokość druku', 'Maks. szerokość druku']
+categoryFilters['drukarki-etykiet-brady'] = [
+  {
+    specKey: 'rodzaj-brady',
+    label: 'Rodzaj',
+    description: 'Grupa drukarek Brady.\n• Przenośne — M210, M211, M210-LAB, M410, M510, M511, M610, M611 i M710 na kasety do 50,8 mm\n• Drukarki znaków — S3100 i S3700 na materiały B30 do 101,6 mm\n• Przemysłowe — i3300, i4311 i i5300 na materiały B30 i B33 oraz i6100, i7100 i i7500 na rolki\n• Kolorowe — J7300 i J4000, druk atramentowy\n• Z aplikatorem — A5500 nakłada flagi, a Wraptor A6200 i A6500 owijki na przewody',
+    derived: [
+      { value: 'Przenośne', namePattern: '\\bM[2-7]1[01]\\b' },
+      { value: 'Drukarki znaków', namePattern: '\\bS3[17]00\\b' },
+      { value: 'Przemysłowe', namePattern: '\\bi\\d{4}\\b' },
+      { value: 'Kolorowe (atramentowe)', namePattern: '\\bJ\\d{4}\\b' },
+      { value: 'Z aplikatorem na przewody', namePattern: '\\bA\\d{4}\\b' },
+    ],
+  },
+  {
+    specKey: 'technologia-brady',
+    label: 'Technologia druku',
+    description: 'Sposób druku.\n• Termotransferowa — z taśmą barwiącą osobno albo w kasecie z etykietą\n• Termiczna — bez taśmy, na materiale termoczułym; i6100, i7100 i i7500\n• Atramentowa — pełny kolor z tuszu; J7300 i J4000',
+    derived: [
+      { value: 'Termotransferowa', pattern: 'termotransfer', specs: ['Technologia druku'] },
+      { value: 'Termiczna (bez taśmy)', pattern: 'termiczny bezpośredni', specs: ['Technologia druku'] },
+      { value: 'Atramentowa (kolorowa)', pattern: 'atrament', specs: ['Technologia druku'] },
+    ],
+  },
+  {
+    specKey: 'rozdzielczosc-brady',
+    label: 'Rozdzielczość',
+    description: 'Gęstość punktów druku.\n• 203 dpi — M210, M211 i M210-LAB\n• 300 dpi — pozostałe drukarki termotransferowe\n• 600 dpi — wybrane wersje i5300, i7100 i i7500\n• 4800 dpi — kolorowe J7300 i J4000',
+    derived: [
+      { value: '203 dpi', pattern: '\\b203 dpi', specs: ['Rozdzielczość druku'] },
+      { value: '300 dpi', pattern: '\\b300 dpi', specs: ['Rozdzielczość druku'] },
+      { value: '600 dpi', pattern: '\\b600 dpi', specs: ['Rozdzielczość druku'] },
+      { value: '4800 dpi', pattern: '\\b4800 dpi', specs: ['Rozdzielczość druku'] },
+    ],
+  },
+  {
+    specKey: 'szerokosc-brady',
+    label: 'Szerokość druku',
+    description: 'Maksymalna szerokość nadruku.\n• do 25,4 mm — M210, M211, M210-LAB, M410 i Wraptor A6200\n• 36,6–50,8 mm — M510, M511, M610, M611, M710, A5500 i Wraptor A6500\n• 101,6–105,7 mm — drukarki znaków, drukarki przemysłowe i J7300\n• 203,2 mm — J4000',
+    derived: [
+      { value: 'do 25,4 mm', pattern: '^(1[0-9]|2[0-5])(,[0-9]+)? mm', specs: BRADY_SZEROKOSC_DRUKU },
+      { value: '36,6–50,8 mm', pattern: '^(3[6-9]|4[0-9]|50)(,[0-9]+)? mm', specs: BRADY_SZEROKOSC_DRUKU },
+      { value: '101,6–105,7 mm', pattern: '^10[1-5](,[0-9]+)? mm', specs: BRADY_SZEROKOSC_DRUKU },
+      { value: '203,2 mm', pattern: '^203(,[0-9]+)? mm', specs: BRADY_SZEROKOSC_DRUKU },
+    ],
+  },
+  {
+    specKey: 'lacznosc-brady',
+    label: 'Łączność',
+    description: 'Jak drukarka odbiera projekt etykiety.\n• USB i Ethernet — komputer i sieć firmowa\n• Wi-Fi i Bluetooth — w wielu modelach tylko wybrane wersje, np. z końcówką -BT, -W albo WB w PN\n• RS-232 — i6100, i7100 oraz wersje FO drukarek A5500 i A6500\n• Bez połączenia — M210 i M210-LAB drukują z klawiatury',
+    derived: [
+      { value: 'USB', pattern: 'USB', specs: ['Łączność'] },
+      { value: 'Ethernet', pattern: 'Ethernet', specs: ['Łączność'] },
+      { value: 'Wi-Fi', pattern: 'Wi-?Fi', specs: ['Łączność'] },
+      { value: 'Bluetooth', pattern: 'Bluetooth', specs: ['Łączność'] },
+      { value: 'RS-232', pattern: 'RS-?232', specs: ['Łączność'] },
+      { value: 'Bez połączenia (z klawiatury)', pattern: '^brak', specs: ['Łączność'] },
+    ],
+  },
+]
+
 // Materiały Brady (15.11.2026): podkategorie według rodzaju materiału, w każdej filtr „Do drukarki”
 // z wiersza „Zgodne drukarki” kart (jest na wszystkich kartach materiałów Brady).
 const ZGODNE_DRUKARKI = ['Zgodne drukarki']

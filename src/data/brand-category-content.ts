@@ -7,6 +7,7 @@ import { unitechTabletCategory } from './unitech-tablet-category'
 import { datalogicScannerCategory } from './datalogic-scanner-category'
 import { progloveCategory } from './proglove-category'
 import { unitechScannerCategory } from './unitech-scanner-category'
+import { bradyPrinterCategory } from './brady-printer-category'
 // Rich SEO content for brand+category pages (e.g. /drukarki-etykiet-zebra)
 // Uses the same interface as subcategory pages for consistent rendering
 
@@ -35,6 +36,7 @@ export const brandCategoryContent: Record<string, BrandCategoryRichContent> = {
   'skanery-datalogic': datalogicScannerCategory,
   'skanery-proglove': progloveCategory,
   'skanery-unitech': unitechScannerCategory,
+  'drukarki-etykiet-brady': bradyPrinterCategory,
   'drukarki-kart-magicard': {
     updatedAt: '2026-09-19',
     sectionHeadings: {

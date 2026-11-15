@@ -96964,6 +96964,18 @@ export const brandCategories: BrandCategory[] = [
     ],
   },
   {
+    id: 'drukarki-etykiet-brady',
+    slug: 'drukarki-etykiet-brady',
+    manufacturerId: 'brady',
+    categoryId: 'drukarki-etykiet',
+    name: 'Drukarki etykiet Brady',
+    seoTitle: 'Drukarki etykiet Brady — przenośne, przemysłowe, kolorowe',
+    seoDescription: 'Drukarki etykiet Brady do kabli i znaków: przenośne M210–M710, S3100 i S3700, przemysłowe i3300–i7500, kolorowe J7300 i J4000 oraz aplikatory A5500–A6500.',
+    longDescription: 'Drukarki etykiet Brady drukują oznaczenia kabli, instalacji, urządzeń, próbek i produktów. Większość modeli drukuje termotransferowo na materiałach Brady: etykietach, owijkach, flagach, koszulkach termokurczliwych, zawieszkach i znakach. Drukarki BradyJet drukują atramentowo w pełnym kolorze. Oferta obejmuje drukarki przenośne do pracy przy instalacji, drukarki stacjonarne na stanowisko oraz drukarki z aplikatorem, które same nakładają oznacznik na przewód.',
+    // FAQ strony jest w brady-printer-category.ts; to pole wyświetla się tylko bez tamtej treści.
+    faq: [],
+  },
+  {
     id: 'drukarki-kart-magicard',
     slug: 'drukarki-kart-magicard',
     manufacturerId: 'magicard',
