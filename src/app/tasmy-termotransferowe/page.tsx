@@ -231,7 +231,7 @@ export default function Page() {
             Każdy model Zebra ma inne przeznaczenie. Kliknij wybrany, żeby zobaczyć pełną specyfikację, warianty rozmiarowe, kompatybilne drukarki i etykiety, do których jest polecany.
           </p>
           <p className="text-gray-600 max-w-2xl mt-2">
-            <LinkedText text="Taśmy SATO w liniach Value, Flex i Flow są w osobnym katalogu: [taśmy termotransferowe SATO](/tasmy-termotransferowe-sato)." />
+            <LinkedText text="Taśmy SATO w liniach Value, Flex i Flow są w osobnym katalogu: [taśmy termotransferowe SATO](/tasmy-termotransferowe-sato). Taśmy w kasetach i na rolkach do drukarek etykiet Brady są w kategorii [taśmy barwiące Brady](/tasmy-barwiace-brady)." />
           </p>
         </div>
 

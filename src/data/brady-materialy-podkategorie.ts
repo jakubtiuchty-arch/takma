@@ -127,7 +127,7 @@ export const bradyPodkategorieMaterialow: Subcategory[] = [
     description: 'Taśmy termotransferowe Brady w kasetach i na rolkach do drukarek przenośnych, stacjonarnych, przemysłowych i aplikatorów',
     seoTitle: 'Taśmy barwiące Brady do drukarek — kasety i rolki',
     seoDescription: 'Taśmy barwiące Brady do druku termotransferowego: kasety i75, M61 i B30, rolki na gilzie 25 mm i taśmy do aplikatorów, woskowo-żywiczne i żywiczne, w kolorach.',
-    longDescription: 'Taśma barwiąca przenosi farbę na etykietę w druku termotransferowym, więc od niej zależy odporność nadruku. Taśmy woskowo-żywiczne nadają się do papieru i matowych folii, a żywiczne do poliestru, poliimidu i etykiet narażonych na chemikalia albo wysoką temperaturę. Brady dostarcza taśmy w kasetach, które zakłada się bez przewlekania, oraz na rolkach z gilzą do drukarek przemysłowych. Szerokość taśmy dobiera się do szerokości etykiety, a serię do materiału B- podanego na karcie etykiety.',
+    longDescription: 'Taśma barwiąca przenosi farbę na etykietę w druku termotransferowym, więc od niej zależy odporność nadruku. Taśmy woskowo-żywiczne nadają się do papieru i matowych folii, a żywiczne do poliestru, poliimidu i etykiet narażonych na chemikalia albo wysoką temperaturę. Brady dostarcza taśmy w kasetach, które zakłada się bez przewlekania, oraz na rolkach z gilzą do drukarek przemysłowych. Szerokość taśmy dobiera się do szerokości etykiety, a serię do materiału B- podanego na karcie etykiety. Taśmy do drukarek Zebra zawiera kategoria [taśmy termotransferowe](/tasmy-termotransferowe), a taśmy SATO — [taśmy termotransferowe SATO](/tasmy-termotransferowe-sato).',
   }),
   podkategoria({
     id: 'tusze-brady',

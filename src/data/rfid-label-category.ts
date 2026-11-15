@@ -10,7 +10,7 @@ export const rfidLabelCategory: Subcategory = {
   description: 'Etykiety RAIN UHF RFID do produktów, opakowań i metalu. Rolki przemysłowe, biurkowe i mobilne.',
   seoTitle: 'Etykiety RFID Zebra — rolki UHF i Silverline | TAKMA',
   seoDescription: 'Etykiety RFID Zebra do produktów, opakowań i metalu. Wybierz PN, wymiary oraz rolkę do drukarki. Sprawdź ceny netto i aktualne stany w TAKMA.',
-  longDescription: 'Etykiety RFID Zebra łączą powierzchnię do nadruku z anteną i układem do radiowego zapisu danych. Wybierz rolkę do drukarki przemysłowej, biurkowej lub mobilnej. Do metalowych przedmiotów dobierz konstrukcję Silverline albo Metal Skin i odpowiednią konfigurację On-Metal. Na kartach znajdziesz numery PN, wymiary, nawój oraz warunki zgodności z drukarkami. Ceny dotyczą jednej rolki.',
+  longDescription: 'Etykiety RFID Zebra łączą powierzchnię do nadruku z anteną i układem do radiowego zapisu danych. Wybierz rolkę do drukarki przemysłowej, biurkowej lub mobilnej. Do metalowych przedmiotów dobierz konstrukcję Silverline albo Metal Skin i odpowiednią konfigurację On-Metal. Na kartach znajdziesz numery PN, wymiary, nawój oraz warunki zgodności z drukarkami. Ceny dotyczą jednej rolki. Etykiety RFID do drukarek Brady, m.in. na metal i flagi kablowe RFID, są w kategorii [etykiety RFID Brady](/etykiety-rfid-brady).',
   icon: 'tag',
   productIds: rfidLabelProducts.map(product => product.id),
   productCount: rfidLabelProducts.length,
