@@ -4,6 +4,11 @@ import { wspolneB33 } from './brady-b33-wspolne'
 // Etykiety i taśmy z poliestru Brady B33 / B33C / B33D / B33FP do BradyPrinter i3300 (także starsza BBP33):
 // Workhorse, materiały odporne na pogodę, One Step Protect, PermaShield. Jedna karta na rodzinę z brady.eu, PN jako warianty. 14.11.2026.
 
+// Numer pasujący tylko do drukarki i5300; pozostałe numery karty Workhorse B-423 drukują też i3300 oraz i4311.
+const TYLKO_I5300 = new Set(['B33-343-423'])
+const drukarka = (pn: string) => (TYLKO_I5300.has(pn) ? 'tylko i5300' : 'i3300, i4311, i5300')
+const dopisekDrukarki = (pn: string) => (TYLKO_I5300.has(pn) ? ', tylko i5300' : '')
+
 // ---------------------------------------------------------------------------
 // Poliester odporny na warunki atmosferyczne B-8591 (cps-4297059)
 // ---------------------------------------------------------------------------
@@ -117,13 +122,14 @@ export const bradyB33Poliester8591: Product = {
 }
 
 // ---------------------------------------------------------------------------
-// Workhorse — biały poliester B-423 (cps-3069367); bez B33-343-423 (tylko i5300) i B33C-3000-430 (przezroczysty, karta niżej)
+// Workhorse — biały poliester B-423 (cps-3069367); bez B33C-3000-430 (przezroczysty, karta niżej)
 // ---------------------------------------------------------------------------
 
 // [PN, nr art., wymiar etykiety, sztuk, rzędów na rolce]
 const WORKHORSE_423: [string, string, string, string, string][] = [
   ['B33-11-423', '133774', '6,35 × 6,35', '15000', '12'],
   ['B33-340-423', '152830', '9,53 × 9,53', '10000', '7'],
+  ['B33-343-423', '152844', '12,7 × 5,08', '10000', '5'],
   ['B33-149-423', '133801', '12,7 × 12,7', '5000', '4'],
   ['B33-46-423', '133871', '19,05 × 6,35', '5000', '1'],
   ['B33-1-423', '133788', '19,05 × 6,35', '5000', '4'],
@@ -151,11 +157,12 @@ export const bradyB33Workhorse423: Product = {
   ...wspolneB33,
   id: 'brady-b33-53-423',
   slug: 'brady-b33-53-423',
+  updatedAt: '2026-11-15',
   name: 'Białe etykiety poliestrowe Brady Workhorse B-423 do drukarki i3300',
   seoTitle: 'Brady Workhorse B-423 — białe etykiety poliestrowe, i3300',
-  seoDescription: 'Białe etykiety poliestrowe Brady Workhorse B-423 do i3300: płytki PCB, tabliczki, kody kreskowe, 23 rozmiary. PN: B33-53-423, B33-76-423, B33-11-423.',
-  shortDescription: 'Brady Workhorse B-423 to białe etykiety z błyszczącego poliestru w 23 rozmiarach, od 6,35 × 6,35 do 101,6 × 152,4 mm. Do drukarki Brady i3300.',
-  description: 'Workhorse B-423 jest białym poliestrem, cienkim (0,076 mm) i lśniącym. Klej akrylowy wiąże trwale z podłożem gładkim. Etykiety ułatwiają identyfikację płytek PCB i elementów elektronicznych. Drukuje się na nich także kody kreskowe, tabliczki znamionowe i oznaczenia paneli słonecznych. Trzy formaty opisano jako przydatne w laboratorium, na butelkach, szalkach i kolbach.\n\nDo wyboru jest 23 formaty. Najmniejszy ma 6,35 mm z każdej strony, największy ma długość 152,4 mm. Rolki zawierają od 300 do 15 000 sztuk. Drobne etykiety leżą obok siebie w kilku rzędach, a drobiazg 6,35 mm aż w dwunastu. Liczbę rzędów pokazuje tabela. Dla małych formatów oznacza to wygodną, gęstą rolkę.\n\nMateriał pracuje od −70 do 110 °C. Odporność obejmuje wilgoć, korozję, UV, chemikalia, ścieranie i wpływ pogody. Uznanie UL, akceptacja CSA i brak halogenów (DIN VDE 0472-815) dotyczą koloru białego. Klej ma opis agresywnego, a materiał zaliczono do odpornych na wysoką temperaturę i do trudnych warunków pracy. Zaleca się taśmę B30-R6000, dobieraną osobno.',
+  seoDescription: 'Białe etykiety poliestrowe Brady Workhorse B-423 do i3300: płytki PCB, tabliczki, kody kreskowe, 24 rozmiary. PN: B33-53-423, B33-76-423, B33-11-423.',
+  shortDescription: 'Brady Workhorse B-423 to białe etykiety z błyszczącego poliestru w 24 rozmiarach, od 6,35 × 6,35 do 101,6 × 152,4 mm. Do drukarki Brady i3300.',
+  description: 'Workhorse B-423 jest białym poliestrem, cienkim (0,076 mm) i lśniącym. Klej akrylowy wiąże trwale z podłożem gładkim. Etykiety ułatwiają identyfikację płytek PCB i elementów elektronicznych. Drukuje się na nich także kody kreskowe, tabliczki znamionowe i oznaczenia paneli słonecznych. Trzy formaty opisano jako przydatne w laboratorium, na butelkach, szalkach i kolbach.\n\nDo wyboru są 24 formaty. Najmniejszy ma 6,35 mm z każdej strony, największy ma długość 152,4 mm. Rolki zawierają od 300 do 15 000 sztuk. Drobne etykiety leżą obok siebie w kilku rzędach, a drobiazg 6,35 mm aż w dwunastu. Liczbę rzędów pokazuje tabela. Dla małych formatów oznacza to wygodną, gęstą rolkę.\n\nMateriał pracuje od −70 do 110 °C. Odporność obejmuje wilgoć, korozję, UV, chemikalia, ścieranie i wpływ pogody. Uznanie UL, akceptacja CSA i brak halogenów (DIN VDE 0472-815) dotyczą koloru białego. Klej ma opis agresywnego, a materiał zaliczono do odpornych na wysoką temperaturę i do trudnych warunków pracy. Zaleca się taśmę B30-R6000, dobieraną osobno.',
   sameAs: 'https://www.brady.eu/labels/b33-series-workhorse-white-polyester-labels-cps-3069367',
   images: [
     '/images/products/brady/b33-53-423.png',
@@ -182,17 +189,19 @@ export const bradyB33Workhorse423: Product = {
     { name: 'Normy', value: 'UL Recognised, CSA (akceptacja), DIN VDE 0472 część 815 (bez halogenów); dotyczy koloru białego' },
     { name: 'Zalecana taśma barwiąca', value: 'B30-R6000' },
     { name: 'Zgodne drukarki', value: 'i3300, BBP33, i4311, i5300' },
+    { name: 'Uwagi o zgodności', value: 'B33-343-423: tylko i5300' },
     { name: 'Numery artykułów Brady', value: WORKHORSE_423.map(([pn, art]) => `${pn}: ${art}`).join('; ') },
   ],
   variants: WORKHORSE_423.map(([pn, , wym, szt, rzedy]) => ({
     partNumber: pn,
-    name: `Brady ${pn} — biała etykieta poliestrowa B-423 ${wym} mm, ${szt} szt.`,
-    attributes: { Rozmiar: `${wym} mm, ${szt} szt.`, Rzędów: rzedy },
+    name: `Brady ${pn} — biała etykieta poliestrowa B-423 ${wym} mm, ${szt} szt.${dopisekDrukarki(pn)}`,
+    attributes: { Rozmiar: `${wym} mm, ${szt} szt.`, Rzędów: rzedy, Drukarka: drukarka(pn) },
     availability: 'unavailable' as const,
   })),
   variantAttributeTooltips: {
     Rozmiar: 'Wymiary jednej etykiety (szerokość × wysokość) i liczba sztuk na rolce.\n\nNajmniejsza etykieta ma 6,35 × 6,35 mm, a największa 101,6 × 152,4 mm.',
     Rzędów: 'Liczba etykiet obok siebie na szerokości rolki.\n\nEtykiety 6,35 × 6,35 mm leżą w dwunastu rzędach, a duże formaty w jednym.',
+    Drukarka: 'Drukarki B33, w których działa dany numer.\n\nEtykieta 12,7 × 5,08 mm (B33-343-423) pasuje tylko do i5300. Pozostałe rozmiary drukują i3300, i4311 oraz i5300.',
   },
   faq: [
     { question: 'Do czego służą białe etykiety Workhorse B-423?', answer: 'Do oznaczania płytek drukowanych i komponentów, tabliczek znamionowych, kodów kreskowych oraz paneli fotowoltaicznych. Trzy rozmiary mają też opis zastosowania na butelkach, szalkach i kolbach laboratoryjnych.' },

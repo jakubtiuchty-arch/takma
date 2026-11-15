@@ -4,6 +4,21 @@ import { wspolneB33 } from './brady-b33-wspolne'
 // Materiały Brady B33 do przemysłowej drukarki BradyPrinter i3300 (także BBP33): poliimid na płytki drukowane,
 // poliimid antystatyczny (ESD) i odporny na ciepło. Taśma barwiąca w osobnej kasecie serii B30. 14.11.2026.
 
+// Numery pasujące tylko do drukarki i5300; pozostałe numery kart drukują też i3300 oraz i4311.
+// Prefiks B33-34 nie wystarcza do rozpoznania: numery B33-340-… pasują do wszystkich drukarek.
+const TYLKO_I5300 = new Set([
+  'B33-341-719',
+  'B33-341-724',
+  'B33-342-724',
+  'B33-344-724',
+  'B33-341-728',
+  'B33-341-767',
+  'B33-341-797',
+  'B33-342-797',
+])
+const drukarka = (pn: string) => (TYLKO_I5300.has(pn) ? 'tylko i5300' : 'i3300, i4311, i5300')
+const dopisekDrukarki = (pn: string) => (TYLKO_I5300.has(pn) ? ', tylko i5300' : '')
+
 // ---------------------------------------------------------------------------
 // Standardowy poliimid B-797 — siedem PN w jednej karcie (pid-b33-43-797 i sześć pokrewnych)
 // ---------------------------------------------------------------------------
@@ -77,7 +92,7 @@ export const bradyB33Poliimid797: Product = {
 }
 
 // ---------------------------------------------------------------------------
-// Antystatyczny poliimid matowy B-719, 1 mil (cps-3069377); bez B33-341-719 (tylko i5300) i B33-2-719 (brak strony)
+// Antystatyczny poliimid matowy B-719, 1 mil (cps-3069377); bez B33-2-719 (brak strony)
 // ---------------------------------------------------------------------------
 
 // [PN, nr art., szerokość, wysokość, sztuk, etykiet w rzędzie]
@@ -85,6 +100,7 @@ const ESD_719: [string, string, string, string, string, string][] = [
   ['B33-70-719', '153179', '6,35', '6,35', '20000', '7'],
   ['B33-340-719', '152832', '9,53', '9,53', '10000', '7'],
   ['B33-12-719', '153181', '12,70', '11,10', '10000', '5'],
+  ['B33-341-719', '153174', '16,51', '5,08', '10000', '4'],
   ['B33-1-719', '153175', '19,05', '6,35', '10000', '4'],
   ['B33-46-719', '133875', '19,05', '6,35', '5000', '1'],
   ['B33-51-719', '153178', '25,40', '6,35', '10000', '3'],
@@ -99,11 +115,12 @@ export const bradyB33Esd719: Product = {
   ...wspolneB33,
   id: 'brady-b33-43-719',
   slug: 'brady-b33-43-719',
+  updatedAt: '2026-11-15',
   name: 'Antystatyczne etykiety z poliimidu Brady B-719, matowe, do drukarki i3300',
   seoTitle: 'Brady B-719 — antystatyczne etykiety z poliimidu do i3300',
-  seoDescription: 'Matowe etykiety antystatyczne Brady B-719 z poliimidu do drukarki Brady i3300: 0,084 mm, do 300 °C, 11 rozmiarów. PN: B33-43-719, B33-46-719, B33-4-719.',
-  shortDescription: 'Brady B33-43-719 i dziesięć innych rozmiarów białych, matowych etykiet z antystatycznego poliimidu B-719 do płytek drukowanych. Do drukarki Brady i3300.',
-  description: 'B-719 to cienki, matowy poliimid w kolorze białym. Znakuje się nim płytki drukowane oraz podzespoły jeszcze przed obróbką. Klej oraz podkład mają właściwości antystatyczne, czyli rozpraszają ładunki elektrostatyczne. Rezystywność powierzchniowa mieści się w zakresie zalecanym przez normę ANSI/ESD S541-2008 dla rozpraszających materiałów opakowaniowych ESD. Etykiety znoszą lutowanie falowe oraz powtarzane mycie agresywnymi środkami. Nadruk wykonuje się termotransferem, a kleić je można na wierzchu i na spodzie płytki, przy elementach SMT oraz przewlekanych.\n\nKatalog obejmuje jedenaście rozmiarów. Najmniejsza wersja jest kwadratem 6,35 mm, a największa ma 38,10 × 6,35 mm. Liczba etykiet w opakowaniu waha się od 4000 do 20 000. Obok siebie mieści się od jednej do siedmiu etykiet. Kilka rozmiarów występuje w dwóch wersjach, które różnią się liczbą sztuk i rzędów.\n\nFolia ma grubość 0,084 mm, a dopuszczalna temperatura mieści się między −70 a 300 °C. Odporność obejmuje chemikalia, ciecze oraz wysokie temperatury. Ma uznanie UL i spełnia wymagania MIL-STD-202G (metoda 215K). Zalecana jest kaseta barwiąca B30-R6000, zamawiana osobno.',
+  seoDescription: 'Matowe etykiety antystatyczne Brady B-719 z poliimidu do drukarki Brady i3300: 0,084 mm, do 300 °C, 12 rozmiarów. PN: B33-43-719, B33-46-719, B33-4-719.',
+  shortDescription: 'Brady B33-43-719 i jedenaście innych rozmiarów białych, matowych etykiet z antystatycznego poliimidu B-719 do płytek drukowanych. Do drukarki Brady i3300.',
+  description: 'B-719 to cienki, matowy poliimid w kolorze białym. Znakuje się nim płytki drukowane oraz podzespoły jeszcze przed obróbką. Klej oraz podkład mają właściwości antystatyczne, czyli rozpraszają ładunki elektrostatyczne. Rezystywność powierzchniowa mieści się w zakresie zalecanym przez normę ANSI/ESD S541-2008 dla rozpraszających materiałów opakowaniowych ESD. Etykiety znoszą lutowanie falowe oraz powtarzane mycie agresywnymi środkami. Nadruk wykonuje się termotransferem, a kleić je można na wierzchu i na spodzie płytki, przy elementach SMT oraz przewlekanych.\n\nKatalog obejmuje dwanaście rozmiarów. Najmniejsza wersja jest kwadratem 6,35 mm, a największa ma 38,10 × 6,35 mm. Liczba etykiet w opakowaniu waha się od 4000 do 20 000. Obok siebie mieści się od jednej do siedmiu etykiet. Kilka rozmiarów występuje w dwóch wersjach, które różnią się liczbą sztuk i rzędów.\n\nFolia ma grubość 0,084 mm, a dopuszczalna temperatura mieści się między −70 a 300 °C. Odporność obejmuje chemikalia, ciecze oraz wysokie temperatury. Ma uznanie UL i spełnia wymagania MIL-STD-202G (metoda 215K). Zalecana jest kaseta barwiąca B30-R6000, zamawiana osobno.',
   sameAs: 'https://www.brady.eu/labels/b33-series-matt-1-mil-static-dissipative-polyimide-labels-cps-3069377',
   images: [
     '/images/products/brady/b33-43-719.png',
@@ -129,17 +146,19 @@ export const bradyB33Esd719: Product = {
     { name: 'Normy', value: 'ANSI/ESD S541-2008, MIL-STD-202G metoda 215K, UL' },
     { name: 'Zalecana taśma barwiąca', value: 'B30-R6000' },
     { name: 'Zgodne drukarki', value: 'i3300, BBP33, i4311, i5300' },
+    { name: 'Uwagi o zgodności', value: 'B33-341-719: tylko i5300' },
     { name: 'Numery artykułów Brady', value: ESD_719.map(([pn, art]) => `${pn}: ${art}`).join('; ') },
   ],
   variants: ESD_719.map(([pn, , szer, wys, sztuk, wRzedzie]) => ({
     partNumber: pn,
-    name: `Brady ${pn} — biała, matowa etykieta antystatyczna ${szer} × ${wys} mm`,
-    attributes: { Rozmiar: `${szer} × ${wys} mm, ${SZTUK(sztuk)}`, 'W rzędzie': wRzedzie },
+    name: `Brady ${pn} — biała, matowa etykieta antystatyczna ${szer} × ${wys} mm${dopisekDrukarki(pn)}`,
+    attributes: { Rozmiar: `${szer} × ${wys} mm, ${SZTUK(sztuk)}`, 'W rzędzie': wRzedzie, Drukarka: drukarka(pn) },
     availability: 'unavailable' as const,
   })),
   variantAttributeTooltips: {
     Rozmiar: 'Szerokość i wysokość pojedynczej etykiety oraz liczba etykiet w opakowaniu.\n\nNajmniejsza etykieta ma 6,35 × 6,35 mm, a największa 38,10 × 6,35 mm.',
     'W rzędzie': 'Liczba etykiet ułożonych obok siebie na szerokości rolki.\n\nW tej rodzinie jest to od jednej do siedmiu etykiet.',
+    Drukarka: 'Drukarki B33, w których działa dany numer.\n\nEtykieta 16,51 × 5,08 mm (B33-341-719) pasuje tylko do i5300. Pozostałe rozmiary drukują i3300, i4311 oraz i5300.',
   },
   faq: [
     { question: 'Co oznacza, że etykiety B-719 są antystatyczne?', answer: 'Klej i podkład rozpraszają ładunki elektrostatyczne. Rezystywność powierzchniowa mieści się w zakresie zalecanym przez ANSI/ESD S541-2008 dla rozpraszających materiałów ESD.' },
@@ -157,6 +176,7 @@ export const bradyB33Esd719: Product = {
 const ESD_767: [string, string, string, string, string, string][] = [
   ['B33-340-767', '176423', '9,53', '9,53', '10000', '7'],
   ['B33-12-767', '176387', '12,70', '11,10', '10000', '5'],
+  ['B33-341-767', '176379', '16,51', '5,08', '10000', '4'],
   ['B33-46-767', '176409', '19,05', '6,35', '', '1'],
   ['B33-51-767', '176385', '25,40', '6,35', '10000', '3'],
   ['B33-103-767', '176408', '25,40', '6,35', '5000', '1'],
@@ -168,11 +188,12 @@ export const bradyB33Esd767: Product = {
   ...wspolneB33,
   id: 'brady-b33-43-767',
   slug: 'brady-b33-43-767',
+  updatedAt: '2026-11-15',
   name: 'Antystatyczne etykiety z poliimidu Brady B-767, błyszczące, do drukarki i3300',
   seoTitle: 'Brady B-767 — błyszczące etykiety ESD z poliimidu do i3300',
-  seoDescription: 'Błyszczące etykiety antystatyczne Brady B-767 z poliimidu do drukarki Brady i3300: 0,104 mm, od −80 do 300 °C, 7 wersji. PN: B33-43-767, B33-51-767, B33-5-767.',
-  shortDescription: 'Brady B33-43-767 i sześć innych wersji białych, błyszczących etykiet z antystatycznego poliimidu B-767 do płytek drukowanych. Do drukarki Brady i3300.',
-  description: 'Etykiety B-767 mają białą, błyszczącą powierzchnię z poliimidu. Rozpraszanie ładunków elektrostatycznych zapewniają dwa elementy: klej i podkład. Warstwa kleju ma rezystywność w przedziale 10⁴–10¹¹ Ω, zgodnie z zaleceniem normy ANSI/ESD S541-2008 dotyczącym rozpraszających opakowań ESD. Etykietę nakleja się na płytkę po procesie, po stronie montażu SMT i elementów przewlekanych, od góry oraz od spodu.\n\nSiedem wersji tworzy sześć rozmiarów. Najmniejsza wersja ma kształt kwadratu o wymiarze 9,53 mm, a największa mierzy 31,75 × 6,35 mm. Rozmiar 25,40 × 6,35 mm występuje dwukrotnie, z trzema etykietami w rzędzie albo z jedną. Opakowania liczą zwykle 5000, 7000 albo 10 000 etykiet. Poszczególne wersje różnią się wymiarem etykiety oraz liczbą rzędów na rolce.\n\nGrubość materiału wynosi 0,104 mm, a zakres temperatur sięga od −80 do 300 °C. Folia znosi ścieranie, chemikalia, płyny oraz wilgoć. Uznanie UL 969 dotyczy nadruku taśmami barwiącymi serii R6300 i R6000 bez halogenów. Zachowana jest też norma MIL-STD-202G, metoda 215K. W pierwszej kolejności poleca się kasetę B30-R6300. Nadruk wykonuje się termotransferem.',
+  seoDescription: 'Błyszczące etykiety antystatyczne Brady B-767 z poliimidu do drukarki Brady i3300: 0,104 mm, od −80 do 300 °C, 8 wersji. PN: B33-43-767, B33-51-767, B33-5-767.',
+  shortDescription: 'Brady B33-43-767 i siedem innych wersji białych, błyszczących etykiet z antystatycznego poliimidu B-767 do płytek drukowanych. Do drukarki Brady i3300.',
+  description: 'Etykiety B-767 mają białą, błyszczącą powierzchnię z poliimidu. Rozpraszanie ładunków elektrostatycznych zapewniają dwa elementy: klej i podkład. Warstwa kleju ma rezystywność w przedziale 10⁴–10¹¹ Ω, zgodnie z zaleceniem normy ANSI/ESD S541-2008 dotyczącym rozpraszających opakowań ESD. Etykietę nakleja się na płytkę po procesie, po stronie montażu SMT i elementów przewlekanych, od góry oraz od spodu.\n\nOsiem wersji tworzy siedem rozmiarów. Najmniejszą powierzchnię ma etykieta 16,51 × 5,08 mm przeznaczona tylko do i5300, a największa mierzy 31,75 × 6,35 mm. Rozmiar 25,40 × 6,35 mm występuje dwukrotnie, z trzema etykietami w rzędzie albo z jedną. Opakowania liczą zwykle 5000, 7000 albo 10 000 etykiet. Poszczególne wersje różnią się wymiarem etykiety oraz liczbą rzędów na rolce.\n\nGrubość materiału wynosi 0,104 mm, a zakres temperatur sięga od −80 do 300 °C. Folia znosi ścieranie, chemikalia, płyny oraz wilgoć. Uznanie UL 969 dotyczy nadruku taśmami barwiącymi serii R6300 i R6000 bez halogenów. Zachowana jest też norma MIL-STD-202G, metoda 215K. W pierwszej kolejności poleca się kasetę B30-R6300. Nadruk wykonuje się termotransferem.',
   sameAs: 'https://www.brady.eu/labels/b33-series-glossy-2-mil-static-dissipative-polyimide-labels-cps-3069376',
   images: [
     '/images/products/brady/b33-43-767.png',
@@ -194,21 +215,23 @@ export const bradyB33Esd767: Product = {
     { name: 'Temperatura pracy', value: 'od −80 do 300 °C' },
     { name: 'Odporność', value: 'ścieranie, chemikalia, płyny, wilgoć, wysoka i niska temperatura' },
     { name: 'Kolor', value: 'biały' },
-    { name: 'Wymiary etykiety', value: 'od 9,53 × 9,53 mm do 31,75 × 6,35 mm, zależnie od wersji' },
+    { name: 'Wymiary etykiety', value: 'od 9,53 × 9,53 mm do 31,75 × 6,35 mm oraz 16,51 × 5,08 mm (tylko i5300), zależnie od wersji' },
     { name: 'Normy', value: 'UL 969 (nadruk taśmami R6300 i R6000), MIL-STD-202G metoda 215K, ANSI/ESD S541-2008' },
     { name: 'Zalecana taśma barwiąca', value: 'B30-R6300' },
     { name: 'Zgodne drukarki', value: 'i3300, BBP33, i4311, i5300' },
+    { name: 'Uwagi o zgodności', value: 'B33-341-767: tylko i5300' },
     { name: 'Numery artykułów Brady', value: ESD_767.map(([pn, art]) => `${pn}: ${art}`).join('; ') },
   ],
   variants: ESD_767.map(([pn, , szer, wys, sztuk, wRzedzie]) => ({
     partNumber: pn,
-    name: `Brady ${pn} — biała, błyszcząca etykieta antystatyczna ${szer} × ${wys} mm`,
-    attributes: { Rozmiar: sztuk ? `${szer} × ${wys} mm, ${SZTUK(sztuk)}` : `${szer} × ${wys} mm`, 'W rzędzie': wRzedzie },
+    name: `Brady ${pn} — biała, błyszcząca etykieta antystatyczna ${szer} × ${wys} mm${dopisekDrukarki(pn)}`,
+    attributes: { Rozmiar: sztuk ? `${szer} × ${wys} mm, ${SZTUK(sztuk)}` : `${szer} × ${wys} mm`, 'W rzędzie': wRzedzie, Drukarka: drukarka(pn) },
     availability: 'unavailable' as const,
   })),
   variantAttributeTooltips: {
-    Rozmiar: 'Szerokość i wysokość pojedynczej etykiety oraz liczba etykiet w opakowaniu.\n\nNajmniejsza etykieta ma 9,53 × 9,53 mm, a największa 31,75 × 6,35 mm.',
+    Rozmiar: 'Szerokość i wysokość pojedynczej etykiety oraz liczba etykiet w opakowaniu.\n\nRozmiary sięgają od 16,51 × 5,08 mm (tylko i5300) i kwadratu 9,53 mm do 31,75 × 6,35 mm.',
     'W rzędzie': 'Liczba etykiet ułożonych obok siebie na szerokości rolki.\n\nW tej rodzinie wynosi od jednej do siedmiu.',
+    Drukarka: 'Drukarki B33, w których działa dany numer.\n\nEtykieta 16,51 × 5,08 mm (B33-341-767) pasuje tylko do i5300. Pozostałe rozmiary drukują i3300, i4311 oraz i5300.',
   },
   faq: [
     { question: 'Jaką rezystywność powierzchniową ma klej etykiet B-767?', answer: 'Od 10⁴ do 10¹¹ Ω. Wartość mieści się w przedziale zalecanym przez ANSI/ESD S541-2008 dla rozpraszających materiałów ESD.' },
@@ -226,6 +249,8 @@ export const bradyB33Esd767: Product = {
 const CIEPLO_797: [string, string, string, string, string, string][] = [
   ['B33-70-797', '176374', '6,35', '6,35', '20000', '7'],
   ['B33-71-797', '176375', '8,00', '8,00', '20000', '6'],
+  ['B33-341-797', '176368', '16,51', '5,08', '10000', '4'],
+  ['B33-342-797', '176369', '16,51', '5,08', '3700', '1'],
   ['B33-51-797', '176373', '25,40', '6,35', '10000', '3'],
   ['B33-3-797', '176376', '25,40', '9,53', '10000', '3'],
   ['B33-5-797', '176378', '25,40', '12,70', '7000', '3'],
@@ -239,11 +264,12 @@ export const bradyB33Cieplo797: Product = {
   ...wspolneB33,
   id: 'brady-b33-51-797',
   slug: 'brady-b33-51-797',
+  updatedAt: '2026-11-15',
   name: 'Etykiety z poliimidu odporne na ciepło Brady B-797 do drukarki i3300',
   seoTitle: 'Brady B-797 — etykiety z poliimidu odporne na ciepło do i3300',
-  seoDescription: 'Odporne na ciepło etykiety Brady B-797 z poliimidu do drukarki Brady i3300: od −80 do 300 °C, 9 wersji. PN: B33-51-797, B33-70-797, B33-45-797, B33-15-797.',
-  shortDescription: 'Brady B33-51-797 i osiem innych wersji białych, błyszczących etykiet z poliimidu B-797, odpornych na lutowanie na fali i mycie płytek. Do drukarki Brady i3300.',
-  description: 'Odporne na ciepło etykiety B-797 wykonano z białego poliimidu o błyszczącej powierzchni, z myślą o producentach płytek drukowanych i elektroniki. Nadruk termotransferowy nie rozmazuje się. Wzmocniona powłoka wierzchnia chroni zapis na płytkach, które wielokrotnie przechodzą mycie w ostrych warunkach, a klej znosi agresywne środki czyszczące. Czytelny nadruk nie wymaga wstępnego podgrzewania ani lutowania rozpływowego.\n\nDziewięć wersji obejmuje rozmiary między kwadratem 6,35 mm a paskiem 50,80 × 6,35 mm. Opakowanie mieści od 3200 do 20 000 etykiet. Najwięcej, bo siedem etykiet obok siebie, niesie rolka z kwadratem 6,35 mm, a najdłuższa etykieta biegnie pojedynczo. Rozmiar 38,10 × 6,35 mm istnieje w dwóch wersjach: z dwiema etykietami w rzędzie i z jedną.\n\nPoliimid ma odporność na wilgoć, ciepło, korozję, chemikalia oraz ścieranie. Folia o grubości 0,104 mm wytrzymuje temperatury w przedziale od −80 do 300 °C. Etykiety nakleja się na gładkie podłoże. Materiał jest wolny od dibutylocyny i dioktylocyny. Ma uznanie UL, a dla MIL-STD-202G, metoda 215K, wymagania są zachowane. Zalecaną taśmą jest B30-R6300.',
+  seoDescription: 'Odporne na ciepło etykiety Brady B-797 z poliimidu do drukarki Brady i3300: od −80 do 300 °C, 11 wersji. PN: B33-51-797, B33-70-797, B33-45-797, B33-15-797.',
+  shortDescription: 'Brady B33-51-797 i dziesięć innych wersji białych, błyszczących etykiet z poliimidu B-797, odpornych na lutowanie na fali i mycie płytek. Do drukarki Brady i3300.',
+  description: 'Odporne na ciepło etykiety B-797 wykonano z białego poliimidu o błyszczącej powierzchni, z myślą o producentach płytek drukowanych i elektroniki. Nadruk termotransferowy nie rozmazuje się. Wzmocniona powłoka wierzchnia chroni zapis na płytkach, które wielokrotnie przechodzą mycie w ostrych warunkach, a klej znosi agresywne środki czyszczące. Czytelny nadruk nie wymaga wstępnego podgrzewania ani lutowania rozpływowego.\n\nJedenaście wersji obejmuje rozmiary między kwadratem 6,35 mm a paskiem 50,80 × 6,35 mm. Opakowanie mieści od 3200 do 20 000 etykiet. Najwięcej, bo siedem etykiet obok siebie, niesie rolka z kwadratem 6,35 mm, a najdłuższa etykieta biegnie pojedynczo. Rozmiary 38,10 × 6,35 mm oraz 16,51 × 5,08 mm istnieją w dwóch wersjach: wielorzędowej i jednorzędowej.\n\nPoliimid ma odporność na wilgoć, ciepło, korozję, chemikalia oraz ścieranie. Folia o grubości 0,104 mm wytrzymuje temperatury w przedziale od −80 do 300 °C. Etykiety nakleja się na gładkie podłoże. Materiał jest wolny od dibutylocyny i dioktylocyny. Ma uznanie UL, a dla MIL-STD-202G, metoda 215K, wymagania są zachowane. Zalecaną taśmą jest B30-R6300.',
   sameAs: 'https://www.brady.eu/labels/heat-resistant-polyimide-labels-for-b33-printers-cps-4725659',
   images: [
     '/images/products/brady/b33-51-797.png',
@@ -269,17 +295,19 @@ export const bradyB33Cieplo797: Product = {
     { name: 'Normy', value: 'UL, MIL-STD-202G metoda 215K, bez dibutylocyny i dioktylocyny' },
     { name: 'Zalecana taśma barwiąca', value: 'B30-R6300' },
     { name: 'Zgodne drukarki', value: 'i3300, BBP33, i4311, i5300' },
+    { name: 'Uwagi o zgodności', value: 'B33-341-797, B33-342-797: tylko i5300' },
     { name: 'Numery artykułów Brady', value: CIEPLO_797.map(([pn, art]) => `${pn}: ${art}`).join('; ') },
   ],
   variants: CIEPLO_797.map(([pn, , szer, wys, sztuk, wRzedzie]) => ({
     partNumber: pn,
-    name: `Brady ${pn} — biała etykieta z poliimidu odporna na ciepło ${szer} × ${wys} mm`,
-    attributes: { Rozmiar: `${szer} × ${wys} mm, ${SZTUK(sztuk)}`, 'W rzędzie': wRzedzie },
+    name: `Brady ${pn} — biała etykieta z poliimidu odporna na ciepło ${szer} × ${wys} mm${dopisekDrukarki(pn)}`,
+    attributes: { Rozmiar: `${szer} × ${wys} mm, ${SZTUK(sztuk)}`, 'W rzędzie': wRzedzie, Drukarka: drukarka(pn) },
     availability: 'unavailable' as const,
   })),
   variantAttributeTooltips: {
     Rozmiar: 'Szerokość i wysokość pojedynczej etykiety oraz liczba etykiet w opakowaniu.\n\nNajmniejsza etykieta ma 6,35 × 6,35 mm, a najdłuższa 50,80 × 6,35 mm.',
     'W rzędzie': 'Liczba etykiet ułożonych obok siebie na szerokości rolki.\n\nNa rolkach z kwadratem 6,35 mm jest ich siedem, a przy etykiecie 50,80 mm tylko jedna.',
+    Drukarka: 'Drukarki B33, w których działa dany numer.\n\nEtykiety 16,51 × 5,08 mm (B33-341-797 i B33-342-797) pasują tylko do i5300. Pozostałe rozmiary drukują i3300, i4311 oraz i5300.',
   },
   faq: [
     { question: 'Czy nadruk na etykietach B-797 rozmazuje się?', answer: 'Nie. Poliimid jest odporny na rozmazywanie, a wzmocniona powłoka wierzchnia chroni zapis podczas wielokrotnego mycia płytek.' },
@@ -357,7 +385,7 @@ export const bradyB33EsdRdzen767: Product = {
 }
 
 // ---------------------------------------------------------------------------
-// Poliimid matowy biały B-728, 2 mil, na płytki drukowane (cps-4297063); bez B33-341-728 (tylko i5300)
+// Poliimid matowy biały B-728, 2 mil, na płytki drukowane (cps-4297063)
 // ---------------------------------------------------------------------------
 
 // [PN, nr art., szerokość, wysokość, sztuk, etykiet w rzędzie]
@@ -365,6 +393,7 @@ const MATOWY_728: [string, string, string, string, string, string][] = [
   ['B33-70-728', '153217', '6,35', '6,35', '20000', '7'],
   ['B33-340-728', '153219', '9,53', '9,53', '10000', '7'],
   ['B33-12-728', '153213', '12,70', '11,10', '10000', '5'],
+  ['B33-341-728', '153220', '16,51', '5,08', '10000', '4'],
   ['B33-1-728', '153209', '19,05', '6,35', '10000', '4'],
   ['B33-2-728', '153210', '22,86', '6,35', '10000', '3'],
   ['B33-51-728', '153216', '25,40', '6,35', '10000', '3'],
@@ -379,11 +408,12 @@ export const bradyB33Matowy728: Product = {
   ...wspolneB33,
   id: 'brady-b33-1-728',
   slug: 'brady-b33-1-728',
+  updatedAt: '2026-11-15',
   name: 'Matowe etykiety z poliimidu na płytki drukowane Brady B-728 (2 mil) do drukarki i3300',
   seoTitle: 'Brady B-728 — matowe etykiety z poliimidu na PCB do i3300',
-  seoDescription: 'Matowe etykiety z poliimidu Brady B-728 na płytki drukowane, do drukarki Brady i3300: 0,112 mm, do 300 °C, 11 wersji. PN: B33-1-728, B33-70-728, B33-4-728.',
-  shortDescription: 'Brady B33-1-728 i dziesięć innych wersji białych, matowych etykiet z poliimidu B-728 do znakowania płytek drukowanych. Do drukarki Brady i3300.',
-  description: 'B-728 to biały poliimid o matowej powierzchni, przeznaczony do oznaczania płytek drukowanych i komponentów przed procesem produkcyjnym. Klej o podwyższonej wytrzymałości dobrano do ekstremalnych procedur mycia i do chemikaliów czyszczących. Etykiety nadają się też do automatycznych aplikatorów. Producent podaje odporność na ostre zmywanie topnika. Nadruk powstaje termotransferem.\n\nDo wyboru jest jedenaście wersji. Najmniejsza ma bok 6,35 mm, a największa mierzy 38,10 × 6,35 mm. Opakowanie zawiera 4000, 7000, 8000, 10 000 albo 20 000 etykiet. Wymiary 25,40 × 6,35 mm oraz 31,75 × 6,35 mm mają po dwie wersje: wielorzędową oraz jednorzędową. Siedem etykiet obok siebie mieści się w wersjach o boku 6,35 oraz 9,53 mm.\n\nFolia o grubości 0,112 mm działa w przedziale temperatur od −70 do 300 °C. Poliimid znosi promieniowanie UV i czynniki atmosferyczne, a także wilgoć, korozję, chemikalia i tarcie. Materiał ma uznanie UL; wymagania MIL-STD-202G w metodzie 215K są zachowane. Do nadruku potrzebna jest taśma barwiąca B30-R6000, zamawiana osobno.',
+  seoDescription: 'Matowe etykiety z poliimidu Brady B-728 na płytki drukowane, do drukarki Brady i3300: 0,112 mm, do 300 °C, 12 wersji. PN: B33-1-728, B33-70-728, B33-4-728.',
+  shortDescription: 'Brady B33-1-728 i jedenaście innych wersji białych, matowych etykiet z poliimidu B-728 do znakowania płytek drukowanych. Do drukarki Brady i3300.',
+  description: 'B-728 to biały poliimid o matowej powierzchni, przeznaczony do oznaczania płytek drukowanych i komponentów przed procesem produkcyjnym. Klej o podwyższonej wytrzymałości dobrano do ekstremalnych procedur mycia i do chemikaliów czyszczących. Etykiety nadają się też do automatycznych aplikatorów. Producent podaje odporność na ostre zmywanie topnika. Nadruk powstaje termotransferem.\n\nDo wyboru jest dwanaście wersji. Najmniejsza ma bok 6,35 mm, a największa mierzy 38,10 × 6,35 mm. Opakowanie zawiera 4000, 7000, 8000, 10 000 albo 20 000 etykiet. Wymiary 25,40 × 6,35 mm oraz 31,75 × 6,35 mm mają po dwie wersje: wielorzędową oraz jednorzędową. Siedem etykiet obok siebie mieści się w wersjach o boku 6,35 oraz 9,53 mm.\n\nFolia o grubości 0,112 mm działa w przedziale temperatur od −70 do 300 °C. Poliimid znosi promieniowanie UV i czynniki atmosferyczne, a także wilgoć, korozję, chemikalia i tarcie. Materiał ma uznanie UL; wymagania MIL-STD-202G w metodzie 215K są zachowane. Do nadruku potrzebna jest taśma barwiąca B30-R6000, zamawiana osobno.',
   sameAs: 'https://www.brady.eu/labels/b33-series-matte-white-2-mil-polyimide-circuit-board-labels-cps-4297063',
   images: [
     '/images/products/brady/b33-4-728.png',
@@ -409,17 +439,19 @@ export const bradyB33Matowy728: Product = {
     { name: 'Normy', value: 'UL, MIL-STD-202G metoda 215K' },
     { name: 'Zalecana taśma barwiąca', value: 'B30-R6000' },
     { name: 'Zgodne drukarki', value: 'i3300, BBP33, i4311, i5300' },
+    { name: 'Uwagi o zgodności', value: 'B33-341-728: tylko i5300' },
     { name: 'Numery artykułów Brady', value: MATOWY_728.map(([pn, art]) => `${pn}: ${art}`).join('; ') },
   ],
   variants: MATOWY_728.map(([pn, , szer, wys, sztuk, wRzedzie]) => ({
     partNumber: pn,
-    name: `Brady ${pn} — biała, matowa etykieta z poliimidu ${szer} × ${wys} mm`,
-    attributes: { Rozmiar: `${szer} × ${wys} mm, ${SZTUK(sztuk)}`, 'W rzędzie': wRzedzie },
+    name: `Brady ${pn} — biała, matowa etykieta z poliimidu ${szer} × ${wys} mm${dopisekDrukarki(pn)}`,
+    attributes: { Rozmiar: `${szer} × ${wys} mm, ${SZTUK(sztuk)}`, 'W rzędzie': wRzedzie, Drukarka: drukarka(pn) },
     availability: 'unavailable' as const,
   })),
   variantAttributeTooltips: {
     Rozmiar: 'Szerokość i wysokość pojedynczej etykiety oraz liczba etykiet w opakowaniu.\n\nNajmniejsza etykieta ma 6,35 × 6,35 mm, a największa 38,10 × 6,35 mm.',
     'W rzędzie': 'Liczba etykiet ułożonych obok siebie na szerokości rolki.\n\nWynosi od jednej do siedmiu. Rolki z jedną etykietą w rzędzie mają wąski pas materiału.',
+    Drukarka: 'Drukarki B33, w których działa dany numer.\n\nEtykieta 16,51 × 5,08 mm (B33-341-728) pasuje tylko do i5300. Pozostałe rozmiary drukują i3300, i4311 oraz i5300.',
   },
   faq: [
     { question: 'Czy etykiety B-728 nadają się do automatycznych aplikatorów?', answer: 'Tak. Klej jest dobrany do mycia w ekstremalnych procedurach i do użycia w automatycznych aplikatorach etykiet.' },
@@ -708,13 +740,16 @@ export const bradyB33Matowy729: Product = {
 }
 
 // ---------------------------------------------------------------------------
-// Poliimid bursztynowy B-724 (cps-3069365); bez B33-341/342/344-724 (tylko i5300) oraz B33-1/43/149-724 (brak stron)
+// Poliimid bursztynowy B-724 (cps-3069365); bez B33-1/43/149-724 (brak stron)
 // ---------------------------------------------------------------------------
 
 // [PN, nr art., szerokość, wysokość, sztuk, etykiet w rzędzie]
 const BURSZTYNOWY_724: [string, string, string, string, string, string][] = [
   ['B33-340-724', '152911', '9,53', '9,53', '10000', '7'],
+  ['B33-344-724', '152847', '12,70', '5,08', '3700', '1'],
   ['B33-12-724', '152912', '12,70', '11,10', '10000', '5'],
+  ['B33-341-724', '152840', '16,51', '5,08', '10000', '4'],
+  ['B33-342-724', '152842', '16,51', '5,08', '3700', '1'],
   ['B33-46-724', '133872', '19,05', '6,35', '5000', '1'],
   ['B33-2-724', '140723', '22,86', '6,35', '5000', '3'],
   ['B33-51-724', '152909', '25,40', '6,35', '10000', '3'],
@@ -728,11 +763,12 @@ export const bradyB33Bursztynowy724: Product = {
   ...wspolneB33,
   id: 'brady-b33-12-724',
   slug: 'brady-b33-12-724',
+  updatedAt: '2026-11-15',
   name: 'Bursztynowe etykiety z poliimidu Brady B-724 na płytki drukowane do drukarki i3300',
   seoTitle: 'Brady B-724 — bursztynowe etykiety z poliimidu do drukarki i3300',
-  seoDescription: 'Bursztynowe etykiety z poliimidu Brady B-724 na płytki, do drukarki Brady i3300: lutowanie na fali, do 300 °C, 9 wersji. PN: B33-12-724, B33-5-724.',
-  shortDescription: 'Brady B33-12-724 i osiem innych wersji bursztynowych, matowych etykiet z poliimidu B-724 do płytek drukowanych. Do drukarki Brady i3300.',
-  description: 'Bursztynowy poliimid B-724 ma matową powierzchnię. Klej akrylowy o dużej wytrzymałości znosi ekstremalne procedury mycia i środki czyszczące używane przy produkcji płytek drukowanych. Materiał przechodzi wielokrotne, ostre płukanie, a podczas lutowania pozostaje na płytce, zarówno po stronie górnej, jak i dolnej. Nakleja się go na gładkie powierzchnie. Znosi także ostre zmywanie topnika z płytki. Nadruk wykonuje się termotransferem.\n\nDo wyboru jest dziewięć wersji. Najdrobniejsza to kwadrat 9,53 mm, najszersza ma 38,10 mm. Rzędy liczą od jednej do siedmiu etykiet, a opakowanie mieści od 4000 do 10 000 sztuk. Etykiety o długości 25,40 mm i wysokości 6,35 mm można kupić w dwóch układach: po trzy obok siebie lub pojedynczo.\n\nFolia ma grubość 0,112 mm i wytrzymuje temperatury od −70 do 300 °C. Materiał nie ulega ścieraniu, chemikaliom, korozji, wilgoci, fali lutowniczej ani pogodzie. Przy nadruku taśmą serii R4300 dotrzymany jest wymóg SAE AS81531 (znakowanie izolacji elektrycznej), a także MIL-STD-202G, metoda 215K. Kasetę B30-R4300 poleca się do nadruku.',
+  seoDescription: 'Bursztynowe etykiety z poliimidu Brady B-724 na płytki, do drukarki Brady i3300: lutowanie na fali, do 300 °C, 12 wersji. PN: B33-12-724, B33-5-724.',
+  shortDescription: 'Brady B33-12-724 i jedenaście innych wersji bursztynowych, matowych etykiet z poliimidu B-724 do płytek drukowanych. Do drukarki Brady i3300.',
+  description: 'Bursztynowy poliimid B-724 ma matową powierzchnię. Klej akrylowy o dużej wytrzymałości znosi ekstremalne procedury mycia i środki czyszczące używane przy produkcji płytek drukowanych. Materiał przechodzi wielokrotne, ostre płukanie, a podczas lutowania pozostaje na płytce, zarówno po stronie górnej, jak i dolnej. Nakleja się go na gładkie powierzchnie. Znosi także ostre zmywanie topnika z płytki. Nadruk wykonuje się termotransferem.\n\nDo wyboru jest dwanaście wersji. Najwęższa to kwadrat 9,53 mm, najszersza ma 38,10 mm. Rzędy liczą od jednej do siedmiu etykiet, a opakowanie mieści od 3700 do 10 000 sztuk. Etykiety o długości 25,40 mm i wysokości 6,35 mm można kupić w dwóch układach: po trzy obok siebie lub pojedynczo.\n\nFolia ma grubość 0,112 mm i wytrzymuje temperatury od −70 do 300 °C. Materiał nie ulega ścieraniu, chemikaliom, korozji, wilgoci, fali lutowniczej ani pogodzie. Przy nadruku taśmą serii R4300 dotrzymany jest wymóg SAE AS81531 (znakowanie izolacji elektrycznej), a także MIL-STD-202G, metoda 215K. Kasetę B30-R4300 poleca się do nadruku.',
   sameAs: 'https://www.brady.eu/labels/b33-series-amber-polyimide-labels-cps-3069365',
   images: [
     '/images/products/brady/b33-12-724.png',
@@ -754,21 +790,23 @@ export const bradyB33Bursztynowy724: Product = {
     { name: 'Temperatura pracy', value: 'od −70 do 300 °C' },
     { name: 'Odporność', value: 'ścieranie, chemikalia, korozja, wilgoć, lutowanie na fali, czynniki atmosferyczne' },
     { name: 'Kolor', value: 'bursztynowy' },
-    { name: 'Wymiary etykiety', value: 'od 9,53 × 9,53 mm do 38,10 × 6,35 mm, zależnie od wersji' },
+    { name: 'Wymiary etykiety', value: 'szerokość od 9,53 do 38,10 mm, wysokość od 5,08 do 12,70 mm, zależnie od wersji' },
     { name: 'Normy', value: 'MIL-STD-202G metoda 215K, SAE AS81531 (znakowanie izolacji elektrycznej, nadruk taśmą serii R4300)' },
     { name: 'Zalecana taśma barwiąca', value: 'B30-R4300' },
     { name: 'Zgodne drukarki', value: 'i3300, BBP33, i4311, i5300' },
+    { name: 'Uwagi o zgodności', value: 'B33-341-724, B33-342-724, B33-344-724: tylko i5300' },
     { name: 'Numery artykułów Brady', value: BURSZTYNOWY_724.map(([pn, art]) => `${pn}: ${art}`).join('; ') },
   ],
   variants: BURSZTYNOWY_724.map(([pn, , szer, wys, sztuk, wRzedzie]) => ({
     partNumber: pn,
-    name: `Brady ${pn} — bursztynowa etykieta z poliimidu ${szer} × ${wys} mm`,
-    attributes: { Rozmiar: `${szer} × ${wys} mm, ${SZTUK(sztuk)}`, 'W rzędzie': wRzedzie },
+    name: `Brady ${pn} — bursztynowa etykieta z poliimidu ${szer} × ${wys} mm${dopisekDrukarki(pn)}`,
+    attributes: { Rozmiar: `${szer} × ${wys} mm, ${SZTUK(sztuk)}`, 'W rzędzie': wRzedzie, Drukarka: drukarka(pn) },
     availability: 'unavailable' as const,
   })),
   variantAttributeTooltips: {
-    Rozmiar: 'Szerokość i wysokość pojedynczej etykiety oraz liczba etykiet w opakowaniu.\n\nNajmniejsza etykieta ma 9,53 × 9,53 mm, a największa 38,10 × 6,35 mm.',
+    Rozmiar: 'Szerokość i wysokość pojedynczej etykiety oraz liczba etykiet w opakowaniu.\n\nNajmniejsza etykieta ma 12,70 × 5,08 mm, a największa 38,10 × 6,35 mm.',
     'W rzędzie': 'Liczba etykiet ułożonych obok siebie na szerokości rolki.\n\nWynosi od jednej do siedmiu.',
+    Drukarka: 'Drukarki B33, w których działa dany numer.\n\nEtykiety o wysokości 5,08 mm (B33-341-724, B33-342-724 i B33-344-724) pasują tylko do i5300. Pozostałe rozmiary drukują i3300, i4311 oraz i5300.',
   },
   faq: [
     { question: 'Czy bursztynowe etykiety B-724 wytrzymują lutowanie na fali?', answer: 'Tak. Poliimid zostaje na płytce w procesie lutowania, po stronie górnej i dolnej, i znosi wielokrotne mycie.' },

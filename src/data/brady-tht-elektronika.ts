@@ -98,6 +98,7 @@ const POLIIMID_797: Wiersz[] = [
   ['THT-44-797-10', '34.93', '6.35', '10000', '1', '615'],
   ['THT-4-797-10', '38.10', '6.35', '10000', '2', '615'],
   ['THT-45-797-10', '38.10', '6.35', '10000', '1', '615'],
+  ['THT-15-797-2.5', '50.80', '6.35', '2500', '1', '615'],
   ['THT-70-797-20', '6.35', '6.35', '20000', '7', '615'],
   ['THT-71-797-20', '8.00', '8.00', '20000', '6', '615'],
   ['THT-58-797-10', '25.40', '9.53', '10000', '1', '615'],
@@ -107,11 +108,12 @@ export const bradyTHTPoliimid797: Product = {
   ...wspolneTHT,
   id: 'brady-tht-11-797-10',
   slug: 'brady-tht-11-797-10',
+  updatedAt: '2026-11-15',
   name: 'Białe błyszczące etykiety poliimidowe na płytki drukowane Brady B-797 na rolce 76 mm',
   seoTitle: 'Brady B-797 — etykiety poliimidowe na płytki, i6100, i7100',
   seoDescription: 'Białe etykiety poliimidowe Brady B-797 do drukarek i6100, i7100 i i7500: mycie po lutowaniu, do 300 °C. PN: THT-11-797-10, THT-38-797-10, THT-70-797-20.',
-  shortDescription: 'Brady B-797 to biały, błyszczący poliimid do znakowania płytek drukowanych, w 24 numerach wykrojonych. Do drukarek Brady i6100, i7100 i i7500.',
-  description: 'B-797 to biały poliimid z połyskiem o grubości 0,104 mm, używany do znakowania płytek drukowanych, komponentów i sprzętu. Trwały klej akrylowy opracowano pod kątem skrajnie ostrego mycia i środków czyszczących. Wzmocniona warstwa wierzchnia znosi wielokrotne mycie w trudnych warunkach, a nadruk się nie rozmazuje. Czytelność nadruku zapewnia się bez reflow i bez wstępnego podgrzewania.\n\nW karcie jest 24 numery. Etykiety kwadratowe o boku 6,35 mm występują w trzech wersjach: 12 000 sztuk w jednym rzędzie, 10 000 w dwunastu rzędach i 20 000 w siedmiu. Takie same 20 000 sztuk mają etykiety 8 × 8 mm. Najszersza etykieta mierzy 38,1 mm. Numer THT-211-797-10 jest opakowaniem 10 000 etykiet 12,7 × 12,7 mm, zawierającym rolki po 5000 sztuk.\n\nWartości graniczne temperatury wynoszą −80 °C i 300 °C. Etykieta jest odporna na ścieranie, chemikalia, korozję, ciepło oraz wilgoć. Spełnia MIL-STD-202G, ma znak UL Recognised i jest wolna od dibutylocyny oraz dioktylocyny. Do nadruku zaleca się taśmę R6306 (seria R6300), a w i7500 i75-R6306; dla numeru THT-211-797-10 podano R6000HF.',
+  shortDescription: 'Brady B-797 to biały, błyszczący poliimid do znakowania płytek drukowanych, w 25 numerach wykrojonych. Do drukarek Brady i6100, i7100 i i7500.',
+  description: 'B-797 to biały poliimid z połyskiem o grubości 0,104 mm, używany do znakowania płytek drukowanych, komponentów i sprzętu. Trwały klej akrylowy opracowano pod kątem skrajnie ostrego mycia i środków czyszczących. Wzmocniona warstwa wierzchnia znosi wielokrotne mycie w trudnych warunkach, a nadruk się nie rozmazuje. Czytelność nadruku zapewnia się bez reflow i bez wstępnego podgrzewania.\n\nW karcie jest 25 numerów. Etykiety kwadratowe o boku 6,35 mm występują w trzech wersjach: 12 000 sztuk w jednym rzędzie, 10 000 w dwunastu rzędach i 20 000 w siedmiu. Takie same 20 000 sztuk mają etykiety 8 × 8 mm. Najszersza etykieta mierzy 50,8 mm i jest pakowana po 2500 sztuk. Numer THT-211-797-10 jest opakowaniem 10 000 etykiet 12,7 × 12,7 mm, zawierającym rolki po 5000 sztuk.\n\nWartości graniczne temperatury wynoszą −80 °C i 300 °C. Etykieta jest odporna na ścieranie, chemikalia, korozję, ciepło oraz wilgoć. Spełnia MIL-STD-202G, ma znak UL Recognised i jest wolna od dibutylocyny oraz dioktylocyny. Do nadruku zaleca się taśmę R6306 (seria R6300), a w i7500 i75-R6306; dla numeru THT-211-797-10 podano R6000HF.',
   sameAs: 'https://www.brady.eu/labels/76-mm-core-glossy-white-2-mil-polyimide-circuit-board-labels-cps-4358222',
   images: [
     '/images/products/brady/tht-11-797-10.png',
@@ -132,7 +134,7 @@ export const bradyTHTPoliimid797: Product = {
     { name: 'Temperatura pracy', value: 'od −80 do 300 °C' },
     { name: 'Odporność', value: 'ścieranie, chemikalia, korozja, ciepło, wilgoć, rozpuszczalniki' },
     { name: 'Kolor', value: 'biały' },
-    { name: 'Wymiary etykiety', value: 'szerokość od 6,35 do 38,1 mm, wysokość od 3,18 do 12,7 mm, zależnie od wersji' },
+    { name: 'Wymiary etykiety', value: 'szerokość od 6,35 do 50,8 mm, wysokość od 3,18 do 12,7 mm, zależnie od wersji' },
     { name: 'Liczba sztuk na rolce', value: `${listaSztuk(POLIIMID_797)}, zależnie od wersji` },
     { name: 'Opakowanie', value: 'Numer THT-211-797-10 to opakowanie 10 000 etykiet, z rolkami po 5000 sztuk.' },
     { name: 'Normy', value: 'UL Recognised, MIL-STD-202G (notice 12, metoda 215K), bez dibutylocyny i dioktylocyny' },
@@ -147,7 +149,7 @@ export const bradyTHTPoliimid797: Product = {
       : v,
   ),
   variantAttributeTooltips: {
-    Rozmiar: TOOLTIP_ROZMIAR('6,35 × 6,35', '38,1 × 6,35'),
+    Rozmiar: TOOLTIP_ROZMIAR('6,35 × 6,35', '50,8 × 6,35'),
     Rzędów: 'Liczba etykiet obok siebie na szerokości rolki.\n\nEtykiety 6,35 × 6,35 mm leżą w jednym, siedmiu albo dwunastu rzędach.',
     Drukarki: TOOLTIP_DRUKARKI,
   },
@@ -558,17 +560,20 @@ export const bradyTHTPoliimid767: Product = {
 const POLIIMID_717: Wiersz[] = [
   ['THT-45-717-10', '38.10', '6.35', '10000', '1', '615'],
   ['THT-60-717-10', '38.10', '3.18', '10000', '1', '615'],
+  ['THT-103-717-10', '25.40', '6.35', '10000', '1', '615'],
+  ['THT-59-717-10', '25.40', '12.70', '10000', '1', '615'],
 ]
 
 export const bradyTHTPoliimid717: Product = {
   ...wspolneTHT,
   id: 'brady-tht-45-717-10',
   slug: 'brady-tht-45-717-10',
+  updatedAt: '2026-11-15',
   name: 'Białe błyszczące etykiety poliimidowe ESD Brady UltraTemp B-717 na rolce 76 mm',
   seoTitle: 'Brady B-717 — błyszczący poliimid ESD, i6100, i7100, i7500',
-  seoDescription: 'Białe błyszczące etykiety poliimidowe ESD Brady UltraTemp B-717 do i6100, i7100 i i7500: klej rozpraszający ładunki. PN: THT-45-717-10, THT-60-717-10.',
-  shortDescription: 'Brady UltraTemp B-717 to biały, błyszczący poliimid z klejem rozpraszającym ładunki elektrostatyczne, w dwóch formatach 38,1 mm szerokości. Do drukarek Brady i6100, i7100 i i7500.',
-  description: 'UltraTemp B-717 jest białym poliimidem z połyskiem, o folii 0,107 mm. Klej akrylowy odprowadza ładunki elektrostatyczne. Etykiety znakują płytki drukowane i znoszą agresywne mycie topnika. Materiał dopuszczono do SMT i THT, a naklejanie następuje po zakończeniu procesu.\n\nKarta obejmuje dwa numery. THT-45-717-10 to etykieta 38,1 × 6,35 mm, a THT-60-717-10 ma wymiar 38,1 × 3,18 mm. Obie liczą 10 000 sztuk na rolce i leżą w jednym rzędzie. Odstęp pionowy między etykietami wynosi odpowiednio 8,89 i 5,72 mm, a szerokość podkładu 43,18 mm.\n\nPrzedział temperatury obejmuje −70 °C oraz 300 °C jako wartości skrajne. Chemikalia, płyny i ścieranie nie uszkadzają folii, podobnie jak korozja i wilgoć. Znak UL Recognised oraz zgodność z MIL-STD-202G potwierdzono. Nadruk wykonuje się taśmą R6006 (seria R6000HF); w i7500 stosuje się i75-R6006.',
+  seoDescription: 'Białe etykiety poliimidowe ESD Brady UltraTemp B-717 do i6100, i7100 i i7500: klej rozpraszający ładunki. PN: THT-45-717-10, THT-60-717-10, THT-103-717-10.',
+  shortDescription: 'Brady UltraTemp B-717 to biały, błyszczący poliimid z klejem rozpraszającym ładunki elektrostatyczne, w czterech formatach o szerokości 25,4 i 38,1 mm. Do drukarek Brady i6100, i7100 i i7500.',
+  description: 'UltraTemp B-717 jest białym poliimidem z połyskiem, o folii 0,107 mm. Klej akrylowy odprowadza ładunki elektrostatyczne. Etykiety znakują płytki drukowane i znoszą agresywne mycie topnika. Materiał dopuszczono do SMT i THT, a naklejanie następuje po zakończeniu procesu.\n\nKarta obejmuje cztery numery. THT-45-717-10 to etykieta 38,1 × 6,35 mm, a THT-60-717-10 ma wymiar 38,1 × 3,18 mm. Numer THT-103-717-10 mierzy 25,4 × 6,35 mm, a THT-59-717-10 25,4 × 12,7 mm. Wszystkie liczą 10 000 sztuk na rolce i leżą w jednym rzędzie. Dla dwóch pierwszych numerów odstęp pionowy między etykietami wynosi odpowiednio 8,89 i 5,72 mm, a szerokość podkładu 43,18 mm.\n\nPrzedział temperatury obejmuje −70 °C oraz 300 °C jako wartości skrajne. Chemikalia, płyny i ścieranie nie uszkadzają folii, podobnie jak korozja i wilgoć. Znak UL Recognised oraz zgodność z MIL-STD-202G potwierdzono. Nadruk wykonuje się taśmą R6006 (seria R6000HF); w i7500 stosuje się i75-R6006.',
   sameAs: 'https://www.brady.eu/labels/thermal-transfer-printable-static-dissipative-polyimide-labels-pid-tht-45-717-10',
   images: [
     '/images/products/brady/tht-45-717-10.png',
@@ -589,20 +594,20 @@ export const bradyTHTPoliimid717: Product = {
     { name: 'Temperatura pracy', value: 'od −70 do 300 °C' },
     { name: 'Odporność', value: 'ścieranie, chemikalia, płyny, korozja, wilgoć, wysoka i niska temperatura' },
     { name: 'Kolor', value: 'biały' },
-    { name: 'Wymiary etykiety', value: '38,1 × 6,35 / 38,1 × 3,18 mm, zależnie od wersji' },
+    { name: 'Wymiary etykiety', value: '38,1 × 6,35 / 38,1 × 3,18 / 25,4 × 6,35 / 25,4 × 12,7 mm, zależnie od wersji' },
     { name: 'Liczba sztuk na rolce', value: '10 000' },
     { name: 'Normy', value: 'UL Recognised, MIL-STD-202G (metoda 215K), ANSI/ESD S541-2008 (rezystywność kleju od 10⁴ do 10¹¹ Ω)' },
     { name: 'Zalecana taśma barwiąca', value: 'R6006 (seria R6000HF); do i7500: i75-R6006' },
     { name: 'Gilza', value: '76,2 mm' },
     { name: 'Zgodne drukarki', value: zgodneDrukarki(POLIIMID_717) },
-    { name: 'Numery artykułów Brady', value: 'THT-45-717-10: 134249; THT-60-717-10: 134253' },
+    { name: 'Numery artykułów Brady', value: 'THT-45-717-10: 134249; THT-60-717-10: 134253; THT-103-717-10: 134242; THT-59-717-10: 134252' },
   ],
   variants: warianty(POLIIMID_717, 'biała etykieta poliimidowa ESD B-717'),
   variantAttributeTooltips: {
-    Rozmiar: 'Szerokość i wysokość jednej etykiety oraz liczba sztuk na rolce.\n\nObie wersje mają 38,1 mm szerokości, a wysokość wynosi 6,35 albo 3,18 mm.',
+    Rozmiar: 'Szerokość i wysokość jednej etykiety oraz liczba sztuk na rolce.\n\nSzerokość wynosi 38,1 albo 25,4 mm, a wysokość od 3,18 do 12,7 mm.',
   },
   faq: [
-    { question: 'Czym różnią się dwa numery w tej karcie?', answer: 'Tylko wysokością etykiety: THT-45-717-10 ma 6,35 mm, a THT-60-717-10 ma 3,18 mm. Szerokość 38,1 mm, materiał i liczba sztuk na rolce są takie same.' },
+    { question: 'Czym różnią się numery w tej karcie?', answer: 'Wymiarem etykiety: THT-45-717-10 ma 38,1 × 6,35 mm, THT-60-717-10 ma 38,1 × 3,18 mm, THT-103-717-10 ma 25,4 × 6,35 mm, a THT-59-717-10 ma 25,4 × 12,7 mm. Materiał, liczba sztuk na rolce i jeden rząd są takie same.' },
     { question: 'Jaką taśmą drukować etykiety B-717?', answer: 'Zaleca się R6006 z serii R6000HF, a do i7500 i75-R6006. Etykiety drukują [Brady i6100](/produkt/brady-i6100), [Brady i7100](/produkt/brady-i7100) i [Brady i7500](/produkt/brady-i7500).' },
     { question: 'Czy etykiety B-717 pasują do płytek SMT?', answer: 'Tak. Materiał jest zgodny z SMT na stronie górnej i dolnej oraz z THT po obu stronach. Etykiety nakleja się po zakończeniu procesu.' },
   ],
@@ -896,7 +901,7 @@ export const bradyTHTPoliimid777: Product = {
 }
 
 // ---------------------------------------------------------------------------
-// Matowy bursztynowy poliimid B-724 (cps-4392521); bez THT-15-724-2.5 i THT-16-724-2.5 (brak zgodności z drukarką w danych)
+// Matowy bursztynowy poliimid B-724 (cps-4392521)
 // ---------------------------------------------------------------------------
 
 const POLIIMID_724: Wiersz[] = [
@@ -924,17 +929,20 @@ const POLIIMID_724: Wiersz[] = [
   ['THT-57-724-10', '17.78', '9.53', '10000', '4', '615'],
   ['THT-50-724-10', '19.05', '19.05', '10000', '4', '615'],
   ['THT-5-724-10', '25.40', '12.70', '10000', '3', '615'],
+  ['THT-15-724-2.5', '50.80', '6.35', '2500', '1', '615'],
+  ['THT-16-724-2.5', '76.20', '6.35', '2500', '1', '615'],
 ]
 
 export const bradyTHTPoliimid724: Product = {
   ...wspolneTHT,
   id: 'brady-tht-14-724-10',
   slug: 'brady-tht-14-724-10',
+  updatedAt: '2026-11-15',
   name: 'Matowe bursztynowe etykiety poliimidowe na płytki drukowane Brady B-724 na rolce 76 mm',
   seoTitle: 'Brady B-724 — bursztynowy poliimid na płytki, i6100, i7100',
   seoDescription: 'Matowe bursztynowe etykiety poliimidowe Brady B-724 do i6100, i7100 i i7500: lutowanie na fali, 0,112 mm. PN: THT-14-724-10, THT-38-724-10, THT-50-724-10.',
-  shortDescription: 'Brady B-724 to matowy poliimid w kolorze bursztynowym do znakowania płytek drukowanych, w 24 numerach. Do drukarek Brady i6100, i7100 i i7500.',
-  description: 'B-724 to poliimid w kolorze bursztynowym, o wykończeniu matowym i grubości 0,112 mm. Do powierzchni gładkich klej akrylowy przylega trwale. Materiał znosi agresywne mycie topnika oraz lutowanie na fali. Etykiety oznaczają płytki drukowane i są odporne na ciepło.\n\nW karcie jest 24 numery, a każda rolka mieści 10 000 sztuk. Kwadrat 6,35 mm leży w dwunastu rzędach, a kwadrat 9,53 mm w siedmiu. Najszersza etykieta ma 50,8 mm. Największy format to kwadrat 19,05 mm w czterech rzędach.\n\nDolny limit pracy to −70 °C, górny 300 °C. Ścieranie, chemikalia, korozja, wilgoć i warunki atmosferyczne mu nie szkodzą. Numer THT-47-724-10 pasuje tylko do i7100 i i7500, a pozostałe numery do wszystkich trzech drukarek. Szerokości zaczynają się od 6,35 mm, a wysokości mieszczą się między 3,18 a 19,05 mm.',
+  shortDescription: 'Brady B-724 to matowy poliimid w kolorze bursztynowym do znakowania płytek drukowanych, w 26 numerach. Do drukarek Brady i6100, i7100 i i7500.',
+  description: 'B-724 to poliimid w kolorze bursztynowym, o wykończeniu matowym i grubości 0,112 mm. Do powierzchni gładkich klej akrylowy przylega trwale. Materiał znosi agresywne mycie topnika oraz lutowanie na fali. Etykiety oznaczają płytki drukowane i są odporne na ciepło.\n\nW karcie jest 26 numerów. Rolki mają po 10 000 sztuk, z wyjątkiem THT-15-724-2.5 i THT-16-724-2.5, które mają po 2500. Kwadrat 6,35 mm leży w dwunastu rzędach, a kwadrat 9,53 mm w siedmiu. Najszersza etykieta ma 76,2 mm. Największy format to kwadrat 19,05 mm w czterech rzędach.\n\nDolny limit pracy to −70 °C, górny 300 °C. Ścieranie, chemikalia, korozja, wilgoć i warunki atmosferyczne mu nie szkodzą. Numer THT-47-724-10 pasuje tylko do i7100 i i7500, a pozostałe numery do wszystkich trzech drukarek. Szerokości zaczynają się od 6,35 mm, a wysokości mieszczą się między 3,18 a 19,05 mm.',
   sameAs: 'https://www.brady.eu/labels/76-mm-core-matt-amber-polyimide-circuit-board-labels-cps-4392521',
   images: [
     '/images/products/brady/tht-14-724-10.png',
@@ -955,15 +963,15 @@ export const bradyTHTPoliimid724: Product = {
     { name: 'Temperatura pracy', value: 'od −70 do 300 °C' },
     { name: 'Odporność', value: 'ścieranie, chemikalia, korozja, wilgoć, lutowanie na fali, warunki atmosferyczne, ciepło' },
     { name: 'Kolor', value: 'bursztynowy' },
-    { name: 'Wymiary etykiety', value: 'szerokość od 6,35 do 50,8 mm, wysokość od 3,18 do 19,05 mm, zależnie od wersji' },
-    { name: 'Liczba sztuk na rolce', value: '10 000' },
+    { name: 'Wymiary etykiety', value: 'szerokość od 6,35 do 76,2 mm, wysokość od 3,18 do 19,05 mm, zależnie od wersji' },
+    { name: 'Liczba sztuk na rolce', value: `${listaSztuk(POLIIMID_724)}, zależnie od wersji` },
     { name: 'Gilza', value: '76,2 mm' },
     { name: 'Zgodne drukarki', value: zgodneDrukarki(POLIIMID_724) },
     ...uwagiZgodnosci(POLIIMID_724),
   ],
   variants: warianty(POLIIMID_724, 'bursztynowa etykieta poliimidowa B-724', { rzedy: true, drukarki: true }),
   variantAttributeTooltips: {
-    Rozmiar: TOOLTIP_ROZMIAR('6,35 × 6,35', '50,8 × 6,35'),
+    Rozmiar: TOOLTIP_ROZMIAR('6,35 × 6,35', '76,2 × 6,35'),
     Rzędów: 'Liczba etykiet obok siebie na szerokości rolki.\n\nNajdrobniejsze etykiety leżą w dwunastu rzędach, a długie paski w jednym.',
     Drukarki: TOOLTIP_DRUKARKI,
   },

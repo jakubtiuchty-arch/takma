@@ -15,6 +15,7 @@ const METAL_428: [string, string, string, string, string, string][] = [
   ['B33-5-428', '142880', '25,4', '12,7', '5000', '3'],
   ['B33-37-428', '153389', '38,1', '12,7', '4000', '2'],
   ['B33-53-428', '133884', '50,8', '12,7', '2500', '1'],
+  ['B33-616-428', '361675', '22,86', '19,05', '3000', '3'],
   ['B33-6-428', '153390', '38,1', '19,05', '3000', '2'],
   ['B33-17-428', '143085', '50,8', '25,4', '1500', '1'],
   ['B33-18-428', '142881', '76,2', '25,4', '1500', '1'],
@@ -24,15 +25,19 @@ const METAL_428: [string, string, string, string, string, string][] = [
   ['B33-161-428', '153393', '101,6', '101,6', '300', '1'],
 ]
 
+// Taśma ciągła z tego samego materiału: [PN, nr art.]
+const TASMA_428: [string, string] = ['B33C-3000-428', '133996']
+
 export const bradyB33Metal428: Product = {
   ...wspolneB33,
   id: 'brady-b33-17-428',
   slug: 'brady-b33-17-428',
+  updatedAt: '2026-11-15',
   name: 'Etykiety z metalizowanego poliestru Brady B-428 do drukarki i3300',
   seoTitle: 'Brady B-428 — metalizowany poliester do drukarki i3300',
   seoDescription: 'Etykiety z metalizowanego poliestru Brady B-428 do drukarki Brady i3300: matowe, jasnoszare, od −40 do 120 °C. PN: B33-17-428, B33-19-428, B33-55-428.',
-  shortDescription: 'Matowe, jasnoszare etykiety z metalizowanego poliestru B-428 w dziesięciu rozmiarach, od 25,4 × 12,7 do 101,6 × 101,6 mm. Do drukarki Brady i3300.',
-  description: 'Brady B-428 to jasnoszary poliester z warstwą metalu i matową powierzchnią. Zadrukowana folia przypomina tabliczkę znamionową lub seryjną. Nadruk mieści kody kreskowe, napisy, znaki graficzne i logo. Trwały klej akrylowy łączy się z powierzchniami gładkimi. Folia oznacza aparaty, elementy płytek drukowanych, sprzęt teleinformatyczny i instalacje elektryczne. Służy również do ewidencji mienia. Niektóre rozmiary występują pod marką MetaLabel.\n\nRolki występują w dziesięciu formatach. Wersja o szerokości 25,4 mm i wysokości 12,7 mm jest pakowana po 5000 sztuk, a największa, kwadratowa o boku 101,6 mm, po 300. Mniejsze formaty mają obok siebie dwie lub trzy etykiety. Większe formaty pomieszczą dłuższy tekst albo duży kod. Grubość folii wynosi 0,122 mm.\n\nMateriał odpiera paliwa, oleje, rozpuszczalniki i chemikalia. Wytrzymuje zimno do −40 °C oraz ciepło do 120 °C. Certyfikaty: UL (uznanie), CSA (akceptacja) i AGA (zatwierdzenie). Halogenów w folii nie ma (norma DIN VDE 0472-815). Nadruk wykonuje kaseta B30-R4300.',
+  shortDescription: 'Matowe, jasnoszare etykiety z metalizowanego poliestru B-428 w jedenastu rozmiarach, od 25,4 × 12,7 do 101,6 × 101,6 mm, oraz taśma ciągła 76,2 mm. Do drukarki Brady i3300.',
+  description: 'Brady B-428 to jasnoszary poliester z warstwą metalu i matową powierzchnią. Zadrukowana folia przypomina tabliczkę znamionową lub seryjną. Nadruk mieści kody kreskowe, napisy, znaki graficzne i logo. Trwały klej akrylowy łączy się z powierzchniami gładkimi. Folia oznacza aparaty, elementy płytek drukowanych, sprzęt teleinformatyczny i instalacje elektryczne. Służy również do ewidencji mienia. Niektóre rozmiary występują pod marką MetaLabel.\n\nRolki występują w jedenastu formatach. Wersja o szerokości 25,4 mm i wysokości 12,7 mm jest pakowana po 5000 sztuk, a największa, kwadratowa o boku 101,6 mm, po 300. Mniejsze formaty mają obok siebie dwie lub trzy etykiety. Większe formaty pomieszczą dłuższy tekst albo duży kod. Grubość folii wynosi 0,122 mm. Dostępna jest także taśma ciągła o szerokości 76,2 mm i długości 25,91 m, z której długość etykiety ustala się przy druku.\n\nMateriał odpiera paliwa, oleje, rozpuszczalniki i chemikalia. Wytrzymuje zimno do −40 °C oraz ciepło do 120 °C. Certyfikaty: UL (uznanie), CSA (akceptacja) i AGA (zatwierdzenie). Halogenów w folii nie ma (norma DIN VDE 0472-815). Nadruk wykonuje kaseta B30-R4300.',
   sameAs: 'https://www.brady.eu/labels/b33-series-metallised-polyester-permanent-acrylic-adhesive-labels-cps-3069379',
   images: [
     '/images/products/brady/b33-17-428.png',
@@ -45,7 +50,7 @@ export const bradyB33Metal428: Product = {
     'Rolka Brady B33-6-428 z rzędami małych jasnoszarych etykiet 38,1 × 19,05 mm',
   ],
   specifications: [
-    { name: 'Typ', value: 'Etykiety w rolce B33, bez taśmy barwiącej' },
+    { name: 'Typ', value: 'Etykiety wykrawane B33 i taśma ciągła B33C, bez taśmy barwiącej' },
     { name: 'Materiał', value: 'B-428' },
     { name: 'Typ materiału', value: 'poliester metalizowany' },
     { name: 'Wykończenie', value: 'matowe, metaliczny wygląd' },
@@ -54,22 +59,30 @@ export const bradyB33Metal428: Product = {
     { name: 'Temperatura pracy', value: 'od −40 do 120 °C' },
     { name: 'Odporność', value: 'paliwa i oleje, wysoka temperatura, niska temperatura, rozpuszczalniki i chemikalia' },
     { name: 'Kolor', value: 'jasnoszary' },
-    { name: 'Wymiary etykiety', value: 'szerokość od 25,4 do 101,6 mm, wysokość od 12,7 do 101,6 mm' },
-    { name: 'Liczba sztuk', value: 'od 300 do 5000, zależnie od wersji' },
+    { name: 'Wymiary etykiety', value: 'szerokość od 22,86 do 101,6 mm, wysokość od 12,7 do 101,6 mm; taśma ciągła o szerokości 76,2 mm i długości 25,91 m' },
+    { name: 'Liczba sztuk', value: 'od 300 do 5000 etykiet, zależnie od wersji; taśma ciągła: 1 rolka' },
     { name: 'Normy', value: 'UL Recognised, CSA Accepted, AGA Approved, bez halogenów (DIN VDE 0472, część 815)' },
     { name: 'Zalecana taśma barwiąca', value: 'B30-R4300' },
     { name: 'Zgodne drukarki', value: DRUKARKI_B33 },
-    { name: 'Numery artykułów Brady', value: METAL_428.map(([pn, art]) => `${pn}: ${art}`).join('; ') },
+    { name: 'Numery artykułów Brady', value: [...METAL_428, TASMA_428].map(([pn, art]) => `${pn}: ${art}`).join('; ') },
   ],
-  variants: METAL_428.map(([pn, , szer, wys, szt, rzad]) => ({
-    partNumber: pn,
-    name: `Brady ${pn} — etykieta z metalizowanego poliestru ${szer} × ${wys} mm`,
-    attributes: { Rozmiar: `${szer} × ${wys} mm, ${szt} szt.`, 'W rzędzie': rzad },
-    availability: 'unavailable' as const,
-  })),
+  variants: [
+    ...METAL_428.map(([pn, , szer, wys, szt, rzad]) => ({
+      partNumber: pn,
+      name: `Brady ${pn} — etykieta z metalizowanego poliestru ${szer} × ${wys} mm`,
+      attributes: { Rozmiar: `${szer} × ${wys} mm, ${szt} szt.`, 'W rzędzie': rzad },
+      availability: 'unavailable' as const,
+    })),
+    {
+      partNumber: TASMA_428[0],
+      name: `Brady ${TASMA_428[0]} — taśma ciągła z metalizowanego poliestru 76,2 mm × 25,91 m`,
+      attributes: { Rozmiar: 'ciągła 76,2 mm × 25,91 m', 'W rzędzie': '1' },
+      availability: 'unavailable' as const,
+    },
+  ],
   variantAttributeTooltips: {
-    Rozmiar: 'Szerokość i wysokość etykiety oraz liczba sztuk na rolce.\n\nWymiary rosną od 25,4 × 12,7 mm do 101,6 × 101,6 mm, a rolka liczy od 300 do 5000 sztuk.',
-    'W rzędzie': 'Liczba etykiet obok siebie na szerokości rolki.\n\nNajmniejsza etykieta ma trzy obok siebie, wersje 38,1 mm mają po dwie, pozostałe po jednej.',
+    Rozmiar: 'Szerokość i wysokość etykiety oraz liczba sztuk na rolce albo szerokość i długość taśmy ciągłej.\n\nWymiary rosną od 25,4 × 12,7 mm do 101,6 × 101,6 mm, a rolka liczy od 300 do 5000 sztuk. Taśma ciągła ma 76,2 mm szerokości i 25,91 m długości.',
+    'W rzędzie': 'Liczba etykiet obok siebie na szerokości rolki.\n\nTrzy obok siebie mają etykiety o szerokości 25,4 mm i 22,86 mm, po dwie wersje 38,1 mm, pozostałe oraz taśma ciągła po jednej.',
   },
   faq: [
     { question: 'Na jakie powierzchnie nakleja się etykiety B-428?', answer: 'Trwały klej akrylowy jest przeznaczony do powierzchni gładkich. Etykieta pracuje w zakresie od −40 do 120 °C.' },
@@ -731,10 +744,69 @@ export const bradyB33Permashield428: Product = {
   applications: ['Tabliczki znamionowe z dodatkową warstwą ochronną', 'Znakowanie płytek drukowanych i sprzętu teleinformatycznego', 'Inwentaryzacja i ewidencja urządzeń'],
 }
 
-export const bradyB33MetalizowaneInne: Product[] = [bradyB33Metal428, bradyB33Metal434, bradyB33Metal435, bradyB33Metal486, bradyB33Niemetal413, bradyB33Tamper438, bradyB33Permashield428, bradyB33Winyl439, bradyB33Polipropylen425, bradyB33Papier424]
+// ---------------------------------------------------------------------------
+// MetaLabel B-7563, srebrny metalizowany poliester z satynowym wykończeniem (cps-3079463)
+// ---------------------------------------------------------------------------
+
+export const bradyB33Metal7563: Product = {
+  ...wspolneB33,
+  id: 'brady-b33-600-7563',
+  slug: 'brady-b33-600-7563',
+  updatedAt: '2026-11-15',
+  createdAt: '2026-11-15',
+  name: 'Etykiety z metalizowanego poliestru Brady B-7563 do drukarki i3300',
+  seoTitle: 'Brady B-7563 — metalizowany poliester do drukarki i3300',
+  seoDescription: 'Srebrne, satynowe etykiety z metalizowanego poliestru Brady B-7563 do drukarki Brady i3300: od −40 do 135 °C, UL. PN: B33-600-7563, 38,1 × 19,05 mm.',
+  shortDescription: 'Brady B33-600-7563 to srebrna, satynowa etykieta z metalizowanego poliestru B-7563 o wymiarach 38,10 × 19,05 mm, 2500 sztuk na rolce. Do drukarki Brady i3300.',
+  description: 'Etykieta MetaLabel B-7563 jest wykonana ze srebrnego poliestru z warstwą metalu. Satynowa folia ma grubość 0,075 mm i wygląda jak metalowa płytka. Trwały klej akrylowy łączy się z powierzchniami gładkimi. Znakuje się nią urządzenia i wyposażenie, które trzeba wpisać do ewidencji mienia, oraz sprzęt wymagający ogólnej identyfikacji.\n\nNumer B33-600-7563 to prostokąt 38,10 × 19,05 mm, na którym drukuje się kody kreskowe i numery inwentarzowe. Rolka mieści 2500 sztuk, a numer artykułu Brady to 361696. Etykiety biegną w dwóch rzędach na nośniku o szerokości 108 mm. Karta obejmuje ten jeden rozmiar. Etykiety są dostarczane bez nadruku, a treść powstaje w drukarce metodą termotransferu.\n\nZakres temperatury pracy wynosi od −40 do 135 °C. Folia jest odporna na ścieranie, paliwa, oleje, rozpuszczalniki, chemikalia, wilgoć i promieniowanie UV. Materiał ma uznanie UL (UL Recognised). Nadruk wykonuje się taśmą barwiącą B30-R6000, którą zamawia się osobno. Etykiety drukują drukarki i3300, BBP33, i4311 oraz i5300.',
+  sameAs: 'https://www.brady.eu/labels/metallised-polyester-labels-for-bbp33-i3300-printers-cps-3079463?part-number=b33-600-7563',
+  images: ['/images/products/brady/b33-600-7563.png'],
+  imageDescriptions: [
+    'Rolka Brady B33-600-7563 ze srebrnymi, satynowymi etykietami z metalizowanego poliestru 38,1 × 19,05 mm w dwóch rzędach',
+  ],
+  specifications: [
+    { name: 'Typ', value: 'Etykiety w rolce B33, bez taśmy barwiącej' },
+    { name: 'Materiał', value: 'MetaLabel B-7563' },
+    { name: 'Typ materiału', value: 'poliester metalizowany' },
+    { name: 'Wykończenie', value: 'satynowe, metaliczny wygląd' },
+    { name: 'Klej', value: 'trwały, akrylowy; do powierzchni gładkich' },
+    { name: 'Grubość', value: '0,075 mm' },
+    { name: 'Temperatura pracy', value: 'od −40 do 135 °C' },
+    { name: 'Odporność', value: 'ścieranie, paliwa i oleje, rozpuszczalniki i chemikalia, wilgoć, UV, wysoka i niska temperatura' },
+    { name: 'Kolor', value: 'srebrny' },
+    { name: 'Wymiary etykiety', value: '38,10 × 19,05 mm' },
+    { name: 'Liczba sztuk', value: '2500' },
+    { name: 'Normy', value: 'UL Recognised' },
+    { name: 'Zalecana taśma barwiąca', value: 'B30-R6000' },
+    { name: 'Zgodne drukarki', value: DRUKARKI_B33 },
+    { name: 'Numery artykułów Brady', value: 'B33-600-7563: 361696' },
+  ],
+  variants: [
+    {
+      partNumber: 'B33-600-7563',
+      name: 'Brady B33-600-7563 — etykieta z metalizowanego poliestru 38,1 × 19,05 mm',
+      attributes: { Rozmiar: '38,1 × 19,05 mm, 2500 szt.', 'W rzędzie': '2' },
+      availability: 'unavailable' as const,
+    },
+  ],
+  variantAttributeTooltips: {
+    Rozmiar: 'Szerokość i wysokość etykiety oraz liczba sztuk na rolce.\n\nEtykieta ma 38,1 × 19,05 mm, a rolka mieści 2500 sztuk.',
+    'W rzędzie': 'Liczba etykiet obok siebie na szerokości rolki.\n\nEtykiety leżą w dwóch rzędach na nośniku o szerokości 108 mm.',
+  },
+  faq: [
+    { question: 'Na jakich powierzchniach i w jakiej temperaturze pracują etykiety B-7563?', answer: 'Klej akrylowy trzyma się trwale gładkiego podłoża. Etykieta działa w zakresie od −40 do 135 °C i znosi kontakt z paliwami, olejami, rozpuszczalnikami oraz promieniowanie UV.' },
+    { question: 'Jakie uznanie mają etykiety B-7563?', answer: 'Materiał ma uznanie UL (UL Recognised). Folia jest srebrna, ma satynowe wykończenie i 0,075 mm grubości.' },
+    { question: 'Jaką taśmę barwiącą zamówić do etykiet B-7563?', answer: 'Do nadruku służy taśma barwiąca B30-R6000, kupowana osobno. Etykiety przyjmują [Brady i3300](/produkt/brady-i3300), [Brady i4311](/produkt/brady-i4311) i [Brady i5300](/produkt/brady-i5300) oraz starsza BBP33.' },
+  ],
+  applications: ['Ewidencja mienia i inwentaryzacja', 'Ogólna identyfikacja urządzeń'],
+}
+
+
+export const bradyB33MetalizowaneInne: Product[] = [bradyB33Metal428, bradyB33Metal7563, bradyB33Metal434, bradyB33Metal435, bradyB33Metal486, bradyB33Niemetal413, bradyB33Tamper438, bradyB33Permashield428, bradyB33Winyl439, bradyB33Polipropylen425, bradyB33Papier424]
 
 export const bradyB33MetalizowaneInneSekcje: Record<string, 'przewody' | 'elektronika' | 'lab' | 'ogolne'> = {
   'brady-b33-17-428': 'ogolne',
+  'brady-b33-600-7563': 'ogolne',
   'brady-b33-17-434': 'ogolne',
   'brady-b33-19-435': 'ogolne',
   'brady-b33-17-486': 'ogolne',
