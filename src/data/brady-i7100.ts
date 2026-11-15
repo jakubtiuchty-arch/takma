@@ -20,7 +20,8 @@ export const bradyI7100: Product = {
   quoteOnly: true,
   availability: 'unavailable',
   images: [
-    '/images/products/brady/i7100-300-eu.png',
+    '/images/products/brady/i7100-300-eu-v2.png',
+    '/images/products/brady/i7100-otwarta.png',
     '/images/products/brady/i7100-esd.png',
     '/images/products/brady/i7100-esd-odklejak.png',
     '/images/products/brady/i7100-aplikator-fiolek.png',
@@ -31,6 +32,7 @@ export const bradyI7100: Product = {
     '/images/products/brady-i7100-aplikator-fiolek-probowki.webp',
   ],
   imageDescriptions: [
+    'Brady i7100 obrócona w prawo — niebiesko-czarna obudowa, kolorowy ekran dotykowy z lewej strony frontu i szczelina wyjścia etykiet',
     'Brady i7100 z otwartą pokrywą i zdjętą osłoną boczną — widoczne uchwyty rolki etykiet i taśmy barwiącej z zielonymi pokrętłami, głowica drukująca i ekran dotykowy po lewej stronie',
     'Brady i7100 w wersji ESD — ciemnoszara obudowa z żółtym znakiem ESD, ekran dotykowy po lewej stronie, obok przewody i dwie puste gilzy na taśmę barwiącą',
     'Brady i7100 ESD z modułem odklejania — otwarta dolna część z zieloną rolką dociskową i prowadnicami podkładu',
