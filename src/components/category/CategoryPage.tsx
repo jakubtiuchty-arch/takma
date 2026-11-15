@@ -1,5 +1,6 @@
 import { getProductStock } from '@/lib/product-stock'
 import { withLiveCatalogData } from '@/lib/catalog-live'
+import { produktyDoSiatki } from '@/lib/product-card-data'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ChevronRightIcon } from '@/components/ui/Icons'
@@ -36,16 +37,11 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
     return withLiveCatalogData(product, new Map(rows.map(row => [row.partNumber, row])))
   })) : baseProducts
   const printerCategory = slug === 'drukarki-etykiet'
-  const gridProducts = printerCategory ? products.map(p => ({
-    id: p.id, name: p.name, slug: p.slug, images: p.images.slice(0, 1),
-    imageDescriptions: p.imageDescriptions?.slice(0, 1), manufacturerId: p.manufacturerId,
-    categoryId: p.categoryId, subcategoryIds: p.subcategoryIds, specifications: p.specifications,
-    variants: p.variants, priceFrom: p.priceFrom, quoteOnly: p.quoteOnly,
-    licenseDelivery: p.licenseDelivery, comingSoon: p.comingSoon, priceTiers: p.priceTiers, availability: p.availability,
-  })) : products
   const subcats = getSubcategoriesForCategory(category.id)
   const content = subcategoryContent[slug]
   const filters = categoryFilters[slug]
+  // Do komponentu klienckiego jadą tylko pola kafla i wiersze specyfikacji czytane przez filtry.
+  const gridProducts = produktyDoSiatki(products, filters)
   const heroImages: Record<string, { src: string; alt: string; lead: string }> = {
     'laptopy-przemyslowe': {
       src: '/images/laptopy-przemyslowe-hero-v2.webp',
@@ -492,7 +488,14 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
               const subs = getSubcategoriesForCategory(cat.id)
               const isParent = cat.id === category.id
               const brandChildren = brandCategories.filter(b => b.categoryId === cat.id).map(bc => ({ id: bc.id, slug: bc.slug, name: bc.name, productCount: 0, isCurrent: false }))
-              const subChildren = subs.map(sub => ({ id: sub.id, slug: sub.slug, name: sub.name, productCount: sub.productCount, isCurrent: false }))
+              const subChildren = subs.map(sub => {
+                // Trzeci poziom (np. Etykiety Brady → Oznaczniki kabli Brady) — jak w menu stron bez filtrów.
+                const wnuki = isParent ? getChildSubcategories(sub.id) : []
+                return {
+                  id: sub.id, slug: sub.slug, name: sub.name, productCount: sub.productCount, isCurrent: false,
+                  children: wnuki.length > 0 ? wnuki.map(w => ({ id: w.id, slug: w.slug, name: w.name, productCount: w.productCount, isCurrent: false })) : undefined,
+                }
+              })
               return { id: cat.id, slug: cat.slug, name: cat.name, productCount: cat.productCount, isParent, children: isParent ? [...brandChildren, ...subChildren] : [] }
             })}
           >
@@ -573,7 +576,7 @@ export default async function CategoryPage({ slug }: CategoryPageProps) {
 
           {/* Main content */}
           <div className="flex-1 min-w-0">
-            <ProductGrid products={products} variant="grid" columns={3} maxInitial={48} />
+            <ProductGrid products={gridProducts} variant="grid" columns={3} maxInitial={48} />
 
             {richContent}
           </div>

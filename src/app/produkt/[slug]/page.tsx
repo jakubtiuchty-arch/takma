@@ -43,6 +43,7 @@ import {
   getCategoryById,
   getManufacturerById,
   getSubcategoriesForProduct,
+  getSubcategoryById,
   brandCategories,
   isThermalLabelProduct,
   isTransferLabelProduct,
@@ -115,6 +116,7 @@ import { BRADY_J4000_TUSZE_IDS, BRADY_J4000_LAB_IDS, BRADY_J4000_LAMINATY_IDS, B
 import { BRADY_B33_PRZEWODY_IDS, BRADY_B33_ELEKTRONIKA_IDS, BRADY_B33_LAB_IDS, BRADY_B33_OGOLNE_IDS } from '@/data/brady-b33-grupy'
 import { BRADY_THT_PRZEWODY_IDS, BRADY_THT_ELEKTRONIKA_IDS, BRADY_THT_LAB_IDS, BRADY_THT_RFID_IDS, BRADY_THT_TASMY_IDS } from '@/data/brady-tht-grupy'
 import { BRADY_A55_FLAGI_IDS, BRADY_A55_TASMY_IDS } from '@/data/brady-a5500'
+import { PODKATEGORIA_ETYKIETY_BRADY } from '@/data/brady-materialy-podkategorie'
 import { BRADY_A62_NYLON_IDS, BRADY_A62_TASMY_IDS } from '@/data/brady-a6200'
 import { BRADY_WRAP_NYLON_IDS, BRADY_WRAP_POLIIMID_IDS } from '@/data/brady-a6500'
 import { BRADY_M45_KABLE_IDS, BRADY_M45_LAB_IDS } from '@/data/brady-m45-kasety'
@@ -379,6 +381,11 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   const manufacturer = getManufacturerById(product.manufacturerId)
   const subcats = getSubcategoriesForProduct(product)
   const primarySubcategory = subcats[0] ?? null
+  // Materiały Brady: pełna ścieżka „Etykiety Brady › Oznaczniki przewodów i kabli Brady”. Karta należy do obu
+  // podkategorii, podrzędna jest pierwsza (okruszki i podpis pod H1 pokazują rodzaj materiału).
+  const nadrzednaPodkategoria = primarySubcategory?.parentSubcategoryId === PODKATEGORIA_ETYKIETY_BRADY
+    ? subcats.find(s => s.id === PODKATEGORIA_ETYKIETY_BRADY)
+    : undefined
   // Etykiety (DT/TT) — wybór wariantu na series page, na rodzicu nie pokazujemy tabeli
   // (rodzic i tak jest redirectowany wyżej, to backstop dla starych slugów bez series).
   const isThermalLabel = product.subcategoryIds?.includes('etykiety-termiczne') ?? false
@@ -499,6 +506,16 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
         : compatibleConsumables.length > 0
   // Drukarki na własne materiały (kasety Brady M21) pokazują swoje kasety z compatibleAccessories.
   const kasetySection = brotherWlasneMaterialy && compatibleConsumables.length > 0
+  // Link „Zobacz całą kategorię” przy sekcji materiałów drukarki Brady: wspólna podkategoria pozycji sekcji
+  // (np. Oznaczniki przewodów i kabli Brady), a przy sekcji mieszanej — Etykiety Brady, gdy wszystkie do niej należą.
+  const kategoriaGrupyBrady = (pozycje: ((typeof products)[number] | undefined)[]): string | undefined => {
+    const pierwsze = Array.from(new Set(pozycje.map((p) => p?.subcategoryIds?.[0]).filter((id): id is string => !!id)))
+    if (pierwsze.length === 1) {
+      const pod = getSubcategoryById(pierwsze[0])
+      return pod ? `/${pod.slug}` : undefined
+    }
+    return pozycje.length > 0 && pozycje.every((p) => p?.subcategoryIds?.includes(PODKATEGORIA_ETYKIETY_BRADY)) ? '/etykiety-brady' : undefined
+  }
   // Kasety Brady M21 w sekcjach: zakładane na kabel, etykiety ogólne i etykiety laboratoryjne.
   // Drukarka laboratoryjna (M210-LAB) pokazuje najpierw etykiety laboratoryjne, pozostałe drukarki — kable.
   const kasetyGrupy = kasetySection ? (() => {
@@ -1004,6 +1021,9 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
   if (brandCategory) {
     breadcrumbItems.push({ '@type': 'ListItem', position: pos++, name: brandCategory.name, item: `https://www.takma.com.pl/${brandCategory.slug}` })
   }
+  if (nadrzednaPodkategoria) {
+    breadcrumbItems.push({ '@type': 'ListItem', position: pos++, name: nadrzednaPodkategoria.name, item: `https://www.takma.com.pl/${nadrzednaPodkategoria.slug}` })
+  }
   if (primarySubcategory) {
     breadcrumbItems.push({ '@type': 'ListItem', position: pos++, name: primarySubcategory.name, item: `https://www.takma.com.pl/${primarySubcategory.slug}` })
   }
@@ -1277,6 +1297,17 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                 className="hover:text-primary-600 transition-colors whitespace-nowrap"
               >
                 {brandCategory.name}
+              </Link>
+            </>
+          )}
+          {nadrzednaPodkategoria && (
+            <>
+              <ChevronRightIcon size={16} className="flex-shrink-0" />
+              <Link
+                href={`/${nadrzednaPodkategoria.slug}`}
+                className="hover:text-primary-600 transition-colors whitespace-nowrap"
+              >
+                {nadrzednaPodkategoria.name}
               </Link>
             </>
           )}
@@ -2120,6 +2151,7 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
                       products={g.pozycje as typeof products}
                       initialLimit={4}
                       showDualButtons
+                      categoryHref={product.manufacturerId === 'brady' ? kategoriaGrupyBrady(g.pozycje) : undefined}
                     />
                   ))}
                 </>

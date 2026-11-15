@@ -167,7 +167,7 @@ const navigation: NavItem[] = [
       { name: 'Taśmy termotransferowe', href: '/tasmy-termotransferowe' },
       { name: 'Taśmy termotransferowe SATO', href: '/tasmy-termotransferowe-sato' },
       { name: 'Etykiety Brady', href: '/etykiety-brady' },
-      { name: 'Oznaczniki kabli Brady', href: '/oznaczniki-kabli-brady' },
+      { name: 'Oznaczniki przewodów i kabli Brady', href: '/oznaczniki-kabli-brady' },
       { name: 'Koszulki termokurczliwe Brady', href: '/koszulki-termokurczliwe-brady' },
       { name: 'Etykiety RFID Brady', href: '/etykiety-rfid-brady' },
       { name: 'Taśmy barwiące Brady', href: '/tasmy-barwiace-brady' },

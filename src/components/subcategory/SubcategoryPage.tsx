@@ -28,6 +28,8 @@ import BrandServiceBanner from '@/app/produkt/[slug]/ServiceBanner'
 import { uzupelnijTrescRfid, type CenyRfid } from '@/data/rfid-printer-category'
 import { lookupUnifiedStock } from '@/lib/unified-stock'
 import { catalogPartNumbers, withLiveCatalogData } from '@/lib/catalog-live'
+import { produktyDoSiatki } from '@/lib/product-card-data'
+import { KAFLE_ETYKIET_BRADY } from '@/data/brady-materialy-podkategorie'
 import type { Product } from '@/data/products'
 import type { StockInfo } from '@/lib/ingram'
 
@@ -331,6 +333,8 @@ export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
   }
 
   const healthcareHero = slug === 'terminale-dla-sluzby-zdrowia'
+  // Strona rodzica bez linków do podkategorii w HTML (filtr „Rodzaj” działa w przeglądarce) dostaje kafelki.
+  const kafle = slug === 'etykiety-brady' ? KAFLE_ETYKIET_BRADY : undefined
   const hero = heroImages[slug]
   const banerSerwisu = serviceBanners[slug]
   // Podkategoria jednej marki (np. Epson ColorWorks) nie może pokazywać banera serwisu Zebry.
@@ -462,11 +466,25 @@ export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
 
         {healthcareHero && <p className="mb-8 text-gray-600 leading-relaxed"><LinkedText text={subcategory.longDescription} /></p>}
 
+        {/* Kafelki podkategorii nad siatką — układ jak „Drukarki do etykiet według zastosowania” na /drukarki-etykiet */}
+        {kafle && (
+          <section aria-labelledby="podkategorie-kafle" className="mb-8 rounded-2xl border border-gray-200 bg-gray-50 p-5 lg:p-6">
+            <h2 id="podkategorie-kafle" className="text-xl font-semibold text-gray-900 mb-2">{kafle.heading}</h2>
+            <p className="text-sm text-gray-600 mb-4">{kafle.lead}</p>
+            <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+              {kafle.items.map(item => <Link key={item.href} href={item.href} className="rounded-xl border border-gray-200 bg-white p-4 hover:border-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-600">
+                <span className="block font-semibold text-primary-600 mb-1">{item.title}&nbsp;→</span>
+                <span className="text-sm text-gray-600">{item.text}</span>
+              </Link>)}
+            </div>
+          </section>
+        )}
+
         {/* Sidebar + Content layout */}
         {(sidebarFilters[slug] || categoryFilters[slug]) ? (
           /* Layout z filtrami — FilterableProductGrid renderuje sidebar (kategorie+filtry) + grid; konfiguracja tu (materiały) albo w category-filters.ts (reguły pochodne) */
           <FilterableProductGrid
-            products={products}
+            products={produktyDoSiatki(products, sidebarFilters[slug] || categoryFilters[slug])}
             filters={sidebarFilters[slug] || categoryFilters[slug]}
             filtersFirst={!sidebarFilters[slug]}
             useLivePrices={slug === 'drukarki-rfid' || slug === 'terminale-rfid' || slug === 'terminale-naramienne' || slug === 'uchwyty-rfid' || slug === 'czytniki-rfid' || slug === 'akcesoria-do-komputerow-pos' || slug === 'akcesoria-do-ekranow-kds' || slug === 'akcesoria-do-kioskow'}
@@ -482,13 +500,23 @@ export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
                 productCount: 0,
                 isCurrent: false,
               }))
-              const subChildren = subs.map(sub => ({
-                id: sub.id,
-                slug: sub.slug,
-                name: sub.name,
-                productCount: sub.productCount,
-                isCurrent: sub.id === subcategory.id,
-              }))
+              // Trzeci poziom pod bieżącą podkategorią albo jej rodzicem — jak w menu stron bez filtrów.
+              const subChildren = subs.map(sub => {
+                const wnuki = sub.id === subcategory.id || sub.id === subcategory.parentSubcategoryId
+                  ? getChildSubcategories(sub.id)
+                  : []
+                return {
+                  id: sub.id,
+                  slug: sub.slug,
+                  name: sub.name,
+                  productCount: sub.productCount,
+                  isCurrent: sub.id === subcategory.id,
+                  isAncestor: sub.id === subcategory.parentSubcategoryId,
+                  children: wnuki.length > 0
+                    ? wnuki.map(w => ({ id: w.id, slug: w.slug, name: w.name, productCount: w.productCount, isCurrent: w.id === subcategory.id }))
+                    : undefined,
+                }
+              })
               return {
                 id: cat.id,
                 slug: cat.slug,
@@ -776,7 +804,7 @@ export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
             </aside>
 
             <div className="flex-1 min-w-0">
-              <ProductGrid products={products} variant="grid" columns={3} />
+              <ProductGrid products={produktyDoSiatki(products)} variant="grid" columns={3} />
 
               {content && (
                 <div className="mt-12 space-y-10">

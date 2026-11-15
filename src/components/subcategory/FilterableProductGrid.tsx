@@ -9,6 +9,7 @@ import { FilterIcon, CloseIcon, ChevronDownIcon, HelpCircleIcon } from '@/compon
 import { trackFilterUsed } from '@/lib/ga-events'
 import { readCatalogFilterState, writeCatalogFilterState } from '@/lib/catalog-filter-state'
 import { catalogPartNumbers, withLiveCatalogData } from '@/lib/catalog-live'
+import { specNameMatches } from '@/lib/product-card-data'
 import { useStockData } from '@/app/produkt/[slug]/StockInfo'
 
 export interface FilterDefinition {
@@ -47,22 +48,6 @@ export interface DerivedRule {
   namePattern?: string
   /** Produkt należy do tej podkategorii (subcategoryIds) */
   subcategory?: string
-}
-
-/**
- * Czy nazwa wiersza specyfikacji odpowiada nazwie wpisanej w regule.
- *
- * Katalog dopisuje do nazw wariant albo typ: „SIM (model US20X)”, „WWAN (Memor 35)”,
- * „Skaner 2D”, „Skaner LR”. Porównanie 1:1 gubiło takie wiersze — terminal z LTE
- * wyłącznie w wariancie wpadał do „Tylko Wi-Fi”, a gun ze skanerem dalekiego
- * zasięgu znikał z filtra skanera.
- */
-function specNameMatches(names: string[], name: string): boolean {
-  const n = name.toLowerCase()
-  return names.some(raw => {
-    const r = raw.toLowerCase()
-    return n === r || n.startsWith(`${r} `) || n.startsWith(`${r}(`)
-  })
 }
 
 /** Wszystkie wartości filtra dla produktu (dla filtrów zwykłych 0–1 wartość, dla pochodnych 0–n). */
@@ -181,7 +166,19 @@ export interface CategoryNavItem {
   productCount: number
   isParent?: boolean
   isCurrent?: boolean
-  children?: { id: string; slug: string; name: string; productCount: number; isCurrent: boolean }[]
+  children?: CategoryNavChild[]
+}
+
+export interface CategoryNavChild {
+  id: string
+  slug: string
+  name: string
+  productCount: number
+  isCurrent: boolean
+  /** Bieżąca strona jest podkategorią tej pozycji */
+  isAncestor?: boolean
+  /** Trzeci poziom (np. Etykiety Brady → Oznaczniki kabli Brady), jak w menu stron bez filtrów */
+  children?: Omit<CategoryNavChild, 'children' | 'isAncestor'>[]
 }
 
 interface FilterableProductGridProps {
@@ -456,12 +453,33 @@ export default function FilterableProductGrid({
                         className={`block px-3 py-1.5 rounded-lg text-sm transition-colors ${
                           sub.isCurrent
                             ? 'bg-primary-50 text-primary-700 font-medium'
-                            : 'text-gray-500 hover:bg-primary-50 hover:text-primary-600'
+                            : sub.isAncestor
+                              ? 'text-primary-600 font-medium'
+                              : 'text-gray-500 hover:bg-primary-50 hover:text-primary-600'
                         }`}
                       >
                         {sub.name}
                         {sub.productCount > 0 && <span className="text-gray-400 ml-1">({sub.productCount})</span>}
                       </Link>
+                      {sub.children && sub.children.length > 0 && (
+                        <ul className="ml-3 mt-0.5 space-y-0.5">
+                          {sub.children.map((child) => (
+                            <li key={child.id}>
+                              <Link
+                                href={`/${child.slug}`}
+                                className={`block px-3 py-1.5 rounded-lg text-xs transition-colors ${
+                                  child.isCurrent
+                                    ? 'bg-primary-50 text-primary-700 font-medium'
+                                    : 'text-gray-500 hover:bg-primary-50 hover:text-primary-600'
+                                }`}
+                              >
+                                {child.name}
+                                {child.productCount > 0 && <span className="text-gray-400 ml-1">({child.productCount})</span>}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
                     </li>
                   ))}
                 </ul>
