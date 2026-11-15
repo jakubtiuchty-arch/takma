@@ -16,6 +16,7 @@ import { healthcareTerminalContent } from './healthcare-terminal-category'
 import { labelSoftwareContent } from './software-category'
 import { rfidLabelContent } from './rfid-label-category'
 import { rfidPrinterContent } from './rfid-printer-category'
+import { bradyOznacznikiTresc, bradyKoszulkiTresc, bradyPrzemysloweTresc } from './brady-materialy-tresc'
 // Rich content for subcategory pages (SEO/AEO/GEO)
 // Generated from competitor analysis and expert knowledge
 
@@ -77,6 +78,8 @@ export interface ComparisonTableRow {
 export interface ComparisonTable {
   heading: string
   intro?: string
+  /** Nagłówek pierwszej kolumny (domyślnie „Model”), np. „Rodzaj” albo „Materiał”. */
+  modelColumn?: string
   columns: string[]
   rows: ComparisonTableRow[]
   note?: string
@@ -4183,3 +4186,8 @@ subcategoryContent['komputery-pos'] = posComputerCategoryContent
 subcategoryContent['ekrany-kds'] = kdsCategoryContent
 subcategoryContent['kioski-samoobslugowe'] = kioskCategoryContent
 subcategoryContent['laptopy-przemyslowe'] = laptopCategoryContent
+
+// Materiały Brady (audyt SEO 15.11.2026): treść i FAQ trzech podkategorii z największym popytem.
+subcategoryContent['oznaczniki-kabli-brady'] = bradyOznacznikiTresc
+subcategoryContent['koszulki-termokurczliwe-brady'] = bradyKoszulkiTresc
+subcategoryContent['etykiety-przemyslowe-brady'] = bradyPrzemysloweTresc

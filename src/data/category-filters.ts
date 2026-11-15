@@ -1722,7 +1722,8 @@ const bradyMaterial: FilterDefinition = {
   label: 'Materiał',
   description: 'Z czego wykonano etykietę, oznacznik albo koszulkę.\n• Winyl — elastyczny, na kable i powierzchnie zakrzywione\n• Poliester — trwały, na urządzenia i tabliczki znamionowe\n• Poliimid — odporny na wysoką temperaturę, na płytki drukowane\n• Polipropylen i papier — do wnętrz i laboratoriów\n• Tkanina nylonowa — elastyczna, na przewody i listwy',
   derived: [
-    { value: 'Winyl', pattern: 'winyl', specs: MATERIAL_BRADY },
+    // PVF (polifluorek winylu, Tedlar) i PVDF (polifluorek winylidenu) to fluoropolimery, nie winyl.
+    { value: 'Winyl', pattern: '^(?!.*(fluor|pvdf|pvf)).*winyl', specs: MATERIAL_BRADY },
     { value: 'Poliester', pattern: 'poliester', specs: MATERIAL_BRADY },
     { value: 'Poliimid', pattern: 'poliimid', specs: MATERIAL_BRADY },
     { value: 'Polipropylen', pattern: 'polipropylen', specs: MATERIAL_BRADY },

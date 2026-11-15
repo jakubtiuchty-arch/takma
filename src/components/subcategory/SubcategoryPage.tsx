@@ -539,7 +539,7 @@ export default async function SubcategoryPage({ slug }: SubcategoryPageProps) {
                   <RichText text={content.definition.content} className="definition-content text-gray-600 leading-relaxed space-y-3 sm:text-justify" />
                 </section>
 
-                {content.comparisonTable && <TabelaPorownawcza table={content.comparisonTable} kolumnaModelu={slug === 'drukarki-rfid' ? 'Typ' : undefined} />}
+                {content.comparisonTable && <TabelaPorownawcza table={content.comparisonTable} kolumnaModelu={content.comparisonTable.modelColumn ?? (slug === 'drukarki-rfid' ? 'Typ' : undefined)} />}
 
                 {content.calculator === 'koszt-etykiety' && (
                   <section>
