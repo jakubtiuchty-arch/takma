@@ -115,6 +115,7 @@ import { BRADY_J4000_TUSZE_IDS, BRADY_J4000_LAB_IDS, BRADY_J4000_LAMINATY_IDS, B
 import { BRADY_B33_PRZEWODY_IDS, BRADY_B33_ELEKTRONIKA_IDS, BRADY_B33_LAB_IDS, BRADY_B33_OGOLNE_IDS } from '@/data/brady-b33-grupy'
 import { BRADY_THT_PRZEWODY_IDS, BRADY_THT_ELEKTRONIKA_IDS, BRADY_THT_LAB_IDS, BRADY_THT_RFID_IDS, BRADY_THT_TASMY_IDS } from '@/data/brady-tht-grupy'
 import { BRADY_A55_FLAGI_IDS, BRADY_A55_TASMY_IDS } from '@/data/brady-a5500'
+import { BRADY_A62_NYLON_IDS, BRADY_A62_TASMY_IDS } from '@/data/brady-a6200'
 import { BRADY_M45_KABLE_IDS, BRADY_M45_LAB_IDS } from '@/data/brady-m45-kasety'
 import StarterKits from '@/components/product/StarterKits'
 import MobileCta from './MobileCta'
@@ -135,7 +136,7 @@ const accessoryNavigation = buildAccessoryNavigation(products)
 const KASETY_NA_KABLE_IDS = new Set([...Array.from(BRADY_OZNACZNIKI_KABLI_IDS), ...Array.from(BRADY_M45_KABLE_IDS), ...Array.from(BRADY_M6_KABLE_IDS)])
 const KASETY_LAB_IDS = new Set([...Array.from(BRADY_ETYKIETY_LAB_IDS), ...Array.from(BRADY_M45_LAB_IDS), ...Array.from(BRADY_M6_LAB_IDS)])
 // Taśmy barwiące M61 do M610 — osobna sekcja, bo w kasetach M6 nie ma taśmy.
-const TASMY_BARWIACE_IDS = new Set([...Array.from(BRADY_M6_TASMY_IDS), ...Array.from(BRADY_B30_TASMY_IDS), ...Array.from(BRADY_THT_TASMY_IDS), ...Array.from(BRADY_A55_TASMY_IDS)])
+const TASMY_BARWIACE_IDS = new Set([...Array.from(BRADY_M6_TASMY_IDS), ...Array.from(BRADY_B30_TASMY_IDS), ...Array.from(BRADY_THT_TASMY_IDS), ...Array.from(BRADY_A55_TASMY_IDS), ...Array.from(BRADY_A62_TASMY_IDS)])
 const brotherWlasneMaterialyIds = new Set([...brotherQlProducts, ...brotherPtouchProducts, ...bradyLabelPrinters].map((p) => p.id))
 
 /** Wyciągnięcie wariantu z searchParams (?pn=...) — używane do dynamic title/desc/canonical */
@@ -523,6 +524,14 @@ export default async function ProductPage({ params, searchParams }: ProductPageP
         { klucz: 'flagi', tytul: 'Flagi kablowe QuickFlag', pozycje: compatibleConsumables.filter((p) => BRADY_A55_FLAGI_IDS.has(p!.id)) },
         { klucz: 'etykiety', tytul: 'Etykiety flagowe na przewody', pozycje: compatibleConsumables.filter((p) => !BRADY_A55_FLAGI_IDS.has(p!.id) && !TASMY_BARWIACE_IDS.has(p!.id)) },
         { klucz: 'tasmy', tytul: 'Taśmy barwiące', pozycje: tasmy },
+      ].filter((g) => g.pozycje.length > 0)
+    }
+    // Drukarka z aplikatorem owijek Wraptor A6200: owijki samolaminujące B-427 i B-417, etykiety nylonowe B-499, taśma w kasecie.
+    if (product.id === 'brady-a6200') {
+      return [
+        { klucz: 'owijki', tytul: 'Owijki samolaminujące', pozycje: compatibleConsumables.filter((p) => !BRADY_A62_NYLON_IDS.has(p!.id) && !TASMY_BARWIACE_IDS.has(p!.id)) },
+        { klucz: 'nylon', tytul: 'Etykiety z tkaniny nylonowej', pozycje: compatibleConsumables.filter((p) => BRADY_A62_NYLON_IDS.has(p!.id)) },
+        { klucz: 'tasmy', tytul: 'Taśma barwiąca', pozycje: tasmy },
       ].filter((g) => g.pozycje.length > 0)
     }
     // Przemysłowe i3300, i4311 i i5300: najpierw seria B33 (przewody, elektronika, laboratorium, etykiety ogólne), potem materiały B30 i taśmy.

@@ -82,6 +82,7 @@ import { bradyAkcesoria } from './brady-akcesoria'
 import { bradyI7100Akcesoria } from './brady-i7100'
 import { bradyI7500Akcesoria } from './brady-i7500'
 import { bradyA5500Akcesoria, bradyA55Materialy } from './brady-a5500'
+import { bradyA6200Akcesoria, bradyA62Materialy } from './brady-a6200'
 import { getacTabletProducts, getacTabletAccessories } from './getac-tablet-products'
 import { bluebirdTabletProducts, bluebirdTabletAccessories } from './bluebird-tablet-products'
 import { unitechTabletProducts } from './unitech-tablet-products'
@@ -572,8 +573,9 @@ export const subcategories: Subcategory[] = [
       'brady-i7100',
       'brady-i7500',
       'brady-a5500',
+      'brady-a6200',
     ],
-    productCount: 82,
+    productCount: 83,
   },
   {
     id: 'termiczne-drukarki-etykiet',
@@ -653,8 +655,8 @@ export const subcategories: Subcategory[] = [
     seoDescription: 'Drukarka do oznaczania i opisywania kabli dla elektryka: oznaczniki kablowe, owijki, flagi, koszulki termokurczliwe, etykiety na listwy zaciskowe. Brady M210, M211, M410, M510, M511, M610, M611, M710 i Brother P-touch.',
     longDescription: 'Drukarka do oznaczania kabli, nazywana też drukarką oznaczników kablowych albo etykieciarką do kabli, drukuje oznaczniki, które owija się wokół kabla, mocuje jako flagę albo nasuwa na kabel jako koszulkę termokurczliwą. Druk jest termotransferowy. Na taśmach laminowanych i owijkach samolaminujących warstwa ochronna chroni nadruk przed ścieraniem i wilgocią. Elektrycy opisują nią kable, listwy zaciskowe, bezpieczniki i rozdzielnice. Instalatorzy sieci oznaczają kable krosowe, panele krosowe i gniazda. Modele ręczne mają klawiaturę i szablony etykiet kablowych, a modele z Bluetooth drukują z aplikacji na smartfonie. Do opisów biurowych służą [etykieciarki](/etykieciarki).',
     icon: 'printer',
-    productIds: ['brady-m210', 'brady-m211', 'brady-m410', 'brady-m510', 'brady-m511', 'brady-m610', 'brady-m611', 'brady-m710', 'brother-pt-e110', 'brother-pt-e310bt', 'brother-pt-e560bt', 'brother-pt-e720bt', 'brother-pt-e920bt', 'brother-pt-p900wc', 'brother-pt-p950nw', 'brady-a5500'],
-    productCount: 16,
+    productIds: ['brady-m210', 'brady-m211', 'brady-m410', 'brady-m510', 'brady-m511', 'brady-m610', 'brady-m611', 'brady-m710', 'brother-pt-e110', 'brother-pt-e310bt', 'brother-pt-e560bt', 'brother-pt-e720bt', 'brother-pt-e920bt', 'brother-pt-p900wc', 'brother-pt-p950nw', 'brady-a5500', 'brady-a6200'],
+    productCount: 17,
   },
   {
     id: 'akcesoria-do-drukarek-etykiet',
@@ -95599,7 +95601,7 @@ for (const subcategory of subcategories) {
 
 // Akcesoria Brother do etykieciarek P-touch i akcesoria Brady do M210 i M211 trafiają do akcesoriów drukarek etykiet według `subcategoryIds`.
 for (const subcategory of subcategories) {
-  const additions = [...brotherQlPtouchAccessories, ...bradyAkcesoria, ...bradyI7100Akcesoria, ...bradyI7500Akcesoria, ...bradyA5500Akcesoria].filter(product => product.subcategoryIds?.includes(subcategory.id))
+  const additions = [...brotherQlPtouchAccessories, ...bradyAkcesoria, ...bradyI7100Akcesoria, ...bradyI7500Akcesoria, ...bradyA5500Akcesoria, ...bradyA6200Akcesoria].filter(product => product.subcategoryIds?.includes(subcategory.id))
   if (additions.length) {
     subcategory.productIds = Array.from(new Set([...subcategory.productIds, ...additions.map(product => product.id)]))
     subcategory.productCount = subcategory.productIds.length
@@ -95773,6 +95775,8 @@ const rawProductList: Product[] = [
   ...bradyI7500Akcesoria,
   ...bradyA5500Akcesoria,
   ...bradyA55Materialy,
+  ...bradyA6200Akcesoria,
+  ...bradyA62Materialy,
   ...bradyRt710Accessories,
   ...getacTabletProducts,
   ...getacTabletAccessories,

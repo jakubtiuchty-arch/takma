@@ -1,0 +1,542 @@
+import type { Product } from './products'
+import { wspolneM6 } from './brady-m6-wspolne'
+
+// Drukarka z aplikatorem owijek Brady Wraptor A6200 (A6200-EUB, A6200-EUB-WIFI, A6200-EUB-WIFI-KIT z nawijarką),
+// akcesoria A6200 oraz materiały A62/BA62 (owijki B-427 i B-417, etykiety z tkaniny nylonowej B-499) i taśma A62-R4300.
+// Jedna karta na materiał: rolki standardowe A62 i zbiorcze BA62 jako warianty. Brady nie ma cen ani stanów
+// w /api/stock, więc karty są na zapytanie (quoteOnly). 15.11.2026.
+
+export const bradyA6200: Product = {
+  id: 'brady-a6200',
+  slug: 'brady-a6200',
+  name: 'Brady Wraptor A6200',
+  seoH1: 'Brady Wraptor A6200',
+  seoTitle: 'Brady Wraptor A6200 — drukarka z aplikatorem owijek na przewody',
+  seoDescription: 'Brady Wraptor A6200 drukuje i owija etykiety na przewodach Ø 1,19–6,35 mm w mniej niż 7 s, 300 dpi, ekran dotykowy. PN: A6200-EUB, A6200-EUB-WIFI.',
+  shortDescription: 'Brady Wraptor A6200 — kompaktowa drukarka z aplikatorem, która drukuje owijkę samolaminującą i owija ją wokół przewodu o średnicy od 1,19 do 6,35 mm w mniej niż 7 sekund. Wersje z Wi-Fi i z nawijarką podkładu.',
+  description: 'Brady Wraptor A6200 to kompaktowa drukarka z aplikatorem owijek na przewody i kable. Operator wsuwa przewód w szczęki i dociska go do szyn zwalniających. Wraptor drukuje tekst i kody w 300 dpi, a mechanizm owijarki nawija gotową etykietę na izolację; cały cykl zajmuje mniej niż 7 sekund. Przewód może mieć od 1,19 do 6,35 mm średnicy razem z izolacją.\n\nDrukarka pracuje na owijkach i etykietach serii A62 o szerokości 12,7 lub 25,4 mm oraz na taśmie barwiącej w kasecie A62-R4300. Zbiorcze rolki BA62 (do 7500 etykiet) zakłada się na adapter A6200-BULK-ADAPTER. Szczęki napinają przewód, aby owinięcie było gładkie. Przy przewodach wrażliwych na naciąg, np. światłowodowych, napinanie można wyłączyć.\n\nKolorowy ekran dotykowy składa się na płasko na pokrywę. Pliki etykiet trafiają do drukarki z programu Brady Workstation przez USB lub Ethernet, a w wersjach WIFI także bez kabla. Pamięć 32 GB przechowuje zadania, więc przy stanowisku nie trzeba komputera. Urządzenie waży 4,08 kg i jest przeznaczone do 500 owinięć dziennie. Wersja A6200-EUB-WIFI-KIT ma w zestawie nawijarkę zużytego podkładu.',
+  categoryId: 'drukarki-etykiet',
+  subcategoryIds: ['termotransferowe-drukarki-etykiet', 'drukarki-do-oznaczania-kabli'],
+  manufacturerId: 'brady',
+  sameAs: 'https://www.brady.eu/label-printers/wraptor-a6200-wrap-printer-applicator-eu-pid-a6200-eub',
+  quoteOnly: true,
+  availability: 'unavailable',
+  images: [
+    '/images/products/brady/a6200-eub.png',
+    '/images/products/brady/a6200-przod.png',
+    '/images/products/brady/a6200-tyl.png',
+    '/images/products/brady/a6200-z-nawijarka.png',
+    '/images/products/brady/a6200-z-adapterem-i-nawijarka.png',
+    '/images/products/brady/a6200-eub-zestaw.png',
+    '/images/products/brady-a6200-ekran-dotykowy.webp',
+    '/images/products/brady-a6200-owijanie-przewodu.webp',
+    '/images/products/brady-a6200-owijka-na-przewodzie.webp',
+    '/images/products/brady-a6200-stanowisko-z-laptopem.webp',
+    '/images/products/brady-a6200-ladowanie-etykiet.webp',
+  ],
+  imageDescriptions: [
+    'Brady Wraptor A6200 obrócona w prawo — niebieska obudowa, uniesiony ekran dotykowy i przezroczysty moduł owijarki z przodu',
+    'Brady Wraptor A6200 z przodu — ekran dotykowy z ikonami menu, przycisk zasilania i moduł owijarki ze szczękami',
+    'Tył drukarki Brady Wraptor A6200 — port USB, złącze Ethernet, gniazdo zasilania, port nawijarki i kratka wentylatora',
+    'Brady Wraptor A6200 ustawiona na nawijarce podkładu A6200-REWINDER z przezroczystą osłoną szpuli',
+    'Brady Wraptor A6200 z nawijarką podkładu i adapterem rolki etykiet zbiorczych z tyłu obudowy',
+    'Brady Wraptor A6200 z zawartością zestawu: zasilacz z przewodem, kabel USB, kaseta z taśmą barwiącą i rolka owijek',
+    'Pracownica przy stole dotyka ekranu drukarki Brady Wraptor A6200',
+    'Pracownik wsuwa przewód w szczęki drukarki Brady Wraptor A6200 przy stanowisku montażowym',
+    'Dłoń trzyma żółty przewód z białą owijką z nadrukiem przy drukarce Brady Wraptor A6200',
+    'Stanowisko z dwiema osobami: jedna projektuje etykiety na laptopie, druga owija przewody drukarką Brady Wraptor A6200',
+    'Dłoń zakłada rolkę owijek A62 do otwartej drukarki Brady Wraptor A6200',
+  ],
+  tags: ['produkcja'],
+  isNew: true,
+  isBestseller: false,
+  applications: [
+    'Oznaczanie przewodów w wiązkach kablowych i szafach sterowniczych',
+    'Owijki na przewody w produkcji komórkowej',
+    'Oznaczanie kabli teleinformatycznych i elektrycznych',
+    'Owijki na przewody światłowodowe (napinanie wyłączone)',
+  ],
+  specifications: [
+    { name: 'Typ urządzenia', value: 'Drukarka termotransferowa z aplikatorem owijek na przewody i kable' },
+    { name: 'Technologia druku', value: 'Termotransfer' },
+    { name: 'Rozdzielczość druku', value: '300 dpi (11,8 punktu/mm)' },
+    { name: 'Prędkość druku', value: '38,1 mm/s' },
+    { name: 'Czas cyklu', value: 'do 7 s (druk i owinięcie)' },
+    { name: 'Tryby pracy', value: 'druk i owinięcie, tylko druk, tylko owinięcie' },
+    { name: 'Średnica przewodu', value: 'od 1,19 do 6,35 mm z izolacją' },
+    { name: 'Szerokość etykiety', value: 'od 12,7 do 25,4 mm' },
+    { name: 'Wysokość etykiety', value: 'od 19,05 do 38,1 mm' },
+    { name: 'Maks. szerokość druku', value: '25,4 mm' },
+    { name: 'Maks. wysokość nadruku', value: '31,75 mm' },
+    { name: 'Materiały', value: 'A62- (rolki standardowe) i BA62- (rolki zbiorcze): owijki z winylu B-427, owijki o dużej przyczepności B-417, etykiety z tkaniny nylonowej B-499' },
+    { name: 'Taśma barwiąca', value: 'A62-R4300 w kasecie, 50 mm × 45,7 m' },
+    { name: 'Napinanie przewodu', value: 'włączane i wyłączane w ustawieniach; wyłączenie dla przewodów wrażliwych na naciąg, np. światłowodowych' },
+    { name: 'Zalecane użycie', value: 'do 500 owinięć dziennie; praca 8 godzin dziennie, 5 dni w tygodniu' },
+    { name: 'Wyświetlacz', value: 'kolorowy ekran dotykowy LCD, składany na pokrywę' },
+    { name: 'Pamięć', value: '32 GB, rozszerzenie przez pamięć USB (FAT, FAT32, exFAT)' },
+    { name: 'Łączność', value: 'USB-B do komputera, 2 porty USB-A (z tyłu i z boku), Ethernet; wersje WIFI: także Wi-Fi' },
+    { name: 'Porty dodatkowe', value: 'port nawijarki podkładu z tyłu obudowy' },
+    { name: 'Druk bez komputera', value: 'tak, z plików w pamięci drukarki lub na pamięci USB; wybór pliku skanerem kodów kreskowych' },
+    { name: 'Język drukarki', value: 'emulacja ZPL Brady; Brady Script Emulator for ZPL (akcesorium M-SCRIPT-ADAPT-INT)' },
+    { name: 'Kody kreskowe', value: 'Codablock A, Codablock F, Code 128 (A, B, C), Code 39, Code 93, EAN-13, EAN-8, Industrial 2 of 5, MSI, Plessey, UPC-A, UPC-E' },
+    { name: 'Czcionki', value: 'Arial, Arial 65, Courier New, Tahoma, Times New Roman' },
+    { name: 'Oprogramowanie', value: 'Brady Workstation Product and Wire ID Suite; CodeSoft; sterownik Windows do programów innych firm' },
+    { name: 'Systemy operacyjne', value: 'Windows 7, 8, 10' },
+    { name: 'Bezpieczeństwo', value: 'owijarka zatrzymuje się po otwarciu modułu owijarki' },
+    { name: 'Zasilanie', value: 'zasilacz 100–240 V AC, 50/60 Hz, 1,5 A; drukarka 18 V DC' },
+    { name: 'Temperatura pracy', value: 'od 15 do 32 °C' },
+    { name: 'Wilgotność pracy', value: 'od 10 do 80%, bez kondensacji' },
+    { name: 'Temperatura przechowywania', value: 'od 0 do 60 °C (wilgotność 20–80%)' },
+    { name: 'Wymiary (szer. × wys. × gł.)', value: '224,79 × 210,82 × 297,18 mm; z nawijarką 224,79 × 299,72 × 302,26 mm' },
+    { name: 'Masa', value: '4,08 kg; z nawijarką 5,49 kg' },
+    { name: 'Konserwacja', value: 'czyszczenie głowicy, rolek i czujników wacikami z alkoholem izopropylowym; czyszczenie filtra wentylatora z tyłu obudowy' },
+    { name: 'Gwarancja', value: '1 rok' },
+    { name: 'Zawartość opakowania', value: 'drukarka z aplikatorem, zasilacz z przewodem zasilającym, kabel USB, kaseta z taśmą A62-R4300, rolka owijek A62-3-427, skrócona instrukcja, kod do pobrania Brady Workstation Product and Wire ID Suite; A6200-EUB-WIFI-KIT: także nawijarka A6200-REWINDER' },
+    { name: 'Akcesoria opcjonalne', value: 'nawijarka podkładu A6200-REWINDER (151626), adapter rolki etykiet zbiorczych A6200-BULK-ADAPTER (170976), torba A6200-SC (152190), zasilacz A6200-PS-EU (310253), Brady Script Emulator for ZPL, zestaw czyszczący PCK-6' },
+    { name: 'Numery artykułów Brady', value: 'A6200-EUB: 176480; A6200-EUB-WIFI: 176479; A6200-EUB-WIFI-KIT: 176478' },
+  ],
+  variants: [
+    { partNumber: 'A6200-EUB', name: 'Brady Wraptor A6200 — drukarka z aplikatorem owijek', attributes: {}, availability: 'unavailable' },
+    { partNumber: 'A6200-EUB-WIFI', name: 'Brady Wraptor A6200 z Wi-Fi — drukarka z aplikatorem owijek', attributes: { 'Wi-Fi': 'Tak' }, availability: 'unavailable' },
+    { partNumber: 'A6200-EUB-WIFI-KIT', name: 'Brady Wraptor A6200 z Wi-Fi i nawijarką podkładu', attributes: { 'Wi-Fi': 'Tak', Nawijarka: 'W zestawie' }, availability: 'unavailable' },
+  ],
+  variantAttributeTooltips: {
+    'Wi-Fi': 'Moduł sieci bezprzewodowej.\n\nWersje A6200-EUB-WIFI i A6200-EUB-WIFI-KIT przyjmują pliki etykiet także przez Wi-Fi, poza USB i Ethernetem.',
+    Nawijarka: 'Nawijarka zużytego podkładu A6200-REWINDER.\n\nMontuje się ją pod drukarką. Nawija podkład po wydruku, więc wokół stanowiska nie zbierają się ścinki. Do pozostałych wersji można ją dokupić.',
+  },
+  faq: [
+    { question: 'Jakie przewody owija Brady Wraptor A6200?', answer: 'Przewody o średnicy od 1,19 do 6,35 mm razem z izolacją. Grubszy przewód zablokuje mechanizm, a przy cieńszym niż 1,19 mm etykieta nie zostanie prawidłowo nałożona. Rozmiar owijki dobiera się do średnicy, np. [owijki B-427](/produkt/brady-a62-1-427) 12,70 × 19,05 mm pasują do przewodów od 1,52 do 3,05 mm.' },
+    { question: 'Jakie etykiety i taśma pasują do Brady Wraptor A6200?', answer: 'Etykiety serii A62 i BA62: samolaminujące owijki z winylu [B-427](/produkt/brady-a62-1-427), owijki o dużej przyczepności [B-417](/produkt/brady-a62-1-417) i etykiety z tkaniny nylonowej [B-499](/produkt/brady-a62-7-499). Taśma barwiąca to kaseta [A62-R4300](/produkt/brady-a62-r4300). W zestawie z drukarką są kaseta A62-R4300 i rolka A62-3-427.' },
+    { question: 'Czym różnią się rolki A62 i BA62?', answer: 'Rolki A62 mają od 400 do 850 etykiet i zakłada się je w drukarce. Zbiorcze rolki BA62 tych samych rozmiarów mają od 3 400 do 7 500 etykiet i wymagają adaptera [A6200-BULK-ADAPTER](/produkt/brady-a6200-bulk-adapter). Adapter pasuje do drukarek A6200 kupionych w 2023 roku lub później.' },
+    { question: 'Czy Brady Wraptor A6200 nadaje się do przewodów światłowodowych?', answer: 'Tak, po wyłączeniu napinania przewodu w ustawieniach. Szczęki wtedy zaciskają się na przewodzie, ale go nie napinają. Przy zwykłych przewodach napinanie powinno być włączone, bo daje gładsze owinięcie.' },
+    { question: 'Która wersja Brady Wraptor A6200 ma nawijarkę podkładu?', answer: 'A6200-EUB-WIFI-KIT ma w zestawie nawijarkę [A6200-REWINDER](/produkt/brady-a6200-rewinder) i moduł Wi-Fi. A6200-EUB-WIFI ma Wi-Fi bez nawijarki, a A6200-EUB łączy się przez USB i Ethernet. Nawijarkę można dokupić do każdej wersji.' },
+  ],
+  compatibleAccessories: ['brady-a62-1-427', 'brady-a62-1-417', 'brady-a62-7-499', 'brady-a62-r4300'],
+  relatedAccessories: ['brady-a6200-rewinder', 'brady-a6200-bulk-adapter', 'brady-a6200-sc', 'brady-a6200-ps-eu', 'brady-i4311-sc', 'brady-m-script-adapt-int', 'brady-pck-6'],
+  relatedProducts: ['brady-a5500', 'brady-m611', 'brady-m710'],
+  downloads: [
+    { name: 'Instrukcja obsługi Brady Wraptor A6200 (PL)', type: 'manual', url: '/downloads/brady-a6200-instrukcja-obslugi.pdf', size: '6,6 MB' },
+    { name: 'Skrócona instrukcja Brady Wraptor A6200 (rysunkowa)', type: 'manual', url: '/downloads/brady-a6200-skrocona-instrukcja.pdf', size: '1,8 MB' },
+    { name: 'Zautomatyzowana identyfikacja kabli — broszura Brady (PL)', type: 'datasheet', url: '/downloads/brady-automatyczna-identyfikacja-kabli-broszura.pdf', size: '2,9 MB' },
+    { name: 'Brady Workstation — pobieranie programu', type: 'software', url: 'https://workstation.bradyid.com/pl/updates', size: 'Online' },
+  ],
+  createdAt: '2026-11-15',
+  updatedAt: '2026-11-15',
+}
+
+// ---------------------------------------------------------------------------
+// Akcesoria Wraptor A6200
+// ---------------------------------------------------------------------------
+
+type Akcesorium = Pick<Product, 'id' | 'name' | 'seoTitle' | 'seoDescription' | 'shortDescription' | 'description' | 'images' | 'imageDescriptions' | 'specifications' | 'applications' | 'relatedAccessories' | 'relatedProducts' | 'faq'> & { sameAs: string; downloads?: Product['downloads'] }
+
+const akcesoria: Akcesorium[] = [
+  {
+    id: 'brady-a6200-rewinder',
+    name: 'Nawijarka podkładu Brady A6200-REWINDER do drukarki Wraptor A6200',
+    seoTitle: 'Brady A6200-REWINDER — nawijarka podkładu do Wraptor A6200',
+    seoDescription: 'Nawijarka podkładu Brady A6200-REWINDER do drukarki z aplikatorem Wraptor A6200: nawija zużyty podkład etykiet, montaż pod drukarką. Nr art. 151626.',
+    shortDescription: 'Brady A6200-REWINDER — nawijarka zużytego podkładu do drukarki z aplikatorem owijek Brady Wraptor A6200. Montuje się ją pod drukarką i zasila z portu nawijarki.',
+    description: 'Brady A6200-REWINDER nawija podkład etykiet, który wychodzi z drukarki Wraptor A6200 po wydruku. Przy intensywnej pracy zużyty podkład szybko się gromadzi i może blokować jego wysuwanie z drukarki. Nawijarka zbiera go na szpulę, więc stanowisko pozostaje czyste.\n\nNawijarkę montuje się pod drukarką jedną śrubą, a jej kabel podłącza do portu nawijarki z tyłu obudowy. Koniec podkładu wsuwa się w szczelinę pod żółtym paskiem szpuli. Przy zmianie rolki etykiet szpulę zawsze się opróżnia: podkład odcina się ostrzem drukarki i zsuwa ze szpuli po wyciągnięciu żółtego pokrętła.\n\nNawijarka ma wymiary 223,95 × 88,47 × 302,74 mm i waży 1,42 kg. Drukarkę z nawijarką podnosi się za wycięcia po obu stronach nawijarki. Nawijarka jest w zestawie A6200-EUB-WIFI-KIT.',
+    images: ['/images/products/brady/a6200-rewinder.png', '/images/products/brady/a6200-rewinder-bok.png', '/images/products/brady-a6200-nawijarka-podkladu.webp'],
+    imageDescriptions: [
+      'Nawijarka podkładu Brady A6200-REWINDER z kablem i skróconą instrukcją',
+      'Nawijarka Brady A6200-REWINDER z boku, z przezroczystą osłoną szpuli i żółtym pokrętłem',
+      'Przezroczysta osłona nawijarki pod drukarką Wraptor A6200 z nawiniętym białym podkładem na żółtej szpuli',
+    ],
+    specifications: [
+      { name: 'Part Number', value: 'A6200-REWINDER' },
+      { name: 'Numer artykułu Brady', value: '151626' },
+      { name: 'Typ', value: 'Nawijarka zużytego podkładu etykiet' },
+      { name: 'Montaż', value: 'pod drukarką, jedna śruba; kabel do portu nawijarki z tyłu drukarki' },
+      { name: 'Wymiary (szer. × wys. × gł.)', value: '223,95 × 88,47 × 302,74 mm' },
+      { name: 'Masa', value: '1,42 kg' },
+      { name: 'Gwarancja', value: '1 rok' },
+      { name: 'Zgodne drukarki', value: 'Wraptor A6200' },
+    ],
+    applications: ['Zbieranie zużytego podkładu przy intensywnej pracy', 'Porządek na stanowisku z drukarką Wraptor A6200'],
+    relatedAccessories: ['brady-a6200-bulk-adapter', 'brady-a6200-sc'],
+    relatedProducts: ['brady-a6200'],
+    faq: [
+      { question: 'Jak zamontować nawijarkę A6200-REWINDER?', answer: 'Drukarkę wyłącza się, zamyka pokrywę i moduł owijarki, kładzie ekran płasko i odwraca drukarkę. Ustawia się ją na nawijarce tak, aby otwór na śrubę pokrył się ze śrubą, i dokręca śrubę. Kabel nawijarki podłącza się do portu z tyłu [Brady Wraptor A6200](/produkt/brady-a6200).' },
+    ],
+    sameAs: 'https://www.brady.eu/label-printers/rewinder-for-bradyprinter-wraptor-a6200-wrap-printer-applicator-pid-a6200-rewinder',
+    downloads: [
+      { name: 'Skrócona instrukcja nawijarki A6200-REWINDER (rysunkowa)', type: 'manual', url: '/downloads/brady-a6200-rewinder-skrocona-instrukcja.pdf', size: '1 MB' },
+    ],
+  },
+  {
+    id: 'brady-a6200-bulk-adapter',
+    name: 'Adapter rolki etykiet zbiorczych Brady A6200-BULK-ADAPTER do Wraptor A6200',
+    seoTitle: 'Brady A6200-BULK-ADAPTER — adapter rolek zbiorczych BA62',
+    seoDescription: 'Adapter rolki etykiet zbiorczych Brady A6200-BULK-ADAPTER do drukarki Wraptor A6200: rolki BA62 do 7500 etykiet, montaż z tyłu drukarki. Nr art. 170976.',
+    shortDescription: 'Brady A6200-BULK-ADAPTER — adapter do zbiorczych rolek etykiet BA62 w drukarce z aplikatorem Brady Wraptor A6200. Rolka zbiorcza ma do 7500 etykiet zamiast kilkuset.',
+    description: 'Brady A6200-BULK-ADAPTER trzyma dużą rolkę etykiet zbiorczych BA62 za drukarką Wraptor A6200. Adapter podaje etykiety płynnie, utrzymuje ich napięcie i nawija je z powrotem, gdy drukarka cofa materiał. Rolka zbiorcza mieści od 3 400 do 7 500 etykiet, zależnie od materiału i rozmiaru, więc etykiety wymienia się rzadziej.\n\nWspornik adaptera przykręca się trzema śrubami motylkowymi z tyłu drukarki. Rolkę nasuwa się na szpulę między płaski dysk a dysk z kołnierzem, a etykiety prowadzi przez szczelinę nad wentylatorem do wnętrza drukarki. Przed załadowaniem zmniejsza się napięcie pokrętłem adaptera.\n\nAdapter pasuje do drukarek A6200 kupionych w 2023 roku lub później. Ma 190,5 mm wysokości i 254 mm głębokości, a waży 2,25 kg.',
+    images: ['/images/products/brady/a6200-bulk-adapter.png', '/images/products/brady/a6200-z-adapterem.png', '/images/products/brady-a6200-adapter-rolki-zbiorczej.webp'],
+    imageDescriptions: [
+      'Szary adapter rolki etykiet zbiorczych Brady A6200-BULK-ADAPTER ze szpulą i wspornikiem',
+      'Drukarka Brady Wraptor A6200 z adapterem rolki zbiorczej i białą rolką etykiet z tyłu',
+      'Pracownik przy stole warsztatowym owija przewód drukarką Wraptor A6200 z adapterem rolki zbiorczej',
+    ],
+    specifications: [
+      { name: 'Part Number', value: 'A6200-BULK-ADAPTER' },
+      { name: 'Numer artykułu Brady', value: '170976' },
+      { name: 'Typ', value: 'Adapter rolki etykiet zbiorczych' },
+      { name: 'Zgodne materiały', value: 'rolki zbiorcze BA62 (B-427, B-417, B-499)' },
+      { name: 'Montaż', value: 'z tyłu drukarki, trzy śruby motylkowe' },
+      { name: 'Wymiary', value: 'wysokość 190,5 mm, głębokość 254 mm' },
+      { name: 'Masa', value: '2,25 kg' },
+      { name: 'Gwarancja', value: '1 rok' },
+      { name: 'Zgodne drukarki', value: 'Wraptor A6200 kupione w 2023 roku lub później' },
+    ],
+    applications: ['Duże serie owijek bez częstej wymiany rolki', 'Praca na zbiorczych rolkach BA62'],
+    relatedAccessories: ['brady-a6200-rewinder'],
+    relatedProducts: ['brady-a6200'],
+    faq: [
+      { question: 'Czy adapter A6200-BULK-ADAPTER pasuje do każdej drukarki Wraptor A6200?', answer: 'Pasuje do drukarek [Brady Wraptor A6200](/produkt/brady-a6200) kupionych w 2023 roku lub później. W sprawie starszych egzemplarzy prosimy o kontakt przed zamówieniem.' },
+    ],
+    sameAs: 'https://www.brady.eu/label-printers/wraptor-a6200-bulk-label-roll-adapter-pid-a6200-bulk-adapter',
+  },
+  {
+    id: 'brady-a6200-sc',
+    name: 'Torba Brady A6200-SC do drukarki Wraptor A6200',
+    seoTitle: 'Brady A6200-SC — miękka torba do drukarki Wraptor A6200',
+    seoDescription: 'Miękka torba Brady A6200-SC do przenoszenia drukarki z aplikatorem owijek Wraptor A6200: rączki, pasek na ramię, przednia kieszeń. Nr art. 152190.',
+    shortDescription: 'Brady A6200-SC — miękka torba w kolorach czarnym i niebieskim do przenoszenia i przechowywania drukarki z aplikatorem owijek Brady Wraptor A6200.',
+    description: 'Brady A6200-SC to miękka torba do drukarki Wraptor A6200. Ma rączki, pasek na ramię i przednią kieszeń zamykaną na zamek. Przód torby rozpina się do wkładania i wyjmowania drukarki.\n\nTorba ma wymiary 304,8 × 298 × 254 mm. Chroni drukarkę przy przenoszeniu między stanowiskami oraz w czasie przechowywania.',
+    images: ['/images/products/brady/a6200-sc.png', '/images/products/brady/a6200-sc-z-drukarka.png'],
+    imageDescriptions: [
+      'Czarno-niebieska torba Brady A6200-SC z rączkami, paskiem na ramię i przednią kieszenią',
+      'Otwarta torba Brady A6200-SC z drukarką Wraptor A6200 w środku',
+    ],
+    specifications: [
+      { name: 'Part Number', value: 'A6200-SC' },
+      { name: 'Numer artykułu Brady', value: '152190' },
+      { name: 'Typ', value: 'Miękka torba na drukarkę' },
+      { name: 'Kolor', value: 'czarny i niebieski' },
+      { name: 'Wymiary (szer. × wys. × gł.)', value: '304,8 × 298 × 254 mm' },
+      { name: 'Zgodne drukarki', value: 'Wraptor A6200' },
+    ],
+    applications: ['Przenoszenie drukarki Wraptor A6200 między stanowiskami', 'Przechowywanie drukarki'],
+    relatedAccessories: ['brady-a6200-ps-eu', 'brady-a6200-rewinder'],
+    relatedProducts: ['brady-a6200'],
+    faq: [
+      { question: 'Czy do drukarki Wraptor A6200 pasuje też pokrowiec I4311-SC?', answer: 'Tak. Pokrowiec [I4311-SC](/produkt/brady-i4311-sc) pasuje do drukarek i4311 i Wraptor A6200. Torba A6200-SC jest przeznaczona tylko do [Brady Wraptor A6200](/produkt/brady-a6200).' },
+    ],
+    sameAs: 'https://www.brady.eu/label-printers/a6200-soft-case-pid-a6200-sc',
+  },
+  {
+    id: 'brady-a6200-ps-eu',
+    name: 'Zasilacz Brady A6200-PS-EU do drukarki Wraptor A6200',
+    seoTitle: 'Brady A6200-PS-EU — zasilacz 18 V do drukarki Wraptor A6200',
+    seoDescription: 'Zasilacz Brady A6200-PS-EU z przewodem z wtyczką europejską do drukarki z aplikatorem Wraptor A6200: wejście 100–240 V AC, wyjście 18 V DC. Nr art. 310253.',
+    shortDescription: 'Brady A6200-PS-EU — zapasowy zasilacz 18 V z przewodem zasilającym z wtyczką europejską do drukarki z aplikatorem owijek Brady Wraptor A6200.',
+    description: 'Brady A6200-PS-EU to zasilacz do drukarki Wraptor A6200; w zestawie jest przewód sieciowy z europejską wtyczką. Zasilacz przyjmuje napięcie 100–240 V AC, 50/60 Hz, a drukarce podaje 18 V DC. Prąd wejściowy wynosi 1,5 A.\n\nDrukarkę zasila się tylko zasilaczem 18 V firmy Brady i przewodem przeznaczonym do niej. Gniazdo sieciowe musi mieć uziemienie. Zasilacz przydaje się jako zapas albo na drugie stanowisko pracy.',
+    images: ['/images/products/brady/a6200-ps-eu.png'],
+    imageDescriptions: ['Czarny zasilacz Brady A6200-PS-EU z przewodem DC i przewodem zasilającym z wtyczką europejską'],
+    specifications: [
+      { name: 'Part Number', value: 'A6200-PS-EU' },
+      { name: 'Numer artykułu Brady', value: '310253' },
+      { name: 'Typ', value: 'Zasilacz sieciowy z przewodem zasilającym (wtyczka europejska)' },
+      { name: 'Napięcie wejściowe', value: '100–240 V AC, 50/60 Hz' },
+      { name: 'Prąd wejściowy', value: '1,5 A' },
+      { name: 'Napięcie wyjściowe', value: '18 V DC' },
+      { name: 'Zgodne drukarki', value: 'Wraptor A6200' },
+    ],
+    applications: ['Zapasowy zasilacz drukarki Wraptor A6200', 'Zasilanie drukarki na drugim stanowisku'],
+    relatedAccessories: ['brady-a6200-sc'],
+    relatedProducts: ['brady-a6200'],
+    faq: [
+      { question: 'Jakim zasilaczem zasila się Brady Wraptor A6200?', answer: 'Tylko zasilaczem 18 V firmy Brady z przewodem dostarczonym do drukarki. Zapasowy zasilacz z wtyczką europejską ma numer A6200-PS-EU. Gniazdo zasilania [Brady Wraptor A6200](/produkt/brady-a6200) musi być uziemione.' },
+    ],
+    sameAs: 'https://www.brady.eu/label-printers/a6200-ac-adapter-europe-pid-a6200-ps-eu',
+  },
+]
+
+export const bradyA6200Akcesoria: Product[] = akcesoria.map((akcesorium): Product => ({
+  ...akcesorium,
+  slug: akcesorium.id,
+  categoryId: 'akcesoria',
+  subcategoryIds: ['akcesoria-do-drukarek-etykiet'],
+  manufacturerId: 'brady',
+  quoteOnly: true,
+  availability: 'unavailable',
+  tags: ['produkcja'],
+  isNew: true,
+  isBestseller: false,
+  compatibleAccessories: [],
+  downloads: akcesorium.downloads ?? [],
+  createdAt: '2026-11-15',
+  updatedAt: '2026-11-15',
+}))
+
+// ---------------------------------------------------------------------------
+// Materiały A62 / BA62 i taśma A62-R4300
+// ---------------------------------------------------------------------------
+
+const wspolneA62: typeof wspolneM6 = {
+  ...wspolneM6,
+  relatedProducts: ['brady-a6200'],
+  createdAt: '2026-11-15',
+  updatedAt: '2026-11-15',
+}
+
+// [PN, rozmiar, zakres przewodu, liczba na rolce]
+type Owijka = [string, string, string, string]
+
+const wariantyA62 = (wiersze: Owijka[], opis: string) =>
+  wiersze.map(([pn, rozmiar, przewod, sztuk]) => ({
+    partNumber: pn,
+    name: `Brady ${pn} — ${opis} ${rozmiar}${pn.startsWith('BA62') ? ', rolka zbiorcza' : ''}`,
+    attributes: { Rozmiar: rozmiar, 'Ø przewodu': przewod, 'Na rolce': sztuk, Rolka: pn.startsWith('BA62') ? 'Zbiorcza' : 'Standar\u00ADdowa' } as Record<string, string>,
+    availability: 'unavailable' as const,
+  }))
+
+const ROLKA_TOOLTIP = 'Rodzaj rolki.\n\nStandardowa (A62) — rolka zakładana w drukarce, kilkaset etykiet.\n\nZbiorcza (BA62) — duża rolka na adapterze A6200-BULK-ADAPTER z tyłu drukarki, kilka tysięcy etykiet.'
+
+// Winyl B-427 (cps-4250817 i cps-5196434). BA62-11-427: zakres przewodu jak A62-11-427 (maks. średnica drukarki to 6,35 mm).
+const A62_427: Owijka[] = [
+  ['A62-1-427', '12,70 × 19,05 mm', '1,52–3,05 mm', '850 szt.'],
+  ['A62-14-427', '12,70 × 31,75 mm', '3,05–6,10 mm', '500 szt.'],
+  ['A62-11-427', '12,70 × 38,10 mm', '4,06–6,35 mm', '450 szt.'],
+  ['A62-15-427', '25,40 × 19,05 mm', '1,52–3,05 mm', '850 szt.'],
+  ['A62-2-427', '25,40 × 25,40 mm', '2,54–5,08 mm', '650 szt.'],
+  ['A62-3-427', '25,40 × 31,75 mm', '3,05–6,10 mm', '500 szt.'],
+  ['A62-4-427', '25,40 × 38,10 mm', '4,06–6,35 mm', '450 szt.'],
+  ['BA62-1-427', '12,70 × 19,05 mm', '1,52–3,05 mm', '7 500 szt.'],
+  ['BA62-14-427', '12,70 × 31,75 mm', '3,05–6,10 mm', '4 700 szt.'],
+  ['BA62-11-427', '12,70 × 38,10 mm', '4,06–6,35 mm', '4 000 szt.'],
+  ['BA62-15-427', '25,40 × 19,05 mm', '1,52–3,05 mm', '7 500 szt.'],
+  ['BA62-2-427', '25,40 × 25,40 mm', '2,54–5,08 mm', '5 800 szt.'],
+  ['BA62-3-427', '25,40 × 31,75 mm', '3,05–6,10 mm', '4 700 szt.'],
+  ['BA62-4-427', '25,40 × 38,10 mm', '4,06–6,35 mm', '4 000 szt.'],
+]
+
+export const bradyA62Winyl: Product = {
+  ...wspolneA62,
+  id: 'brady-a62-1-427',
+  slug: 'brady-a62-1-427',
+  name: 'Owijki samolaminujące Brady A62 i BA62 z winylu B-427 do Wraptor A6200',
+  seoTitle: 'Brady A62-427 — owijki samolaminujące do Wraptor A6200',
+  seoDescription: 'Samolaminujące owijki winylowe Brady B-427 do drukarki Wraptor A6200: rolki A62 i zbiorcze BA62, przewody 1,52–6,35 mm. PN: A62-1-427, A62-3-427, BA62-1-427.',
+  shortDescription: 'Brady A62-427 i BA62-427 — samolaminujące owijki z winylu B-427 z białym polem nadruku i półprzezroczystym ogonem, w 7 rozmiarach na rolkach standardowych i zbiorczych. Do drukarki Brady Wraptor A6200.',
+  description: 'Owijki B-427 mają białe pole nadruku i półprzezroczysty ogon. Drukarka Wraptor A6200 owija ogon na nadruku, który zostaje pod przezroczystą warstwą jak pod laminatem. Folia winylowa (0,102 mm) jest matowa i trudnopalna. Trwały klej akrylowy bardzo dobrze znosi wodę i olej, a owijki wytrzymują też kontakt z chemikaliami i wilgocią. Elastyczny materiał sprawdza się wewnątrz budynków i na zewnątrz, w temperaturach −70…70 °C.\n\nSeria obejmuje siedem rozmiarów: dwie szerokości (12,70 i 25,40 mm) oraz wysokości od 19,05 do 38,10 mm. Obsługiwane średnice przewodu zaczynają się od 1,52 mm, a kończą na 6,35 mm. Rolki A62 mają od 450 do 850 sztuk, a zbiorcze rolki BA62 od 4 000 do 7 500 sztuk; te ostatnie pracują tylko z adapterem A6200-BULK-ADAPTER. Rolka A62-3-427 jest w zestawie z drukarką.\n\nNadruk wykonuje się taśmą A62-R4300. Owijki B-427 tracą wydajność owijania w temperaturze otoczenia powyżej 26,7 °C. Służą do oznaczania przewodów elektrycznych, teleinformatycznych i telekomunikacyjnych.',
+  sameAs: 'https://www.brady.eu/labels/self-laminating-vinyl-wrap-around-labels-for-a6200-printer-applicator-cps-4250817',
+  images: ['/images/products/brady/a62-1-427.png', '/images/products/brady/a62-1-427-pasek.png', '/images/products/brady/ba62-1-417.png'],
+  imageDescriptions: [
+    'Rolka owijek Brady A62-1-427 na czarnej szpuli z wysuniętym paskiem etykiet',
+    'Pasek owijek A62-1-427 z białym polem nadruku i półprzezroczystym ogonem',
+    'Zbiorcza rolka owijek Brady BA62 na tekturowej gilzie',
+  ],
+  specifications: [
+    { name: 'Typ', value: 'Samolaminujące owijki na przewody, nadruk termotransferowy' },
+    { name: 'Materiał', value: 'B-427 (winyl samolaminujący)' },
+    { name: 'Budowa etykiety', value: 'białe pole nadruku i półprzezroczysty ogon owijany na nadruku' },
+    { name: 'Właściwości', value: 'trudnopalny, samolaminujący' },
+    { name: 'Wykończenie', value: 'matowe' },
+    { name: 'Klej', value: 'trwały, akrylowy' },
+    { name: 'Grubość', value: '0,102 mm' },
+    { name: 'Temperatura pracy', value: 'od −70 do 70 °C' },
+    { name: 'Odporność', value: 'woda, olej, chemikalia, wilgoć' },
+    { name: 'Wymiary etykiety', value: 'szerokość 12,70 lub 25,40 mm, wysokość od 19,05 do 38,10 mm' },
+    { name: 'Pole nadruku', value: 'od 12,70 × 9,53 do 25,40 × 12,70 mm' },
+    { name: 'Zakres średnicy przewodu', value: 'od 1,52 do 6,35 mm (22–6 AWG), zależnie od rozmiaru' },
+    { name: 'Liczba sztuk na rolce', value: 'A62: od 450 do 850; BA62: od 4 000 do 7 500' },
+    { name: 'Rolki zbiorcze', value: 'BA62 wymagają adaptera A6200-BULK-ADAPTER' },
+    { name: 'Uwagi', value: 'wydajność owijania spada w temperaturze otoczenia powyżej 26,7 °C' },
+    { name: 'Zalecana taśma barwiąca', value: 'A62-R4300' },
+    { name: 'Gilza', value: '25,4 mm' },
+    { name: 'Zgodne drukarki', value: 'Wraptor A6200' },
+  ],
+  variants: wariantyA62(A62_427, 'owijka winylowa B-427'),
+  variantAttributeTooltips: {
+    Rozmiar: 'Szerokość i wysokość owijki.\n\nOwijki B-427 mają od 12,70 × 19,05 do 25,40 × 38,10 mm.',
+    'Ø przewodu': 'Zakres średnicy przewodu razem z izolacją, który obejmuje dany rozmiar owijki.\n\nNp. A62-1-427 pasuje do przewodów od 1,52 do 3,05 mm, a A62-4-427 do przewodów od 4,06 do 6,35 mm.',
+    'Na rolce': 'Liczba owijek na jednej rolce.\n\nRolki A62 mają od 450 do 850 sztuk, zbiorcze BA62 od 4 000 do 7 500.',
+    Rolka: ROLKA_TOOLTIP,
+  },
+  faq: [
+    { question: 'Która owijka B-427 jest w zestawie z Wraptor A6200?', answer: 'Rolka A62-3-427 z 500 owijkami 25,40 × 31,75 mm, do przewodów od 3,05 do 6,10 mm. Razem z nią w opakowaniu [Brady Wraptor A6200](/produkt/brady-a6200) jest kaseta z taśmą A62-R4300.' },
+    { question: 'Czym różni się owijka B-427 od B-417?', answer: 'Obie są samolaminujące. B-427 pracuje od −70 do 70 °C i ma klej odporny na wodę i olej. [B-417](/produkt/brady-a62-1-417) ma klej o dużej przyczepności, który trzyma także na izolacji z teflonu, silikonu i oplotu.' },
+  ],
+  applications: ['Oznaczanie przewodów elektrycznych', 'Owijki na kable teleinformatyczne i telekomunikacyjne', 'Oznaczenia przewodów w pomieszczeniach i na zewnątrz'],
+}
+
+// Winyl B-417 o dużej przyczepności (cps-5460648 i cps-5196436)
+const A62_417: Owijka[] = [
+  ['A62-1-417', '12,70 × 19,05 mm', '1,52–3,05 mm', '750 szt.'],
+  ['A62-14-417', '12,70 × 31,75 mm', '3,05–6,10 mm', '450 szt.'],
+  ['A62-11-417', '12,70 × 38,10 mm', '4,06–6,35 mm', '400 szt.'],
+  ['A62-15-417', '25,40 × 19,05 mm', '1,52–3,05 mm', '750 szt.'],
+  ['A62-2-417', '25,40 × 25,40 mm', '2,54–5,08 mm', '550 szt.'],
+  ['A62-3-417', '25,40 × 31,75 mm', '3,05–6,10 mm', '450 szt.'],
+  ['A62-4-417', '25,40 × 38,10 mm', '4,06–6,35 mm', '400 szt.'],
+  ['BA62-1-417', '12,70 × 19,05 mm', '1,52–3,05 mm', '6 400 szt.'],
+  ['BA62-14-417', '12,70 × 31,75 mm', '3,05–6,10 mm', '4 000 szt.'],
+  ['BA62-11-417', '12,70 × 38,10 mm', '4,06–6,35 mm', '3 400 szt.'],
+  ['BA62-15-417', '25,40 × 19,05 mm', '1,52–3,05 mm', '6 400 szt.'],
+  ['BA62-2-417', '25,40 × 25,40 mm', '2,54–5,08 mm', '5 000 szt.'],
+  ['BA62-3-417', '25,40 × 31,75 mm', '3,05–6,10 mm', '4 000 szt.'],
+  ['BA62-4-417', '25,40 × 38,10 mm', '4,06–6,35 mm', '3 400 szt.'],
+]
+
+export const bradyA62Przyczepne: Product = {
+  ...wspolneA62,
+  id: 'brady-a62-1-417',
+  slug: 'brady-a62-1-417',
+  name: 'Owijki samolaminujące o dużej przyczepności Brady A62 i BA62 B-417 do Wraptor A6200',
+  seoTitle: 'Brady A62-417 — owijki o dużej przyczepności do Wraptor A6200',
+  seoDescription: 'Owijki samolaminujące Brady B-417 o dużej przyczepności do Wraptor A6200: na teflon, silikon i oplot, ciekły azot, UL969. PN: A62-1-417, A62-3-417, BA62-1-417.',
+  shortDescription: 'Brady A62-417 i BA62-417 — samolaminujące owijki z winylu B-417 z klejem o dużej przyczepności, także na izolację z teflonu, silikonu i oplotu. 7 rozmiarów do drukarki Brady Wraptor A6200.',
+  description: 'B-417 to owijka samolaminująca z klejem o dużej przyczepności, przeznaczona do przewodów o małym przekroju. Klej akrylowy trzyma się izolacji z teflonu, silikonu i oplotu, a także zwykłego PVC. Białe pole nadruku przykrywa przezroczysty ogon, który chroni napis. Winyl o grubości 0,107 mm ma wykończenie matowe i gaśnie samoczynnie.\n\nOwijki działają od −40 °C do 70 °C i znoszą warunki w zamrażarkach oraz w ciekłym azocie. Są odporne na chemikalia, wilgoć, olej i wodę. Przy nadruku taśmą R4300 lub R7950 materiał ma uznanie UL969 (plik MH62024); przy zamówieniu należy zaznaczyć, że potrzebna jest wersja z uznaniem UL.\n\nRozmiary pokrywają się z owijkami B-427: siedem formatów, a obsługiwane przewody mają średnicę 1,52–6,35 mm. Na rolce A62 jest od 400 do 750 owijek, a na zbiorczej rolce BA62 od 3 400 do 6 400. Rolkę zbiorczą montuje się na adapterze A6200-BULK-ADAPTER, a do nadruku służy taśma A62-R4300.',
+  sameAs: 'https://www.brady.eu/labels/self-laminating-vinyl-wire-and-cable-labels-cps-5460648',
+  images: ['/images/products/brady/ba62-1-417.png', '/images/products/brady/ba62-1-417-pasek.png', '/images/products/brady/a62-1-427.png'],
+  imageDescriptions: [
+    'Zbiorcza rolka owijek Brady BA62-1-417 z wysuniętym paskiem etykiet',
+    'Pasek owijek BA62-1-417 z białym polem nadruku i przezroczystym ogonem',
+    'Standardowa rolka owijek Brady A62 na czarnej szpuli do drukarki Wraptor A6200',
+  ],
+  specifications: [
+    { name: 'Typ', value: 'Samolaminujące owijki na przewody o dużej przyczepności, nadruk termotransferowy' },
+    { name: 'Materiał', value: 'B-417 (winyl samolaminujący)' },
+    { name: 'Budowa etykiety', value: 'białe pole nadruku i przezroczysty ogon owijany na nadruku' },
+    { name: 'Właściwości', value: 'samogasnący, samolaminujący' },
+    { name: 'Wykończenie', value: 'matowe' },
+    { name: 'Klej', value: 'trwały, akrylowy, o dużej przyczepności; na izolację z teflonu, silikonu, oplotu i PVC' },
+    { name: 'Grubość', value: '0,107 mm' },
+    { name: 'Temperatura pracy', value: 'od −40 do 70 °C; zamrażarka, ciekły azot' },
+    { name: 'Odporność', value: 'chemikalia, wilgoć, olej, woda' },
+    { name: 'Wymiary etykiety', value: 'szerokość 12,70 lub 25,40 mm, wysokość od 19,05 do 38,10 mm' },
+    { name: 'Pole nadruku', value: 'od 12,70 × 9,53 do 25,40 × 12,70 mm' },
+    { name: 'Zakres średnicy przewodu', value: 'od 1,52 do 6,35 mm (22–6 AWG), zależnie od rozmiaru' },
+    { name: 'Liczba sztuk na rolce', value: 'A62: od 400 do 750; BA62: od 3 400 do 6 400' },
+    { name: 'Rolki zbiorcze', value: 'BA62 wymagają adaptera A6200-BULK-ADAPTER' },
+    { name: 'Normy', value: 'UL969 (plik MH62024) przy nadruku taśmami R4300 i R7950; wersję z uznaniem UL wskazuje się przy zamówieniu' },
+    { name: 'Zalecana taśma barwiąca', value: 'A62-R4300' },
+    { name: 'Gilza', value: '25,4 mm' },
+    { name: 'Zgodne drukarki', value: 'Wraptor A6200' },
+  ],
+  variants: wariantyA62(A62_417, 'owijka o dużej przyczepności B-417'),
+  variantAttributeTooltips: {
+    Rozmiar: 'Szerokość i wysokość owijki.\n\nOwijki B-417 występują w 7 rozmiarach, od 12,70 × 19,05 do 25,40 × 38,10 mm.',
+    'Ø przewodu': 'Zakres średnicy przewodu razem z izolacją dla danego rozmiaru.\n\nNp. A62-2-417 obejmuje przewody od 2,54 do 5,08 mm, a A62-11-417 przewody od 4,06 do 6,35 mm.',
+    'Na rolce': 'Liczba owijek na jednej rolce.\n\nRolki A62 mają od 400 do 750 sztuk, zbiorcze BA62 od 3 400 do 6 400.',
+    Rolka: ROLKA_TOOLTIP,
+  },
+  faq: [
+    { question: 'Kiedy wybrać owijki B-417 zamiast B-427?', answer: 'Gdy izolacja przewodu jest trudna do oklejenia, np. z teflonu, silikonu albo z oplotem, oraz przy przewodach o małym przekroju. B-417 ma też zastosowanie w zamrażarce i w ciekłym azocie. Owijki drukuje i nakłada [Brady Wraptor A6200](/produkt/brady-a6200).' },
+    { question: 'Czy owijki B-417 mają uznanie UL?', answer: 'Tak, przy nadruku taśmą R4300 lub R7950 materiał ma uznanie UL969 (plik MH62024). Brady sprzedaje owijki B-417 z uznaniem UL i bez niego, dlatego wersję UL trzeba wskazać przy zamówieniu.' },
+  ],
+  applications: ['Oznaczanie przewodów o małym przekroju', 'Owijki na izolację z teflonu, silikonu i oplotu', 'Oznaczenia w zamrażarkach i w ciekłym azocie'],
+}
+
+// Tkanina nylonowa B-499 (pojedyncze PN A62-x-499 i cps-5196421)
+const A62_499: Owijka[] = [
+  ['A62-7-499', '12,70 × 19,05 mm', '1,52–6,10 mm', '600 szt.'],
+  ['A62-16-499', '12,70 × 25,40 mm', '3,30–6,35 mm', '450 szt.'],
+  ['A62-15-499', '25,40 × 19,05 mm', '1,52–6,10 mm', '600 szt.'],
+  ['A62-13-499', '25,40 × 25,40 mm', '3,30–6,35 mm', '450 szt.'],
+  ['BA62-7-499', '12,70 × 19,05 mm', '1,52–6,10 mm', '5 200 szt.'],
+  ['BA62-16-499', '12,70 × 25,40 mm', '3,30–6,35 mm', '4 000 szt.'],
+  ['BA62-15-499', '25,40 × 19,05 mm', '1,52–6,10 mm', '5 200 szt.'],
+  ['BA62-13-499', '25,40 × 25,40 mm', '3,30–6,35 mm', '4 000 szt.'],
+]
+
+export const bradyA62Nylon: Product = {
+  ...wspolneA62,
+  id: 'brady-a62-7-499',
+  slug: 'brady-a62-7-499',
+  name: 'Etykiety z tkaniny nylonowej Brady A62 i BA62 B-499 do Wraptor A6200',
+  seoTitle: 'Brady A62-499 — etykiety z tkaniny nylonowej do Wraptor A6200',
+  seoDescription: 'Etykiety Brady B-499 z tkaniny nylonowej do Wraptor A6200: autoklaw, ciekły azot, od −40 do 90 °C, bezhalogenowe. PN: A62-7-499, A62-13-499, BA62-7-499.',
+  shortDescription: 'Brady A62-499 i BA62-499 — białe etykiety z tkaniny nylonowej B-499 z mocnym klejem akrylowym, odporne na autoklaw i ciekły azot. 4 rozmiary do drukarki Brady Wraptor A6200.',
+  description: 'Etykiety B-499 powstają z matowej, białej tkaniny nylonowej powlekanej poliamidem, o grubości 0,166 mm. Klej akrylowy o dużej przyczepności trzyma na stałe nawet na podłożach szorstkich i o niskiej energii powierzchniowej, nie tylko na gładkich. W odróżnieniu od owijek winylowych etykieta nie ma przezroczystego ogona.\n\nEtykiety można poddawać autoklawowaniu, mrożeniu i przechowywaniu w ciekłym azocie, a ich zakres temperatur to −40…90 °C. Nie szkodzą jej ścieranie, środki chemiczne, wilgoć, mróz, promienie UV ani pogoda. Biała odmiana spełnia normę DIN VDE 0472-815 dla materiałów bezhalogenowych i ma certyfikaty UL Recognised oraz CSA Accepted.\n\nDostępne są cztery formaty: szerokość 12,70 lub 25,40 mm, wysokość 19,05 lub 25,40 mm. Etykiety niższe obejmują przewody Ø 1,52–6,10 mm, wyższe Ø 3,30–6,35 mm. Rolka A62 ma 450 lub 600 etykiet, zbiorcza rolka BA62 4 000 lub 5 200. Nadruk wykonuje się kasetą A62-R4300.',
+  sameAs: 'https://www.brady.eu/labels/aggressive-adhesive-multi-purpose-nylon-labels-cps-5196421',
+  images: ['/images/products/brady/a62-7-499.png', '/images/products/brady/a62-7-499-pasek.png', '/images/products/brady/ba62-7-499.png'],
+  imageDescriptions: [
+    'Rolka etykiet nylonowych Brady A62-7-499 na czarnej szpuli z wysuniętym paskiem',
+    'Pasek białych etykiet A62-7-499 z tkaniny nylonowej na podkładzie',
+    'Zbiorcza rolka etykiet nylonowych Brady BA62-7-499 na tekturowej gilzie',
+  ],
+  specifications: [
+    { name: 'Typ', value: 'Etykiety owijane na przewody z tkaniny nylonowej, nadruk termotransferowy' },
+    { name: 'Materiał', value: 'B-499 (tkanina nylonowa powlekana poliamidem)' },
+    { name: 'Właściwości', value: 'autoklawowalna, do przechowywania kriogenicznego, bezhalogenowa' },
+    { name: 'Wykończenie', value: 'matowe, białe' },
+    { name: 'Klej', value: 'trwały, akrylowy, o dużej przyczepności; do powierzchni gładkich, szorstkich i o niskiej energii powierzchniowej' },
+    { name: 'Grubość', value: '0,166 mm' },
+    { name: 'Temperatura pracy', value: 'od −40 do 90 °C; autoklaw, zamrażarka, ciekły azot' },
+    { name: 'Odporność', value: 'ścieranie, chemikalia, wilgoć, niska temperatura, UV, warunki atmosferyczne' },
+    { name: 'Wymiary etykiety', value: 'szerokość 12,70 lub 25,40 mm, wysokość 19,05 lub 25,40 mm' },
+    { name: 'Zakres średnicy przewodu', value: 'od 1,52 do 6,35 mm (22–6 AWG), zależnie od rozmiaru' },
+    { name: 'Liczba sztuk na rolce', value: 'A62: 450 lub 600; BA62: 4 000 lub 5 200' },
+    { name: 'Rolki zbiorcze', value: 'BA62 wymagają adaptera A6200-BULK-ADAPTER' },
+    { name: 'Normy', value: 'bezhalogenowa (DIN VDE 0472-815), UL Recognised, CSA Accepted (materiał biały)' },
+    { name: 'Zalecana taśma barwiąca', value: 'A62-R4300' },
+    { name: 'Gilza', value: '25,4 mm' },
+    { name: 'Zgodne drukarki', value: 'Wraptor A6200' },
+  ],
+  variants: wariantyA62(A62_499, 'etykieta nylonowa B-499'),
+  variantAttributeTooltips: {
+    Rozmiar: 'Szerokość i wysokość etykiety.\n\nEtykiety B-499 mają cztery rozmiary: 12,70 lub 25,40 mm szerokości i 19,05 lub 25,40 mm wysokości.',
+    'Ø przewodu': 'Zakres średnicy przewodu razem z izolacją dla danego rozmiaru.\n\nEtykiety o wysokości 19,05 mm pasują do przewodów od 1,52 do 6,10 mm, o wysokości 25,40 mm od 3,30 do 6,35 mm.',
+    'Na rolce': 'Liczba etykiet na jednej rolce.\n\nRolki A62 mają 450 lub 600 sztuk, zbiorcze BA62 4 000 lub 5 200.',
+    Rolka: ROLKA_TOOLTIP,
+  },
+  faq: [
+    { question: 'Gdzie stosuje się etykiety nylonowe B-499 z drukarki Wraptor A6200?', answer: 'Na przewodach, komponentach i urządzeniach elektrycznych oraz w magazynach. Materiał znosi autoklaw, zamrażarkę i ciekły azot, a także ścieranie, chemikalia i promienie UV. Etykiety drukuje i nakłada [Brady Wraptor A6200](/produkt/brady-a6200).' },
+    { question: 'Czym etykiety B-499 różnią się od owijek B-427?', answer: 'Etykieta B-499 jest z tkaniny nylonowej i nie ma przezroczystego ogona, który zakrywa nadruk. Pracuje do 90 °C i znosi autoklaw. [Owijka B-427](/produkt/brady-a62-1-427) jest z winylu samolaminującego i chroni nadruk przezroczystą warstwą.' },
+  ],
+  applications: ['Oznaczanie przewodów i komponentów elektrycznych', 'Etykiety odporne na autoklaw i ciekły azot', 'Oznaczenia w magazynach'],
+}
+
+export const bradyA62R4300: Product = {
+  ...wspolneA62,
+  id: 'brady-a62-r4300',
+  slug: 'brady-a62-r4300',
+  name: 'Taśma barwiąca Brady A62-R4300 w kasecie do drukarki Wraptor A6200',
+  seoTitle: 'Brady A62-R4300 — taśma barwiąca w kasecie do Wraptor A6200',
+  seoDescription: 'Czarna taśma barwiąca Brady A62-R4300 w kasecie do drukarki Wraptor A6200: wosk z żywicą, 50 mm × 45,7 m, bez kalibracji i przewlekania. Nr art. 151629.',
+  shortDescription: 'Brady A62-R4300 — czarna, bezhalogenowa taśma barwiąca woskowo-żywiczna w kasecie, 50 mm × 45,7 m. Kasetę zakłada się w drukarce Brady Wraptor A6200 bez przewlekania taśmy i kalibracji.',
+  description: 'Kaseta A62-R4300 zawiera czarną taśmę barwiącą R4300 przeznaczoną do drukarki Wraptor A6200. Kasetę wkłada się nad głowicą, aż zatrzaśnie się na miejscu. Zakładanie nie wymaga przewlekania taśmy i kalibracji. Jeśli kaseta była już używana, przed założeniem przekręca się górną szpulę, aby odsłonić nieużywany odcinek.\n\nTaśma ma formułę woskowo-żywiczną, szerokość 50 mm i długość 45,7 m. Jest bezhalogenowa, odporna na chemikalia i rozmazywanie, a napis wytrzymuje lata w strefach przemysłowych. Zaleca się ją do matowych i chropowatych materiałów, takich jak winyl samolaminujący B-427 i tkanina nylonowa B-499. Jest też zalecaną taśmą dla owijek B-417.\n\nNieużywaną taśmę przechowuje się w chłodnym, suchym miejscu do sześciu miesięcy. Zużytą kasetę oddaje się do recyklingu zgodnie z lokalnymi przepisami.',
+  sameAs: 'https://www.brady.eu/ribbons-cartridges/a6200-r4300-series-printer-ribbon-pid-a62-r4300',
+  images: ['/images/products/brady/a62-r4300.png', '/images/products/brady-a6200-wymiana-tasmy.webp'],
+  imageDescriptions: [
+    'Kaseta z czarną taśmą barwiącą Brady A62-R4300 w przezroczystej obudowie',
+    'Dłoń wkłada kasetę z taśmą A62-R4300 do otwartej drukarki Brady Wraptor A6200',
+  ],
+  specifications: [
+    { name: 'Part Number', value: 'A62-R4300' },
+    { name: 'Numer artykułu Brady', value: '151629' },
+    { name: 'Typ', value: 'Taśma barwiąca w kasecie do druku termotransferowego' },
+    { name: 'Seria', value: 'R4300' },
+    { name: 'Formuła taśmy', value: 'woskowo-żywiczna' },
+    { name: 'Typ materiału', value: 'poliester (nośnik taśmy)' },
+    { name: 'Kolor', value: 'czarny' },
+    { name: 'Szerokość taśmy', value: '50 mm' },
+    { name: 'Długość taśmy', value: '45,7 m' },
+    { name: 'Grubość', value: '0,0045 mm' },
+    { name: 'Właściwości', value: 'bezhalogenowa' },
+    { name: 'Odporność', value: 'chemikalia, rozmazywanie' },
+    { name: 'Temperatura pracy', value: 'od 5 do 35 °C' },
+    { name: 'Zalecane materiały', value: 'winyl samolaminujący B-427, tkanina nylonowa B-499, owijki B-417' },
+    { name: 'Przechowywanie', value: 'nieużywana taśma do 6 miesięcy w chłodnym, suchym miejscu' },
+    { name: 'Format', value: 'kaseta zakładana bez przewlekania i kalibracji' },
+    { name: 'Zgodne drukarki', value: 'Wraptor A6200' },
+  ],
+  variants: [
+    { partNumber: 'A62-R4300', name: 'Brady A62-R4300 — czarna taśma barwiąca w kasecie 50 mm × 45,7 m', attributes: { Rozmiar: '50 mm × 45,7 m' }, availability: 'unavailable' },
+  ],
+  variantAttributeTooltips: {
+    Rozmiar: 'Szerokość taśmy barwiącej i długość nawiniętej taśmy w kasecie.\n\nA62-R4300 ma 50 mm szerokości i 45,7 m długości.',
+  },
+  faq: [
+    { question: 'Jak wymienić taśmę A62-R4300 w drukarce Wraptor A6200?', answer: 'Należy podnieść pokrywę, ścisnąć występy po obu stronach starej kasety i wyjąć ją. Nową kasetę ustawia się etykietą do góry i wciska nad głowicą, aż zatrzaśnie się na miejscu. Pasek stanu na ekranie [Brady Wraptor A6200](/produkt/brady-a6200) pokazuje założoną taśmę.' },
+  ],
+  applications: ['Nadruk na owijkach winylowych B-427 i B-417', 'Nadruk na etykietach z tkaniny nylonowej B-499'],
+}
+
+export const bradyA62Materialy: Product[] = [bradyA62Winyl, bradyA62Przyczepne, bradyA62Nylon, bradyA62R4300]
+
+export const BRADY_A62_NYLON_IDS = new Set(['brady-a62-7-499'])
+export const BRADY_A62_TASMY_IDS = new Set(['brady-a62-r4300'])
