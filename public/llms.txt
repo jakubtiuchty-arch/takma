@@ -94,6 +94,15 @@ TAKMA dostarcza rozwiązania AutoID dla przedsiębiorstw w całej Polsce:
     - SATO SRS100 (taśma żywiczna Flex, folie syntetyczne, do 300 mm/s): https://www.takma.com.pl/tasmy-termotransferowe-sato/serie/srs100
   - Etykiety termiczne Zebra (direct thermal, bez taśmy — papierowe, foliowe, linerless): https://www.takma.com.pl/etykiety-termiczne-zebra
   - Etykiety termotransferowe Zebra (papierowe, foliowe, specjalne): https://www.takma.com.pl/etykiety-termotransferowe-zebra
+  - Etykiety Brady (kasety i rolki do drukarek Brady): https://www.takma.com.pl/etykiety-brady
+    - Oznaczniki kabli Brady (owijki samolaminujące, flagi, zawieszki, etykiety na listwy zaciskowe): https://www.takma.com.pl/oznaczniki-kabli-brady
+    - Koszulki termokurczliwe Brady PermaSleeve (standardowe, bezhalogenowe LSZH, Heatex, wysokotemperaturowe): https://www.takma.com.pl/koszulki-termokurczliwe-brady
+    - Etykiety laboratoryjne Brady (probówki, fiolki, szkiełka; ciekły azot, autoklaw, ksylen): https://www.takma.com.pl/etykiety-laboratoryjne-brady
+    - Etykiety na płytki drukowane Brady (poliimid, ESD, małe formaty na kody 2D): https://www.takma.com.pl/etykiety-na-plytki-drukowane-brady
+    - Etykiety przemysłowe i znaki Brady (znamionowe, plomby VOID, taśmy ciągłe, zawieszki, GHS, etykiety do drukarek atramentowych): https://www.takma.com.pl/etykiety-przemyslowe-brady
+  - Etykiety RFID Brady (UHF do druku i kodowania: zasoby, laboratorium, metal, flagi kablowe): https://www.takma.com.pl/etykiety-rfid-brady
+  - Taśmy barwiące Brady (kasety i75, M61, B30, rolki na gilzie 25 mm, taśmy do aplikatorów): https://www.takma.com.pl/tasmy-barwiace-brady
+  - Tusze do drukarek Brady BradyJet (kasety CMY i K z głowicą): https://www.takma.com.pl/tusze-brady
 - Serwis i naprawa: https://www.takma.com.pl/serwis
 - Poradniki: https://www.takma.com.pl/poradnik
 - Kontakt: https://www.takma.com.pl/kontakt

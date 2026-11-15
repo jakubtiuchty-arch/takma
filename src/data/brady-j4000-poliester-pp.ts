@@ -626,6 +626,7 @@ export const bradyJ4000Laminat910: Product = {
     { name: 'Szerokość rolki', value: '69,85 / 114,3 / 165,1 / 215,9 mm, zależnie od wersji' },
     { name: 'Długość rolki', value: '36,56 m' },
     { name: 'Gilza', value: '76,2 mm' },
+    { name: 'Zgodne drukarki', value: 'J4000 (laminat nakłada się na wydrukowane etykiety)' },
     { name: 'Numery artykułów Brady', value: LAMINAT_910.map(([pn, art]) => `${pn}: ${art}`).join('; ') },
   ],
   variants: LAMINAT_910.map(([pn, , nazwa, rozmiar, forma]) => ({

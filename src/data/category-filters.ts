@@ -1201,11 +1201,16 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
     {
       specKey: 'rodzaj',
       label: 'Rodzaj materiału',
-      description: 'Co kupujesz.\n• Etykiety termiczne — bez taśmy, nadruk krótkotrwały: wysyłka, cenówki\n• Etykiety termotransferowe — z taśmą, nadruk trwały: produkt, magazyn, folia\n• Taśmy termotransferowe — barwiące do drukarek etykiet\n• Taśmy do drukarek kart — kolorowe i mono do Magicard i Zebra ZC\n• Karty PVC i opaski — blankiety kart i opaski na rękę',
+      description: 'Co kupujesz.\n• Etykiety termiczne — bez taśmy, nadruk krótkotrwały: wysyłka, cenówki\n• Etykiety termotransferowe — z taśmą, nadruk trwały: produkt, magazyn, folia\n• Etykiety i oznaczniki Brady — kasety i rolki do drukarek Brady: kable, koszulki, laboratorium, elektronika\n• Etykiety RFID — z chipem UHF do druku i kodowania\n• Taśmy termotransferowe — barwiące do drukarek etykiet\n• Tusze — kasety do kolorowych drukarek atramentowych\n• Taśmy do drukarek kart — kolorowe i mono do Magicard i Zebra ZC\n• Karty PVC i opaski — blankiety kart i opaski na rękę',
       derived: [
         { value: 'Etykiety termiczne', subcategory: 'etykiety-termiczne' },
         { value: 'Etykiety termotransferowe', subcategory: 'etykiety-termotransferowe' },
+        { value: 'Etykiety i oznaczniki Brady', subcategory: 'etykiety-brady' },
+        { value: 'Etykiety RFID', subcategory: 'etykiety-rfid-brady' },
         { value: 'Taśmy termotransferowe', subcategory: 'tasmy-termotransferowe' },
+        { value: 'Taśmy termotransferowe', subcategory: 'tasmy-barwiace-brady' },
+        { value: 'Tusze', subcategory: 'tusze-brady' },
+        { value: 'Tusze', subcategory: 'tusze-do-kolorowych-drukarek' },
         { value: 'Taśmy do drukarek kart', subcategory: 'tasmy-do-drukarek-kart' },
         { value: 'Karty PVC', subcategory: 'karty-pcv' },
         { value: 'Opaski identyfikacyjne', subcategory: 'opaski-identyfikacyjne' },
@@ -1216,6 +1221,7 @@ export const categoryFilters: Record<string, FilterDefinition[]> = {
       label: 'Producent',
       derived: [
         { value: 'Zebra', manufacturer: 'zebra' },
+        { value: 'Brady', manufacturer: 'brady' },
         { value: 'Magicard', manufacturer: 'magicard' },
       ],
     },
@@ -1691,6 +1697,73 @@ categoryFilters['drukarki-etykiet-brother'] = [
   ...categoryFilters['drukarki-etykiet'].map(filter => filter.specKey === 'szerokosc' ? szerokoscBrother(filter) : filter),
 ]
 categoryFilters['drukarki-kart-magicard'] = categoryFilters['drukarki-kart']
+
+// Materiały Brady (15.11.2026): podkategorie według rodzaju materiału, w każdej filtr „Do drukarki”
+// z wiersza „Zgodne drukarki” kart (jest na wszystkich kartach materiałów Brady).
+const ZGODNE_DRUKARKI = ['Zgodne drukarki']
+const bradyDoDrukarki: FilterDefinition = {
+  specKey: 'brady-drukarka',
+  label: 'Do drukarki',
+  description: 'Seria drukarek Brady, do których pasuje materiał.\n• M210, M211 — kasety M21\n• M410, M510, M511 — kasety M4 i M5\n• M610, M611, M710 — kasety M6 i M7 oraz materiał BM\n• S3100, S3700 — materiały B30\n• i3300, i4311, i5300 — materiały B30 i B33\n• i6100, i7100, i7500 — rolki z gilzą 76 mm\n• J7300, J4000 — etykiety do druku atramentowego\n• A5500, A6200, A6500 — drukarki z aplikatorem',
+  derived: [
+    { value: 'M210, M211', pattern: '\\bM21[01]', specs: ZGODNE_DRUKARKI },
+    { value: 'M410, M510, M511', pattern: 'M410|M51[01]', specs: ZGODNE_DRUKARKI },
+    { value: 'M610, M611, M710', pattern: 'M61[01]|M710', specs: ZGODNE_DRUKARKI },
+    { value: 'S3100, S3700', pattern: 'S3100|S3700', specs: ZGODNE_DRUKARKI },
+    { value: 'i3300, i4311, i5300', pattern: 'i3300|i4311|i5300', specs: ZGODNE_DRUKARKI },
+    { value: 'i6100, i7100, i7500', pattern: 'i6100|i7100|i7500', specs: ZGODNE_DRUKARKI },
+    { value: 'J7300, J4000', pattern: 'J7300|J4000', specs: ZGODNE_DRUKARKI },
+    { value: 'A5500, A6200, A6500', pattern: 'A5500|A6200|A6500', specs: ZGODNE_DRUKARKI },
+  ],
+}
+const MATERIAL_BRADY = ['Typ materiału', 'Materiał']
+const bradyMaterial: FilterDefinition = {
+  specKey: 'brady-material',
+  label: 'Materiał',
+  description: 'Z czego wykonano etykietę, oznacznik albo koszulkę.\n• Winyl — elastyczny, na kable i powierzchnie zakrzywione\n• Poliester — trwały, na urządzenia i tabliczki znamionowe\n• Poliimid — odporny na wysoką temperaturę, na płytki drukowane\n• Polipropylen i papier — do wnętrz i laboratoriów\n• Tkanina nylonowa — elastyczna, na przewody i listwy',
+  derived: [
+    { value: 'Winyl', pattern: 'winyl', specs: MATERIAL_BRADY },
+    { value: 'Poliester', pattern: 'poliester', specs: MATERIAL_BRADY },
+    { value: 'Poliimid', pattern: 'poliimid', specs: MATERIAL_BRADY },
+    { value: 'Polipropylen', pattern: 'polipropylen', specs: MATERIAL_BRADY },
+    { value: 'Tkanina nylonowa', pattern: 'nylon', specs: MATERIAL_BRADY },
+    { value: 'Papier', pattern: 'papier', specs: MATERIAL_BRADY },
+    { value: 'Poliolefina', pattern: 'poliolefin', specs: MATERIAL_BRADY },
+  ],
+}
+categoryFilters['etykiety-brady'] = [
+  {
+    specKey: 'brady-rodzaj',
+    label: 'Rodzaj',
+    description: 'Do czego służy materiał.\n• Oznaczniki kabli — owijki, flagi, zawieszki, etykiety na listwy\n• Koszulki termokurczliwe — rurki z nadrukiem nasuwane na przewód\n• Laboratoryjne — probówki, fiolki, szkiełka\n• Na płytki drukowane — poliimid i ESD w elektronice\n• Przemysłowe i znaki — tabliczki, plomby, taśmy ciągłe, zawieszki',
+    derived: [
+      { value: 'Oznaczniki kabli', subcategory: 'oznaczniki-kabli-brady' },
+      { value: 'Koszulki termokurczliwe', subcategory: 'koszulki-termokurczliwe-brady' },
+      { value: 'Etykiety laboratoryjne', subcategory: 'etykiety-laboratoryjne-brady' },
+      { value: 'Etykiety na płytki drukowane', subcategory: 'etykiety-na-plytki-drukowane-brady' },
+      { value: 'Etykiety przemysłowe i znaki', subcategory: 'etykiety-przemyslowe-brady' },
+    ],
+  },
+  bradyDoDrukarki,
+  bradyMaterial,
+]
+for (const page of ['oznaczniki-kabli-brady', 'koszulki-termokurczliwe-brady', 'etykiety-laboratoryjne-brady', 'etykiety-na-plytki-drukowane-brady', 'etykiety-przemyslowe-brady']) {
+  categoryFilters[page] = [bradyDoDrukarki, bradyMaterial]
+}
+categoryFilters['etykiety-rfid-brady'] = [bradyDoDrukarki]
+categoryFilters['tusze-brady'] = [bradyDoDrukarki]
+categoryFilters['tasmy-barwiace-brady'] = [
+  bradyDoDrukarki,
+  {
+    specKey: 'brady-formula',
+    label: 'Formuła taśmy',
+    description: 'Rodzaj warstwy barwiącej.\n• Woskowo-żywiczna — papier i matowe folie, odporność na ścieranie\n• Żywiczna — poliester, poliimid, chemikalia i wysoka temperatura',
+    derived: [
+      { value: 'Woskowo-żywiczna', pattern: 'wosk', specs: ['Formuła taśmy'] },
+      { value: 'Żywiczna', pattern: '^żywic', specs: ['Formuła taśmy'] },
+    ],
+  },
+]
 
 /**
  * Akcesoria do drukarek etykiet: części (głowice, wałki, gilotyny, odklejaki), interfejsy,

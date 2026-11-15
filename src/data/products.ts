@@ -84,6 +84,7 @@ import { bradyI7500Akcesoria } from './brady-i7500'
 import { bradyA5500Akcesoria, bradyA55Materialy } from './brady-a5500'
 import { bradyA6200Akcesoria, bradyA62Materialy } from './brady-a6200'
 import { bradyA6500Akcesoria, bradyWrapMaterialy } from './brady-a6500'
+import { bradyPodkategorieMaterialow, podkategorieMaterialuBrady, BRADY_PODKATEGORIE_MATERIALOW_IDS } from './brady-materialy-podkategorie'
 import { getacTabletProducts, getacTabletAccessories } from './getac-tablet-products'
 import { bluebirdTabletProducts, bluebirdTabletAccessories } from './bluebird-tablet-products'
 import { unitechTabletProducts } from './unitech-tablet-products'
@@ -458,10 +459,10 @@ export const categories: Category[] = [
     id: 'materialy-eksploatacyjne',
     slug: 'materialy-eksploatacyjne',
     name: 'Materiały eksploatacyjne',
-    description: 'Etykiety, taśmy barwiące i opaski Zebra, taśmy do drukarek kart Zebra i Magicard oraz karty PVC i zbliżeniowe',
-    seoTitle: 'Materiały eksploatacyjne Zebra i Magicard | Etykiety, taśmy, karty',
-    seoDescription: 'Etykiety termiczne i termotransferowe, taśmy barwiące i opaski Zebra, taśmy do drukarek kart Zebra ZC i Magicard oraz karty PVC i zbliżeniowe. Ceny netto B2B.',
-    longDescription: 'Materiały do drukarek etykiet i drukarek kart. Do drukarek etykiet Zebra: etykiety papierowe termotransferowe (Z-Perform 1000T, Z-Select 2000T, 8000T All-Temp), foliowe (Z-Ultimate 3000T, PolyPro, 8100T CryoCool), etykiety termiczne (Z-Perform 1000D, Z-Select 2000D Removable, PolyPro 4000D, bezpodkładowe ZeroLiner), taśmy barwiące woskowe, woskowo-żywiczne i żywiczne (od 2100 European Wax po 5100 Premium Resin i 8000 ChemResist) oraz opaski Z-Band dla szpitali. Do drukarek kart: taśmy YMCKO, YMCKOK i monochromatyczne do Zebra ZC100, ZC300 i ZC350, taśmy do Magicard Pronto100, 300 i 600 oraz zestaw YMCK z folią retransferową do Prima 8. Do tego karty PVC (białe Standard, Premium Fotodek, HoloPatch do Magicard, samoprzylepne, srebrne i czarne) i karty zbliżeniowe Unique 125 kHz, MIFARE 1K, DESFire EV1 i EV3 oraz dualne. Etykiety i taśmy pochodzą od producentów drukarek, więc czujniki i głowice pracują tak, jak przewidział producent.',
+    description: 'Etykiety, taśmy barwiące i opaski Zebra, etykiety, oznaczniki kabli i taśmy Brady, taśmy do drukarek kart Zebra i Magicard oraz karty PVC i zbliżeniowe',
+    seoTitle: 'Materiały eksploatacyjne Zebra, Brady, Magicard | Etykiety, taśmy',
+    seoDescription: 'Etykiety i taśmy barwiące Zebra i Brady, oznaczniki kabli i koszulki Brady, opaski, taśmy do drukarek kart Zebra ZC i Magicard oraz karty PVC. Ceny netto B2B.',
+    longDescription: 'Materiały do drukarek etykiet i drukarek kart. Do drukarek etykiet Zebra: etykiety papierowe termotransferowe (Z-Perform 1000T, Z-Select 2000T, 8000T All-Temp), foliowe (Z-Ultimate 3000T, PolyPro, 8100T CryoCool), etykiety termiczne (Z-Perform 1000D, Z-Select 2000D Removable, PolyPro 4000D, bezpodkładowe ZeroLiner), taśmy barwiące woskowe, woskowo-żywiczne i żywiczne (od 2100 European Wax po 5100 Premium Resin i 8000 ChemResist) oraz opaski Z-Band dla szpitali. Do drukarek Brady: etykiety i oznaczniki kabli, koszulki termokurczliwe, etykiety laboratoryjne i na płytki drukowane, etykiety RFID, taśmy barwiące oraz tusze. Do drukarek kart: taśmy YMCKO, YMCKOK i monochromatyczne do Zebra ZC100, ZC300 i ZC350, taśmy do Magicard Pronto100, 300 i 600 oraz zestaw YMCK z folią retransferową do Prima 8. Do tego karty PVC (białe Standard, Premium Fotodek, HoloPatch do Magicard, samoprzylepne, srebrne i czarne) i karty zbliżeniowe Unique 125 kHz, MIFARE 1K, DESFire EV1 i EV3 oraz dualne. Etykiety i taśmy pochodzą od producentów drukarek, więc czujniki i głowice pracują tak, jak przewidział producent.',
     icon: 'tag',
     productCount: 107,
   },
@@ -1057,6 +1058,8 @@ export const subcategories: Subcategory[] = [
     productIds: ['acss-unqe1bn', 'acss-unqe1u', 'acss-unqe1', 'acss-mfrc1', 'acss-mdev12', 'acss-mdev14', 'acss-mdev18', 'acss-mdev32', 'acss-mdev34', 'acss-mdev38', 'acss-ntag213c', 'acss-ntag216c', 'acss-unq-mfrc1', 'acss-mdev12-unq', 'acss-mdev14-unq', 'acss-mdev34-unq'],
     productCount: 16,
   },
+  // Materiały Brady: Etykiety Brady (z podkategoriami), Etykiety RFID, Taśmy barwiące i Tusze Brady (brady-materialy-podkategorie.ts)
+  ...bradyPodkategorieMaterialow,
   // --- Podkategorie: Akcesoria do terminali mobilnych ---
   {
     id: 'akcesoria-do-terminali',
@@ -96075,11 +96078,22 @@ export const products: Product[] = rawProductList
   .sort((a, b) => Number(!!a.comingSoon) - Number(!!b.comingSoon))
   .map((p) => ({
     ...p,
+    // Materiały Brady: podkategorie według rodzaju (brady-materialy-podkategorie.ts)
+    ...(p.manufacturerId === 'brady' && p.categoryId === 'materialy-eksploatacyjne'
+      ? { subcategoryIds: Array.from(new Set([...(p.subcategoryIds ?? []), ...podkategorieMaterialuBrady(p)])) }
+      : {}),
     compatibleAccessories: relinkAll(p.compatibleAccessories) ?? [],
     compatibleFoilLabels: relinkAll(p.compatibleFoilLabels),
     relatedAccessories: relinkAll(p.relatedAccessories),
     relatedProducts: relinkAll(p.relatedProducts),
   }))
+
+// Podkategorie materiałów Brady: `productIds` z `subcategoryIds` kart (oba kierunki zgodne).
+for (const subcategory of subcategories) {
+  if (!BRADY_PODKATEGORIE_MATERIALOW_IDS.has(subcategory.id)) continue
+  subcategory.productIds = products.filter((p) => p.subcategoryIds?.includes(subcategory.id)).map((p) => p.id)
+  subcategory.productCount = subcategory.productIds.length
+}
 
 // Liczba produktów kategorii z danych, nie wpisana ręcznie — wpisy rozjechały się
 // z katalogiem (np. „Drukarki etykiet (39)” przy 78 produktach, 25.09.2026).

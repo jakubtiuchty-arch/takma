@@ -104,6 +104,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     'termotransferowe-drukarki-etykiet': new Date('2026-09-20'),
     'nawijarki-do-etykiet': new Date('2026-09-21'),
     'dyspensery-etykiet': new Date('2026-09-21'),
+    // Materiały Brady (podkategorie od 15.11.2026)
+    'etykiety-brady': new Date('2026-11-15'),
+    'oznaczniki-kabli-brady': new Date('2026-11-15'),
+    'koszulki-termokurczliwe-brady': new Date('2026-11-15'),
+    'etykiety-laboratoryjne-brady': new Date('2026-11-15'),
+    'etykiety-na-plytki-drukowane-brady': new Date('2026-11-15'),
+    'etykiety-przemyslowe-brady': new Date('2026-11-15'),
+    'etykiety-rfid-brady': new Date('2026-11-15'),
+    'tasmy-barwiace-brady': new Date('2026-11-15'),
+    'tusze-brady': new Date('2026-11-15'),
   }
   const subcategoryPages: MetadataRoute.Sitemap = subcategories
     .filter((sub) => !/^etykiety-termotransferowe-(papierowe|foliowe|specjalne)$/.test(sub.slug))
