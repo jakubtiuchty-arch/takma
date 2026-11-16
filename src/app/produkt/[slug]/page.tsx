@@ -27,6 +27,7 @@ import { getProductVariantTooltips } from '@/lib/product-variant-tooltips'
 import { getProductTabTitle, getVariantTabTitle, isShortTabTitleScope } from '@/lib/product-tab-title'
 import { isRfidContentProduct } from '@/lib/rfid-content'
 import { isZebraTerminalProduct } from '@/lib/zebra-terminal-pricing'
+import { wstawCeneProduktu } from '@/lib/cena-od'
 import { Metadata } from 'next'
 import { notFound, permanentRedirect } from 'next/navigation'
 import Link from 'next/link'
@@ -175,8 +176,10 @@ export async function generateMetadata({ params, searchParams }: ProductPageProp
 
   // SEO: dynamic title gdy wybrany wariant (rozmiar + PN), inaczej dedykowany lub fallback
   const variantSuffix = variant ? ` ${variantSize ?? ''}${variantPN ? ` — ${variantPN}` : ''}`.trim() : ''
+  // `{cenaOd}` w seoTitle dostaje tylko cenę z danych na żywo (najtańszy dostępny wariant), nigdy priceFrom
+  const seoTitle = product.seoTitle !== undefined ? wstawCeneProduktu(product.seoTitle, initialStock !== undefined ? currentNetPrice : undefined) : undefined
   // Szablon layoutu dokłada „| TAKMA", więc sufiks wpisany w seoTitle trzeba zdjąć (inaczej „| TAKMA | TAKMA")
-  const baseTitle = (isZebraTerminalProduct(product) ? product.seoTitle?.replace(/\s*(?:\||—|,)?\s*od\s+[\d\s.,]+\s*zł(?:\s+netto)?/ig, '') : product.seoTitle)?.replace(/\s*\|\s*TAKMA\s*$/, '')
+  const baseTitle = (isZebraTerminalProduct(product) ? seoTitle?.replace(/\s*(?:\||—|,)?\s*od\s+[\d\s.,]+\s*zł(?:\s+netto)?/ig, '') : seoTitle)?.replace(/\s*\|\s*TAKMA\s*$/, '')
     ?? `${product.name}${category ? ` - ${category.name}` : ''}${product.priceFrom && !product.comingSoon ? ` | ${product.priceFrom.toLocaleString('pl-PL')} zł` : ''}`
   // Listingi objęte krótkim tytułem karty „Producent Model” (specyfikacja jest w meta description)
   const title = isShortTabTitleScope(product)

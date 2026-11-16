@@ -2,6 +2,7 @@ import { tool } from 'ai'
 import { z } from 'zod'
 import { products, categories } from '@/data/products'
 import { guides } from '@/data/guides'
+import { wstawCeneProduktu } from '@/lib/cena-od'
 
 // ─── Helper: simple text search scoring ──────────────────────────────────────
 
@@ -64,7 +65,8 @@ export const searchProducts = tool({
         ...p.tags,
         ...p.applications,
         ...(p.variants?.map(v => v.partNumber + ' ' + v.name) ?? []),
-        p.seoTitle ?? '',
+        // Znacznik `{cenaOd}` nie jest słowem do wyszukania
+        wstawCeneProduktu(p.seoTitle ?? '', null),
       ].join(' ')
 
       return { product: p, score: searchScore(searchText, query) }
