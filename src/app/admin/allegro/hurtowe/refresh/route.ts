@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getSessionFromCookie } from '@/lib/auth'
 import { refreshBatch } from '@/lib/allegro/bulk'
+import { ALLEGRO_PAUSED, ALLEGRO_PAUSED_MESSAGE } from '@/lib/allegro/pause'
 
 export const runtime = 'nodejs'
 export const maxDuration = 300
@@ -16,6 +17,7 @@ export async function POST(request: NextRequest) {
   if (!session && !isCron) {
     return NextResponse.json({ error: 'Brak autoryzacji.' }, { status: 401 })
   }
+  if (ALLEGRO_PAUSED) return NextResponse.json({ error: ALLEGRO_PAUSED_MESSAGE }, { status: 423 })
   try {
     const res = await refreshBatch(20)
     return NextResponse.json({ ok: true, ...res })

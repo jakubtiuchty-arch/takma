@@ -3,6 +3,7 @@ import { prisma } from '@/lib/db'
 import { allegroFetch } from '@/lib/allegro/client'
 import { cappedAvailable } from '@/lib/allegro/stock'
 import { ALLEGRO_ENV } from '@/lib/allegro/auth'
+import { ALLEGRO_PAUSED } from '@/lib/allegro/pause'
 
 export const runtime = 'nodejs'
 export const maxDuration = 300
@@ -44,7 +45,8 @@ export async function GET() {
     const available = cappedAvailable(stockByPN.get(o.partNumber))
     if (available === o.stockAvailable) continue // bez zmian
 
-    const reviving = (o.stockAvailable ?? 0) === 0 && available > 0
+    // Przy wstrzymanej sprzedaży (ALLEGRO_PAUSED) tylko aktualizujemy liczbę sztuk, bez wznawiania.
+    const reviving = !ALLEGRO_PAUSED && (o.stockAvailable ?? 0) === 0 && available > 0
     try {
       if (reviving) {
         try {

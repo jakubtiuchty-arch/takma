@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { bulkPublishBatch } from '@/lib/allegro/bulk'
+import { ALLEGRO_PAUSED } from '@/lib/allegro/pause'
 
 export const runtime = 'nodejs'
 export const maxDuration = 300
@@ -11,6 +12,7 @@ export const dynamic = 'force-dynamic'
  * aż wystawi wszystko (potem idle). Po zakończeniu można wyłączyć flagę.
  */
 export async function GET() {
+  if (ALLEGRO_PAUSED) return NextResponse.json({ ok: true, paused: true })
   if (process.env.ALLEGRO_BULK_PUBLISH !== 'true') {
     return NextResponse.json({ ok: true, disabled: true })
   }

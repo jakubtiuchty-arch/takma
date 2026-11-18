@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { refreshBatch } from '@/lib/allegro/bulk'
+import { ALLEGRO_PAUSED } from '@/lib/allegro/pause'
 
 export const runtime = 'nodejs'
 export const maxDuration = 300
@@ -21,6 +22,8 @@ export async function GET(request: NextRequest) {
   if (!okCron && !okFlag) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 })
   }
+
+  if (ALLEGRO_PAUSED) return NextResponse.json({ ok: true, paused: true })
 
   const start = Date.now()
   const MAX_MS = 240_000

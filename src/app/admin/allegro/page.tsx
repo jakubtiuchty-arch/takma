@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { ALLEGRO_PAUSED } from '@/lib/allegro/pause'
 import { getConnection, allegroConfigured, ALLEGRO_ENV } from '@/lib/allegro/auth'
 import { listThreads } from '@/lib/allegro/messaging'
 import { listOrders } from '@/lib/allegro/orders'
@@ -98,6 +99,14 @@ export default async function AllegroDashboardPage() {
             Połącz konto
           </Link>
           , aby zobaczyć dane.
+        </div>
+      )}
+
+      {ALLEGRO_PAUSED && (
+        <div className="mb-6 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-900">
+          <strong>Sprzedaż na Allegro jest wstrzymana.</strong> Oferty zakończono 18.11.2026 w Sales Center. Sklep nie
+          wystawia, nie odświeża i nie wznawia ofert. Aby wznowić sprzedaż, ustaw na Vercelu ALLEGRO_PAUSED=false,
+          wdróż stronę i wznów oferty w Sales Center („Wystaw lub wznów”, do 60 dni od zakończenia).
         </div>
       )}
 

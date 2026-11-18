@@ -1,3 +1,4 @@
+import { ALLEGRO_PAUSED, ALLEGRO_PAUSED_MESSAGE } from './pause'
 import { prisma } from '@/lib/db'
 import { allegroFetch } from './client'
 import { ALLEGRO_ENV } from './auth'
@@ -60,6 +61,7 @@ interface AllegroOfferResponse {
  * Nie publikuje (status INACTIVE) — aktywację robi się ręcznie w panelu.
  */
 export async function publishDraft(partNumber: string): Promise<PublishResult> {
+  if (ALLEGRO_PAUSED) return { ok: false, partNumber, status: 'ERROR', error: ALLEGRO_PAUSED_MESSAGE }
   const resolved = resolveByPN(partNumber)
   if (!resolved) {
     // PN wypadł z katalogu (przebudowa serii, wycofany rozmiar). Oferty nie da się

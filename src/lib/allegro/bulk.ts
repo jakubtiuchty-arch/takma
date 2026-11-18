@@ -1,3 +1,4 @@
+import { ALLEGRO_PAUSED } from './pause'
 import { prisma } from '@/lib/db'
 import { ALLEGRO_ENV } from './auth'
 import { isValidGtin } from './gtin'
@@ -78,6 +79,7 @@ export async function getBulkProgress(): Promise<{
  * więc kolejne wywołania przechodzą przez resztę.
  */
 export async function refreshBatch(limit = 20): Promise<{ processed: number; succeeded: number; failed: number }> {
+  if (ALLEGRO_PAUSED) return { processed: 0, succeeded: 0, failed: 0 }
   const offers = await prisma.allegroOffer.findMany({
     where: { environment: ALLEGRO_ENV, status: { in: ['DRAFT', 'ACTIVE'] } },
     orderBy: { updatedAt: 'asc' },
