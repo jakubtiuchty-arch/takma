@@ -418,7 +418,7 @@ export async function lookupUnifiedStock(
         const live: JarltechStockInfo[] = livePNs.length ? await readLiveJarltechWithDeadline(livePNs)
           .catch(err => { console.warn('[stock] Jarltech live fallback failed:', err); return [] }) : []
         // Zapis potwierdzonych ofert jest częścią odczytu — kolejny render nie gubi DE.
-        await Promise.all(live.filter(item => item.found || zebraTerminalPartNumbers.has(item.partNumber)).map(item => {
+        await Promise.all(live.filter(item => !item.bladZrodla && (item.found || zebraTerminalPartNumbers.has(item.partNumber))).map(item => {
           const data = {
             found: item.found, unitPrice: item.unitPrice ?? null, currency: item.currency ?? 'EUR',
             inventory: item.inventory, incomingQty: item.incomingQty, incomingDate: item.incomingDate ?? null,

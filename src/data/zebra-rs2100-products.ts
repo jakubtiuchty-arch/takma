@@ -301,7 +301,7 @@ export const zebraRs2100Accessories: Product[] = [
     "tags": [
       "magazyn"
     ],
-    "availability": "available",
+    "availability": "unavailable",
     "priceFrom": 174.1,
     "isNew": true,
     "isBestseller": false,

@@ -9,7 +9,7 @@
     },
     {
       "path": "/api/cron/jarltech-sync",
-      "schedule": "0 5 * * *"
+      "schedule": "0 5,17 * * *"
     },
     {
       "path": "/api/cron/seo-digest",

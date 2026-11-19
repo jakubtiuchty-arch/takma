@@ -39,7 +39,11 @@ export async function GET(request: NextRequest) {
   // dawniej sync szedł zawsze w kolejności products.ts i Vercel ubijał go w tym
   // samym miejscu, więc ogon listy NIGDY się nie odświeżał (wpisy z kwietnia
   // pokazywały stany magazynowe sprzed miesięcy). Teraz: najpierw PN-y bez
-  // wpisu w cache, potem od najdawniej synchronizowanych — pełna rotacja co ~4-5 dni.
+  // wpisu w cache, potem od najdawniej synchronizowanych.
+  // 19.11.2026: pula ~11 200 PN, przebieg ~1 300–1 500 PN. Przy jednym przebiegu dziennie
+  // rotacja trwała ~8 dni, a wpis starszy niż 7 dni stock-sync i /api/stock traktują jak brak
+  // danych (866 PN z towarem pokazywało „Brak danych z dystrybutora”). Dwa przebiegi dziennie
+  // (vercel.json) dają pełną rotację w ~4 dni.
   const cacheAges = new Map(
     (await prisma.jarltechStockCache.findMany({ select: { partNumber: true, lastSync: true } }))
       .map((r) => [r.partNumber, r.lastSync.getTime()]),
@@ -53,6 +57,7 @@ export async function GET(request: NextRequest) {
   const DEADLINE = Date.now() + 270_000 // zapas 30s przed ubiciem funkcji (maxDuration=300)
   let synced = 0
   let found = 0
+  let bledy = 0
   let stoppedEarly = false
 
   for (let i = 0; i < uniquePNs.length; i += BATCH_SIZE) {
@@ -67,6 +72,12 @@ export async function GET(request: NextRequest) {
       const results = await lookupStock(batch)
 
       for (const result of results) {
+        // Błąd zapytania to nie „Jarltech nie ma tego PN”: zostawiamy poprzedni wpis.
+        // Jego stare lastSync sprawia, że kolejny przebieg (stale-first) sprawdzi ten PN jako pierwszy.
+        if (result.bladZrodla) {
+          bledy++
+          continue
+        }
         await prisma.jarltechStockCache.upsert({
           where: { partNumber: result.partNumber },
           create: {
@@ -108,13 +119,14 @@ export async function GET(request: NextRequest) {
     }
   }
 
-  console.log(`[Jarltech Sync] Done: ${synced}/${uniquePNs.length} synced, ${found} found`)
+  console.log(`[Jarltech Sync] Done: ${synced}/${uniquePNs.length} synced, ${found} found, ${bledy} błędów (wpisy bez zmian)`)
 
   return NextResponse.json({
     success: true,
     total: uniquePNs.length,
     synced,
     found,
+    bledy,
     stoppedEarly,
     remaining: uniquePNs.length - synced,
     timestamp: new Date().toISOString(),

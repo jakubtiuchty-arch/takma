@@ -45,6 +45,9 @@ export interface JarltechStockInfo {
   availability: 'available' | 'on-order' | 'unavailable'
   deliveryText: string
   lastSync: string
+  /** Błąd zapytania (timeout, HTTP 5xx, przerwa po błędzie), a nie „Jarltech nie ma tego PN”.
+   *  Taki wynik nie może nadpisać wpisu w JarltechStockCache. */
+  bladZrodla?: true
 }
 
 // ============================================
@@ -199,8 +202,12 @@ async function fetchItemDetails(jarltechId: string, token: string) {
   if (stockRes.ok) {
     const s = await stockRes.json()
     stock = typeof s.stock === 'number' ? s.stock : parseInt(s.stock) || 0
+  } else if (stockRes.status === 404) {
+    console.warn(`[Jarltech] Stock HTTP 404 for ${jarltechId}`)
   } else {
-    console.warn(`[Jarltech] Stock HTTP ${stockRes.status} for ${jarltechId}`)
+    // 429/5xx to błąd zapytania, nie „0 szt.” — wyjątek oznaczy wynik jako bladZrodla
+    // i nie nadpisze stanu zapisanego w JarltechStockCache.
+    throw new Error(`Jarltech stock HTTP ${stockRes.status} for ${jarltechId}`)
   }
 
   let incomingQty = 0
@@ -267,7 +274,7 @@ function isErrorCooldown(): boolean {
   return lastErrorAt > 0 && (Date.now() - lastErrorAt) < ERROR_COOLDOWN
 }
 
-function makeEmptyResult(pn: string, now: string): JarltechStockInfo {
+function makeEmptyResult(pn: string, now: string, bladZrodla = false): JarltechStockInfo {
   return {
     partNumber: pn,
     found: false,
@@ -277,6 +284,7 @@ function makeEmptyResult(pn: string, now: string): JarltechStockInfo {
     availability: 'unavailable',
     deliveryText: 'Brak danych z dystrybutora',
     lastSync: now,
+    ...(bladZrodla ? { bladZrodla: true as const } : {}),
   }
 }
 
@@ -348,7 +356,7 @@ async function lookupSinglePN(pn: string, now: string): Promise<JarltechStockInf
   } catch (error) {
     console.error(`[Jarltech] Blad lookup PN ${pn}:`, error)
     lastErrorAt = Date.now()
-    return makeEmptyResult(pn, now)
+    return makeEmptyResult(pn, now, true)
   }
 }
 
@@ -363,7 +371,7 @@ export async function lookupStock(partNumbers: string[]): Promise<JarltechStockI
   const { customerId, clientId, clientSecret } = env()
   if (!customerId || !clientId || !clientSecret) {
     console.warn('[Jarltech] Brak konfiguracji (JARLTECH_CUSTOMER_ID/CLIENT_ID/CLIENT_SECRET)')
-    return partNumbers.map(pn => makeEmptyResult(pn, now))
+    return partNumbers.map(pn => makeEmptyResult(pn, now, true))
   }
 
   // Sprawdz cache
@@ -379,11 +387,10 @@ export async function lookupStock(partNumbers: string[]): Promise<JarltechStockI
   }
 
   // Error cooldown
+  // Przerwa po błędzie: tych PN nie sprawdzaliśmy, więc to nie jest „brak w Jarltech”.
+  // Nie zapisujemy ich w pamięci podręcznej, żeby kolejne zapytanie sprawdziło je naprawdę.
   if (isErrorCooldown()) {
-    for (const pn of uncached) {
-      setCached(pn, makeEmptyResult(pn, now))
-    }
-    return partNumbers.map(pn => getCached(pn) || makeEmptyResult(pn, now))
+    return partNumbers.map(pn => getCached(pn) || makeEmptyResult(pn, now, true))
   }
 
   console.log(`[Jarltech] Sprawdzam ${uncached.length} PN (concurrency: ${MAX_CONCURRENCY})`)
@@ -391,9 +398,11 @@ export async function lookupStock(partNumbers: string[]): Promise<JarltechStockI
   // Równoległe przetwarzanie z limitem concurrency
   const tasks = uncached.map(pn => () => lookupSinglePN(pn, now))
   const results = await runWithConcurrency(tasks, MAX_CONCURRENCY)
+  const wynikiBledow = new Map<string, JarltechStockInfo>()
   for (let i = 0; i < uncached.length; i++) {
-    setCached(uncached[i], results[i])
+    if (results[i].bladZrodla) wynikiBledow.set(uncached[i], results[i])
+    else setCached(uncached[i], results[i])
   }
 
-  return partNumbers.map(pn => getCached(pn) || makeEmptyResult(pn, now))
+  return partNumbers.map(pn => getCached(pn) || wynikiBledow.get(pn) || makeEmptyResult(pn, now, true))
 }
