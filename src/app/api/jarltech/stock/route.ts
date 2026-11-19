@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { getSessionFromCookie } from '@/lib/auth'
 import { lookupStock } from '@/lib/jarltech'
 
 /**
@@ -6,8 +7,15 @@ import { lookupStock } from '@/lib/jarltech'
  *
  * Zwraca aktualne stany magazynowe i ceny z Jarltech dla podanych Part Numberow.
  * Endpoint debug/legacy — do testowania Jarltech osobno.
+ *
+ * Tylko dla zalogowanego admina: odpowiedź zawiera cenę zakupu u dystrybutora.
+ * Sklep czyta stany przez /api/stock, który tej ceny nie podaje.
  */
 export async function GET(request: NextRequest) {
+  if (!(await getSessionFromCookie())) {
+    return NextResponse.json({ error: 'Brak autoryzacji.' }, { status: 401, headers: { 'Cache-Control': 'private, no-store' } })
+  }
+
   const pnParam = request.nextUrl.searchParams.get('pn')
 
   if (!pnParam) {
@@ -42,7 +50,8 @@ export async function GET(request: NextRequest) {
       found: results.filter(r => r.found).length,
     }, {
       headers: {
-        'Cache-Control': 'public, s-maxage=3600, stale-while-revalidate=7200',
+        // Odpowiedź admina nie może trafić do cache CDN.
+        'Cache-Control': 'private, no-store',
       },
     })
   } catch (error) {
